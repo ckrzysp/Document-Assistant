@@ -6,8 +6,16 @@ from schemas import LoginRequest, LoginResponse, RegisterRequest, RegisterRespon
 from crud.user_crud import UserCRUD
 from passlib.context import CryptContext
 from crud.user_crud import UserCRUD
+from contextlib import asynccontextmanager
 
-app = FastAPI()
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    await database.connect()
+    yield
+    await database.disconnect()
+
+app = FastAPI(lifespan=lifespan)
 pwd_context = CryptContext(schemes=["argon2"], deprecated="auto")
 
 def get_db():
@@ -16,14 +24,6 @@ def get_db():
         yield db
     finally:
         db.close()
-
-@app.on_event("startup")
-async def startup():
-    await database.connect()
-
-@app.on_event("shutdown")
-async def shutdown():
-    await database.disconnect()
 
 @app.post("/register", response_model=RegisterResponse)
 async def register(request : RegisterRequest, db : Session = Depends(get_db)):
