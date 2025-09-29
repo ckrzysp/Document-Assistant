@@ -1,5 +1,6 @@
 // src/pages/GuestLanding.js
 import React from "react";
+import { Link } from "react-router-dom";
 import {Box, Typography, Button} from "@mui/material";
 
 export default function GuestLanding() {
@@ -23,15 +24,19 @@ export default function GuestLanding() {
           gap: 2,
         }}
       >
-        <Button variant="text" sx={{ color: "#000", fontWeight: "bold" }}>
-          Login
-        </Button>
-        <Button
-          variant="outlined"
-          sx={{ color: "#000", borderColor: "#000", fontWeight: "bold" }}
-        >
-          Sign up
-        </Button>
+        <Link to="/login">
+          <Button variant="text" sx={{ color: "#000", fontWeight: "bold" }}>
+            Login
+          </Button>
+        </Link>
+        <Link to="/register">
+          <Button
+            variant="outlined"
+            sx={{ color: "#000", borderColor: "#000", fontWeight: "bold" }}
+          >
+            Sign up
+          </Button>
+        </Link>
       </Box>
 
       {/* center content */}
@@ -56,13 +61,15 @@ export default function GuestLanding() {
         <Typography
           variant="h4"
           component="h1"
-          sx={{ fontWeight: "bold", mb: 4 }}
+          sx={{ fontWeight: "bold", mb: 4
+           }}
         >
           Legal Document AI Assistant!
         </Typography>
 
         {/* 'start chat' and 'get to know us' buttons */}
         <Box sx={{ display: "flex", gap: 3 }}>
+          <Link to="/login">
           <Button
             variant="outlined"
             sx={{
@@ -76,6 +83,7 @@ export default function GuestLanding() {
           >
             Start Chatting
           </Button>
+          </Link>
           <Button
             variant="outlined"
             sx={{
