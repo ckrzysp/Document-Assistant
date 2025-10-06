@@ -7,7 +7,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Documents from "./pages/Documents";
-import Chat from "./pages/Chat";
+import Chat from "./pages/chat/Chat";
 import Upload from "./pages/Upload";
 
 function App() {
