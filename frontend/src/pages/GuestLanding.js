@@ -51,6 +51,15 @@ export default function GuestLanding() {
           px: 2,
         }}
       >
+        <Box
+          component="img"
+          src="/LDAALogo.png"
+          alt="Legal Document AI Assistant Logo"
+          sx={{
+            height: 150,
+            width: 'auto',
+          }}
+        />
         <Typography
           variant="h4"
           component="h1"
