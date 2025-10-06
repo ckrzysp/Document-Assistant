@@ -22,6 +22,15 @@ export default function Register() {
           textAlign: "center",
         }}
       >
+        <Box
+          component="img"
+          src="/LDAALogo.png"
+          alt="Legal Document AI Assistant Logo"
+          sx={{
+            height: 150,
+            width: 'auto',
+          }}
+        />
         <Typography
           variant="h4"
           component="h1"

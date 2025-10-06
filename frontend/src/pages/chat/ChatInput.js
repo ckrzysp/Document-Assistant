@@ -22,6 +22,7 @@ export default function ChatInput({ input, setInput, sendMsg, canChat }) {
     >
       <TextField
         fullWidth
+        multiline
         variant='standard'
         placeholder='Type your message...'
         value={input}
@@ -29,6 +30,9 @@ export default function ChatInput({ input, setInput, sendMsg, canChat }) {
         onKeyDown={handleKeyPress}
         InputProps={{
           disableUnderline: true,
+          startAdornment: (
+            <InputAdornment position="start" sx={{ width: '12px' }} />
+          ),
           endAdornment: (
             <InputAdornment position='end'>
               {/* needs backend */}

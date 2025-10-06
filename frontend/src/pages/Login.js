@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Box, Typography, Button, Paper, TextField, Divider} from "@mui/material";
+import {Box, Typography, Button, Paper, TextField, Divider, IconButton} from "@mui/material";
+import { Google } from '@mui/icons-material';
 
 export default function Login() {
   return (
@@ -24,20 +25,37 @@ export default function Login() {
           textAlign: "center",
         }}
       >
-        <Typography
-          variant="h4"
-          component="h1"
-          sx={{ fontWeight: "bold", mb: 1 }}
-        >
-          Legal Document
-        </Typography>
-        <Typography
-          variant="h4"
-          component="h1"
-          sx={{ fontWeight: "bold", mb: 4 }}
-        >
-          AI Assistant
-        </Typography>
+        {/* Logo */}
+        <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
+          <Box
+            component="img"
+            src="/LDAALogo.png"
+            alt="Legal Document AI Assistant Logo"
+            sx={{
+              height: 150,
+              width: 'auto',
+              mr: 2, 
+            }}
+          />
+          
+          {/* title */}
+          <Box>
+            <Typography
+              variant="h4"
+              component="h1"
+              sx={{ fontWeight: "bold", mb: 1 }}
+            >
+              Legal Document
+            </Typography>
+            <Typography
+              variant="h4"
+              component="h1"
+              sx={{ fontWeight: "bold" }}
+            >
+              AI Assistant
+            </Typography>
+          </Box>
+        </Box>
 
         {/* Login form */}
         <Box
@@ -110,6 +128,9 @@ export default function Login() {
                 border: "2px solid gray",
               }}
             >
+              <IconButton sx={{ color: '#000' }}>
+                <Google />
+              </IconButton>
               Continue with Google
             </Button>
           </Paper>

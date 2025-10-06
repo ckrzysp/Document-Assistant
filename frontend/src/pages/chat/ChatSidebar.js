@@ -16,7 +16,7 @@ import {
   Search,
   MoreHoriz,
   MenuOpen,
-  OpenInNew
+  LogoutRounded
 } from '@mui/icons-material';
 
 export default function ChatSidebar({
@@ -232,7 +232,7 @@ export default function ChatSidebar({
           </Box>
           {/* needs backend. user settings/logout */}
           <IconButton sx={{ color: '#000' }}>
-            <OpenInNew />
+            <LogoutRounded />
           </IconButton>
         </Box>
       </Box>
