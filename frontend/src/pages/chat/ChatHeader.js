@@ -4,35 +4,28 @@ import {
   MenuOpen,
   ChatBubbleOutline,
   Description,
-  FolderOpen
+  Stars
 } from '@mui/icons-material';
 
 const NAV_ICONS = [
   { Icon: MenuOpen, action: 'toggleSidebar' },
   { Icon: ChatBubbleOutline, action: 'newChat' },
-  { Icon: Description, path: '/dashboard' },
-  { Icon: FolderOpen, path: '/documents' }
+  { Icon: Description, path: '/documents' },
+  { Icon: Stars, path: '/dashboard' }
 ];
 
 export default function ChatHeader({ handleNewChat, onToggleSidebar }) {
   return (
     <Box sx={{ position: 'fixed', top: 15, left: 20, display: 'flex', gap: 1.5 }}>
-      <Paper
+      <Box
+        component="img"
+        src="/LDAALogo.png"
+        alt="Legal Document AI Assistant Logo"
         sx={{
-          borderRadius: '50%',
-          width: 45,
-          height: 45,
-          border: '1px solid #000',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          fontWeight: 600,
-          bgcolor: '#f6f6f6',
-          boxShadow: '3px 3px 0 rgba(0,0,0,0.15)'
+        height: 50,
+        width: 'auto',
         }}
-      >
-        L
-      </Paper>
+      />
 
       <Paper
         sx={{
