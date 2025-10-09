@@ -20,9 +20,9 @@ class Document(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id"))
-    text = Column(Text, nullable=False, index=True)
-    # original_bytes = Column(String(100), unique=True, index=True, nullable=False)
-    # translated_bytes = Column(String(100), unique=True, index=True, nullable=False)
+    text = Column(Text, nullable=True, index=True)
+    original_file_path = Column(String(255), nullable=True)
+    translated_file_path = Column(String(255), nullable=True)
     file_info = Column(JSON, default=dict)
 
     owner = relationship("User", back_populates="documents")
@@ -34,6 +34,7 @@ class Chat(Base):
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id"))
     document_id = Column(Integer, ForeignKey("documents.id"))
+    name = Column(String(500), nullable=True)
     messages = Column(JSON, default=list)
 
     owner = relationship("User", back_populates="chats")
