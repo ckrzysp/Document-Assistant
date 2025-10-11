@@ -1,8 +1,23 @@
+# Core Framework
 fastapi==0.117.1
-uvicorn[standard]==0.37.0
+uvicorn==0.37.0
+python-dotenv==1.1.1
+python-multipart==0.0.20
+
+# Database
+sqlalchemy==2.0.43
 databases==0.9.0
 aiomysql==0.2.0
 PyMySQL==1.1.2
-SQLAlchemy==2.0.43
-python-dotenv==1.1.1
-passlib[argon2]==1.7.4
+
+# Data Validation
+pydantic==2.11.9
+email-validator==2.3.0
+
+# Security
+passlib==1.7.4
+argon2-cffi==25.1.0
+
+# AI/LLM APIs
+openai==2.2.0
+google-genai==1.43.0
