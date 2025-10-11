@@ -1,4 +1,5 @@
 from sqlalchemy.orm import Session
+from sqlalchemy.orm.attributes import flag_modified
 from tables import Chat
 from typing import List, Optional
 
@@ -19,14 +20,16 @@ class ChatCRUD:
     def updateChat(db : Session, chat_id: int, message : str, role : str):
         chat = db.query(Chat).filter(Chat.id == chat_id).first()
         if chat:
-            previousMessages = chat.messages
+            previousMessages = chat.message_history if chat.message_history else []
             previousMessages.append({
                 "role" : role,
                 "content" : message,
             })
-            chat.messages = previousMessages
+            chat.message_history = previousMessages
+            flag_modified(chat, "message_history")  # Tell SQLAlchemy the JSON field changed
             db.commit()
             db.refresh(chat)
+            return chat
 
     @staticmethod
     def delete(db: Session, chat_id: int) -> bool:

@@ -4,8 +4,8 @@ from typing import List, Optional
 
 class DocumentCRUD:
     @staticmethod
-    def create(db : Session, user_id : int, text : str, file_info : dict) -> Document:
-        document = Document(user_id=user_id, text=text, file_info=file_info)
+    def create(db : Session, user_id : int, file_info : dict) -> Document:
+        document = Document(user_id=user_id, file_info=file_info)
         db.add(document)
         db.commit()
         db.refresh(document)
@@ -14,9 +14,13 @@ class DocumentCRUD:
     @staticmethod
     def get_by_id(db: Session, document_id: int) -> Optional[Document]:
         return db.query(Document).filter(Document.id == document_id).first()
+
+    @staticmethod
+    def get_by_user_id(db: Session, user_id: int) -> List[Document]:
+        return db.query(Document).filter(Document.user_id == user_id).all()
     
     @staticmethod
-    def add_file_paths(db : Session, document_id: int, original_file_path : str, translated_file_path : str) -> bool
+    def add_file_paths(db : Session, document_id: int, original_file_path : str, translated_file_path : str):
         document = db.query(Document).filter(Document.id == document_id).first()
         if document:
             document.original_file_path = original_file_path

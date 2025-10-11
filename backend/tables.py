@@ -35,11 +35,11 @@ class Chat(Base):
     user_id = Column(Integer, ForeignKey("users.id"))
     document_id = Column(Integer, ForeignKey("documents.id"))
     name = Column(String(500), nullable=True)
-    messages = Column(JSON, default=list)
+    message_history = Column(JSON, default=list)  # Renamed to avoid conflict
 
     owner = relationship("User", back_populates="chats")
     document = relationship("Document", back_populates="chats")
-    messages = relationship("Message", back_populates="chat")
+    messages_relation = relationship("Message", back_populates="chat")  # Renamed to avoid conflict
 
 class Message(Base):
     __tablename__ = "messages"
@@ -49,4 +49,4 @@ class Message(Base):
     role = Column(String(100), index=True, nullable=False)
     content = Column(Text, index=True, nullable=False)
 
-    chat = relationship("Chat", back_populates="messages")
+    chat = relationship("Chat", back_populates="messages_relation")

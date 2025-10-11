@@ -1,15 +1,17 @@
 # Endpoint Code
 from fastapi import FastAPI, Depends, HTTPException, Form, File, UploadFile
+from fastapi.responses import FileResponse
+from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from database import database, engine
-from schemas import LoginRequest, LoginResponse, RegisterRequest, RegisterResponse
+from schemas import LoginRequest, LoginResponse, RegisterRequest, RegisterResponse, SendMessageRequest, SendMessageResponse, DocumentResponse
 from crud.user_crud import UserCRUD
 from crud.document_crud import DocumentCRUD
 from crud.message_crud import MessageCRUD
 from crud.chat_crud import ChatCRUD
 from passlib.context import CryptContext
 from contextlib import asynccontextmanager
-from helpers import saveFile
+from helpers import saveFile, get_gpt_response_with_context, check_logic_with_gemini
 
 
 @asynccontextmanager
@@ -19,6 +21,16 @@ async def lifespan(app: FastAPI):
     await database.disconnect()
 
 app = FastAPI(lifespan=lifespan)
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  # Frontend URL
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 pwd_context = CryptContext(schemes=["argon2"], deprecated="auto")
 
 def get_db():
@@ -67,13 +79,13 @@ async def create_chat(
         "media_type": file.content_type
     }
 
-    document = DocumentCRUD.create(db=db, user_id=user_id, original_file_path="", translated_file_path="", file_info=file_info)
+    document = DocumentCRUD.create(db=db, user_id=user_id, file_info=file_info)
 
-    original_file_path = saveFile(file=file, user_id=user_id, document_id=document.id, type="original")
+    original_file_path = await saveFile(file=file, user_id=user_id, document_id=document.id, type="original")
 
     # TO DO: Implementation of translating the document
-    translated_file = ""
-    translated_file_path = saveFile(file=translated_file, user_id=user_id, document_id=document.id, type="translated")
+    translated_file_path = ""  # Placeholder for now
+    # translated_file_path = await saveFile(file=translated_file, user_id=user_id, document_id=document.id, type="translated")
 
     DocumentCRUD.add_file_paths(db=db, document_id=document.id, original_file_path=original_file_path, translated_file_path=translated_file_path)
 
@@ -86,14 +98,94 @@ async def create_chat(
 
     return {"chat_id": chat.id}
 
-# @app.post("/send_message")
-# def send_message(request : SendMessageRequest, db : Session = Depends(get_db)):
-#     user_id = request.user_id
-#     chat_id = request.chat_id
+@app.post("/send_message")
+def send_message(request : SendMessageRequest, db : Session = Depends(get_db)):
+    chat_id = request.chat_id
+    user_message = request.text
 
-#     MessageCRUD.create(db=db, chat_id=chat_id, role="user", context=request.text)
+    # Update Message Table & Chat Session History
+    MessageCRUD.create(db=db, chat_id=chat_id, role="user", content=user_message)
 
-#     ChatCRUD.updateChat(db=db, chat_id=chat_id, message=request.text, role="user")
+    chat = ChatCRUD.updateChat(db=db, chat_id=chat_id, message=user_message, role="user")
+
+    gemini_approved = False
+    gpt_response=""
+    retries = 0
+    # Get Response from GPT
+    while not gemini_approved and retries < 5:
+
+        gpt_response = get_gpt_response_with_context(chat.message_history, chat.document.text)
+
+        content = user_message + " " + gpt_response
+
+        gemini_approved = check_logic_with_gemini(content=content, document_text=chat.document.text)
+
+        retries += 1
+    
+    if not gemini_approved and retries >= 5:
+        # No consistence was reached between the two models
+        gpt_response = "Unable to answer this question."
+
+    # Add GPT Message to Messages and Update the Chat (should also work for when nothing is found)
+    MessageCRUD.create(db=db, chat_id=chat_id, role="assistant", content=gpt_response)
+
+    chat = ChatCRUD.updateChat(db=db, chat_id=chat_id, message=gpt_response, role="assistant")
+
+    # Return the message
+    return gpt_response
+
+@app.get("/documents/{user_id}", response_model=list[DocumentResponse])
+def get_documents(user_id: int, db: Session = Depends(get_db)):
+    user = UserCRUD.get_by_id(db=db, user_id=user_id)
+
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    return [
+        DocumentResponse(
+            id=doc.id,
+            filename=doc.file_info.get("filename", ""),
+            media_type=doc.file_info.get("media_type", ""),
+            has_translation=bool(doc.translated_file_path and doc.translated_file_path.strip())
+        )
+        for doc in user.documents
+    ]
+
+@app.get("/documents/{document_id}/download")
+def download_document(
+    document_id: int,
+    version: str = "original",  # "original" or "translated"
+    db: Session = Depends(get_db)
+):
+    """
+    Download a document file.
+
+    Args:
+        document_id: The document ID
+        version: "original" or "translated" (default: "original")
+    """
+    document = DocumentCRUD.get_by_id(db=db, document_id=document_id)
+
+    if not document:
+        raise HTTPException(status_code=404, detail="Document not found")
+
+    # Determine which file path to use
+    if version == "translated":
+        file_path = document.translated_file_path
+        if not file_path or not file_path.strip():
+            raise HTTPException(status_code=404, detail="Translated version not available")
+        filename_prefix = "translated_"
+    else:  # default to original
+        file_path = document.original_file_path
+        if not file_path:
+            raise HTTPException(status_code=404, detail="Original file not found")
+        filename_prefix = ""
+
+    return FileResponse(
+        path=file_path,
+        filename=f"{filename_prefix}{document.file_info.get('filename', 'download')}",
+        media_type=document.file_info.get("media_type", "application/octet-stream")
+    )
 
 
 
