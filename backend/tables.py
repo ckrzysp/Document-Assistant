@@ -20,9 +20,9 @@ class Document(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id"))
-    text = Column(Text, nullable=False, index=True)
-    # original_bytes = Column(String(100), unique=True, index=True, nullable=False)
-    # translated_bytes = Column(String(100), unique=True, index=True, nullable=False)
+    text = Column(Text, nullable=True, index=True)
+    original_file_path = Column(String(255), nullable=True)
+    translated_file_path = Column(String(255), nullable=True)
     file_info = Column(JSON, default=dict)
 
     owner = relationship("User", back_populates="documents")
@@ -34,11 +34,12 @@ class Chat(Base):
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id"))
     document_id = Column(Integer, ForeignKey("documents.id"))
-    messages = Column(JSON, default=list)
+    name = Column(String(500), nullable=True)
+    message_history = Column(JSON, default=list)  # Renamed to avoid conflict
 
     owner = relationship("User", back_populates="chats")
     document = relationship("Document", back_populates="chats")
-    messages = relationship("Message", back_populates="chat")
+    messages_relation = relationship("Message", back_populates="chat")  # Renamed to avoid conflict
 
 class Message(Base):
     __tablename__ = "messages"
@@ -48,4 +49,4 @@ class Message(Base):
     role = Column(String(100), index=True, nullable=False)
     content = Column(Text, index=True, nullable=False)
 
-    chat = relationship("Chat", back_populates="messages")
+    chat = relationship("Chat", back_populates="messages_relation")

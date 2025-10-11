@@ -4,7 +4,7 @@ from typing import List, Optional
 
 class UserCRUD:
     @staticmethod
-    async def create(db : Session, name : str, email : str, hashed_password : str) -> User:
+    def create(db : Session, name : str, email : str, hashed_password : str) -> User:
         user = User(name=name, email=email, hashed_password=hashed_password)
         db.add(user)
         db.commit()
