@@ -1,0 +1,43 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+82251504.json,362,304,379,315,17,answer
+82251504.json,446,257,461,267,cc:,question
+82251504.json,249,235,270,248,:,question
+82251504.json,249,268,285,282,From:,question
+82251504.json,249,302,281,317,Area:,question
+82251504.json,307,304,354,318,Region:,question
+82251504.json,288,303,299,316,5,answer
+82251504.json,169,270,180,280,X,other
+82251504.json,87,366,140,381,Chains:,question
+82251504.json,84,472,180,486,Independents:,question
+82251504.json,680,832,702,941,82251504,other
+82251504.json,70,89,173,101,11/05/97 11: 03,other
+82251504.json,200,88,288,101,813 384 0683,other
+82251504.json,360,88,553,101,LORILLARD TAMPA GREENSBOR,other
+82251504.json,612,87,666,101,0002/ 003,other
+82251504.json,592,108,673,142,,other
+82251504.json,216,183,435,201,Retail Excel Progress Report,header
+82251504.json,88,203,169,216,Submission for:,question
+82251504.json,447,205,535,220,Distribution by/ to:,question
+82251504.json,446,221,572,251,DM to RSM 1st of Month RSM to R W. C. 10th,answer
+82251504.json,465,256,501,268,D. O. S.,answer
+82251504.json,314,235,413,249,R. W. Caldarella,answer
+82251504.json,316,267,390,282,Kent B. Mills,answer
+82251504.json,88,218,126,228,July 31,question
+82251504.json,89,233,142,246,August 29,question
+82251504.json,89,251,162,262,September 30,question
+82251504.json,87,265,147,280,October 31,question
+82251504.json,88,285,156,299,November 28,question
+82251504.json,88,303,157,316,December 30,question
+82251504.json,88,334,241,347,Acceptance/ Response:,header
+82251504.json,247,335,541,352,What is the retailers response to Lorillard's Excel,question
+82251504.json,85,351,215,365,Merchandising plan?,question
+82251504.json,145,369,569,387,"This program has been successful to date with chains where our ""Flex",answer
+82251504.json,82,384,585,436,"Payment"". was not place. The chains where were using the ""Flex Payment"" system we have not been las successful. The P. O. S. requirements of the P- 1 Plan with Oil Companies is difficult to obtain.",answer
+82251504.json,82,487,419,510,"Additional P. V. merchandising is being secured quickly,",answer
+82251504.json,81,522,584,557,Additional monies have assisted Region 17 in fighting PM Exclusives and PM/ RJR co-existence situations.,other
+82251504.json,85,592,317,608,Hardware Evaluation/ Effectiveness:,header
+82251504.json,324,595,578,612,Comment on the assembly of displays and,question
+82251504.json,84,613,216,627,application of shields:,question
+82251504.json,82,628,590,683,The displays are easily assembled and durable. Some questions have been raised conceming the inability to be flush with the counter and/ or against the register. As well as the ability to place this or the Back Bar if the settlement goes through,answer
+82251504.json,82,715,578,747,Pemanent Advertising Evaluation/ Effectiveness/ Acceptance: (P- 1/ P- 5 & C 5 Plans Only:,question
+82251504.json,203,754,351,769,Not available at this time,answer

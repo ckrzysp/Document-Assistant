@@ -1,0 +1,76 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+13149651.json,263,117,273,127,☑,answer
+13149651.json,275,117,322,125,ORIGINAL,question
+13149651.json,46,162,78,170,Subject,question
+13149651.json,71,205,98,213,State:,header
+13149651.json,73,297,100,305,Local:,header
+13149651.json,71,339,79,349,,question
+13149651.json,70,316,80,326,1.,question
+13149651.json,249,311,259,319,3.,question
+13149651.json,250,335,258,345,4.,question
+13149651.json,443,221,454,234,☑,answer
+13149651.json,568,229,579,240,☑,answer
+13149651.json,582,232,599,240,Yes,question
+13149651.json,448,316,458,326,☐,question
+13149651.json,448,328,459,338,☐,question
+13149651.json,60,388,71,399,☑,answer
+13149651.json,170,385,183,395,☑,answer
+13149651.json,73,390,94,400,GPR,question
+13149651.json,184,387,205,395,PRO,question
+13149651.json,67,858,101,869,Agency,question
+13149651.json,513,860,569,874,262-6423,other
+13149651.json,581,845,602,853,Date,question
+13149651.json,588,860,631,871,2-2-83,answer
+13149651.json,662,722,683,838,680534113,other
+13149651.json,564,70,635,89,1981 Session,other
+13149651.json,507,117,629,130,Amendment No. if Applicable,question
+13149651.json,529,103,587,117,LRB 1946,answer
+13149651.json,506,89,637,105,LRB Or Bill No. han Au No,question
+13149651.json,358,115,418,125,☐ UPDATED,question
+13149651.json,359,127,447,137,☐ SUPPLEMENTAL,question
+13149651.json,261,130,335,140,☐ CORRECTED,question
+13149651.json,45,88,152,113,FISCAL ESTIMATE AD MBA 23 (Rev 11/80,question
+13149651.json,81,163,345,183,Regulation of Smoking Public Places,answer
+13149651.json,47,189,107,201,Fiscal Effect,question
+13149651.json,53,399,250,414,Asumptions Used in Arriving at Fiscal Estimate,question
+13149651.json,89,405,609,473,"This bill regulates smoking in university buildings which house educational programs and in inpatient health care facilities. Smoking within these or rooms, provided buildings would be allowed only specified facilities designate these ""smoking permitted"" areas. that signs are posted to",answer
+13149651.json,91,475,614,584,"university buildings would each It is estimated that, on the average, The per ""smoking signs. sign cost is require about three permitted"" This estimate is based on the estimated at $4 50 in 1982-83 dollars. 1981 increased to reflect Inflation from 1981 to 1983. per sign cost, and Thus, the expected one-time cost for the University Systet to implement no be about There are significant the provisions of the bill would $8,000. with the bill's provisions. continuing annual costs associated",answer
+13149651.json,66,775,196,787,Long Range Fiscal Implications,question
+13149651.json,103,870,316,887,University of Wisconsin System,answer
+13149651.json,348,839,504,893,Authorized Signature Telephone No. ,other
+13149651.json,0,951,231,983,680534113 RODUCED FROM B&W WEB SITE,other
+13149651.json,109,201,214,214,☐ No State Fiscal Effect,question
+13149651.json,122,214,374,242,Check columns below only if bill makes a rect appropriation or affect a sum sufficient appropriation.,question
+13149651.json,110,247,254,259,☐ Increase Existing Appropriation,question
+13149651.json,110,260,257,273,☐ Decrease Existing Appropriation,question
+13149651.json,110,274,233,285,☐ Create New Appropriation,question
+13149651.json,271,242,394,254,☐ Increase Existing Revenues,question
+13149651.json,271,256,397,267,☐ Decrease Existing Revenues,question
+13149651.json,444,250,519,261,☐ Decrease Costs,question
+13149651.json,610,229,637,240,☐ No,question
+13149651.json,457,216,639,231,Increase Costs - May Be Possible to Absorb,question
+13149651.json,455,233,556,244,Within Agency's Budget,header
+13149651.json,110,295,232,306,☐ No oca government cost,question
+13149651.json,433,300,633,314,5. Types of Local Governmental Unit Aflected:,header
+13149651.json,518,313,565,324,☐ Villages,question
+13149651.json,518,325,558,335,☐ Others,question
+13149651.json,602,311,638,321,☐ Cities,question
+13149651.json,360,342,418,353,☐ Mandatory,question
+13149651.json,323,380,364,391,☐ SEG-S,question
+13149651.json,271,383,303,393,☐ SEG,question
+13149651.json,228,384,260,394,☐ PRS,question
+13149651.json,115,387,150,397,☐ FED,question
+13149651.json,54,374,148,386,Fund Source Affected,header
+13149651.json,383,365,514,375,Affected Ch. 20 Appropriations,question
+13149651.json,408,374,571,391,"20. 285 1 (a), 1 (b), 1 (im)",question
+13149651.json,260,309,348,320,☐ Increase Revenues,question
+13149651.json,292,320,346,330,☐ Permissive,question
+13149651.json,358,318,418,328,☐ Mandatory,question
+13149651.json,261,334,349,344,☐ Decrease Revenues,question
+13149651.json,293,345,346,356,☐ Permissive,question
+13149651.json,177,346,236,358,Mandatory,question
+13149651.json,177,321,236,333,☐ Mandatory,question
+13149651.json,112,324,167,335,☐ Permissive,question
+13149651.json,113,349,169,361,Permane,question
+13149651.json,81,338,155,348,Decreas Corts,question
+13149651.json,80,313,152,324,☐ Increase Costs,question

@@ -1,0 +1,101 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0000989556.json,76,129,118,139,Brand:,question
+0000989556.json,73,141,119,153,Style:,question
+0000989556.json,145,127,197,137,PHOENIX,answer
+0000989556.json,349,130,409,139,Company:,question
+0000989556.json,350,142,407,155,Country:,question
+0000989556.json,350,157,402,167,Macket:,question
+0000989556.json,419,144,467,154,CYPRUS,answer
+0000989556.json,512,171,567,183,NICOSIA,answer
+0000989556.json,404,240,461,255,Weights,header
+0000989556.json,377,475,441,487,Adhesive:,header
+0000989556.json,70,488,151,498,Supplier(s),question
+0000989556.json,72,513,109,525,Color,question
+0000989556.json,72,557,135,569,Porosity,question
+0000989556.json,73,609,140,621,substance,question
+0000989556.json,234,488,285,500,Ecusta,answer
+0000989556.json,235,501,287,514,E.30639,answer
+0000989556.json,228,543,259,555,None,answer
+0000989556.json,293,558,356,567,(coresta),answer
+0000989556.json,377,515,407,527,Type,question
+0000989556.json,377,558,428,568,Overall,question
+0000989556.json,475,558,508,570,skip,question
+0000989556.json,377,599,443,609,Dimension,question
+0000989556.json,377,614,458,624,Positioning,question
+0000989556.json,476,488,515,500,Swift,answer
+0000989556.json,554,558,591,567,Other,other
+0000989556.json,494,587,522,596,N/A,answer
+0000989556.json,448,558,457,567,x,answer
+0000989556.json,299,683,336,693,Date:,question
+0000989556.json,299,778,333,788,Date:,question
+0000989556.json,533,829,653,853,620419245,other
+0000989556.json,72,750,108,762,Date:,question
+0000989556.json,73,777,137,789,Replaces:,question
+0000989556.json,72,804,111,816,05045,other
+0000989556.json,165,777,192,789,New,answer
+0000989556.json,527,33,618,48,Page 1 of 10,other
+0000989556.json,210,45,497,113,RESTRICTED BROWN & WILLIAMSON INTERNATIONAL TOBACCO PRODUCT SPECIFICATION,header
+0000989556.json,145,141,208,154,HLB- KS,answer
+0000989556.json,419,129,518,144,B. A. T. CYPRUS,answer
+0000989556.json,349,169,500,182,Place of Manufacture:,question
+0000989556.json,75,156,202,168,Licensee Ref. NO.:,question
+0000989556.json,73,211,191,225,CIGARETTE MAKING,header
+0000989556.json,73,240,247,253,Physical Characteristics,header
+0000989556.json,73,266,249,280,Overall Cigarette Length,question
+0000989556.json,72,280,203,291,Tobacco Rod Length,question
+0000989556.json,72,295,203,305,Filter Plug Length,question
+0000989556.json,73,305,329,320,Filter Plug Pressure Drop (unencap.),question
+0000989556.json,72,320,317,332,Filter Plug Pressure Drop encap.,question
+0000989556.json,70,334,240,346,Cigarette Circumference,question
+0000989556.json,72,347,287,361,Total Pressure Drop (unencap.),question
+0000989556.json,73,362,274,374,Total Pressure Drop (encap.),question
+0000989556.json,67,377,175,387,Tipping Length,question
+0000989556.json,72,391,300,402,Print Position (from filter end),question
+0000989556.json,75,404,280,417,Moisture content (ex-catcher),question
+0000989556.json,73,419,238,431,Filter ventilation Rate,question
+0000989556.json,350,268,395,280,84 mm,answer
+0000989556.json,347,280,395,293,64 mm,answer
+0000989556.json,349,296,396,307,20 mm,answer
+0000989556.json,347,308,397,320,56 mm,answer
+0000989556.json,346,322,397,334,56 mm,answer
+0000989556.json,343,337,393,347,24.75 mm,answer
+0000989556.json,349,349,395,361,90 mm,answer
+0000989556.json,343,362,394,374,110 mm,answer
+0000989556.json,350,377,396,391,25 mm,answer
+0000989556.json,349,392,395,402,27 mm,answer
+0000989556.json,343,404,386,416,13.5 %,answer
+0000989556.json,347,416,386,430,Nil %,answer
+0000989556.json,407,265,513,280,Total Cigt. Wt.,question
+0000989556.json,551,266,640,281,974 mg,answer
+0000989556.json,557,295,636,308,749 mg,answer
+0000989556.json,555,320,636,335,245 mg/cc,answer
+0000989556.json,404,320,552,334,Net Tob. Rod Density,question
+0000989556.json,404,295,515,308,Net Net Tobacco,question
+0000989556.json,75,445,293,460,Tipping and Tipping Application,question
+0000989556.json,73,473,172,486,Tipping Paper:,header
+0000989556.json,72,501,216,513,Supplier Code No(s).,question
+0000989556.json,222,516,323,525,Imitation Cork,answer
+0000989556.json,72,528,204,554,Perforation Type and No. of lines,question
+0000989556.json,75,570,196,582,Print Description,question
+0000989556.json,213,572,324,584,Brown on yellow,answer
+0000989556.json,73,585,163,595,Bobbin Width,question
+0000989556.json,73,596,169,608,Robbin Length,question
+0000989556.json,234,612,359,625,36 gm/ m2,answer
+0000989556.json,229,584,366,597,50 mm mm,answer
+0000989556.json,229,599,358,612,2700 m,answer
+0000989556.json,73,638,301,651,(Indicate N/A If Not Applicable),other
+0000989556.json,377,488,456,502,Supplier (s),question
+0000989556.json,376,501,521,514,Supplier Code No (s),question
+0000989556.json,527,501,585,514,T.K. 9220,answer
+0000989556.json,418,515,580,525,Printed Imitation cork,answer
+0000989556.json,374,543,521,556,Application Pattern:,header
+0000989556.json,377,585,482,597,Glue Pree Area,question
+0000989556.json,510,614,636,624,mm from mouth end,answer
+0000989556.json,510,599,630,611,mm x mm,answer
+0000989556.json,299,656,388,666,Prepared by:,question
+0000989556.json,419,656,544,668,M. HAMERTON / enm,answer
+0000989556.json,419,680,498,693,"May 1, 1985",answer
+0000989556.json,299,710,388,721,Approved by:,question
+0000989556.json,391,723,627,762,"Director of Technical Operations, Brown & Williamson International Tobacco",answer
+0000989556.json,139,747,226,764,"May 1, 1985",answer
+0000989556.json,410,778,493,792,"May 1, 1985",answer

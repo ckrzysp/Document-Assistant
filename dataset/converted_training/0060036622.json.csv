@@ -1,0 +1,36 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0060036622.json,247,60,269,74,TO:,question
+0060036622.json,247,116,288,130,From:,question
+0060036622.json,291,258,392,271,Contribution,question
+0060036622.json,249,286,324,300,Requested,question
+0060036622.json,331,286,351,301,by,question
+0060036622.json,642,860,676,874,1976,question
+0060036622.json,265,254,286,274,☑,answer
+0060036622.json,356,344,417,358,Message,question
+0060036622.json,353,763,374,783,,answer
+0060036622.json,296,59,442,73,Mr. G. J. Schramm,answer
+0060036622.json,507,59,636,73,Mr. W. P. Myhan,answer
+0060036622.json,507,73,644,87,Mr. F. X. Whelan,answer
+0060036622.json,296,74,458,88,Mr. R. H. Stinnette,answer
+0060036622.json,296,88,449,102,Mr. J. B. McCarthy,answer
+0060036622.json,296,115,401,129,E. E. Curtin,answer
+0060036622.json,247,186,627,231,Request for contribution or membership to be considered by contributions Committee at next meeting,other
+0060036622.json,448,256,560,273,☐ Membership,question
+0060036622.json,377,271,566,328,"Harvard Medical School and Dr. Gary Huber Boston, Massachusetts",answer
+0060036622.json,454,341,567,356,Letter 8/ 1/ 76,answer
+0060036622.json,249,372,458,386,"For American Brands, Inc.",question
+0060036622.json,267,429,621,443,Recent actions regarding above solicitor ,question
+0060036622.json,331,453,563,468,"1976 $ 40, 921. 30 by A. B., Inc.",answer
+0060036622.json,330,466,564,482,"1975 84, 309. 94 A. B., Inc.",answer
+0060036622.json,328,479,566,496,"1974 92, 131. 29 A. B., Inc.",answer
+0060036622.json,331,492,566,510,"1973 91, 630. 53 A. B., Inc.",answer
+0060036622.json,267,584,345,597,Remarks -,question
+0060036622.json,243,457,321,468,Payment -,question
+0060036622.json,246,620,636,679,"For confirmation by the Committee. Check for $ 43, 910. 30 representing the ninth semi- annual installment to the Harvard Project transmitted August 1976.",answer
+0060036622.json,251,749,605,765,Decision of Committee on Present Request -,question
+0060036622.json,268,778,330,795,Pay - $,question
+0060036622.json,270,804,455,822,Declined - Send letter,question
+0060036622.json,546,806,614,820,YES NO,answer
+0060036622.json,270,834,507,848,Consideration deferred until,question
+0060036622.json,372,860,540,877,Committee meeting ,question
+0060036622.json,561,834,609,876,8/ 26,answer

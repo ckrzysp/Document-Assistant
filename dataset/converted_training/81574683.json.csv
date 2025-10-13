@@ -1,0 +1,106 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+81574683.json,485,32,526,49,Date:,question
+81574683.json,531,32,585,49,3/27/84,answer
+81574683.json,634,34,683,48,84-C-7,other
+81574683.json,31,218,111,236,Cicarettes,header
+81574683.json,320,221,377,238,Filters,other
+81574683.json,34,173,73,187,BLEND,question
+81574683.json,144,173,196,187,CASING,question
+81574683.json,267,173,328,190,RECASING,question
+81574683.json,34,189,87,203,1077-84,answer
+81574683.json,144,187,179,207,7773,answer
+81574683.json,268,190,300,205,7774,answer
+81574683.json,392,191,456,208,attached,answer
+81574683.json,52,250,95,264,Maker,question
+81574683.json,52,274,104,287,Length,question
+81574683.json,54,295,100,310,Filter,question
+81574683.json,106,295,153,310,Length,question
+81574683.json,50,317,155,331,Circumference,question
+81574683.json,50,341,102,356,Weight,question
+81574683.json,52,363,97,374,Paper,question
+81574683.json,556,177,613,192,MENTHOL,question
+81574683.json,556,193,595,208,8098,answer
+81574683.json,585,281,605,291,mm,answer
+81574683.json,480,366,523,381,370mm,answer
+81574683.json,482,390,531,405,24.7mm,answer
+81574683.json,479,457,496,472,E-,other
+81574683.json,494,458,519,472,626,answer
+81574683.json,480,482,519,493,1509C,answer
+81574683.json,689,730,706,822,81574683,other
+81574683.json,27,552,93,569,Wrapping,header
+81574683.json,47,575,104,590,Labels,question
+81574683.json,50,595,113,613,Closures,question
+81574683.json,46,641,103,656,Cartons,question
+81574683.json,49,665,112,679,Markings,question
+81574683.json,198,571,243,589,white,answer
+81574683.json,197,595,231,612,blue,answer
+81574683.json,197,623,242,637,white,answer
+81574683.json,198,644,236,658,white,answer
+81574683.json,313,553,421,570,Responsibility,header
+81574683.json,331,645,398,659,Shipping,question
+81574683.json,45,754,87,769,Other,question
+81574683.json,503,891,525,906,,other
+81574683.json,528,895,577,908,Newan,other
+81574683.json,577,894,622,909,"Stein,",other
+81574683.json,479,599,557,613,production,answer
+81574683.json,201,433,233,448,4260,answer
+81574683.json,198,476,220,494,NA,answer
+81574683.json,338,295,373,310,Kind,question
+81574683.json,339,344,363,355,Rod,question
+81574683.json,369,342,416,356,Length,question
+81574683.json,335,387,436,404,Circunference,question
+81574683.json,334,412,381,423,Weight,question
+81574683.json,335,433,381,446,Plast.,question
+81574683.json,277,45,507,91,Sample No. 1078-84 Type of Cigarette NP Control 85 Batch Size As needed,header
+81574683.json,49,96,215,113,ginal Request Made By,question
+81574683.json,221,98,375,116,T. Jessup on 2/13/84,answer
+81574683.json,31,116,163,135,Purpose of Sample,question
+81574683.json,165,119,332,139,Mkt. Research Newport,answer
+81574683.json,281,144,353,162,W. Barnes,answer
+81574683.json,32,141,277,158,Sample Specifications Written By,question
+81574683.json,394,176,488,191,FINAL FLAVOR,question
+81574683.json,203,246,239,264,MK 9,answer
+81574683.json,203,271,252,291,84.0 cm,answer
+81574683.json,204,295,255,313,21.0 mm,answer
+81574683.json,204,320,250,333,24.8 mm,answer
+81574683.json,204,341,280,358,96.0 g/100,answer
+81574683.json,203,363,243,378,E- 554,answer
+81574683.json,173,385,305,404,51mm cork- Ecusta,answer
+81574683.json,133,409,306,425,TOD 01042-4 lines perf.,answer
+81574683.json,50,385,127,399,Tip. Paper,question
+81574683.json,50,430,165,450,Tip. Paper Por.,question
+81574683.json,49,454,136,469,Glue Roller,question
+81574683.json,47,475,146,493,Air Dilution,question
+81574683.json,197,453,262,471,Mk II 85,answer
+81574683.json,478,253,554,270,Section A,question
+81574683.json,585,251,659,271,Section B,question
+81574683.json,482,275,520,292,21mm,answer
+81574683.json,480,299,565,316,"3.3 35,000y",answer
+81574683.json,475,323,529,337,RE- 2218,answer
+81574683.json,482,344,529,360,126 mm,answer
+81574683.json,480,412,558,427,81.0 g/100,answer
+81574683.json,480,433,537,450,7% Kent,answer
+81574683.json,335,366,439,380,Pressure Drop,question
+81574683.json,337,455,408,471,Plug Wrap,question
+81574683.json,334,478,443,496,Plug Wrap Por.,question
+81574683.json,337,500,415,517,Comb. Wrap,question
+81574683.json,337,524,447,539,Comb. Wrap Por.,question
+81574683.json,335,575,439,592,Tobacco Blend,question
+81574683.json,334,601,465,616,Filter Production,question
+81574683.json,331,623,458,638,Making & Packing,question
+81574683.json,332,666,465,682,Sample Requistion,question
+81574683.json,473,577,619,593,"production, Barnes",answer
+81574683.json,476,623,593,638,"Barnes, Fernald",answer
+81574683.json,472,648,489,664,- -,answer
+81574683.json,475,668,555,682,T. Skinner,answer
+81574683.json,198,662,269,678,code #1746,answer
+81574683.json,50,619,120,634,Tear Tape,question
+81574683.json,28,718,127,748,Requirements Laboratory,question
+81574683.json,198,732,257,749,30 ctns.,answer
+81574683.json,179,753,248,771,1100 pks.,answer
+81574683.json,310,716,460,733,Laboratory Analysis:,question
+81574683.json,328,735,509,794,Moisture analysis Menthol analysis Tar & nicotine analysis,answer
+81574683.json,303,799,455,817,Special Requirements,question
+81574683.json,22,817,566,881,"1. Cigts. to be packed in white labels printed with ""20 Class A. ATF Auth. #47 sample not for sale, all applicable state taxes paid, and code No. 746.""",answer
+81574683.json,21,885,500,928,"2. Cigts. to be inspected, placed in pk. mailers and shipped Inc., for Mkt. Rsh. Study.",answer
+81574683.json,459,880,729,959,"Director, Product Development",other

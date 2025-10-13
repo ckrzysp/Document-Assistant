@@ -1,0 +1,84 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+92380595.json,293,152,398,176,RECEIVED,question
+92380595.json,27,155,63,172,DATE:,question
+92380595.json,28,183,50,197,TO:,question
+92380595.json,88,228,126,241,ATTN:,question
+92380595.json,28,284,52,299,RE:,question
+92380595.json,546,240,556,255,x,answer
+92380595.json,546,265,591,280,033052,answer
+92380595.json,433,378,453,389,via:,question
+92380595.json,249,401,257,414,x,answer
+92380595.json,68,432,124,447,Summons,question
+92380595.json,68,453,124,466,Complaint,question
+92380595.json,68,510,104,523,Other:,question
+92380595.json,49,508,62,522,X,answer
+92380595.json,317,468,388,481,Garnishment,question
+92380595.json,525,464,579,481,Subpoena,question
+92380595.json,31,591,49,602,vs.,question
+92380595.json,32,655,82,670,RETURN,question
+92380595.json,85,656,119,670,DATE,question
+92380595.json,194,673,233,690,Collect,question
+92380595.json,374,556,381,571,),other
+92380595.json,374,570,382,584,),other
+92380595.json,374,584,381,599,),other
+92380595.json,374,595,381,612,),other
+92380595.json,559,564,613,578,"475,592",answer
+92380595.json,32,697,107,712,COMMENTS:,question
+92380595.json,490,792,529,806,Phone,question
+92380595.json,32,851,67,865,Other,question
+92380595.json,98,841,112,856,X,answer
+92380595.json,708,817,722,892,92380595,other
+92380595.json,444,920,487,935,Signed:,question
+92380595.json,342,943,399,960,ORIGINAL,other
+92380595.json,151,35,544,87,"Executive Offices 1 GULF+ WESTE PLAZA . NEW YORK, NEW YORK 23- 7773 (212) 373- 7500",other
+92380595.json,133,88,563,115,PRENTICE HALL CORPORATE SERVICES,header
+92380595.json,27,128,224,146,United States Corporation Company,other
+92380595.json,437,123,668,141,"The Prentice- Hall Corporation System, Inc.",other
+92380595.json,443,159,616,181,TX 3951 U,other
+92380595.json,87,152,146,167,12- 13- 89,answer
+92380595.json,87,180,254,225,"LORILLARD, INC. ONE PARK AVENUE 18TH FL NEW YORK, N. Y. 10016",answer
+92380595.json,306,187,393,209,DEC 14 89,other
+92380595.json,131,216,398,240,"MR. ARTHUR STEVENS, ESQ A. J. STEVENS",answer
+92380595.json,447,219,551,232,MOTOR CARRIER,question
+92380595.json,447,233,520,262,OR STATUTORY,question
+92380595.json,447,278,507,293,Account #,question
+92380595.json,88,275,199,292,"LORILLARD, INC.",answer
+92380595.json,162,296,295,311,(Represented Company),other
+92380595.json,244,317,475,332,NOTICE OF SERVICE OF PROCESS,header
+92380595.json,52,335,393,352,We enclose the following documents which were served upon:,question
+92380595.json,138,348,500,368,UNITED STATES CORPORATION COMPANY IN TEXAS,answer
+92380595.json,38,378,355,395,as registered agent for the above- captioned corporation on,question
+92380595.json,362,377,421,391,12- 13- 89,answer
+92380595.json,138,401,230,417,Personal Service,question
+92380595.json,278,399,352,415,Mail: Regular,question
+92380595.json,406,399,470,412,or Certified,question
+92380595.json,521,398,580,411,Certified #,question
+92380595.json,68,468,249,504,Duplicate copies of the Notice and Acknowledgement enclosed,question
+92380595.json,316,429,458,463,A self- addressed stamped envelope enclosed,question
+92380595.json,317,485,453,502,Notice of Attorney's Lien,question
+92380595.json,524,423,665,442,Notice of Mechanic's Lien,question
+92380595.json,524,444,673,461,Notice of Default Jucgment,question
+92380595.json,130,500,391,519,CITATION AND FIRST ORIGINAL PETITION,answer
+92380595.json,31,559,140,574,TITLE OF ACTION:,question
+92380595.json,172,560,269,574,WEBSTER CRECC,answer
+92380595.json,94,591,360,615,"R. J. REYNOLDS TOBACCO COMPANY, ET AL",answer
+92380595.json,493,568,546,584,Case No.,question
+92380595.json,31,634,187,649,COURT OR JURISDICTION,question
+92380595.json,204,624,543,646,345th Judicial District Court Travis County. Tx,answer
+92380595.json,147,642,434,662,Monday next 20 days from date of service,answer
+92380595.json,465,670,635,687,Agent called New York Office,question
+92380595.json,31,677,158,694,Tel Call Placed Direct,question
+92380595.json,272,676,323,690,Spoke to,question
+92380595.json,31,743,201,759,ATTORNEYS FOR CLAIMANT,question
+92380595.json,209,736,338,781,"Mary Ellen Felps 1000 West Ave. Austin, Tx. 78701",answer
+92380595.json,494,785,583,799,512/478- 4873,answer
+92380595.json,32,823,239,837,PAPERS TRANSMITTED TO CLIENT,header
+92380595.json,34,838,68,852,Fed X,question
+92380595.json,148,837,202,851,Reg Mail,question
+92380595.json,352,846,483,861,FORM PREPARED BY,question
+92380595.json,494,841,576,856,PAT HIGGINS,answer
+92380595.json,31,926,114,940,Date Received:,question
+92380595.json,144,911,278,954,12/ 14/ 89,answer
+92380595.json,32,890,580,912,DUPLICATE COPY A BUSINESS REPLY ENVELOPE IS ENCLOSED FOR YOUR CONVENIENCE,other
+92380595.json,31,874,544,896,PLEASE ACKNOWLEDGE RECEIPT OF THIS NOTICE AND THE ENCLOSURES BY SIGNING,other
+92380595.json,546,873,673,891,AND RETURNING THE,other

@@ -1,0 +1,44 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+82253058_3059.json,570,901,672,928,82253058,other
+82253058_3059.json,384,63,445,76,LORILLARD,other
+82253058_3059.json,94,203,115,217,TO:,question
+82253058_3059.json,94,222,133,236,FROM:,question
+82253058_3059.json,94,242,130,256,DATE:,question
+82253058_3059.json,288,279,319,293,AUG,question
+82253058_3059.json,384,279,416,294,SEPT,question
+82253058_3059.json,482,279,510,293,OCT,question
+82253058_3059.json,581,281,610,295,NOV,question
+82253058_3059.json,328,204,433,219,MANUFACTURER,question
+82253058_3059.json,330,223,377,236,BRAND:,question
+82253058_3059.json,637,279,652,294,X,answer
+82253058_3059.json,84,56,191,70,12/ 10/ 36 09: 51,other
+82253058_3059.json,218,60,303,73,317 8450977,other
+82253058_3059.json,647,68,706,82,001/ 002,other
+82253058_3059.json,221,137,542,152,COMPETITIVE PRODUCT INTRODUCTION,header
+82253058_3059.json,300,155,461,170,PROGRESS REPORT,other
+82253058_3059.json,141,203,271,218,MRS. K. A. SPARROW,answer
+82253058_3059.json,439,204,522,219,R. J. Reynolds,answer
+82253058_3059.json,383,222,469,237,Camel Menthol,answer
+82253058_3059.json,457,240,627,257,Full Flavor Box and Light Box,answer
+82253058_3059.json,330,240,450,256,TYPE OF PACKINGS:,question
+82253058_3059.json,141,222,196,237,R. G. Ryan,answer
+82253058_3059.json,142,240,190,255,12/ 10/ 96,answer
+82253058_3059.json,92,278,228,295,REPORTING PERIODS:,header
+82253058_3059.json,240,297,498,314,(Forward by the 10th of the following month.),other
+82253058_3059.json,92,335,264,350,TEST MARKET GEOGRAPHY,question
+82253058_3059.json,282,337,359,352,All of Region 7.,answer
+82253058_3059.json,92,374,178,389,PRICE POINT:,question
+82253058_3059.json,194,374,591,391,FULL $ 11.89 P/ V $ (Indicate Distributor's Cost Per Carton),answer
+82253058_3059.json,281,412,645,429,Merchandising the top tray of permanent counter displays and labeling,answer
+82253058_3059.json,91,430,577,447,carton fixtures in the Camel section. Also placing metal signs and temporary counter displays.,answer
+82253058_3059.json,92,411,272,427,SALES FORCE INVOLVEMENT:,question
+82253058_3059.json,94,487,456,504,DISTRIBUTORS - ACCEPTANCE/ INTRO TERMS/ INTRO DEALS:,question
+82253058_3059.json,91,506,600,523,Product is being introduced to all Direct: Accounts in the Region. Acceptance is spotty at this time.,answer
+82253058_3059.json,92,582,269,596,DISTRIBUTOR INVOLVEMENT:,question
+82253058_3059.json,92,602,638,637,Assembly of promotional products and shipment to retail Indianapolis Direct Accounts are reported to be receiving B1G1F product.,answer
+82253058_3059.json,94,679,426,693,CHAINS - ACCEPTANCE/ MERCHANDISING ALLOWANCE,question
+82253058_3059.json,94,698,296,713,Chain acceptance has been very good.,answer
+82253058_3059.json,92,774,473,789,INDEPENDENTS - ACCEPTANCE/ MERCHANDISING ALLOWANCE,question
+82253058_3059.json,92,792,494,808,Acceptance is better at high volume locations than at lower volume retail calls.,answer
+82253058_3059.json,64,925,158,940,CAMEL WK1/ FMT,other
+82253058_3059.json,348,923,421,940,PAGE 1 OF 2,other

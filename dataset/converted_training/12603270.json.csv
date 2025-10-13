@@ -1,0 +1,79 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+12603270.json,81,63,119,75,Date:,question
+12603270.json,86,131,171,141,Description:,question
+12603270.json,85,159,151,169,Supplier:,question
+12603270.json,533,51,546,64,#,other
+12603270.json,547,51,562,63,51,other
+12603270.json,86,267,144,280,Reasons:,question
+12603270.json,198,209,256,219,Increase,answer
+12603270.json,480,201,493,216,(,other
+12603270.json,206,357,274,367,CANCELLED,answer
+12603270.json,530,337,567,347,1985,other
+12603270.json,513,352,596,365,"3,669,000",answer
+12603270.json,532,380,595,388,"252,955",answer
+12603270.json,535,405,593,417,"+58,500",answer
+12603270.json,533,517,596,527,311.455,answer
+12603270.json,517,566,593,579,"3,357,545",answer
+12603270.json,434,447,447,460,0,answer
+12603270.json,95,787,156,795,Original,question
+12603270.json,98,802,120,812,cc:,question
+12603270.json,424,630,452,643,Date,question
+12603270.json,422,656,457,669,Date,question
+12603270.json,424,681,456,693,Date,question
+12603270.json,425,711,458,723,Date,question
+12603270.json,427,738,455,751,Date,question
+12603270.json,497,621,568,641,,answer
+12603270.json,492,645,598,665,,answer
+12603270.json,497,673,592,691,,answer
+12603270.json,184,733,196,743,A.,other
+12603270.json,206,729,219,742,J.,other
+12603270.json,226,729,279,739,Mellman,other
+12603270.json,184,703,199,715,L.,other
+12603270.json,206,703,221,715,E.,other
+12603270.json,223,703,278,713,Gravely,other
+12603270.json,184,676,202,686,J.,other
+12603270.json,206,674,221,686,F.,other
+12603270.json,224,673,277,686,Wilhelm,other
+12603270.json,228,681,326,699,,other
+12603270.json,179,621,343,648,,answer
+12603270.json,178,648,424,673,,answer
+12603270.json,492,791,558,804,1985-39NP,answer
+12603270.json,535,855,658,873,681925993,other
+12603270.json,100,867,193,879,/big:jfw00017,other
+12603270.json,264,42,433,56,CHANGE OF AUTHORIZED COST,header
+12603270.json,131,58,224,71,"June 21, 1985",answer
+12603270.json,174,86,273,98,RICHLAND 100's,answer
+12603270.json,83,88,161,101,Brand Name:,question
+12603270.json,186,121,510,140,Amelia 100's Candidates: (NM-FT and NM- Lights),answer
+12603270.json,168,154,291,168,Market Facts. Inc.,answer
+12603270.json,86,179,327,197,Previous $ Commitments This Project,other
+12603270.json,85,209,191,225,Amt. of Change:,question
+12603270.json,86,236,302,251,Adjusted Total Cost of Protect:,question
+12603270.json,374,174,431,189,"$ 58,500",other
+12603270.json,296,287,410,300,PROJECT CANCELLED,header
+12603270.json,88,347,170,372,Projected: Field Start,question
+12603270.json,88,387,189,401,Field Complete,question
+12603270.json,90,415,202,427,Final Report Due,question
+12603270.json,307,341,487,355,Summary of Research Budget,question
+12603270.json,309,355,435,367,Total Area Budget:,question
+12603270.json,311,380,487,395,Current Balance Available,question
+12603270.json,311,410,457,441,This Change: (From Current Budget),question
+12603270.json,309,452,386,464,This Amount,question
+12603270.json,311,463,482,479,(From Next Year's Budget),question
+12603270.json,311,520,395,534,New Balance:,question
+12603270.json,312,575,437,589,Committed To Date:,question
+12603270.json,95,635,184,648,Submitted By:,question
+12603270.json,93,663,183,676,Approved By:,question
+12603270.json,96,689,183,706,Approved By:,question
+12603270.json,93,716,181,732,Approved By:,question
+12603270.json,95,746,184,758,Approved By:,question
+12603270.json,178,784,293,811,Project File S. Willinger ,answer
+12603270.json,181,811,397,853,Research Group Manager Bonnie Fuller V. Hansberry (If International),answer
+12603270.json,399,792,472,806,Project No.,question
+12603270.json,400,821,483,833,Account Name,question
+12603270.json,495,816,600,832,PRODUCT TESTING,answer
+12603270.json,0,953,233,983,681925993 RODUCED FROM B&W WEB SITE,other
+12603270.json,374,231,423,245,$ -0-,answer
+12603270.json,530,199,621,213,-100% Change),other
+12603270.json,284,206,363,221,Decrease X,answer
+12603270.json,374,203,432,218,"$- 58,500",other

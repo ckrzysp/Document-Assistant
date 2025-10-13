@@ -1,0 +1,45 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+00920222.json,21,244,67,254,VENDOR,question
+00920222.json,50,289,86,300,TERMS,header
+00920222.json,373,288,394,301,VIA,question
+00920222.json,257,316,295,331,Attn:,question
+00920222.json,116,285,141,300,NET,question
+00920222.json,577,200,606,213,DATE,question
+00920222.json,645,372,673,387,UNIT,question
+00920222.json,675,372,707,386,PRICE,question
+00920222.json,367,372,437,387,DESCRIPTION,question
+00920222.json,31,374,87,388,QUANTITY,question
+00920222.json,140,373,174,388,CODE,question
+00920222.json,563,838,658,859,00920222,other
+00920222.json,155,284,172,301,15,answer
+00920222.json,27,278,38,289,-,other
+00920222.json,302,950,334,968,4111,answer
+00920222.json,441,951,472,968,9590,answer
+00920222.json,514,947,732,986,,answer
+00920222.json,254,207,421,224,PURCHASE REQUISITION,header
+00920222.json,39,207,124,221,☐ PURCHASING,question
+00920222.json,39,223,129,238,☐ STATIONARY,question
+00920222.json,36,251,546,274,"Borriston Laboratories, INC. , 5050 Beech Place Temple Hills, MD 20748",answer
+00920222.json,574,242,633,253,ORDER NO.,question
+00920222.json,588,214,692,232,"March 27, 1984",answer
+00920222.json,468,198,567,219,1332 REV L1 16 79,other
+00920222.json,166,223,529,240,PLEASE INCLUDE ONLY ONE TYPE OF MATERIAL ON THIS REQUISITION,other
+00920222.json,204,288,234,302,F. O. B.,question
+00920222.json,278,284,301,299,N /A,answer
+00920222.json,430,282,458,299,N /A,answer
+00920222.json,501,302,579,313,DATE WANTED,question
+00920222.json,575,272,717,285,Prev. or Recommended SupplIer,other
+00920222.json,535,314,622,330,As required,answer
+00920222.json,307,313,429,330,Dr. Connie Stone,answer
+00920222.json,21,314,227,334,- Lorillard Research Center,answer
+00920222.json,18,341,333,363,"- 420 English Street Greensboro, NC 27405",other
+00920222.json,117,402,713,570,"This is your authorization to perform the ""Acute Oral Toxicity Study in the Rat"" tests on materials D13 and D23 supplied by Lorillard. The fixed price for each test is $2050 for each material, for a total price of $4100. Studies are to be conducted in accordance with the October 17, 1980 formal agreement between Borriston and Lorillard. All work is to be coordinated with our Dr. Connie Stone (919) 373- 6663.",answer
+00920222.json,96,876,190,890,FOLLOW UP DATE,question
+00920222.json,109,929,175,944,BUDGET NO.,question
+00920222.json,335,874,426,888,REQUISITION NO.,question
+00920222.json,587,872,646,889,ISSUED BY,question
+00920222.json,578,927,657,942,APPROVED BY,question
+00920222.json,413,927,467,944,DEPT. NO.,question
+00920222.json,295,927,348,944,ACCT. NO.,question
+00920222.json,24,304,150,315,SHIP TO (DEPT- BRANCH),question
+00920222.json,193,242,410,253,FOR PURCHASING DEPARTMENT USE ONLY,question

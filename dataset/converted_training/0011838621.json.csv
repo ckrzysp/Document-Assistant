@@ -1,0 +1,63 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0011838621.json,53,131,87,148,Date:,question
+0011838621.json,56,156,133,170,Description:,question
+0011838621.json,56,183,115,198,Supplier:,question
+0011838621.json,436,124,457,137,No.,question
+0011838621.json,475,123,490,137,27,answer
+0011838621.json,244,242,298,255,Decrease,question
+0011838621.json,57,297,109,310,Reasons:,question
+0011838621.json,465,237,487,250,.08,answer
+0011838621.json,465,261,486,274,.08,answer
+0011838621.json,56,372,124,382,PROJECTED:,header
+0011838621.json,447,399,527,414,1.488.126.23,answer
+0011838621.json,506,422,528,436,.08,answer
+0011838621.json,401,465,414,476,0,other
+0011838621.json,448,513,528,527,1.488.126.15,answer
+0011838621.json,448,563,529,577,1.471.873.85,answer
+0011838621.json,61,763,83,776,cc:,question
+0011838621.json,380,665,407,680,Date,question
+0011838621.json,381,703,409,721,Date,question
+0011838621.json,465,777,552,792,International.,answer
+0011838621.json,507,813,612,837,464537440,other
+0011838621.json,156,656,297,683,MD Davis,answer
+0011838621.json,187,693,314,722,,answer
+0011838621.json,200,88,409,116,INTERNATIONAL MARKETING RESEARCH CHANGE OF AUTHORIZED COST,header
+0011838621.json,98,128,148,145,6/ 21/ 90,answer
+0011838621.json,152,149,388,169,Hong Kong: Cigarette Market Monitor,answer
+0011838621.json,130,179,180,193,MDR. HK,answer
+0011838621.json,341,200,408,214,Total Cost,question
+0011838621.json,439,197,496,212,1990 Cost,question
+0011838621.json,54,215,284,234,Previous Commitments This Project,question
+0011838621.json,57,243,154,260,Amt. of Change:,question
+0011838621.json,161,240,234,256,Increase X,answer
+0011838621.json,330,212,407,229,$ 43.335.00,answer
+0011838621.json,330,237,407,251,$ 4.376.47,answer
+0011838621.json,331,264,409,278,$ 47.711.47,answer
+0011838621.json,254,251,331,270,(10% Change),other
+0011838621.json,53,265,257,284,Adjusted Total Cost of Project:,question
+0011838621.json,423,209,485,226,$ 0.00,answer
+0011838621.json,57,310,537,348,"Original MRA did not include cost for the first month of the study (see L. Lee memo of September 11, 1989)",answer
+0011838621.json,59,381,182,397,Internal Init. Date,question
+0011838621.json,59,408,154,435,Ext. Auth. Date Wave(s),question
+0011838621.json,271,365,418,380,Sumary of IMRD Budget,header
+0011838621.json,440,374,526,389,$ 2.960.000.00,answer
+0011838621.json,274,378,390,394,Total Area Budget:,question
+0011838621.json,272,401,424,419,Current Bal. Available:,question
+0011838621.json,274,427,410,457,This Change: (From Current Budget),question
+0011838621.json,59,482,153,513,Field Complete Wave(s),question
+0011838621.json,60,557,168,600,Final Report Due (Supplier Rpt.) Wave(s),question
+0011838621.json,277,518,355,534,New Balance:,question
+0011838621.json,277,566,393,595,Committed to Date: (Current Year),question
+0011838621.json,272,466,436,494,This Amount (From Next Year's Budget),question
+0011838621.json,430,651,515,683,6/ 21/ 90,answer
+0011838621.json,443,687,518,714,4/ 22/ 90,answer
+0011838621.json,380,753,451,768,Project No.,question
+0011838621.json,381,778,461,795,Account Name,question
+0011838621.json,465,751,512,768,1989- 29,answer
+0011838621.json,63,672,147,686,Submitted By:,question
+0011838621.json,63,709,142,726,Approved By:,question
+0011838621.json,63,750,131,763,Original-,question
+0011838621.json,154,744,234,760,Project File,answer
+0011838621.json,154,758,237,787,MRA File N. W. Kremer,answer
+0011838621.json,152,721,236,736,N. W. Kremer,question
+0011838621.json,151,682,228,697,M. b. Davis,question

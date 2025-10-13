@@ -1,0 +1,63 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0012178355.json,43,89,77,103,BRAND,question
+0012178355.json,117,105,176,116,Domestic,question
+0012178355.json,200,105,211,115,X,answer
+0012178355.json,235,103,274,117,Export,question
+0012178355.json,45,244,127,257,Description:,question
+0012178355.json,388,506,417,521,Date,question
+0012178355.json,172,535,253,549,ENDORSEMENTS,question
+0012178355.json,360,535,391,548,Date,question
+0012178355.json,75,561,96,576,CQA,question
+0012178355.json,77,644,99,659,ELT,question
+0012178355.json,78,670,139,685,Marketing,question
+0012178355.json,173,698,227,713,APPROVAL,question
+0012178355.json,362,701,393,715,Date,question
+0012178355.json,77,729,102,744,CQA,question
+0012178355.json,80,757,141,771,President,question
+0012178355.json,74,411,138,424,Rationale,question
+0012178355.json,344,103,398,118,Military,question
+0012178355.json,479,103,539,117,Contract,question
+0012178355.json,310,187,321,202,X,answer
+0012178355.json,365,216,438,227,Processing,question
+0012178355.json,309,423,323,437,X,answer
+0012178355.json,311,453,322,466,X,answer
+0012178355.json,49,797,84,812,10111,other
+0012178355.json,560,845,675,867,621626776,other
+0012178355.json,42,49,132,60,Attachment II,header
+0012178355.json,232,61,429,75,SPECIFICATION CHANGE PROPOSAL,header
+0012178355.json,124,89,214,104,ELI CUTTER KS,answer
+0012178355.json,365,88,602,103,SPECIFICATION CHANGE NUMBER 84- 79,question
+0012178355.json,71,131,417,147,TYPE OF SPECIFICATION CHANGE (Check all that apply),header
+0012178355.json,71,148,210,161,"Packaging, Temporary",question
+0012178355.json,70,159,230,174,"Cigarette Design, Trial",question
+0012178355.json,70,172,217,190,Tar Adjustment < 1 mg,question
+0012178355.json,71,189,148,203,New Product,question
+0012178355.json,70,203,206,217,Equivalent Additive,question
+0012178355.json,71,215,284,232,Equivalent Filter/ Paper/ /Tipping,question
+0012178355.json,366,145,501,161,"Packaging, Permanent",question
+0012178355.json,363,159,555,174,"Cigarette Design, Permanent",question
+0012178355.json,366,173,516,188,Tar Adjustment > 1 mg,question
+0012178355.json,365,189,496,203,Discontinue Product,question
+0012178355.json,365,201,566,216,Equivalent Packaging Material,question
+0012178355.json,141,243,591,258,"ELI CUTTER KS, for test market, using AMELIA ""B"" Blend (XLF -680G)",answer
+0012178355.json,46,271,150,286,*Cost Summary-,header
+0012178355.json,74,297,271,313,REQUESTED IMPLEMENTATION DATE,question
+0012178355.json,304,300,355,313,9 /17 /84,answer
+0012178355.json,74,327,156,340,COST SUMMARY,header
+0012178355.json,101,342,252,355,Obsolete Material Cost,question
+0012178355.json,101,355,312,370,Special Equipment/ Material Cost,question
+0012178355.json,102,370,310,384,Est. Annual Product Cost Change,question
+0012178355.json,73,395,285,410,ATTACHMENTS (Check if Included),header
+0012178355.json,77,423,252,438,Product Specification List,question
+0012178355.json,75,439,205,453,Packaging Art Stat.,question
+0012178355.json,74,451,194,466,Processing Detail,question
+0012178355.json,74,466,279,479,Initial Production Requirement,question
+0012178355.json,367,411,457,425,Cost Analysis,question
+0012178355.json,367,423,498,439,Spec. Change Detail,question
+0012178355.json,365,437,542,453,Casing Flavoring Formulae,question
+0012178355.json,365,451,467,465,Blend Formulae,question
+0012178355.json,75,507,159,522,Prepared By:,question
+0012178355.json,226,506,302,521,D. M. Frank,answer
+0012178355.json,462,506,521,521,10/ 10/ 84,answer
+0012178355.json,77,589,173,605,RD&E - Product,question
+0012178355.json,77,617,172,632,RD&E - Process,question

@@ -1,0 +1,29 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+82092117.json,61,127,143,211,,other
+82092117.json,102,345,129,359,TO:,question
+82092117.json,102,406,147,423,DATE:,question
+82092117.json,461,440,475,455,3,answer
+82092117.json,249,84,274,98,Fax:,question
+82092117.json,103,691,139,708,NOTE:,question
+82092117.json,633,775,653,874,82092117,other
+82092117.json,275,82,354,101,614 -466 -5087,answer
+82092117.json,419,82,589,101,Dec 10 '98 17 :46 P. 01,other
+82092117.json,103,84,246,100,ATT. GEN. ADMIN. OFFICE,other
+82092117.json,147,148,305,191,Attorney General Betty D. Montgomery,header
+82092117.json,264,249,467,281,CONFIDENTIAL FACSIMILE TRANSMISSION COVER SHEET,header
+82092117.json,352,296,438,314,(614) 466- 5087,answer
+82092117.json,289,296,351,311,FAX NO.,question
+82092117.json,142,342,236,360,George Baroody,answer
+82092117.json,223,376,312,393,(336) 335- 7392,answer
+82092117.json,102,374,200,391,FAX NUMBER:,question
+82092117.json,383,376,500,391,PHONE NUMBER:,question
+82092117.json,504,376,592,393,(336) 335- 7363,answer
+82092117.json,102,439,421,457,NUMBER OF PAGES INCLUDING COVER SHEET:,question
+82092117.json,304,471,537,487,June Flynn for Eric Brown/ (614) 466- 8980,answer
+82092117.json,98,471,280,488,SENDER /PHONE NUMBER:,question
+82092117.json,103,503,274,520,SPECIAL INSTRUCTIONS:,question
+82092117.json,175,599,556,646,"IF YOU DO NOT RECEIVE ANY OF THE PAGES PROPERLY, PLEASE CONTACT SENDER AS SOON AS POSSIBLE",header
+82092117.json,162,691,626,813,"THIS MESSAGE IS INTENDED ONLY FOR THE USE OF THE INDIVIDUAL OR ENTITY TO WHOM IT IS ADDRESSED AND MAY CONTAIN INFORMATION THAT IS PRIVILEGED. CONFIDENTIAL, AND EXEMPT FROM DISCLOSURE UNDER APPLICABLE LAW. If the reader of this message is not the intended recipient of the employee or agent responsible for delivering the message to the intended recipient, you are hereby notified that any dissemination, distribution, copying, or conveying of this communication in any manner is strictly prohibited. If you have received this comunication in error, please notify us immediately by telephone and return the original message to us at the address below via the U. S. Postal Service. Thank you for your cooperation.",answer
+82092117.json,182,887,539,928,"State Office Tower / 30 East Broad Street/ Columbus, Ohio 43215 -3428 www ag state oh us An Equal Opportunity Employer",other
+82092117.json,292,941,426,954,Primed an ,other
+82092117.json,184,405,233,423,12 /10 /98,answer

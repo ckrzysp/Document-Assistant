@@ -1,0 +1,29 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+87086073.json,88,142,110,152,,question
+87086073.json,492,138,513,151,DATE,question
+87086073.json,88,222,134,236,STRUCTURE,question
+87086073.json,88,385,134,399,COMMENTS,question
+87086073.json,469,603,484,616,J.,question
+87086073.json,490,602,503,617,D.,question
+87086073.json,513,601,548,616,Engle,question
+87086073.json,469,687,484,701,R.,question
+87086073.json,490,686,505,700,F.,question
+87086073.json,513,687,572,700,Dufresne,question
+87086073.json,115,186,182,204,Vanitrope,answer
+87086073.json,208,369,236,386,III,answer
+87086073.json,451,366,482,381,B134,answer
+87086073.json,479,570,559,622,,answer
+87086073.json,471,648,657,711,,answer
+87086073.json,654,785,669,873,87086073,other
+87086073.json,212,113,556,136,DECISION TREE ESTIMATION OF TOXIC RISK,header
+87086073.json,115,142,329,161,J. D. Ergle and R. F. Dufresne,answer
+87086073.json,522,135,630,159,"August 14, 1990",answer
+87086073.json,89,169,155,180,COMPOUND NAME,question
+87086073.json,279,221,532,343,CH3CH2O OH,answer
+87086073.json,89,359,195,373,ESTIMATED TOXICITY CLASS,question
+87086073.json,387,356,535,371,LORILLARO COMPOUND CODE NUMBER,question
+87086073.json,119,409,496,428,This ethoxy substitued aromatic falls into class III.,answer
+87086073.json,469,700,585,718,Research Chemist,question
+87086073.json,471,616,587,631,Research Chemist,question
+87086073.json,92,926,210,937,LORILLARD RESEARCH CENTER,other
+87086073.json,635,919,694,932,FORM ,other

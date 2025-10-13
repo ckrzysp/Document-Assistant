@@ -1,0 +1,44 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+87147607.json,41,73,84,84,VENDOR,question
+87147607.json,70,117,102,128,TERMS,question
+87147607.json,155,197,184,211,CODE,question
+87147607.json,373,200,441,214,DESCRIPTION,question
+87147607.json,47,197,101,212,QUANTITY,question
+87147607.json,296,75,364,85,DEPARTMENT,other
+87147607.json,366,77,387,87,USE,other
+87147607.json,385,77,416,87,ONLY,other
+87147607.json,561,89,582,103,NC,question
+87147607.json,575,39,603,50,DATE,question
+87147607.json,571,108,596,118,Prev.,question
+87147607.json,641,201,668,214,UNIT,question
+87147607.json,670,203,701,216,PRICE,question
+87147607.json,296,754,334,768,4111,answer
+87147607.json,436,757,470,768,8700,answer
+87147607.json,627,785,645,874,87147607,other
+87147607.json,207,75,228,83,FOR,other
+87147607.json,228,75,295,85,PURCHASING,other
+87147607.json,59,42,140,53,☐ PURCHASING,question
+87147607.json,60,56,140,68,☐ STATIONARY,question
+87147607.json,265,45,428,57,PURCHASE REQUISITION,header
+87147607.json,182,59,531,73,PLEASE INCLUDE ONLY ONE TYPE OF MATERIAL ON THIS REQUISITION,other
+87147607.json,472,36,569,55,P. O. 1534 LT-1979,other
+87147607.json,581,56,701,71,"April 19, 1988",answer
+87147607.json,46,84,563,103,"Piedmont Research Laboratory 2748 Patterson Ave., Greensboro,",answer
+87147607.json,574,78,630,88,ORDER NO,question
+87147607.json,598,106,711,119,or Recommended Supplier,answer
+87147607.json,43,140,257,156,Lorillard Research Center,answer
+87147607.json,338,144,462,159,N. A. Thaggard,answer
+87147607.json,545,147,641,161,As required,answer
+87147607.json,503,134,577,145,DATE WANTED,question
+87147607.json,42,131,165,143,SHIP TO (DEPT BRANCH),question
+87147607.json,140,105,539,133,27407 NET 15 F. O. B. N/A VIA N/A,answer
+87147607.json,43,168,359,186,"420 English St., Greensboro, NC 27405",question
+87147607.json,123,225,705,528,"This is your authorization to prepare cigarette smoke condensate according to the protocol ""Standard Operating Procedure før the Preparation of Smoke Condensate for Mouse Skin Bioassay,"" for the period April 1, 1988 through December 31, 1988. Condensate will be prepared acording to a time schedule provided by Lorillard. The fixed price for condensate collection will be at a rate of $1, 750/10, 000 cigarettes smoked. Piedmont will pay the cost of consumable supplies. This work is to be conducted in accordance with the December 10, 1984 formal agreement between Piedmont Reseach Laboratories and Lorillard. All work is to be coordinated with our Mr. Neil Thaggard (919) 373-6628",answer
+87147607.json,105,679,197,693,FOLLOW UP DATE,question
+87147607.json,120,730,182,745,BUDGET NO.,question
+87147607.json,338,682,425,693,REQUISITION NO.,question
+87147607.json,578,683,632,696,ISSUED BY,question
+87147607.json,571,735,644,749,APPROVED BY,question
+87147607.json,511,749,673,788,,answer
+87147607.json,411,732,462,747,DEPT. NO.,question
+87147607.json,295,733,350,746,ACCT. NO.,question

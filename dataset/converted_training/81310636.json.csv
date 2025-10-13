@@ -1,0 +1,29 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+81310636.json,623,145,658,158,6692,answer
+81310636.json,225,145,250,156,B83,answer
+81310636.json,250,341,289,354,test,other
+81310636.json,103,683,130,697,Misc,other
+81310636.json,662,786,684,889,81310636,other
+81310636.json,314,78,499,101,COMPOUND STRUCTURE,header
+81310636.json,514,127,659,144,Litton Bionetics,other
+81310636.json,517,147,613,161,Genetic Assay No.,question
+81310636.json,110,144,217,159,COMPOUND CODE,question
+81310636.json,110,176,183,190,Chem Abstr#,question
+81310636.json,187,175,213,188,N/ A,answer
+81310636.json,226,200,399,217,Proprietary Mixture,answer
+81310636.json,110,204,209,221,Compound Name,question
+81310636.json,110,271,190,285,ASSAY RESULT,question
+81310636.json,186,263,741,341,"M. Lymph: negative with S9 activation, positive without S9 activation; Rerun: negative without S9 activation, border- line positive with S9 activation -Technical problems with the",answer
+81310636.json,109,330,251,345,COMPOUND STRUCTURE,other
+81310636.json,117,411,256,426,Unknown Mixture,other
+81310636.json,105,490,232,507,PH (CALCULATED 50%),question
+81310636.json,249,485,284,503,5. 26,answer
+81310636.json,247,546,365,561,Yellow liquid,answer
+81310636.json,103,547,241,564,PHYSICAL APPEARANCE,question
+81310636.json,123,578,159,594,bp/mp ,question
+81310636.json,182,574,213,591,N/ A,answer
+81310636.json,254,577,281,594,C @,question
+81310636.json,320,577,363,592,mm Hg,question
+81310636.json,102,620,225,644,REGULATORY STATUS,question
+81310636.json,246,619,279,639,N/ A,answer
+81310636.json,637,948,696,967,,other

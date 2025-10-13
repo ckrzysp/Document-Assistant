@@ -1,0 +1,39 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0060214859.json,68,175,139,193,Report,question
+0060214859.json,163,179,191,196,517,answer
+0060214859.json,148,373,226,391,ACCEPTED,question
+0060214859.json,102,433,124,450,XX,answer
+0060214859.json,149,433,224,451,REJECTED,question
+0060214859.json,492,226,533,241,Date,question
+0060214859.json,494,257,567,274,Supplier,question
+0060214859.json,63,615,148,633,Comments:,question
+0060214859.json,59,781,181,799,Distribution:,question
+0060214859.json,377,754,413,771,6926,answer
+0060214859.json,265,756,367,770,Telephone#,question
+0060214859.json,641,851,698,878,,answer
+0060214859.json,594,859,625,888,By,question
+0060214859.json,471,853,513,881,No,question
+0060214859.json,524,853,580,880,436,answer
+0060214859.json,730,758,752,849,505991060,other
+0060214859.json,98,256,237,270,Material Tested,question
+0060214859.json,253,254,412,272,P- 830 GLASS FIBER,answer
+0060214859.json,588,226,691,245,10- NOV- 1986,answer
+0060214859.json,587,257,706,273,OWENS CORNING,answer
+0060214859.json,668,289,734,305,2 ROLLS,answer
+0060214859.json,493,288,652,308,Quantity Received,question
+0060214859.json,98,284,234,300,Lot or Sample#,question
+0060214859.json,254,285,368,301,ROLL 34 & 35,answer
+0060214859.json,254,316,318,332,11- 6- 86,answer
+0060214859.json,96,314,219,331,Date Received,question
+0060214859.json,66,479,610,503,Following physical/ visual properties out of specifications:,question
+0060214859.json,620,483,741,501,WEIGHT OUT OF,answer
+0060214859.json,74,510,730,576,SPECIFICATIONS ON ROLLS 34 & 35. WT. AV. ROLL 34 (183. 04) ; WT. AV. ROLL 35 (183. 44) : SPECS. 190 -210 GMS/ SQM. LOI OUT DE SPEC. ON ROLL 34 (AV 2. 49%) SPECIFICATIONS (2.6 6- 3. 1% .,answer
+0060214859.json,57,714,221,765,Kwb Kenneth W. Smits Technologist - QA,other
+0060214859.json,198,785,414,803,"Mr. Lucien L. Bass, III",answer
+0060214859.json,198,797,359,815,Dr. L. H. O' Conner,answer
+0060214859.json,198,814,359,831,Mr. L. W. Peterson,answer
+0060214859.json,197,832,369,845,Mr. W. B. Scantland,answer
+0060214859.json,197,845,321,859,Ms. R. deLacy,answer
+0060214859.json,197,859,352,875,Mr. M. D. Shannon,answer
+0060214859.json,197,874,334,893,Mr. R. L. McGee,answer
+0060214859.json,520,750,672,852,RJR SECRET ADDRESSED ONLY,other

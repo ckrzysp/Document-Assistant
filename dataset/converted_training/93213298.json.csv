@@ -1,0 +1,68 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+93213298.json,404,144,460,162,Division,question
+93213298.json,75,151,135,171,Location,question
+93213298.json,81,279,119,294,Mugs,question
+93213298.json,413,244,490,261,Invitations:,header
+93213298.json,81,324,131,341,Posters,question
+93213298.json,82,416,135,434,Counter,question
+93213298.json,82,432,118,449,Floor,question
+93213298.json,82,450,134,467,Posters,question
+93213298.json,321,719,356,732,Fair,question
+93213298.json,454,714,507,731,Average,question
+93213298.json,594,709,655,726,Excellent,question
+93213298.json,161,677,197,692,Food,question
+93213298.json,161,693,238,707,Cleanliness,question
+93213298.json,161,705,211,723,Service,question
+93213298.json,363,384,437,404,Attendees:,header
+93213298.json,535,264,557,285,10,answer
+93213298.json,541,408,558,423,8,answer
+93213298.json,539,418,554,435,8,answer
+93213298.json,541,437,561,448,2,answer
+93213298.json,186,415,203,432,0,answer
+93213298.json,189,429,203,444,0,answer
+93213298.json,189,446,203,459,0,answer
+93213298.json,186,275,199,295,0,answer
+93213298.json,186,292,199,305,0,answer
+93213298.json,187,306,201,320,0,answer
+93213298.json,187,320,200,335,0,answer
+93213298.json,351,624,371,642,10,answer
+93213298.json,464,670,479,687,X,answer
+93213298.json,615,680,626,694,X,answer
+93213298.json,610,694,625,705,X,answer
+93213298.json,605,617,625,638,10,answer
+93213298.json,683,785,698,853,93213298,other
+93213298.json,291,253,371,300,,other
+93213298.json,338,331,367,360,,other
+93213298.json,219,113,502,136,NEWPORT RACING EVENT SURVEY,header
+93213298.json,504,137,613,160,Detroit - MCA,answer
+93213298.json,504,169,607,190,R. L. Lavoie,answer
+93213298.json,406,172,485,192,Division Mgr,question
+93213298.json,80,183,131,203,Date (s),question
+93213298.json,159,147,311,167,DETROIT GRAND PRIX,answer
+93213298.json,161,175,273,197,"June 11, 1995",answer
+93213298.json,264,205,364,223,Date Submitted,question
+93213298.json,377,200,476,223,"July 6, 1995",answer
+93213298.json,295,223,455,240,(submit by 30 days after event),other
+93213298.json,80,251,211,269,Promotion Quantity:,header
+93213298.json,81,295,161,313,Displays (8),question
+93213298.json,80,306,149,327,Floor (40),question
+93213298.json,82,351,156,370,Date Rec'd,question
+93213298.json,412,264,503,285,# Requested,question
+93213298.json,411,282,500,300,Date Notified,question
+93213298.json,415,297,504,317,Date Ordered,question
+93213298.json,415,345,491,365,Date Rec'd,question
+93213298.json,508,341,577,361,05/ 01/ 95,answer
+93213298.json,80,390,208,409,# Displays Placed:,header
+93213298.json,369,406,504,426,# Customers Invited,question
+93213298.json,367,423,516,441,# Customers Attended,question
+93213298.json,367,437,510,458,# Lorillard Personnel,question
+93213298.json,82,479,216,498,Invitees Comments:,question
+93213298.json,233,469,669,493,Invitees stated the Newport hospitality tent was very,answer
+93213298.json,84,490,653,560,"difficult to locate. Also, the Indy Lights Paddock area was not clearly identified Most Invitees were looking for the hospitality tent in a separate identified area away from the Paddock Brea and the Newport car transporter.",answer
+93213298.json,84,630,186,650,Race Day Info:,header
+93213298.json,214,630,331,648,Event Attendance,question
+93213298.json,406,623,585,644,Hospitality Tent Attendance,question
+93213298.json,88,661,261,683,Quality of Hospitality Tent:,header
+93213298.json,89,747,313,765,Suggestions/ Recommendations:,question
+93213298.json,321,742,646,763,"In the future, please specify where the",answer
+93213298.json,92,756,652,812,Newport hospitality area will be located - at the Newport car trans- porter site or in a separate area . Specific directions will be needed.,answer

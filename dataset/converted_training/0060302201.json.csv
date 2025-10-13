@@ -1,0 +1,35 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0060302201.json,54,119,93,133,NAME:,question
+0060302201.json,53,545,120,558,COMMENTS:,question
+0060302201.json,126,548,167,560,none,answer
+0060302201.json,382,119,447,130,DIVISION,question
+0060302201.json,54,742,111,759,COMMENTS,question
+0060302201.json,351,285,385,302,yes,answer
+0060302201.json,164,58,558,93,RESEARCH COMPLETED OR IN PROGRESS WHICH HAS POSSIBILITIES FOR PRESENTATION OR PUBLICATION,header
+0060302201.json,107,120,220,134,Ronald. W Davis,answer
+0060302201.json,452,118,636,133,Analytical- Radiochemistry,answer
+0060302201.json,53,145,161,161,NATURE OF WORK:,question
+0060302201.json,171,143,556,162,Total aldehyde analysis in cigarette mainstream ,answer
+0060302201.json,54,198,507,219,PRESENT STATUS OF WORK (Cite progress reports where appropriate),question
+0060302201.json,512,202,665,216,Techniques worked out,answer
+0060302201.json,55,228,667,275,and reported for pure aldehyde samples; must be adapted for cigarette mainstream smoke by further laboratory work,answer
+0060302201.json,54,284,351,303,HAS WORK BEEN REPORTED IN MANUSCRIPT ,question
+0060302201.json,397,284,595,303,"IF SO, GIVE DATE AND TITLE:",question
+0060302201.json,53,314,498,334,MBTH- reagent for analysis of aliphatic aldehydes 7 / 5 / 67,answer
+0060302201.json,54,343,374,360,NAMES OF OTHER PERSONS COLLABORATING IN WORK:,question
+0060302201.json,382,343,488,360,L. W. McDowell,answer
+0060302201.json,55,400,346,419,ESTIMATE OF TIME NEEDED TO COMPLETE WORK:,question
+0060302201.json,354,402,523,415,approximately one month,answer
+0060302201.json,54,429,500,448,ESTIMATE OF TIME NEEDED TO PREPARE MANUSCRIPT FOR PRESENTATION:,question
+0060302201.json,500,426,717,446,several weeks after completion,answer
+0060302201.json,55,458,495,475,ESTIMATE OF TIME NEEDED TO PREPARE MANUSCRIPT FOR PUBLICATION:,question
+0060302201.json,500,456,718,485,several weeks after completion of work,answer
+0060302201.json,51,487,260,501,SCIENTIFIC METING OF CHOICE:,question
+0060302201.json,259,489,344,501,none as yet,answer
+0060302201.json,53,513,262,530,SCIENTIFIC JOURNAL OF CHOICE:,question
+0060302201.json,262,515,371,530,Tobacco Science,answer
+0060302201.json,54,656,276,674,COMMENTS BY MANAGER OR DIRECTOR,question
+0060302201.json,52,683,254,701,DOES WORK MERIT PUBLICATION?,question
+0060302201.json,53,711,294,730,CAN TIME BE SPARED FOR COMPLETION?,question
+0060302201.json,134,735,694,765,been with applicability,answer
+0060302201.json,75,761,599,814,may provide a technique.,answer

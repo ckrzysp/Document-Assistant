@@ -1,0 +1,25 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0000971160.json,292,91,376,175,R&D,other
+0000971160.json,219,316,225,327,:,question
+0000971160.json,95,355,169,370,Suggestion:,question
+0000971160.json,482,268,518,282,Date:,question
+0000971160.json,511,309,570,323,Licensee,answer
+0000971160.json,211,651,217,662,,question
+0000971160.json,461,605,483,619,Yes,question
+0000971160.json,545,603,563,617,No,question
+0000971160.json,525,904,641,926,597005708,other
+0000971160.json,256,201,423,230,R&D QUALITY IMPROVEMENT SUGGESTION/ SOLUTION FORM,header
+0000971160.json,89,272,204,289,Name / Phone Ext. :,question
+0000971160.json,215,271,451,287,"M. Hamann P. Harper, P. Martinez",answer
+0000971160.json,543,264,590,279,9/ 3/ 92,answer
+0000971160.json,420,310,491,323,R&D Group:,question
+0000971160.json,236,313,327,327,J. S. Wigand,answer
+0000971160.json,91,316,218,331,Supervisor / Manager,question
+0000971160.json,190,346,594,447,Discontinue coal retention analyses on licensee submitted product samples (Note : Coal Retention testing is not performed by most licensees. Other B&W physical measurements as ends stability and inspection for soft spots in ciparettes are thought to be sufficient measures to assure cigarette physical integrity. The proposed action will increase laboratory productivity . ),answer
+0000971160.json,95,486,250,504,Suggested Solutions (s) :,question
+0000971160.json,263,483,593,553,Delete coal retention from the list of standard analyses performed on licensee submitted product samples. Special requests for coal retention testing could still be submitted on an exception basis.,answer
+0000971160.json,96,608,398,624,Have you contacted your Manager/ Supervisor?,header
+0000971160.json,98,651,211,665,Manager Comments:,question
+0000971160.json,232,644,547,662,"Manager, please contact suggester and forward",answer
+0000971160.json,99,662,323,677,comments to the Quality Council.,answer
+0000971160.json,102,823,145,838,qip . wp,other

@@ -1,0 +1,58 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+86075409_5410.json,56,122,85,137,From:,question
+86075409_5410.json,57,149,72,162,To:,question
+86075409_5410.json,56,175,76,190,CC:,question
+86075409_5410.json,119,229,132,242,,other
+86075409_5410.json,145,425,211,439,Circulation(#),question
+86075409_5410.json,119,256,132,273,,other
+86075409_5410.json,120,284,131,299,,other
+86075409_5410.json,120,310,131,325,,other
+86075409_5410.json,120,341,133,354,,other
+86075409_5410.json,119,369,133,380,,other
+86075409_5410.json,119,397,132,410,,other
+86075409_5410.json,119,425,132,438,,other
+86075409_5410.json,119,451,130,464,,other
+86075409_5410.json,120,480,133,493,,other
+86075409_5410.json,122,507,132,520,,other
+86075409_5410.json,120,535,131,546,,other
+86075409_5410.json,120,577,133,594,,other
+86075409_5410.json,122,605,133,622,,other
+86075409_5410.json,689,809,716,922,86075409,other
+86075409_5410.json,279,453,304,470,Tiers,question
+86075409_5410.json,306,454,317,468,"II,",question
+86075409_5410.json,317,454,325,468,&,question
+86075409_5410.json,327,451,340,469,IV,question
+86075409_5410.json,101,120,177,136,Lynnette Stevens,answer
+86075409_5410.json,102,148,162,163,Kelli Scruggs,answer
+86075409_5410.json,101,175,176,204,Vincent Losito George Baroody,answer
+86075409_5410.json,232,183,361,206,S. Tesh C. Hill,answer
+86075409_5410.json,236,176,291,190,Don Kisling,question
+86075409_5410.json,145,229,236,244,Brand(s) Applicable,question
+86075409_5410.json,147,256,201,271,Media Type,question
+86075409_5410.json,145,284,204,299,Media Name,question
+86075409_5410.json,147,313,257,329,Issue Frequency/ Year,question
+86075409_5410.json,145,341,219,356,*Space/ Color,question
+86075409_5410.json,147,369,231,386,Coupon Issue Date,question
+86075409_5410.json,147,397,254,414,Coupon Expiration Date,question
+86075409_5410.json,145,451,242,467,Geographical Area(s),question
+86075409_5410.json,147,480,212,497,Coupon Value,question
+86075409_5410.json,144,507,243,524,Pack and/ or Carton?,question
+86075409_5410.json,147,536,273,551,Advertising Creative Title.,question
+86075409_5410.json,148,577,241,594,Signature of Initiator,question
+86075409_5410.json,147,605,209,620,Date Initiated,question
+86075409_5410.json,52,634,172,651,Analytical Requirements,question
+86075409_5410.json,344,229,491,243,"Newport Parent, Lights. & 120's",answer
+86075409_5410.json,345,256,396,271,Direct Mail,answer
+86075409_5410.json,344,285,459,301,Competitive 21- 34 years,answer
+86075409_5410.json,496,370,535,384,4/ 14/ 00,answer
+86075409_5410.json,497,397,535,412,9 /30 00,answer
+86075409_5410.json,344,423,605,454,"APPROX 600. 000 AR. AZ.A K CA CO FL ID IA. CT, ME, MASS, MN, MT, NE,",answer
+86075409_5410.json,345,453,570,521,"NV, NM, NY ND, DK, OR, RL, SD, WA, DC, WY $1. 50 OFF PACK",answer
+86075409_5410.json,335,547,646,626,21- Jan 00,answer
+86075409_5410.json,279,705,399,720,FOR CONTROL USE ONLY,header
+86075409_5410.json,235,732,300,750,Code Assigned,question
+86075409_5410.json,233,754,285,772,Job Number,question
+86075409_5410.json,233,778,305,796,Est. Redemption,question
+86075409_5410.json,397,728,464,749,05787,answer
+86075409_5410.json,404,784,438,805,13%,answer
+86075409_5410.json,54,839,151,857,* Where Applicable,other

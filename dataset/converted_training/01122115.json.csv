@@ -1,0 +1,96 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+01122115.json,603,38,624,59,RE,question
+01122115.json,568,89,607,110,DATE,question
+01122115.json,43,504,114,526,Remarks,question
+01122115.json,45,166,94,188,Color,question
+01122115.json,49,119,119,136,Supplier,question
+01122115.json,223,792,283,810,Weight,question
+01122115.json,330,793,375,808,Draw,question
+01122115.json,469,793,512,811,Tars,question
+01122115.json,602,792,679,814,Nicotine,question
+01122115.json,628,39,664,57,-339,answer
+01122115.json,640,117,657,134,.0,answer
+01122115.json,623,117,638,134,6,answer
+01122115.json,624,142,665,159,Good,answer
+01122115.json,623,168,670,188,Good,answer
+01122115.json,626,194,667,211,Good,answer
+01122115.json,624,219,665,239,#450,answer
+01122115.json,635,250,649,264,3,answer
+01122115.json,626,270,665,291,1067,answer
+01122115.json,257,163,307,183,White,answer
+01122115.json,268,297,299,315,"""D""",answer
+01122115.json,249,349,267,367,24,answer
+01122115.json,268,348,290,368,.7,other
+01122115.json,652,402,690,420,.844,answer
+01122115.json,346,709,403,733,SPRING,answer
+01122115.json,226,767,261,781,AMF,answer
+01122115.json,649,714,677,736,85,answer
+01122115.json,588,767,635,787,Hauni,answer
+01122115.json,719,872,739,967,011221115,other
+01122115.json,43,63,189,83,P. LORILLARD CO.,header
+01122115.json,109,87,256,109,(Revised 5/ 9/ 61),answer
+01122115.json,47,88,102,109,SQC -21,question
+01122115.json,46,141,120,163,Bale No.,question
+01122115.json,45,194,246,214,Total Denier as Marked,question
+01122115.json,46,221,247,239,Total Denier as Tested,question
+01122115.json,41,244,203,266,% Moisture in Tow,question
+01122115.json,42,270,128,290,Maker No.,question
+01122115.json,256,116,295,134,T. E.,answer
+01122115.json,254,191,313,211,"58 ,000",answer
+01122115.json,204,272,363,289,Research Division,answer
+01122115.json,42,297,147,317,Type of Rod,question
+01122115.json,43,323,167,343,Length of Rod,question
+01122115.json,237,323,305,344,120 mm.,answer
+01122115.json,43,348,155,367,Circ of Rod,question
+01122115.json,41,373,194,396,Mean Draw of Rod,question
+01122115.json,251,370,392,394,0 .12 (new scale),answer
+01122115.json,236,397,321,420,86 .9 gms,answer
+01122115.json,240,426,323,446,93 .3 gms.,answer
+01122115.json,239,451,320,475,99 .2 gms.,answer
+01122115.json,237,479,322,499,99 .2 gms.,answer
+01122115.json,43,479,183,499,Complete Weight,question
+01122115.json,45,426,234,446,Dry Wt. With Adhesive,question
+01122115.json,45,399,139,421,Dry Weight,question
+01122115.json,140,510,700,546,"* Special Plasticizer - 1 part LG- 168 - 15 parts Estrobond ""B"" Union Carbide LG- 168 additive .38%",answer
+01122115.json,158,563,673,597,"Sample repeated as RE- 341 because 2. 1/ 58 ,000 tow was used instead of 2. 1/ 42 ,000 tow.",answer
+01122115.json,566,64,726,88,RESEARCH DIVISION,header
+01122115.json,617,91,684,112,11 /2 /61,answer
+01122115.json,404,112,525,136,% Plasticizer,question
+01122115.json,406,141,546,162,Firmness of Rod,question
+01122115.json,405,166,551,189,Quality of Bloom,question
+01122115.json,405,194,525,215,Width of Band,question
+01122115.json,405,219,499,241,Ref. Paper,question
+01122115.json,401,247,615,268,Quan of Trays Produced,question
+01122115.json,404,272,522,292,Rods per Min.,question
+01122115.json,406,299,499,317,Tape Speed,question
+01122115.json,406,323,605,345,F. P. M. Delivery Roller,question
+01122115.json,404,351,579,373,F. P. M. No. 1 Roller,question
+01122115.json,405,376,578,398,F. P. M. No. 2 Roller,question
+01122115.json,405,402,635,424,Delivery Roller over Tape,question
+01122115.json,626,299,715,320,400 F. P. M.,answer
+01122115.json,624,324,673,345,337 .5,answer
+01122115.json,626,351,676,369,477 .5,answer
+01122115.json,628,373,674,393,362 .5,answer
+01122115.json,642,429,693,444,1 .194,answer
+01122115.json,626,454,701,475,120 psig,answer
+01122115.json,634,482,702,502,16 psig,answer
+01122115.json,404,479,582,501,Pressure on Air Jet,question
+01122115.json,406,454,615,477,Pump Press. Card Roller,question
+01122115.json,404,427,607,451,No. 1 Roller over Tape,question
+01122115.json,45,712,129,734,Date Made,question
+01122115.json,131,712,195,735,11 /3 /61,answer
+01122115.json,226,714,338,734,Tobacco Used,question
+01122115.json,439,712,623,737,Length of Cigarettes,question
+01122115.json,41,736,237,760,% Moisture in Tobacco,question
+01122115.json,394,737,605,762,Wt. of Cigarettes /4 oz.,question
+01122115.json,42,764,162,786,Type of Maker,question
+01122115.json,394,767,525,789,Type of Tipper,question
+01122115.json,42,825,186,845,Smoking Results,question
+01122115.json,194,824,726,849,.922 1 .059 .54 .20 20 .2 7 .6 62 .4 1 .07 .41 61 .7,answer
+01122115.json,128,859,359,882,Production Supervised by:,question
+01122115.json,370,849,711,887,,other
+01122115.json,404,887,588,932,Benner,answer
+01122115.json,459,913,614,934,Recearch Engineer,question
+01122115.json,137,899,300,968,Dr. C. O. Jensen Mr. R. A. Wagner Mr. J. Berner Dr. A. W. Spears,answer
+01122115.json,42,898,134,919,Copies to:,question
+01122115.json,41,451,138,472,Wet Weight,question

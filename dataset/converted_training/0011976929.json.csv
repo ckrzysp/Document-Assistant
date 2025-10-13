@@ -1,0 +1,25 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0011976929.json,420,380,474,398,Dates:,question
+0011976929.json,543,841,653,862,466603840,other
+0011976929.json,102,869,149,886,/934g,other
+0011976929.json,75,869,103,887,/lr,other
+0011976929.json,327,383,356,398,700,answer
+0011976929.json,489,176,543,198,Dundee,answer
+0011976929.json,54,184,106,205,State:,question
+0011976929.json,147,183,217,200,Illinois,answer
+0011976929.json,284,96,408,113,SPECIAL EVENTS,header
+0011976929.json,358,182,440,199,City/ Town:,question
+0011976929.json,57,243,177,263,Type of Event:,question
+0011976929.json,300,237,417,256,Beauty Contest,answer
+0011976929.json,59,384,244,402,Estimated Attendance,question
+0011976929.json,489,376,669,393,"March 3rd, 4th & 5th,",answer
+0011976929.json,60,441,183,460,Name of Event:,question
+0011976929.json,297,433,535,452,Mrs. Illinois Beauty Pageant,answer
+0011976929.json,64,525,281,544,Contact (Name/ Telephone):,question
+0011976929.json,300,521,613,539,Ms. Joy Weathers (Sales) 312/ 426 - 8000,answer
+0011976929.json,64,584,261,599,Audience Concentration,question
+0011976929.json,300,577,560,625,90 % White - 10 % Black Age category 21 yrs. to 45 yrs.,answer
+0011976929.json,67,691,465,712,Recommended Brand(s) and Promotional Activity:,question
+0011976929.json,503,690,641,708,BARCLAY sampling,answer
+0011976929.json,165,721,342,740,2 - 12M cases mixed.,answer
+0011976929.json,169,747,478,768,To be placed on tables by B & W Reps.,answer

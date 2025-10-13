@@ -1,0 +1,40 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+92433599_92433601.json,124,263,165,278,Name,question
+92433599_92433601.json,126,292,193,309,Address,question
+92433599_92433601.json,126,324,164,339,City,question
+92433599_92433601.json,236,323,297,337,Novato,answer
+92433599_92433601.json,468,321,518,336,State,question
+92433599_92433601.json,385,349,474,367,Telephone,question
+92433599_92433601.json,545,321,569,335,CA,answer
+92433599_92433601.json,128,475,210,492,Defendant,question
+92433599_92433601.json,130,443,211,463,Plaintiff,question
+92433599_92433601.json,598,594,608,611,(,other
+92433599_92433601.json,612,594,625,609,X,answer
+92433599_92433601.json,631,594,639,608,),other
+92433599_92433601.json,598,624,608,638,(,other
+92433599_92433601.json,631,622,641,639,),other
+92433599_92433601.json,613,652,624,669,X,answer
+92433599_92433601.json,634,652,641,670,),other
+92433599_92433601.json,705,816,723,893,92433599,other
+92433599_92433601.json,420,883,431,897,1,other
+92433599_92433601.json,238,352,286,372,94948,answer
+92433599_92433601.json,599,655,607,670,(,other
+92433599_92433601.json,270,94,570,143,PRELIMINARY FACT SHEET NEW FILING - ASBESTOS LITIGATION,header
+92433599_92433601.json,289,154,549,188,(See General Order No. 29) (In Re: Complex Litigation),other
+92433599_92433601.json,117,214,713,249,"1. Name, address and telephone number of law firm representing claimant:",header
+92433599_92433601.json,236,260,471,278,"BRAYTON, GISVOLD. & HARLEY",answer
+92433599_92433601.json,236,288,528,308,"999 Grant Avenue, P. O. Box 2109",answer
+92433599_92433601.json,126,353,203,371,Zip Code,question
+92433599_92433601.json,501,349,631,368,(415) 898- 1555,answer
+92433599_92433601.json,116,395,712,432,2. Names of first named plaintiff and first named defendant on the caption of the complaint:,header
+92433599_92433601.json,239,444,389,459,CHARLES WOODWARD,answer
+92433599_92433601.json,237,473,461,489,"ABEX CORPORATION, et al.",answer
+92433599_92433601.json,119,520,398,537,3. Date of claimant's birth:,question
+92433599_92433601.json,433,518,559,535,"June 19, 1921",answer
+92433599_92433601.json,122,564,537,584,4. Case involves (check appropriate boxes):,header
+92433599_92433601.json,131,595,225,613,(a) Injury,question
+92433599_92433601.json,134,626,299,644,(b) Wrongful death,question
+92433599_92433601.json,134,656,264,673,(c) Consortium,question
+92433599_92433601.json,120,683,700,749,"5. Specify the nature or type of asbestos- related injury alleged by the claimant. (E. q., Asbestosis; Lung Cancer- adenocarcinoma Lung Cancer- Mesothelioma; Pleural Thickening; Fibrosis; etc.)",question
+92433599_92433601.json,165,757,655,778,Mesothelioma and other asbestos- related lung disease,answer
+92433599_92433601.json,124,873,271,897,K:\CLIENTS\5002\FACTSHIT.COM ,other

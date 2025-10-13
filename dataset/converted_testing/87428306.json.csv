@@ -1,0 +1,37 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+87428306.json,115,207,127,215,pH,question
+87428306.json,112,349,155,358,SOLUBILITY,question
+87428306.json,124,434,132,443,,question
+87428306.json,123,485,144,494,ORAL,question
+87428306.json,127,162,158,173,A221,answer
+87428306.json,119,885,156,893,SIGNATURE,question
+87428306.json,190,909,221,918,CENTER,other
+87428306.json,154,909,186,918,RESEARCH,other
+87428306.json,115,912,152,921,LORILLARD,other
+87428306.json,646,643,667,731,87428306,other
+87428306.json,511,880,530,891,DATE,question
+87428306.json,258,119,545,136,COMPOUND PHYSICAL PARAMETERS,header
+87428306.json,114,152,175,162,LRC FILE NUMBER,question
+87428306.json,508,147,556,158,LOT NUMBER,question
+87428306.json,115,179,171,188,PHYSICAL STATE,question
+87428306.json,128,184,547,202,A crystalline solid at room temperature which melts at > 56 C.,answer
+87428306.json,128,219,588,277,"The pH of a 50 % concentration of A221 in water was theoretically calculated to be 7.26 at 22 C from a 0.5 % solution in 79.5 % aqueous dioxane according to the extrapolation procedures of Dr. P. D. Schickedantz, Lozillard Accession Number 1662. Referenced 45- 10- 1.",answer
+87428306.json,115,287,178,298,SPECIFIC GRAVITY,question
+87428306.json,128,305,234,317,Not Determined.,answer
+87428306.json,126,361,536,399,"MUTAGENICITY SOLVENTS A221 is soluble EtOH at 0.2 g/ ml, with stirring, at room temperature. Reference BC30- 88.",answer
+87428306.json,127,436,567,466,"A221 forms a solution in corn oil at 0.5 g/ 0.5 mL, with stirring at room temperature. Reference BC30- 8888.",answer
+87428306.json,127,504,568,535,"A221 forms a solution in corn oil at 0.5 g/ 0.5 mL, with stirring at room temperature. Reference BC30- 88.",answer
+87428306.json,116,574,205,584,ACUTE CARDIOVASCULAR,question
+87428306.json,127,598,516,615,A221 is insoluble for this procedure. Reference BC30- 38,answer
+87428306.json,115,635,220,644,STORAGE RECOMMENDATIONS,question
+87428306.json,126,680,517,698,Refrigerate in an amber glass bottle at no more than 8 C.,answer
+87428306.json,116,739,206,751,COMPOUND SENSITIVE TO,header
+87428306.json,135,765,158,774,☐ AIR,question
+87428306.json,171,763,200,774,☐ HEAT,question
+87428306.json,214,761,262,773,☐ MOISTURE,question
+87428306.json,273,761,309,773,☐ OTHER,question
+87428306.json,119,790,312,802,SAFETY COMMENTS (SUGGESTED HANDLING PROCEDURE:,question
+87428306.json,144,882,352,921,,answer
+87428306.json,372,890,425,903,A - 13,other
+87428306.json,513,885,672,907,,answer
+87428306.json,652,904,700,915,FORM ,other

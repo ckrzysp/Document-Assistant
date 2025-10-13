@@ -1,0 +1,18 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+88057519.json,395,483,442,496,Address,question
+88057519.json,397,507,419,518,City,question
+88057519.json,395,529,426,540,State,question
+88057519.json,658,528,676,542,Zip,question
+88057519.json,619,584,682,598,BRAND,question
+88057519.json,708,409,732,422,1982,other
+88057519.json,701,747,719,832,88057519,other
+88057519.json,552,270,730,351,New SATIN 100's,header
+88057519.json,397,434,476,447,Direct Account,question
+88057519.json,395,455,477,472,Please Ship To,question
+88057519.json,394,554,469,568,Delivery Date,question
+88057519.json,411,582,555,599,No. OF CARTONS,question
+88057519.json,574,617,682,634,Satin Filter 100's,answer
+88057519.json,574,652,703,670,Satin Menthol 100's,answer
+88057519.json,395,796,474,816,Signature of Hetail Purchaser,question
+88057519.json,398,830,493,852,Order Taken By Sales Representative,other
+88057519.json,518,858,631,867,DIRECT ACCOUNT,other

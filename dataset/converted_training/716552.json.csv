@@ -1,0 +1,69 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+716552.json,17,109,84,119,DESCRIPTION,question
+716552.json,17,163,53,173,DESIGN,question
+716552.json,54,163,72,173,NO,question
+716552.json,341,154,387,168,272972,answer
+716552.json,246,215,257,223,☑,answer
+716552.json,237,187,262,201,USE:,question
+716552.json,36,216,83,227,OFFICIAL,question
+716552.json,24,218,35,228,☑,answer
+716552.json,257,216,306,226,DOMESTIC,question
+716552.json,510,215,523,223,☐,question
+716552.json,589,215,641,226,(GRAVURE),answer
+716552.json,640,215,646,226,,other
+716552.json,334,258,351,266,NO,question
+716552.json,324,257,334,264,☑,answer
+716552.json,34,394,87,409,BRANCH,question
+716552.json,17,480,99,495,REPLACEMENT,header
+716552.json,215,395,281,406,LOUISVILLE,question
+716552.json,338,395,411,408,PETERSBURG,question
+716552.json,478,394,520,408,MACON,question
+716552.json,17,514,81,527,DESCRIPTION,question
+716552.json,32,568,86,583,BRANCH,question
+716552.json,215,570,282,584,LOUISVILLE,question
+716552.json,338,571,409,584,PETERSBURG,question
+716552.json,115,538,137,548,80-,other
+716552.json,138,536,151,549,15,answer
+716552.json,341,535,384,549,272972,answer
+716552.json,18,631,82,645,COMMENTS:,question
+716552.json,478,570,523,580,MACON,question
+716552.json,649,712,671,827,680115980,other
+716552.json,28,856,59,866,QNED:,question
+716552.json,490,858,518,868,DATE:,question
+716552.json,236,11,474,52,BROWN & WILLIAMSON TOBACCO CORPORATION MATERIAL SPECIFICATION DESIGN CHANGE AUTHORIZATION,header
+716552.json,18,11,82,23,,other
+716552.json,18,77,73,90,NEW ITEM,header
+716552.json,117,99,373,117,VICEROY Rich Lights 100' s 20' s Label,answer
+716552.json,18,135,64,145,BRAND (S),question
+716552.json,117,128,252,143,VICEROY Rich Lights,answer
+716552.json,116,155,158,172,B1 -257,answer
+716552.json,281,162,317,172,UPC NO,question
+716552.json,486,161,557,171,MATERIAL NO.,question
+716552.json,568,151,616,167,50 -034A,answer
+716552.json,17,187,99,202,TYPE CHANGE:,header
+716552.json,105,215,176,226,☐ TEMPORARY,question
+716552.json,334,208,399,226,MILITARY ☐ EXPORT,question
+716552.json,423,209,482,226,GENERAL ☐ EXPORT,question
+716552.json,524,209,578,228,CUSTOMER SPEC.,answer
+716552.json,17,256,248,269,If a material or dimensional change also involved?,header
+716552.json,17,271,117,284,If yes supply details,question
+716552.json,268,257,298,268,☐ YES,question
+716552.json,578,395,669,405,WINSTON SALEM,question
+716552.json,201,453,256,467,10/ 16/ 81,answer
+716552.json,201,422,257,435,1010/ 30/ 8181,answer
+716552.json,20,416,152,441,SCHEDULE: DATE OR INVENTORY DEPLETION,question
+716552.json,21,450,112,465,DELIVERY DATE,question
+716552.json,115,508,370,524,VICEROY Rich Lights 100' s 20' s Label,answer
+716552.json,18,542,73,553,DESIGN NO.,question
+716552.json,282,542,316,552,UPC NO.,question
+716552.json,487,542,556,553,MATERIAL NO,question
+716552.json,575,536,617,549,50- 034,answer
+716552.json,578,568,669,582,WINSTON SALEM,question
+716552.json,21,592,114,618,INVENTORY DEPLETION DATE,question
+716552.json,215,601,271,614,10/ 30/ 81,answer
+716552.json,115,630,674,711,"Material # 50 -034 A has been assigned to the VICEROY Rich Lights 100' s 20' s Label with new bottom panel. Bottom now incorporates shield. On both side and bottom panels, ""VICEROY"" and ""Rich Lights"" have been inverted. Cartons and labels must change design simultaneously. The current design cannot be used in production after 10/ 30/ 81.",answer
+716552.json,75,747,146,829,J. F. Banks C. Lamb C. L. Domeck Webb L. C. Lanham Branch QC Branch Supply,answer
+716552.json,21,749,68,762,Copies to:,question
+716552.json,99,835,288,885,S. T. BEASLEY (MRS )/ jlf,answer
+716552.json,554,852,602,866,9/ 17/ 8181,answer
+716552.json,0,951,229,983,680115980 PRODUCED FROM B&W WEB SITE,other

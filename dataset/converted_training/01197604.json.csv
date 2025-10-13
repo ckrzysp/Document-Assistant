@@ -1,0 +1,31 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+01197604.json,102,250,196,265,DESCRIPTION:,question
+01197604.json,103,436,157,454,SMOKER:,question
+01197604.json,101,708,165,728,REMARKS:,question
+01197604.json,264,156,292,173,195,answer
+01197604.json,263,187,284,204,II,answer
+01197604.json,665,768,683,863,01197604,other
+01197604.json,102,126,249,145,SAMPLE DESCRIPTION:,header
+01197604.json,141,158,226,176,Tar Number:,question
+01197604.json,140,186,240,205,Batch Number:,question
+01197604.json,141,218,257,236,Tobacco Number:,question
+01197604.json,265,218,453,236,"Sample No. 1166, RD 308",answer
+01197604.json,212,249,426,267,OLD GOLD Straights + 3% KNO3,answer
+01197604.json,106,311,210,328,SAMPLE WEIGHT:,question
+01197604.json,226,310,449,329,"300 mm. tar, 100 mm acetone",answer
+01197604.json,103,345,271,360,METHOD OF PREPARATION:,question
+01197604.json,288,342,632,390,Water removed by co- distillation with acetone under vacum at 45 C.,answer
+01197604.json,102,405,316,422,NUMBER OF CIGARETTES SMOKED:,question
+01197604.json,212,434,273,452,100 unit,answer
+01197604.json,209,464,328,483,Railway Express,answer
+01197604.json,212,494,394,573,"Dr. Dietrich Hoffman The Kettering New York, New York",answer
+01197604.json,103,468,195,485,SHIPPED VIA:,question
+01197604.json,101,497,187,514,SHIPPED TO:,question
+01197604.json,263,585,387,603,"November 2, 1965",answer
+01197604.json,264,617,316,634,150 gm,answer
+01197604.json,261,647,367,665,"February, 136",answer
+01197604.json,102,649,221,665,SUPPLIED UNTIL:,question
+01197604.json,102,616,235,636,REQUIREMENTS /MP.:,question
+01197604.json,102,589,201,604,DATE SHIPPED:,question
+01197604.json,120,708,628,754,Moisture content of tar .48% as determined by near infrared spectroscopy,answer
+01197604.json,102,922,136,939,11 /2,other

@@ -1,0 +1,19 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+89386032.json,70,130,123,158,EPL,header
+89386032.json,209,405,272,416,Multiple,answer
+89386032.json,571,274,607,289,1419A,answer
+89386032.json,441,405,493,419,Species,question
+89386032.json,527,405,561,419,Mice,answer
+89386032.json,675,832,690,921,89386032,other
+89386032.json,141,168,424,182,"EXPERIMENTAL PATHOLOGY LABORATORIES, INC.",header
+89386032.json,291,218,438,245,QUALITY ASSURANCE REPORT CERTIFICATION,header
+89386032.json,106,274,188,290,Client Name,question
+89386032.json,106,317,208,332,Study Director,question
+89386032.json,106,360,185,375,Study Title,question
+89386032.json,109,404,195,419,Test Article,question
+89386032.json,200,274,397,289,"Borriston Laboratories, Inc.",answer
+89386032.json,404,275,521,290,Client Study No.,question
+89386032.json,212,316,636,335,Dr. William O. Iverson Pathologist Dr. Charley E. Gilmore,answer
+89386032.json,214,344,594,391,Bioassay of Cigarette Smoke Condensates for potential Tumorigenic Activity on Mouse Skin (Revised Pathology Report),answer
+89386032.json,124,486,667,593,"A11 parts of the pathology phase of this study, including the final report, were reviewed by Experimental Pathology Laboratories Quality Assurance Unit on March 2- June 8, 1983 . All Findings were reported to the Study Director and Management.",other
+89386032.json,398,661,627,749,6/8/83,other

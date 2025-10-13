@@ -1,0 +1,19 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0071032807.json,501,141,535,156,Date,question
+0071032807.json,197,295,267,312,Marketing,answer
+0071032807.json,168,270,203,283,Mann,answer
+0071032807.json,299,81,473,98,Project Initiation Form,header
+0071032807.json,547,141,674,159,"November 15, 1968",answer
+0071032807.json,168,141,229,156,CST- N- 68,answer
+0071032807.json,54,141,144,159,Project Code,question
+0071032807.json,53,209,144,226,Project Name,question
+0071032807.json,170,207,349,226,Charcoal Smoking Tobacco,answer
+0071032807.json,54,267,159,284,Project Leader,question
+0071032807.json,53,299,180,316,Work Requested by,question
+0071032807.json,54,355,181,373,Project Objective,question
+0071032807.json,200,353,655,402,A pipe tobacco containing activated charcoal - must show vapor phase reduction.,answer
+0071032807.json,106,432,549,500,Smoking Deval Tobacco ,other
+0071032807.json,57,744,237,762,Other personnel assigned,question
+0071032807.json,254,742,690,760,Analytical Section is doing most of the work on vapor phase.,answer
+0071032807.json,74,771,468,790,PDL and John Brooks preparing charocal impregnated RC.,answer
+0071032807.json,61,848,310,866,Estimated Man Hours for Completion,question

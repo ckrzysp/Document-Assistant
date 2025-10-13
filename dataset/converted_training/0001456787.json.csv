@@ -1,0 +1,75 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0001456787.json,76,67,118,82,SECRET,other
+0001456787.json,69,517,121,532,Weights,header
+0001456787.json,69,676,145,690,Supplier(s),question
+0001456787.json,71,729,108,741,Color,question
+0001456787.json,71,783,127,794,Porosity,question
+0001456787.json,69,872,131,883,Substance,question
+0001456787.json,446,281,463,292,mm,answer
+0001456787.json,552,362,569,371,mm,answer
+0001456787.json,446,359,465,368,mm,answer
+0001456787.json,520,464,544,480,13%,answer
+0001456787.json,446,544,463,561,mg,answer
+0001456787.json,554,545,568,559,mg,answer
+0001456787.json,473,754,495,770,N/A,answer
+0001456787.json,352,756,378,771,N/A,answer
+0001456787.json,473,808,495,820,N/A,answer
+0001456787.json,353,809,375,821,N/A,answer
+0001456787.json,520,894,630,913,620753790,other
+0001456787.json,244,106,370,136,CHAMP S/ L TRIAL SPECIFICATION,header
+0001456787.json,397,162,461,187,BWIT Suggestion,question
+0001456787.json,512,173,564,188,HK Trial,question
+0001456787.json,75,147,184,162,CIGARETTE MAKING,header
+0001456787.json,74,172,233,187,Physical Characteristics,header
+0001456787.json,74,198,235,212,Overall Cigarette Length,question
+0001456787.json,74,224,193,240,Tobacco Rod Length,question
+0001456787.json,74,251,195,266,Filter Plug Length,question
+0001456787.json,74,277,310,294,Filter Plug Pressure Drop (unencap.),question
+0001456787.json,74,303,300,319,Filter Plug Pressure Drop (encap.),question
+0001456787.json,75,330,227,344,Cigarette Circumference,question
+0001456787.json,72,358,271,372,Total Pressure Drop (unencap.),question
+0001456787.json,71,384,260,399,Total Pressure Drop (encap.),question
+0001456787.json,71,411,168,425,Tipping Length,question
+0001456787.json,74,436,287,451,Print Position (from filter end),question
+0001456787.json,71,463,243,479,Moisture content (Packing),question
+0001456787.json,71,490,227,504,Filter Ventilation Rate,question
+0001456787.json,71,542,218,559,Total Cigarette Weight,question
+0001456787.json,71,570,176,583,Net Net Tobacco,question
+0001456787.json,70,596,197,608,Tobacco Rod Density,question
+0001456787.json,72,622,279,637,Tipping and Tipping Application,header
+0001456787.json,71,647,167,663,Tipping Paper:,header
+0001456787.json,69,700,202,715,Supplier Code No(s).,question
+0001456787.json,70,753,278,768,Perforation Type & No. of lines,question
+0001456787.json,69,808,184,822,Print Description,question
+0001456787.json,69,829,153,841,Bobbin Width,question
+0001456787.json,69,849,161,866,Dobbin Length,question
+0001456787.json,354,673,423,688,ECUSTA/ B&W,answer
+0001456787.json,473,672,551,689,ECUSTA/ B & W,answer
+0001456787.json,353,783,423,795,Non Porous,answer
+0001456787.json,352,825,390,843,64 mm,answer
+0001456787.json,354,847,399,862,2500 M,answer
+0001456787.json,353,873,408,890,36 nm/ M2,answer
+0001456787.json,475,783,541,796,Non Porous,answer
+0001456787.json,470,828,509,843,64 mm,answer
+0001456787.json,473,848,514,863,2500 M,answer
+0001456787.json,475,873,526,890,36 nm /47M2,answer
+0001456787.json,519,594,588,609,243.6 mg/ cc,answer
+0001456787.json,400,592,482,609,243.6 mg/ ,answer
+0001456787.json,400,567,463,586,858 mg,answer
+0001456787.json,517,569,568,586,858 mg,answer
+0001456787.json,519,438,568,452,35 mm,answer
+0001456787.json,517,410,569,424,32 mm,answer
+0001456787.json,406,413,462,424,32 mm,answer
+0001456787.json,408,436,464,451,35 mm,answer
+0001456787.json,405,461,461,478,13 %,answer
+0001456787.json,408,323,463,344,24.8 mm,answer
+0001456787.json,408,305,464,319,58.5 mm,answer
+0001456787.json,514,327,569,344,24.8 mm,answer
+0001456787.json,515,305,567,319,58.5 mm,answer
+0001456787.json,520,281,569,292,62 mm,answer
+0001456787.json,520,253,570,268,27 mm,answer
+0001456787.json,519,227,566,238,72 mm,answer
+0001456787.json,520,202,570,214,99 mm,answer
+0001456787.json,414,200,465,214,99 mm,answer
+0001456787.json,415,224,463,239,72 mm,answer
+0001456787.json,413,251,464,265,27 mm,answer

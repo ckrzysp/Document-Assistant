@@ -1,0 +1,43 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+91581919.json,519,150,591,166,Account,question
+91581919.json,521,199,581,211,Agency,question
+91581919.json,407,213,434,228,SS:,question
+91581919.json,105,433,147,454,Date,question
+91581919.json,102,467,160,480,1/31/88,answer
+91581919.json,246,469,295,482,Insert,answer
+91581919.json,395,684,456,706,Signed,question
+91581919.json,737,825,762,900,91581919,other
+91581919.json,458,650,608,720,,answer
+91581919.json,478,749,511,765,4th,answer
+91581919.json,102,659,132,672,New,answer
+91581919.json,138,657,186,672,Albany,answer
+91581919.json,187,657,245,672,Tribune,other
+91581919.json,347,653,492,672,advertisements.,question
+91581919.json,561,301,646,317,Bookkeeper,answer
+91581919.json,126,40,252,85,MAR 08 RECO,other
+91581919.json,281,108,517,127,AFFIDAVIT OF PERFORMANCE,header
+91581919.json,109,148,239,167,From Newspaper,question
+91581919.json,251,147,389,166,New Albany Tribune,answer
+91581919.json,588,148,708,180,Harley Davidson Cigarettes,answer
+91581919.json,590,196,770,211,Lorillard Media Service,answer
+91581919.json,106,195,187,212,State of,question
+91581919.json,111,226,193,244,County of,question
+91581919.json,199,193,389,212,Indiana ),answer
+91581919.json,199,225,389,241,Floyd ),answer
+91581919.json,108,268,542,290,"Before me a Notary Public, personally appeared",question
+91581919.json,554,265,651,284,Holly Inzer,answer
+91581919.json,103,298,531,322,"who being duly sworn, says that (he) (she) is",question
+91581919.json,105,331,699,385,of the abovementioned newspaper and that display ads for the above account were made through the aforesaid newspaper during,question
+91581919.json,100,397,226,413,the month of,question
+91581919.json,243,394,444,413,"January ,1988",answer
+91581919.json,463,398,569,416,as follows:,question
+91581919.json,237,437,365,453,Column Inches,question
+91581919.json,436,437,672,453,Exclusive advertising for,question
+91581919.json,436,469,636,482,Harley Davidson Cigarettes,answer
+91581919.json,102,558,666,645,We hereby certify charges shown above on dates per attached bill are true and correct as billed to the account in upper right hand corner of the affidavit and are exclusive,question
+91581919.json,105,744,466,768,Sworn to and subscribed before me this,question
+91581919.json,515,750,575,766,day of,question
+91581919.json,585,744,719,766,"March ,1988",answer
+91581919.json,100,777,712,824,IN TESTIMONY WHEREOF I have set my hand and seal the day and year aforesaid.,question
+91581919.json,102,840,313,862,MY COMMISSION EXPIRES:,question
+91581919.json,349,838,636,877,2-9-90 Betty J. murphy (Notary Public),answer

@@ -1,0 +1,31 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+00836816.json,622,784,639,864,00836816,other
+00836816.json,84,869,125,879,SIGNATURE,question
+00836816.json,486,872,504,880,DATE,question
+00836816.json,163,732,176,739,TO,header
+00836816.json,103,179,130,190,A30,answer
+00836816.json,82,219,96,232,pH,question
+00836816.json,103,376,125,389,ORAL,question
+00836816.json,84,355,125,366,SOLUBILITY,question
+00836816.json,228,141,522,161,COMPOUND PHYSICAL PARAMETERS,header
+00836816.json,84,170,148,178,LRC FILE NUMBER,question
+00836816.json,486,170,533,181,LOT NUMBER,question
+00836816.json,85,196,142,204,PHYSICAL STATE,question
+00836816.json,103,203,286,218,Clear Colorless liquid,answer
+00836816.json,102,228,644,284,"The pH of a 50 % concentration of A30 in (52.6% dioxane/ water was calculated to be 8.13 at 24 C according to the extrapolation procedures by Dr. P. D. Schickedantz, Lorillard Research Center Accession Number 1662, Reference OR 83- 81.",answer
+00836816.json,144,359,427,373,(See SOE for Biological Solutions),answer
+00836816.json,109,388,558,433,Reference OR 100- 32 . 5g A30 soluble in .5 mL corn oil at room temperature.,answer
+00836816.json,105,483,194,496,ACUTE CARDIOVASCULAR,question
+00836816.json,108,500,651,608,(See SOP for Determination of Solubility of Materials for Acute Cardiovascular and Respiratory Effects Study in Beagle Dogs) Reference OR 100- 32 .2 mg A30 soluble in .5 mL 10 % propylene glycol solution at 38 C. Add A30 to warm (38 C) propylene glycol; add warm water to make 10 % propylene glycol solution.,answer
+00836816.json,103,644,500,658,Refrig erate in amber bottle at no more than 8 C.,answer
+00836816.json,84,630,193,640,STORAGE RECOMMENDATIONS,question
+00836816.json,85,732,163,740,COMPOUND SENSITIVE,header
+00836816.json,103,754,128,761,☐ AIR,question
+00836816.json,141,753,170,761,☐ HEAT,question
+00836816.json,186,753,234,761,☐ MOISTURE,question
+00836816.json,247,753,282,761,☐ OTHER,question
+00836816.json,85,779,284,787,SAFETY COMMENTS SUGGESTED- PROCEDURES),other
+00836816.json,81,895,189,903,LORILL ARD RESEARCH CENTER,other
+00836816.json,161,858,297,908,,answer
+00836816.json,527,869,609,908,8/ 10/ 82,answer
+00836816.json,630,897,677,905,FORM ,other

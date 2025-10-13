@@ -1,0 +1,36 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+00922237.json,279,733,313,751,4111,answer
+00922237.json,427,732,461,747,9590,answer
+00922237.json,585,675,683,692,00922237,answer
+00922237.json,518,729,709,771,H.J. Minnemeyer,answer
+00922237.json,24,190,83,204,QUANTITY,question
+00922237.json,140,189,174,206,CODE,question
+00922237.json,377,187,451,204,DESCRIPTION,question
+00922237.json,50,28,117,39,PURCHASING,question
+00922237.json,47,43,117,54,STATIONARY,question
+00922237.json,581,14,609,28,DATE,question
+00922237.json,247,130,282,145,Attn:,question
+00922237.json,13,61,62,69,VENDOR,question
+00922237.json,42,105,80,116,TERMS,question
+00922237.json,253,24,423,38,PURCHASE REQUISITION,header
+00922237.json,471,10,572,33,P.O. 1534 REV. 7/75 LT-9-75,other
+00922237.json,161,39,532,67,PLEASE INCLUDE ONLY ONE TYPE OF MATERIAL ON THIS REQUISITION ,other
+00922237.json,11,64,493,89,"Microbiological Associates 5221 River Rd., Bethesda MD 20816",answer
+00922237.json,578,54,637,66,ORDER NO.,question
+00922237.json,578,85,720,98,Prev. or Recommended Supplier,question
+00922237.json,503,116,585,127,DATE WANTED,question
+00922237.json,87,96,453,119,15 Net F.O.S N/A VIA N/A,answer
+00922237.json,14,117,147,130,SHIP TO DEPT BRANCH),question
+00922237.json,14,130,204,148,Lorillard Research Center,answer
+00922237.json,291,127,445,147,Dr. Harry Minnemeyer,answer
+00922237.json,536,124,622,141,As required,answer
+00922237.json,13,158,318,179,P. O. Box 21688 Greensboro N. C. 27420,other
+00922237.json,103,215,691,403,"This is your authorization to provide the ""1601.013: The Effect of Inhalation of Reference and Test (D3 and D4) Cigarette Smoke on Two Cytogenetic Endpoints in Mice: Chromosome Aberrations and Sister Chromatid Exchange"" test for a fixed price of $19,750 Tests will be performed in accordance with the December 21, 1981 formal agreement between Microbiological Associates and Lorillard. All work is to be coordinated with our Dr. Harry Minnemeyer (919) 373-6603",answer
+00922237.json,647,184,710,201,UNIT PRICE,question
+00922237.json,91,654,185,668,FOLLOW UP DATE,question
+00922237.json,106,708,172,723,BUDGET NO.,question
+00922237.json,338,654,426,668,REQUISITION NO.,question
+00922237.json,589,652,648,669,ISSUED BY,question
+00922237.json,292,708,345,725,ACCT NO.,question
+00922237.json,412,708,467,725,DEPT NO.,question
+00922237.json,582,708,656,725,APPROVED BY,question

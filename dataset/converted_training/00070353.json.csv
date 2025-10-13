@@ -1,0 +1,25 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+00070353.json,92,197,162,215,AUTHORS,question
+00070353.json,92,225,137,239,TITLE,question
+00070353.json,391,310,535,330,RECOMMENDATION:,question
+00070353.json,209,169,236,182,533,answer
+00070353.json,508,172,537,186,Date,question
+00070353.json,549,310,562,324,x,answer
+00070353.json,240,339,268,353,NOT,other
+00070353.json,272,339,340,352,APPROVE,other
+00070353.json,656,742,680,836,00070353,other
+00070353.json,96,67,253,84,Manuscript Review Form,other
+00070353.json,334,126,458,144,TOBACCO SCIENCE,header
+00070353.json,94,169,191,186,Registration No,question
+00070353.json,543,173,649,188,"March 18, 1968",answer
+00070353.json,208,197,598,215,"Andrew G. Kallianos, Richard K. Means, James D. Mold",answer
+00070353.json,209,223,620,270,"""Effect of Nitrates in Tobacco on the Catechol Yield in Cigarette Smoke""",answer
+00070353.json,92,310,245,324,REVIEW COMPLETED,question
+00070353.json,91,338,209,355,PRESENT FORM:,question
+00070353.json,274,304,339,321,3/ 29/ 68,answer
+00070353.json,570,313,686,330,APPROVE IN ITS,question
+00070353.json,345,338,476,357,(Give reasons below):,question
+00070353.json,507,341,683,358,APPROVE TENTATIVELY,answer
+00070353.json,92,365,579,387,SUBJECT TO THE FOLLOWING SUGGESTED REVISIONS: (itemize below):,question
+00070353.json,91,416,616,461,Page 4 - Last line should be Mass spectrometric instead of Mass spectroscopic.,other
+00070353.json,88,845,685,901,NOTE- Execute in triplicate using additionall sheets if more space is required. Retain the third copy for your file Return the original (signed) and the first carbon (unsigned) along with the manuscript to this office The unsigned copy and the manuscript will be for returned to the author his consideration.,other

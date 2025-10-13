@@ -1,0 +1,38 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+71601299.json,88,154,117,169,Date,question
+71601299.json,130,267,177,280,Number,question
+71601299.json,85,267,126,282,Project,question
+71601299.json,176,401,186,416,(s),question
+71601299.json,561,560,575,573,in,other
+71601299.json,196,497,207,510,(s),header
+71601299.json,201,84,509,104,Marketing Research - CPT Initiating Brief,header
+71601299.json,140,152,200,171,15. 03. 2000,answer
+71601299.json,184,186,253,201,BAT Korea,answer
+71601299.json,89,184,164,201,Client Group,question
+71601299.json,89,216,172,232,Client Contact,question
+71601299.json,196,219,322,250,Alberto Marcheggiano Kyu Yeon Hwang,answer
+71601299.json,408,219,503,230,Research Liaison,question
+71601299.json,527,218,591,233,Subi. Jeong,answer
+71601299.json,180,265,425,282,to be assigned by Brown & Williamson USA,answer
+71601299.json,243,300,355,315,"Dunhill Lights, CPT",answer
+71601299.json,84,299,240,317,Project Name/ Description:,question
+71601299.json,85,332,193,352,Market (s) / Zone (s),question
+71601299.json,85,366,151,382,South Korea,answer
+71601299.json,85,401,174,416,Referent Brand,question
+71601299.json,82,432,261,478,Dunhill Lights Kent Super Lights Mild 7 This,answer
+71601299.json,84,496,196,512,Consumer Segment,header
+71601299.json,85,527,247,543,Own Brand - Dunhill Smokers:,question
+71601299.json,250,528,569,545,"150 Males, 25 ~ 39 years old, ABC+ who live Seoul/ Pusan",answer
+71601299.json,84,559,320,576,Competitors Brands - Mild7 Lights Smokers,question
+71601299.json,323,559,561,575,"150 Males, 25 ~ 39 years old, ABC+ who live",answer
+71601299.json,84,603,222,621,Source of Business - This:,question
+71601299.json,223,605,627,622,"250 Males, (100 smokers 25 ~ 29 years old, 150 smokers, 30 ~ 39 years old)",answer
+71601299.json,85,620,471,636,ABC+ who are not rejectors of imported cigarette and live in Seoul/ Pusan,answer
+71601299.json,84,651,348,666,Source of Business - Local Premium KS Smokers,question
+71601299.json,348,649,604,666,"250 Males (100 smokers, 25 ~ 29 years old, 150",answer
+71601299.json,84,666,617,682,"smokers, 30 ~ 39 years old ABC+ who are not rejectors of imported cigarette and live in Seoul/ Pusan",answer
+71601299.json,84,700,270,714,Background / Problem Definition,question
+71601299.json,105,732,589,762,1999 showed that imported cigarettes are recovering from the 1997 / 1998 economic crisis and we forecasted continuos growth over the company's plan period.,answer
+71601299.json,103,761,616,791,BAT objective is to substantially increase its market share with growth coming primarily from its first priority brand: Dunhill Lights,answer
+71601299.json,105,791,622,821,To achieve growth we consider fundamental to have a superior product in terms of acceptability among potential source of business as well as for our current franchise,answer
+71601299.json,0,950,230,983,597133637 PRODUCED FROM B&W WEB SITE,other

@@ -1,0 +1,37 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+83624198.json,448,84,462,95,TO,question
+83624198.json,499,123,615,240,,other
+83624198.json,102,243,137,257,DATE:,question
+83624198.json,101,331,164,344,COMPANY:,question
+83624198.json,102,387,147,398,PHONE:,question
+83624198.json,101,422,140,435,FROM:,question
+83624198.json,101,450,147,463,PHONE:,question
+83624198.json,101,494,164,511,MESSAGE:,question
+83624198.json,494,475,519,488,YES,question
+83624198.json,580,476,598,487,NO,question
+83624198.json,288,475,303,489,12,answer
+83624198.json,645,824,667,925,83624198,other
+83624198.json,392,933,406,944,Tel,question
+83624198.json,482,933,499,944,Fax,question
+83624198.json,109,84,261,97,FEB 25 '98 18: 23 FR ,other
+83624198.json,468,84,600,97,#1 28557 002# P. 2101,other
+83624198.json,98,126,319,150,FAX TRANSMISSION,header
+83624198.json,187,240,294,257,"February 25, 1998",answer
+83624198.json,187,267,259,285,L8557 002,answer
+83624198.json,186,302,295,317,Ronald S. Milstein,answer
+83624198.json,187,330,350,348,Lorillard Tobacco Company,answer
+83624198.json,187,358,279,373,910/ 335- 7707,answer
+83624198.json,187,384,278,401,910 /335 -7718,answer
+83624198.json,189,420,271,435,Andy Zausner,answer
+83624198.json,189,446,277,462,202 /828 -2259,answer
+83624198.json,101,359,179,373,FAX NUMBER:,question
+83624198.json,101,303,182,317,MESSAGE TO:,question
+83624198.json,102,270,167,283,CLIENT NO.:,question
+83624198.json,102,475,274,490,PAGES (including Cover Sheet):,question
+83624198.json,318,475,458,490,HARD COPY TO FOLLOW:,header
+83624198.json,168,499,574,532,See attached fax from the Committee on Commerce just received in my office. Call me discuss.,answer
+83624198.json,168,712,600,757,"If your receipt of this transmission is in error, please notify this firm immediately by collect call to our Facsimile Department at 202- 861 -9106 and send the original transmission to us by return mail at the address below.",other
+83624198.json,169,768,609,821,"This transmission is intended for the sole use of the individual and entity to whom it is addressed, and may contain information that is privileged, confidential and exempt from disclosure under applicable law. You are hereby notified that any dissemination, distribution duplication of this transmission by somcong other than the intended addressee or its designated agent is strictly prohibited.",other
+83624198.json,161,932,383,945,2101 L. Street NW Washington DC 20037 1528,other
+83624198.json,408,932,471,945,202 785 9700,answer
+83624198.json,501,933,564,946,202 -887 -0589,answer

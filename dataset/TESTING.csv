@@ -1,0 +1,2432 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+82092117.json,61,127,143,211,,other
+82092117.json,102,345,129,359,TO:,question
+82092117.json,102,406,147,423,DATE:,question
+82092117.json,461,440,475,455,3,answer
+82092117.json,249,84,274,98,Fax:,question
+82092117.json,103,691,139,708,NOTE:,question
+82092117.json,633,775,653,874,82092117,other
+82092117.json,275,82,354,101,614 -466 -5087,answer
+82092117.json,419,82,589,101,Dec 10 '98 17 :46 P. 01,other
+82092117.json,103,84,246,100,ATT. GEN. ADMIN. OFFICE,other
+82092117.json,147,148,305,191,Attorney General Betty D. Montgomery,header
+82092117.json,264,249,467,281,CONFIDENTIAL FACSIMILE TRANSMISSION COVER SHEET,header
+82092117.json,352,296,438,314,(614) 466- 5087,answer
+82092117.json,289,296,351,311,FAX NO.,question
+82092117.json,142,342,236,360,George Baroody,answer
+82092117.json,223,376,312,393,(336) 335- 7392,answer
+82092117.json,102,374,200,391,FAX NUMBER:,question
+82092117.json,383,376,500,391,PHONE NUMBER:,question
+82092117.json,504,376,592,393,(336) 335- 7363,answer
+82092117.json,102,439,421,457,NUMBER OF PAGES INCLUDING COVER SHEET:,question
+82092117.json,304,471,537,487,June Flynn for Eric Brown/ (614) 466- 8980,answer
+82092117.json,98,471,280,488,SENDER /PHONE NUMBER:,question
+82092117.json,103,503,274,520,SPECIAL INSTRUCTIONS:,question
+82092117.json,175,599,556,646,"IF YOU DO NOT RECEIVE ANY OF THE PAGES PROPERLY, PLEASE CONTACT SENDER AS SOON AS POSSIBLE",header
+82092117.json,162,691,626,813,"THIS MESSAGE IS INTENDED ONLY FOR THE USE OF THE INDIVIDUAL OR ENTITY TO WHOM IT IS ADDRESSED AND MAY CONTAIN INFORMATION THAT IS PRIVILEGED. CONFIDENTIAL, AND EXEMPT FROM DISCLOSURE UNDER APPLICABLE LAW. If the reader of this message is not the intended recipient of the employee or agent responsible for delivering the message to the intended recipient, you are hereby notified that any dissemination, distribution, copying, or conveying of this communication in any manner is strictly prohibited. If you have received this comunication in error, please notify us immediately by telephone and return the original message to us at the address below via the U. S. Postal Service. Thank you for your cooperation.",answer
+82092117.json,182,887,539,928,"State Office Tower / 30 East Broad Street/ Columbus, Ohio 43215 -3428 www ag state oh us An Equal Opportunity Employer",other
+82092117.json,292,941,426,954,Primed an ,other
+82092117.json,184,405,233,423,12 /10 /98,answer
+
+file_name,box.0,box.1,box.2,box.3,text,label
+82200067_0069.json,75,140,93,153,TO:,question
+82200067_0069.json,75,168,109,181,FROM:,question
+82200067_0069.json,633,198,641,208,x,answer
+82200067_0069.json,75,223,127,234,SUBJECT:,question
+82200067_0069.json,535,142,629,155,,header
+82200067_0069.json,197,264,263,281,,header
+82200067_0069.json,74,348,124,361,DIVISION:,header
+82200067_0069.json,91,374,143,388,DIVISION:,question
+82200067_0069.json,92,404,142,415,DIVISION:,question
+82200067_0069.json,94,433,143,444,DIVISION:,question
+82200067_0069.json,196,472,269,486,,header
+82200067_0069.json,75,293,118,306,REGION:,question
+82200067_0069.json,387,374,434,388,DIVISION:,question
+82200067_0069.json,387,404,434,417,DIVISION:,question
+82200067_0069.json,384,432,436,445,DIVISION:,question
+82200067_0069.json,335,587,355,598,225,answer
+82200067_0069.json,338,601,352,614,27,answer
+82200067_0069.json,341,617,352,628,15,answer
+82200067_0069.json,338,649,352,662,31,answer
+82200067_0069.json,339,666,352,676,18,answer
+82200067_0069.json,341,680,354,693,19,answer
+82200067_0069.json,338,697,353,708,20,answer
+82200067_0069.json,675,774,696,879,82200067,other
+82200067_0069.json,85,77,302,90,09/ 17/ 97 10: 55 603 841 1898,other
+82200067_0069.json,370,78,460,89,LORILLARD PTLD,header
+82200067_0069.json,644,78,676,93,☑ 001,other
+82200067_0069.json,225,141,292,154,K. A. Sparrow,answer
+82200067_0069.json,225,169,287,181,T. D. Blachly,answer
+82200067_0069.json,225,223,588,236,OLD GOLD MENTHOL LIGHTS & ULTRA LIGHTS 100'S PROGRESS REPORT,other
+82200067_0069.json,570,170,603,181,AUG 4,question
+82200067_0069.json,566,198,603,208,SEP 15,question
+82200067_0069.json,451,169,490,182,MAY 12,question
+82200067_0069.json,454,197,491,208,JUN 23,question
+82200067_0069.json,75,320,387,333,(ONLY IF PARTIAL REGION CONTINUE WITH DIVISION (S) SCOPE),answer
+82200067_0069.json,154,376,283,388,Portland # REPS: 6,answer
+82200067_0069.json,154,402,286,417,Boise # REPS: 2. 5,answer
+82200067_0069.json,152,430,276,445,Eugene # REPS: 5,answer
+82200067_0069.json,443,374,592,388,Seattle South # REPS: 7,answer
+82200067_0069.json,441,402,592,417,Seattle North # REPS: 4,answer
+82200067_0069.json,443,432,592,444,Helena # REPS: 4,answer
+82200067_0069.json,77,499,576,528,DIRECT ACCOUNTS AND CHAINS HEADQUARTERED WITHIN THE REGION (15 + STORES) STOCKING NO OLD GOLD MENTHOL LIGHTS OR ULTRA LIGHTS 100'S,other
+82200067_0069.json,98,570,199,584,NAME OF ACCOUNT,question
+82200067_0069.json,243,557,286,581,VOLUME,question
+82200067_0069.json,328,557,370,582,NO. OF STORES,question
+82200067_0069.json,411,570,509,582,NAME OF ACCOUNT,question
+82200067_0069.json,546,557,592,581,VOLUME,question
+82200067_0069.json,622,556,664,583,NO. OF STORES,question
+82200067_0069.json,77,587,154,598,Texaco Seattle,answer
+82200067_0069.json,77,602,162,615,Texaco Portland,answer
+82200067_0069.json,77,617,147,630,Maid -O Clover,answer
+82200067_0069.json,77,648,123,662,Dari Mart,answer
+82200067_0069.json,75,663,115,678,Zip Trip,answer
+82200067_0069.json,75,683,120,694,Maverick,answer
+82200067_0069.json,78,698,126,709,Astro Gas,answer
+82200067_0069.json,246,585,285,598,105 / 5,answer
+82200067_0069.json,249,603,282,614,61 / 3,answer
+82200067_0069.json,250,617,279,628,20 / 2,answer
+82200067_0069.json,244,648,286,662,125 / 5,answer
+82200067_0069.json,244,665,288,679,106 / 4,answer
+82200067_0069.json,246,680,284,696,77 / 1,answer
+82200067_0069.json,243,696,287,710,600 / 7,answer
+82200067_0069.json,117,915,176,923,,other
+82200067_0069.json,95,912,113,924,,question
+82200067_0069.json,554,908,659,923,Page 1 of 3 Pages,other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+82250337_0338.json,94,200,114,214,TO:,question
+82250337_0338.json,92,219,128,232,FROM:,question
+82250337_0338.json,95,236,129,250,DATE:,question
+82250337_0338.json,313,200,408,214,MANUFACTURER:,question
+82250337_0338.json,313,218,356,231,BRAND:,question
+82250337_0338.json,278,268,299,282,Oct.,question
+82250337_0338.json,461,268,485,281,Dec.,question
+82250337_0338.json,553,268,575,279,Jan.,question
+82250337_0338.json,369,270,393,281,Nov.,question
+82250337_0338.json,404,270,414,280,X,answer
+82250337_0338.json,451,198,476,212,B&W,answer
+82250337_0338.json,680,814,698,917,82250337,other
+82250337_0338.json,221,133,505,168,COMPETITIVE PRODUCT INTRODUCTION PROGRESS REPORT,header
+82250337_0338.json,140,201,193,214,Sam Zolot,answer
+82250337_0338.json,405,218,472,228,Kool Waterfall,answer
+82250337_0338.json,451,235,509,248,All Packings,answer
+82250337_0338.json,314,235,419,248,TYPE OF PACKINGS:,question
+82250337_0338.json,140,219,199,230,D. J. Landro,answer
+82250337_0338.json,138,237,184,247,2- Dec- 97,answer
+82250337_0338.json,94,271,213,285,REPORTING PERIODS:,header
+82250337_0338.json,95,321,244,335,TEST MARKET GEOGRAPHY:,question
+82250337_0338.json,313,318,543,334,Divisions 621 and 627 wisconsin,answer
+82250337_0338.json,92,358,166,371,PRICE POINT:,question
+82250337_0338.json,180,358,285,369,FULLS $ P/ V $,answer
+82250337_0338.json,321,355,513,369,(Indicate Distributor's Cost Per Carton),other
+82250337_0338.json,94,392,254,406,SALES FORCE INVOLVEMENT:,question
+82250337_0338.json,94,413,644,452,"They have crew- worked distribution, and it is reported that they may crew- work it again Sales force has been busy promoting old style backs to clean up inventory. All POS is being converted to ""B"" Kool.",answer
+82250337_0338.json,94,500,493,515,DISTRIBUTORS ACCEPTANCE INTRO TERMS INTRO DEALS INVOLVEMENT:,question
+82250337_0338.json,94,522,606,559,All accounts have the new packaging. It was not a problem obtaining new distribution. All accounts appear to have 100% distribution of new packings.,answer
+82250337_0338.json,92,609,317,623,CHAINS ACCEPTANCE/ MERCHANDISING:,question
+82250337_0338.json,95,628,516,647,"This has not been a problem. New packaging is just following on the old ""packaging"".",answer
+82250337_0338.json,92,716,359,731,INDEPENDENTS ACCEPTANCE/ MERCHANDISING:,question
+82250337_0338.json,94,737,587,774,Very well received. The packs are peing consolidated and promoted in select retail locations at 40 off $4 00 off cartons.,answer
+82250337_0338.json,94,824,321,839,ADVERTISING EFFECTIVENESS OF P. O. S.:,question
+82250337_0338.json,94,844,610,904,"The theme ""B"" Kool has replaced all previous POS. They have effectively replaced all old POS. New door signage, hour signs, poster mats, and clocks have the new design. ""B"" Kool also appears on billboards in llinois.",answer
+82250337_0338.json,330,950,397,963,PAGE 1 OF 2,other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+82251504.json,362,304,379,315,17,answer
+82251504.json,446,257,461,267,cc:,question
+82251504.json,249,235,270,248,:,question
+82251504.json,249,268,285,282,From:,question
+82251504.json,249,302,281,317,Area:,question
+82251504.json,307,304,354,318,Region:,question
+82251504.json,288,303,299,316,5,answer
+82251504.json,169,270,180,280,X,other
+82251504.json,87,366,140,381,Chains:,question
+82251504.json,84,472,180,486,Independents:,question
+82251504.json,680,832,702,941,82251504,other
+82251504.json,70,89,173,101,11/05/97 11: 03,other
+82251504.json,200,88,288,101,813 384 0683,other
+82251504.json,360,88,553,101,LORILLARD TAMPA GREENSBOR,other
+82251504.json,612,87,666,101,0002/ 003,other
+82251504.json,592,108,673,142,,other
+82251504.json,216,183,435,201,Retail Excel Progress Report,header
+82251504.json,88,203,169,216,Submission for:,question
+82251504.json,447,205,535,220,Distribution by/ to:,question
+82251504.json,446,221,572,251,DM to RSM 1st of Month RSM to R W. C. 10th,answer
+82251504.json,465,256,501,268,D. O. S.,answer
+82251504.json,314,235,413,249,R. W. Caldarella,answer
+82251504.json,316,267,390,282,Kent B. Mills,answer
+82251504.json,88,218,126,228,July 31,question
+82251504.json,89,233,142,246,August 29,question
+82251504.json,89,251,162,262,September 30,question
+82251504.json,87,265,147,280,October 31,question
+82251504.json,88,285,156,299,November 28,question
+82251504.json,88,303,157,316,December 30,question
+82251504.json,88,334,241,347,Acceptance/ Response:,header
+82251504.json,247,335,541,352,What is the retailers response to Lorillard's Excel,question
+82251504.json,85,351,215,365,Merchandising plan?,question
+82251504.json,145,369,569,387,"This program has been successful to date with chains where our ""Flex",answer
+82251504.json,82,384,585,436,"Payment"". was not place. The chains where were using the ""Flex Payment"" system we have not been las successful. The P. O. S. requirements of the P- 1 Plan with Oil Companies is difficult to obtain.",answer
+82251504.json,82,487,419,510,"Additional P. V. merchandising is being secured quickly,",answer
+82251504.json,81,522,584,557,Additional monies have assisted Region 17 in fighting PM Exclusives and PM/ RJR co-existence situations.,other
+82251504.json,85,592,317,608,Hardware Evaluation/ Effectiveness:,header
+82251504.json,324,595,578,612,Comment on the assembly of displays and,question
+82251504.json,84,613,216,627,application of shields:,question
+82251504.json,82,628,590,683,The displays are easily assembled and durable. Some questions have been raised conceming the inability to be flush with the counter and/ or against the register. As well as the ability to place this or the Back Bar if the settlement goes through,answer
+82251504.json,82,715,578,747,Pemanent Advertising Evaluation/ Effectiveness/ Acceptance: (P- 1/ P- 5 & C 5 Plans Only:,question
+82251504.json,203,754,351,769,Not available at this time,answer
+
+file_name,box.0,box.1,box.2,box.3,text,label
+82252956_2958.json,547,143,588,163,AUG 4,question
+82252956_2958.json,541,173,592,193,SEP 15,question
+82252956_2958.json,425,176,479,195,JUN 23,question
+82252956_2958.json,429,145,477,160,MAY 12,question
+82252956_2958.json,35,292,89,313,REGION:,question
+82252956_2958.json,32,360,100,378,DIVISION:,header
+82252956_2958.json,580,397,594,411,7,answer
+82252956_2958.json,579,432,591,446,7,answer
+82252956_2958.json,39,114,61,126,TO:,question
+82252956_2958.json,34,146,80,161,FROM:,question
+82252956_2958.json,38,213,98,227,SUBJECT:,question
+82252956_2958.json,73,921,144,930,OLOGOLD.XLS,other
+82252956_2958.json,695,787,719,895,82252956,other
+82252956_2958.json,151,261,243,276,GEOGRAPHY,header
+82252956_2958.json,149,515,247,529,DISTRIBUTION,header
+82252956_2958.json,189,650,228,668,144/14,answer
+82252956_2958.json,342,652,361,664,93,answer
+82252956_2958.json,190,108,269,126,K. A. Sparrow,answer
+82252956_2958.json,512,107,655,127,SUBMISSION DATE,header
+82252956_2958.json,191,143,258,161,D. J. Landro,answer
+82252956_2958.json,190,209,624,227,OLD GOLD MENTHOL LIGHTS & ULTRA LIGHTS 100'S PROGRESS REPORT,answer
+82252956_2958.json,38,327,414,346,(ONLY IF PARTIAL REGION CONTINUE WITH DIVISION (S) SCOPE),question
+82252956_2958.json,52,395,149,415,DIVISION NAME:,question
+82252956_2958.json,48,428,151,446,DIVISION NAME:,question
+82252956_2958.json,51,462,151,479,DIVISION NAME:,question
+82252956_2958.json,186,395,270,412,Milw. South,answer
+82252956_2958.json,186,427,267,447,Milw. North,answer
+82252956_2958.json,276,397,371,413,DIVISION NAME:,question
+82252956_2958.json,274,430,371,446,DIVISION NAME:,question
+82252956_2958.json,276,465,371,479,DIVISION NAME:,question
+82252956_2958.json,473,395,517,413,# REP,question
+82252956_2958.json,474,430,514,447,# REP,question
+82252956_2958.json,475,463,521,480,# REPS,question
+82252956_2958.json,37,546,616,583,DIRECT ACCOUNTS AND CHAINS HEADQUARTERED WITHIN THE REGION (15 + STORES) STOCKING NO OLD GOLD MENTHOL LIGHTS OR ULTRA LIGHTS 100'S,other
+82252956_2958.json,52,631,173,650,NAME OF ACCOUNT,question
+82252956_2958.json,203,618,263,649,IND/LOR VOLUME,question
+82252956_2958.json,292,614,350,645,NO. OF STORES,question
+82252956_2958.json,381,630,501,649,NAME OF ACCOUNT,question
+82252956_2958.json,527,616,584,648,IND/LOR VOLUME,question
+82252956_2958.json,619,616,674,647,NO. OF TORES,question
+82252956_2958.json,547,912,671,933,Page1 of 3 Pages,other
+82252956_2958.json,37,651,124,668,Walgreen Drug,answer
+
+file_name,box.0,box.1,box.2,box.3,text,label
+82253058_3059.json,570,901,672,928,82253058,other
+82253058_3059.json,384,63,445,76,LORILLARD,other
+82253058_3059.json,94,203,115,217,TO:,question
+82253058_3059.json,94,222,133,236,FROM:,question
+82253058_3059.json,94,242,130,256,DATE:,question
+82253058_3059.json,288,279,319,293,AUG,question
+82253058_3059.json,384,279,416,294,SEPT,question
+82253058_3059.json,482,279,510,293,OCT,question
+82253058_3059.json,581,281,610,295,NOV,question
+82253058_3059.json,328,204,433,219,MANUFACTURER,question
+82253058_3059.json,330,223,377,236,BRAND:,question
+82253058_3059.json,637,279,652,294,X,answer
+82253058_3059.json,84,56,191,70,12/ 10/ 36 09: 51,other
+82253058_3059.json,218,60,303,73,317 8450977,other
+82253058_3059.json,647,68,706,82,001/ 002,other
+82253058_3059.json,221,137,542,152,COMPETITIVE PRODUCT INTRODUCTION,header
+82253058_3059.json,300,155,461,170,PROGRESS REPORT,other
+82253058_3059.json,141,203,271,218,MRS. K. A. SPARROW,answer
+82253058_3059.json,439,204,522,219,R. J. Reynolds,answer
+82253058_3059.json,383,222,469,237,Camel Menthol,answer
+82253058_3059.json,457,240,627,257,Full Flavor Box and Light Box,answer
+82253058_3059.json,330,240,450,256,TYPE OF PACKINGS:,question
+82253058_3059.json,141,222,196,237,R. G. Ryan,answer
+82253058_3059.json,142,240,190,255,12/ 10/ 96,answer
+82253058_3059.json,92,278,228,295,REPORTING PERIODS:,header
+82253058_3059.json,240,297,498,314,(Forward by the 10th of the following month.),other
+82253058_3059.json,92,335,264,350,TEST MARKET GEOGRAPHY,question
+82253058_3059.json,282,337,359,352,All of Region 7.,answer
+82253058_3059.json,92,374,178,389,PRICE POINT:,question
+82253058_3059.json,194,374,591,391,FULL $ 11.89 P/ V $ (Indicate Distributor's Cost Per Carton),answer
+82253058_3059.json,281,412,645,429,Merchandising the top tray of permanent counter displays and labeling,answer
+82253058_3059.json,91,430,577,447,carton fixtures in the Camel section. Also placing metal signs and temporary counter displays.,answer
+82253058_3059.json,92,411,272,427,SALES FORCE INVOLVEMENT:,question
+82253058_3059.json,94,487,456,504,DISTRIBUTORS - ACCEPTANCE/ INTRO TERMS/ INTRO DEALS:,question
+82253058_3059.json,91,506,600,523,Product is being introduced to all Direct: Accounts in the Region. Acceptance is spotty at this time.,answer
+82253058_3059.json,92,582,269,596,DISTRIBUTOR INVOLVEMENT:,question
+82253058_3059.json,92,602,638,637,Assembly of promotional products and shipment to retail Indianapolis Direct Accounts are reported to be receiving B1G1F product.,answer
+82253058_3059.json,94,679,426,693,CHAINS - ACCEPTANCE/ MERCHANDISING ALLOWANCE,question
+82253058_3059.json,94,698,296,713,Chain acceptance has been very good.,answer
+82253058_3059.json,92,774,473,789,INDEPENDENTS - ACCEPTANCE/ MERCHANDISING ALLOWANCE,question
+82253058_3059.json,92,792,494,808,Acceptance is better at high volume locations than at lower volume retail calls.,answer
+82253058_3059.json,64,925,158,940,CAMEL WK1/ FMT,other
+82253058_3059.json,348,923,421,940,PAGE 1 OF 2,other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+82253245_3247.json,36,95,57,108,TO:,question
+82253245_3247.json,37,123,74,138,FROM:,question
+82253245_3247.json,39,182,90,193,SUBJECT:,question
+82253245_3247.json,500,123,512,136,X,answer
+82253245_3247.json,39,237,65,249,PRE-,question
+82253245_3247.json,65,236,94,247,SELL,question
+82253245_3247.json,145,413,224,425,DISTRIBUTION,question
+82253245_3247.json,37,563,73,576,Sheetz,answer
+82253245_3247.json,285,544,298,556,18,answer
+82253245_3247.json,282,561,302,573,150,answer
+82253245_3247.json,282,579,303,590,183,answer
+82253245_3247.json,282,726,300,737,21,answer
+82253245_3247.json,284,742,298,753,82,answer
+82253245_3247.json,282,757,300,769,106,answer
+82253245_3247.json,282,774,295,785,87,answer
+82253245_3247.json,284,791,296,802,5,answer
+82253245_3247.json,284,806,298,818,23,answer
+82253245_3247.json,284,823,295,835,35,answer
+82253245_3247.json,283,838,300,851,43,answer
+82253245_3247.json,37,729,74,738,Kroger,answer
+82253245_3247.json,39,773,60,784,cvs,answer
+82253245_3247.json,691,784,709,885,82253245,other
+82253245_3247.json,183,91,253,107,K. A. Sparrow,answer
+82253245_3247.json,182,120,235,136,R. E. Lane,answer
+82253245_3247.json,503,94,606,109,SUBMISSION DATE,header
+82253245_3247.json,428,123,471,135,JUNE 30,question
+82253245_3247.json,432,151,471,164,AUG 11,question
+82253245_3247.json,556,124,593,138,SEP 22,question
+82253245_3247.json,555,152,594,167,NOV 10,question
+82253245_3247.json,182,180,401,195,STYLE LOW PRICE PROGRESS REPORT,header
+82253245_3247.json,238,205,434,222,EFFECTIVENESS OF: Transition Plan,question
+82253245_3247.json,37,220,159,234,(Report on June 30 only),other
+82253245_3247.json,183,236,562,250,Overall pre- sell efforts were successful Retail accounts that previously stocked,answer
+82253245_3247.json,40,251,311,265,Style Full Price accepted the introduction of the low price,answer
+82253245_3247.json,37,293,124,308,BIGIF 2 FOR 1:,question
+82253245_3247.json,183,293,590,309,Proved to be an excellent tool for pulling the balance of Style Full Price packs through,answer
+82253245_3247.json,37,308,326,323,the system. This aided the field greatly during the transition,answer
+82253245_3247.json,39,352,231,365,$ 7.00 CARTON COUPON/ BUYDOWN:,question
+82253245_3247.json,250,352,588,367,Effective in those retail calls that we could not exchange product out of.,answer
+82253245_3247.json,40,367,181,382,Those situations were limited.,answer
+82253245_3247.json,36,425,422,453,DIRECT ACCOUNTS AND CHAINS HEADQUARTERED WITHIN THE REGION (15+ STORES) STOCKING NO LOW PRICE STYLE,other
+82253245_3247.json,56,480,162,492,NAME OF ACCOUNT,question
+82253245_3247.json,191,465,239,491,IND/ LOR VOLUME,question
+82253245_3247.json,259,465,307,492,NO. OF STORES,question
+82253245_3247.json,348,478,457,491,NAME OF ACCOUNT,question
+82253245_3247.json,480,464,528,492,IND/ LOR VOLUME,question
+82253245_3247.json,548,465,593,492,NO. OF STORES,question
+82253245_3247.json,36,498,134,508,M. Maskos & Sons,answer
+82253245_3247.json,40,511,168,526,Pollock Candy and Cigar,answer
+82253245_3247.json,40,529,159,542,McKeesport Candy Co.,answer
+82253245_3247.json,35,545,95,557,Sicc Serva,answer
+82253245_3247.json,41,577,110,590,Thrift/ Eckerd,answer
+82253245_3247.json,198,544,234,556,104/ 22,answer
+82253245_3247.json,196,561,233,573,521/ 42,answer
+82253245_3247.json,199,577,233,590,137/ 20,answer
+82253245_3247.json,36,654,428,683,DIRECT ACCOUNTS AND CHAINS HEADQUARTERED OUTSIDE THE REGION (15+ STORES) STOCKING NO LOW PRICE STYLE,other
+82253245_3247.json,53,709,163,722,NAME OF ACCOUNT,question
+82253245_3247.json,191,695,238,720,IND/ LOR VOLUME,question
+82253245_3247.json,257,695,302,721,NO OF STORES,question
+82253245_3247.json,350,710,454,720,NAME OF ACCOUNT,question
+82253245_3247.json,480,695,528,721,IND/ LOR VOLUME,question
+82253245_3247.json,546,695,593,721,NO OF STORES,question
+82253245_3247.json,37,742,80,753,Rich Oil,answer
+82253245_3247.json,37,758,114,771,Super America,answer
+82253245_3247.json,36,791,93,804,W H Smith,answer
+82253245_3247.json,39,806,108,819,7- 11 318 Zon,answer
+82253245_3247.json,36,824,101,835,Dairy Marts,answer
+82253245_3247.json,40,838,117,852,Widman Drugs,answer
+82253245_3247.json,76,946,126,956,STYLE XLS,other
+82253245_3247.json,561,941,669,958,Page 1 of 3 Pages,other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+82253362_3364.json,60,88,78,102,TO:,question
+82253362_3364.json,59,113,91,126,FROM:,question
+82253362_3364.json,59,162,106,175,SUBJECT:,question
+82253362_3364.json,571,138,595,152,☑,answer
+82253362_3364.json,162,187,223,198,GEOGRAPHY,header
+82253362_3364.json,60,214,99,224,REGION:,header
+82253362_3364.json,246,212,271,225,FULL,question
+82253362_3364.json,282,212,293,222,X,answer
+82253362_3364.json,59,261,104,274,DIVISION:,header
+82253362_3364.json,246,263,271,276,FULL,question
+82253362_3364.json,450,209,489,224,PARTIAL,question
+82253362_3364.json,448,261,490,274,PARTIAL,question
+82253362_3364.json,159,360,226,374,DISTRIBUTION,header
+82253362_3364.json,278,437,292,448,20,answer
+82253362_3364.json,279,455,292,465,15,answer
+82253362_3364.json,281,472,291,483,29,answer
+82253362_3364.json,281,489,294,500,44,answer
+82253362_3364.json,279,507,290,518,17,answer
+82253362_3364.json,281,525,294,535,34,answer
+82253362_3364.json,281,542,294,553,15,answer
+82253362_3364.json,279,557,292,572,20,answer
+82253362_3364.json,279,577,292,588,22,answer
+82253362_3364.json,536,436,549,451,27,answer
+82253362_3364.json,536,455,550,466,15,answer
+82253362_3364.json,535,472,550,483,37,answer
+82253362_3364.json,60,666,95,679,Chevron,answer
+82253362_3364.json,59,718,86,732,Exxon,answer
+82253362_3364.json,59,770,106,783,Walgreen's,answer
+82253362_3364.json,205,666,215,676,?,answer
+82253362_3364.json,207,682,214,696,?,answer
+82253362_3364.json,208,700,214,713,?,answer
+82253362_3364.json,208,718,215,732,?,answer
+82253362_3364.json,208,737,215,748,?,answer
+82253362_3364.json,208,754,214,768,?,answer
+82253362_3364.json,207,772,214,782,?,answer
+82253362_3364.json,278,666,296,679,115,answer
+82253362_3364.json,279,684,293,695,38,answer
+82253362_3364.json,278,703,296,714,217,answer
+82253362_3364.json,279,719,293,730,38,answer
+82253362_3364.json,281,737,292,748,27,answer
+82253362_3364.json,279,754,292,765,70,answer
+82253362_3364.json,278,771,298,784,177,answer
+82253362_3364.json,694,796,712,901,82253362,other
+82253362_3364.json,77,926,136,940,MAVPROGO,other
+82253362_3364.json,176,89,236,102,K. A. Sparrow,answer
+82253362_3364.json,486,89,574,101,SUBMISSION DATE,header
+82253362_3364.json,412,113,474,126,MAY 19 ☐,question
+82253362_3364.json,416,138,474,151,JUN 30 ☐,question
+82253362_3364.json,536,113,594,126,AUG 11 ☐,question
+82253362_3364.json,538,138,572,149,SEP 22,question
+82253362_3364.json,176,112,236,126,J. L. McGinnis,answer
+82253362_3364.json,177,162,433,175,MAVERICK SPECIALS MENTHOL - PROGRESS REPORT,answer
+82253362_3364.json,59,236,352,250,(ONLY IF PARTIAL REGION CONTINUE WITH DIVISION (S) SCOPE),other
+82253362_3364.json,71,286,147,297,DIVISION NAME:,question
+82253362_3364.json,73,311,147,324,DIVISION NAME:,question
+82253362_3364.json,73,337,145,348,DIVISION NAME:,question
+82253362_3364.json,247,288,322,299,DIVISION NAME:,question
+82253362_3364.json,247,310,321,323,DIVISION NAME:,question
+82253362_3364.json,247,335,321,349,DIVISION NAME:,question
+82253362_3364.json,447,286,484,298,# REPS,question
+82253362_3364.json,447,310,483,323,# REPS,question
+82253362_3364.json,450,335,485,350,# REPS,question
+82253362_3364.json,59,380,399,406,DIRECT ACCOUNTS AND CHAINS HEADQUARTERED WITHIN THE REGION (15+ STORES) STOCKING NO MAVERICK SPECIALS MENTHOL,other
+82253362_3364.json,70,418,164,432,NAME OF ACCOUNT,question
+82253362_3364.json,190,406,231,432,IND/ LOR VOLUME,question
+82253362_3364.json,253,406,293,429,NO. OF STORES,question
+82253362_3364.json,342,419,432,431,NAME OF ACCOUNT,question
+82253362_3364.json,461,406,503,430,IND/ LOR VOLUME,question
+82253362_3364.json,522,408,563,433,NO. OF STORES,question
+82253362_3364.json,327,437,370,449,Sac N Pac,answer
+82253362_3364.json,328,453,380,467,ACO Texaco,answer
+82253362_3364.json,325,472,366,483,Lone Star,answer
+82253362_3364.json,472,436,492,450,75/ 2,answer
+82253362_3364.json,472,454,492,468,95/ 3,answer
+82253362_3364.json,469,472,491,485,76/ 3,answer
+82253362_3364.json,201,437,220,448,26/ 2,answer
+82253362_3364.json,200,454,221,467,42/ 2,answer
+82253362_3364.json,198,472,224,483,106 /4,answer
+82253362_3364.json,201,489,221,502,62/ 2,answer
+82253362_3364.json,201,506,221,519,78/ 4,answer
+82253362_3364.json,196,522,224,537,319/ 16,answer
+82253362_3364.json,201,542,221,553,65/ 3,answer
+82253362_3364.json,201,559,221,572,69/ 3,answer
+82253362_3364.json,201,577,221,590,80/ 4,answer
+82253362_3364.json,59,575,113,589,Shopper Mart,answer
+82253362_3364.json,59,559,126,570,Neal One Stop,answer
+82253362_3364.json,59,539,97,555,Mini Mart,answer
+82253362_3364.json,59,521,147,537,Albertson's -Houston,answer
+82253362_3364.json,59,506,128,520,Valley Shamrock,answer
+82253362_3364.json,59,489,101,500,Get Go,answer
+82253362_3364.json,59,472,112,486,Speedy Stop,answer
+82253362_3364.json,59,453,134,466,Western Beverage,answer
+82253362_3364.json,59,436,112,449,Don & Bens,answer
+82253362_3364.json,59,610,406,637,DIRECT ACCOUNTS AND CHAINS HEADQUARTERED OUTSIDE THE REGION (15+ STORES) STOCKING NO MAVERICK SPECIALS MENTHOL,other
+82253362_3364.json,70,649,164,660,NAME OF ACCOUNT,question
+82253362_3364.json,190,637,236,661,IND/ LOR VOLUME,question
+82253362_3364.json,270,638,311,660,NO. OF STORES,question
+82253362_3364.json,342,648,431,662,NAME OF ACCOUNTS,question
+82253362_3364.json,458,637,503,663,IND/ LOR VOLUME,question
+82253362_3364.json,521,637,565,663,NO. OF STORES,question
+82253362_3364.json,59,684,130,697,Brookshire Bro's,answer
+82253362_3364.json,57,701,159,715,Eckerd Drugs S. Texas,answer
+82253362_3364.json,59,736,105,749,Philip's 66,answer
+82253362_3364.json,59,754,120,767,Star Enterprise,answer
+82253362_3364.json,577,925,673,942,Page 1 of 3 Pages,other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+82254765.json,78,124,100,139,TO:,question
+82254765.json,77,152,122,166,FROM:,question
+82254765.json,608,126,664,139,1/24/97,answer
+82254765.json,233,453,244,464,2,answer
+82254765.json,233,480,244,493,1,answer
+82254765.json,429,482,440,495,1,answer
+82254765.json,430,494,440,507,1,answer
+82254765.json,306,563,348,576,ITEMS,question
+82254765.json,413,811,462,836,zbulan,answer
+82254765.json,676,768,698,870,82254765,other
+82254765.json,640,934,683,947,01/17/97,other
+82254765.json,50,934,110,948,REQFORM,other
+82254765.json,541,589,575,602,1500,answer
+82254765.json,549,615,576,630,500,answer
+82254765.json,215,124,304,139,K. A. SPARROW,answer
+82254765.json,499,126,584,141,DATE TO NYO:,question
+82254765.json,216,149,298,166,S. Reindel,answer
+82254765.json,216,179,319,194,Nassau/ 107,answer
+82254765.json,78,177,179,193,DIV. NAME/ NO:,question
+82254765.json,258,233,485,247,1997 SPECIAL EVENT REQUEST FORM,header
+82254765.json,77,288,185,302,NAME OF EVENT:,question
+82254765.json,81,314,188,330,"""DATE OF EVENT:",question
+82254765.json,228,314,285,328,3/18/97,answer
+82254765.json,216,286,395,303,H. Levinson Tradeshow,answer
+82254765.json,272,370,471,386,SAMPLE 10'S (400 PACKS PER CASE),answer
+82254765.json,75,372,260,385,SAMPLES/ ITEMS REQUIRED:,question
+82254765.json,74,453,159,466,NEWPORT K. S.,question
+82254765.json,75,468,167,481,NEWPORT 100's,question
+82254765.json,77,480,186,494,NEWPORT LTS K. S.,question
+82254765.json,77,494,184,507,NEWPORT LTS. 100,question
+82254765.json,306,454,379,465,KENT III K. S.,question
+82254765.json,307,426,359,439,# CASES,other
+82254765.json,496,453,595,467,KENT GL LTS K. S.,question
+82254765.json,497,468,573,479,GL 100,question
+82254765.json,306,466,376,479,KENT III 100,question
+82254765.json,306,480,363,493,TRUE K. S.,question
+82254765.json,306,496,363,508,KENT K. S.,question
+82254765.json,306,508,362,519,KENT 100,question
+82254765.json,499,564,634,575,QUANTITY REQUIRED,question
+82254765.json,304,589,400,603,BASEBALL CAP,answer
+82254765.json,307,620,413,633,WATER BOTTLES,answer
+82254765.json,77,728,131,741,SHIP TO:,header
+82254765.json,78,756,257,767,CUSTOMER SHIPPING NUMBER,question
+82254765.json,324,754,405,768,198- 1160006,answer
+82254765.json,77,796,151,808,NYO ONLY:,header
+82254765.json,74,823,345,836,DATE FORWARDED TO PROMOTION SERVICES:,question
+82254765.json,77,877,472,893,PLEASE ALLOW 6 WEEKS FOR PROCESSING OF YOUR REQUEST,other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+82491256.json,105,196,157,207,COURT:,question
+82491256.json,103,485,153,498,JUDGE:,question
+82491256.json,233,320,279,335,Asbestos,answer
+82491256.json,325,138,398,155,CASE FORM,header
+82491256.json,108,168,184,182,CASE NAME:,question
+82491256.json,105,223,180,254,LORILLARD ENTITIES:,question
+82491256.json,105,265,184,279,DATE FILED:,question
+82491256.json,106,293,195,309,DATE SERVED:,question
+82491256.json,106,318,179,338,CASE TYPE:,question
+82491256.json,106,349,180,377,PLAINTIFF COUNSEL:,question
+82491256.json,105,443,180,472,LORILLARD COUNSEL:,question
+82491256.json,106,510,183,525,TRIAL DATE:,question
+82491256.json,232,360,479,431,"Wartnick, Chaber, Harowitz, Smith & Tigerman Madelyn J. Chaber 101 California Street, Suite 2200 San Francisco, California 94111 415 986- 5566",answer
+82491256.json,233,295,309,310,"August 3, 1998",answer
+82491256.json,232,264,303,279,"July 23, 1998",answer
+82491256.json,233,237,380,252,Lorillard Tobacco Company,answer
+82491256.json,232,193,454,211,San Francisco Superior Court - No. 996378,answer
+82491256.json,233,165,608,182,"Wanda G. Robinson and Carroll Robinson v Raybestos- Manhattan, et al.",answer
+82491256.json,588,775,653,888,82491256 94624999,other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+82504862.json,113,198,163,211,COURT:,question
+82504862.json,240,327,289,337,Asbestos,answer
+82504862.json,112,487,159,497,JUDGE:,question
+82504862.json,332,144,406,155,CASE FORM,header
+82504862.json,115,172,191,183,CASE NAME:,question
+82504862.json,113,229,189,255,LORILLARD ENTITIES,question
+82504862.json,115,270,191,283,DATE FILED,question
+82504862.json,115,299,203,310,DATE SERVED,question
+82504862.json,113,324,185,337,CASE TYPE:,question
+82504862.json,113,353,191,374,PLAINTIEE'S COUNSEL:,question
+82504862.json,112,446,187,471,LORILLARD COUNSEL:,question
+82504862.json,115,513,193,524,TRIAL DATE:,question
+82504862.json,584,777,658,893,82504862 946225115,other
+82504862.json,240,363,486,430,"Wartnick Chaber, Harowitz, Smith& Tigerman StephenM. Tigerman 101 California Street Suite 2200 San Francisco California 94111 ",answer
+82504862.json,240,296,319,311,"August 3, 1998",answer
+82504862.json,242,240,388,255,Lorillard Tobacco Company,answer
+82504862.json,243,196,461,211,San Francisco Superior Court- No. 996382,answer
+82504862.json,243,168,592,186,Donald D. Sellers and Robin J. Sellers v. Raybestos Manhattan et al.,answer
+
+file_name,box.0,box.1,box.2,box.3,text,label
+82562350.json,118,249,238,309,Fax,header
+82562350.json,272,128,458,186,LORILLARD TOBACCO COMPANY,header
+82562350.json,184,71,202,86,,question
+82562350.json,595,58,661,76,001/004,other
+82562350.json,116,331,144,348,To:,question
+82562350.json,120,360,152,377,Fax:,question
+82562350.json,120,385,148,402,CC:,question
+82562350.json,118,414,146,432,Re:,question
+82562350.json,362,334,407,347,From:,question
+82562350.json,364,359,402,376,Date:,question
+82562350.json,365,387,400,404,Fax:,question
+82562350.json,364,415,411,430,Pages:,question
+82562350.json,133,449,176,466,Urgent,question
+82562350.json,445,414,460,431,4,answer
+82562350.json,120,495,200,510,Comments:,question
+82562350.json,312,744,390,754,CONFIDENTIALITY,question
+82562350.json,390,744,418,752,NOTE,question
+82562350.json,307,905,355,918,Telephone:,question
+82562350.json,653,756,683,861,82562350,other
+82562350.json,56,73,162,87,05/01/00 10:21,other
+82562350.json,201,70,279,85,612 894 9690,other
+82562350.json,349,65,453,81,LORILLARD RGNY 11,other
+82562350.json,169,331,267,350,Mr. Randy Spell,answer
+82562350.json,409,334,493,349,Rick Redfield,answer
+82562350.json,410,357,487,377,"May 1, 2000",answer
+82562350.json,409,385,496,405,952 894- 9690,answer
+82562350.json,166,385,294,405,Mr. Fred Paternostro,answer
+82562350.json,169,412,251,434,Legal- lowa,answer
+82562350.json,199,449,263,465,For Review,question
+82562350.json,296,450,388,465,Please Comment,question
+82562350.json,420,449,495,464,Please Reply,question
+82562350.json,518,450,603,464,please Recycle,question
+82562350.json,115,522,608,600,"Attached is the Iowa Department of Revenue and Finance Minimum Legal Prices on Cigarettes as of April 3, 2000. I am attempting to obtain a copy of the actual Fair Trade Law and will forward as soon as obtained. Rick",answer
+82562350.json,116,764,609,819,"This facsimile may contain privileged and confidential information intended only for the use of the individual entity named above. If the mader of the facsimile is not the intended recipient or employee or delivering. It to the intended recipient you are hereby notified that any dissemination for copying of this facsimile is strictly prohibited. If you have received his facsimile in error, please notify us immediately by telephone (number indicated below) and return the original facsimile to us at the address below via the U.S Postal Service.",other
+82562350.json,319,864,410,895,"205 River Ridge Circle P. O. Box 7589 Bumsville, MN 5337",other
+82562350.json,355,907,420,917,(952) 694-2238,answer
+
+file_name,box.0,box.1,box.2,box.3,text,label
+82573104.json,641,722,665,821,82573104,other
+82573104.json,94,948,130,961,,other
+82573104.json,165,458,207,479,Date:,question
+82573104.json,166,500,193,517,To:,question
+82573104.json,163,539,209,559,From:,question
+82573104.json,162,601,214,618,Room:,question
+82573104.json,161,691,255,709,MESSAGE:,question
+82573104.json,196,155,539,185,COVINGTON & BURLING,header
+82573104.json,550,75,676,217,xc: RB5 12- 9- 99 RECEIVED DEC -9 1999 R B. SPELL,other
+82573104.json,249,205,490,290,"1201 Pennsylvania Avenue, N W. P. O. Box 7566 Washington D. C. 20044- 7566 (202) 662- 6000 Fax Numbers (202) 662 6291 or (202) 737 0528 Fax Operator (202) 662- 6280",other
+82573104.json,124,330,611,405,THIS FACSIMILE TRANSMISSION INTENDED ONLY FOR THE ADDRESSEE SHOWN BELOW LIT MAY CONTAIN INFORMATION THAT IS PRIVILEGED CONFIDENTIAL OR OTHERWISE PROTECTED FROM DISCLOSURE ANY REVIEW DISSEMINATION OR USE OF THIS TRANSMISSION OR ITS CONTENTS BY PERSONS OTHER THAN THE ADDRESSEE IS STRICTLY PROHIBITED YOU HAVE RECEIVED THIS TRANSMISSION ERROR PLEASE NOTIFY US IMMEDIATELY AND MAIL THE ORIGINALI TO AT THE ABOVE ADDRESS,other
+82573104.json,282,457,412,478,"December 9, 1999",answer
+82573104.json,282,494,419,517,"Haney H. Bell, Esq.",answer
+82573104.json,282,538,478,577,David H. Remes (202) 778 5212 - direct fax,answer
+82573104.json,282,598,546,657,803E // Pages (including cover),answer
+82573104.json,289,948,410,965,,other
+82573104.json,542,944,667,964,,other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+82837252.json,140,186,179,200,DATE:,question
+82837252.json,256,186,292,201,TIME:,question
+82837252.json,581,91,638,123,MRA,other
+82837252.json,91,288,204,302,MANUFACTURER:,question
+82837252.json,94,771,114,781,cc:,question
+82837252.json,672,792,693,884,82837252,other
+82837252.json,302,94,501,111,NEW COMPETITIVE PRODUCTS,header
+82837252.json,91,148,187,163,REPORTED BY:,question
+82837252.json,235,140,578,157,"BOBBY MILLS, REGIONAL SALES MGR., INDIANAPOLIS, IN",answer
+82837252.json,189,183,240,197,8/ 10/ 90,answer
+82837252.json,91,229,186,259,SOURCE OF INFORMATION:,question
+82837252.json,236,236,437,254,"HALL RODECAP, NOBLESVILLE, IN",answer
+82837252.json,250,278,288,292,B & W,answer
+82837252.json,194,324,497,341,VICEROY KING BOX AND VICEROY LIGHTS KING BOX,answer
+82837252.json,91,331,180,346,BRAND NAME:,question
+82837252.json,89,374,157,404,TYPE OF PRODUCT:,question
+82837252.json,92,433,186,448,SIZE OR SIZES:,question
+82837252.json,91,476,165,490,LIST PRICE:,question
+82837252.json,92,520,187,549,EXTENT OF DISTRIBUTION:,question
+82837252.json,242,624,447,641,SEE ATTACHED INFORMATION SHEET,answer
+82837252.json,92,615,184,646,OTHER INFORMATION:,question
+82837252.json,232,781,312,883,G. Telford F. J. Schultz A. W. Spears N. P. Ruffalo T. Achey P. J. McCann A. J. Giacolo,answer
+82837252.json,346,782,451,884,J. J. Tatulli L. H. Kersh J. R. Slater S. T. Jones R S. Goldbrenner E. R. Harrow,answer
+82837252.json,92,782,187,869,A. H. Tisch R. H. Orcutt M. A. Peterson T. H. Mau L. Gordon J. P. Mastandrea,answer
+
+file_name,box.0,box.1,box.2,box.3,text,label
+83443897.json,91,223,127,238,DATE:,question
+83443897.json,89,313,153,330,COMPANY:,question
+83443897.json,91,366,134,384,PHONE:,question
+83443897.json,88,402,129,417,FROM:,question
+83443897.json,91,432,136,446,PHONE:,question
+83443897.json,87,483,150,497,MESSAGE:,question
+83443897.json,486,461,513,475,YES,question
+83443897.json,571,462,592,475,NO,question
+83443897.json,278,459,292,472,2,answer
+83443897.json,547,461,562,475,X,answer
+83443897.json,670,782,694,891,83443897,other
+83443897.json,89,63,248,78,JAN 11 '99 16: 29 FR 8220,other
+83443897.json,434,60,588,74,TO 3212128557HC02N P. 01,other
+83443897.json,511,126,591,208,DICKSTEIN SHAPIRO MORING OSHINSKY ,other
+83443897.json,94,108,315,131,FAX TRANSMISSION,header
+83443897.json,177,221,282,240,"January 11, 1999",answer
+83443897.json,179,249,247,266,L8557 002,answer
+83443897.json,179,284,268,304,Dewey Tedder,answer
+83443897.json,179,311,343,331,Lorillard Tobacco Company,answer
+83443897.json,179,339,270,357,336/ 373- 6917,answer
+83443897.json,177,367,270,385,336/ 373- 6750,answer
+83443897.json,175,402,361,421,Andy Zausner and Rob Mangas,answer
+83443897.json,175,430,380,448,202/ 828- 2259 and 202/ 828 2241,answer
+83443897.json,89,250,162,265,CLIENT NO.:,question
+83443897.json,89,285,171,303,MESSAGE TO:,question
+83443897.json,89,342,171,357,FAX NUMBER:,question
+83443897.json,88,459,264,475,PAGES (including Cover Sheet):,question
+83443897.json,307,461,451,475,HARD COPY TO FOLLOW,header
+83443897.json,451,567,526,585,JAN 1 2 1999,answer
+83443897.json,156,485,331,502,The following is for your review,answer
+83443897.json,154,700,591,747,"If your receipt of this transmission is in error, please notify this firm immediately by collect call to our Facsimile Department at 202- 861- 9106, and send the original transmission to us by return mail at the address below.",other
+83443897.json,154,757,601,810,"This transmission is intended for the sole use of the individual and entity to whom it is addressed, and may contain information that is privileged, confidential and exempt from disclosure under applicable law. You are hereby notified that any dissemination, distribution or duplication of this transmission by someone other than the intended addressee or its designated agent is strictly prohibited.",other
+83443897.json,144,923,555,938,"2101 L Street NW Washington, DC 20037- 1526 Tel 202- 785 9700 Fax 202- 887 0689",other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+83553333_3334.json,253,154,294,169,Sender,question
+83553333_3334.json,253,194,281,207,Date,question
+83553333_3334.json,46,325,61,339,To,question
+83553333_3334.json,465,268,521,281,Reference,question
+83553333_3334.json,253,214,327,227,November,answer
+83553333_3334.json,328,214,349,227,"12,",other
+83553333_3334.json,353,212,387,226,1999,answer
+83553333_3334.json,489,209,502,224,6,answer
+83553333_3334.json,45,640,99,657,Message:,question
+83553333_3334.json,638,722,662,825,8355333,other
+83553333_3334.json,42,63,258,76,11/ 12/ 99 19: 32 FAA 212 450 4800,other
+83553333_3334.json,316,66,374,76,DPW 1048,other
+83553333_3334.json,619,68,680,78,UUZ/ DUS,other
+83553333_3334.json,237,109,476,125,DAVIS POLK & WARDWELL,header
+83553333_3334.json,43,156,134,173,Fax Transmittal,question
+83553333_3334.json,43,176,158,214,"450 Lexington Avenue New York, NY 10017 212- 450- 4000",answer
+83553333_3334.json,253,173,366,192,Charles Duggan,answer
+83553333_3334.json,465,190,665,207,Number of Pages (this page included),question
+83553333_3334.json,254,229,373,246,Sender Voice Number,question
+83553333_3334.json,464,228,648,244,"If problems receiving this fax, call",question
+83553333_3334.json,464,246,557,262,212- 450- 4785,answer
+83553333_3334.json,256,250,347,265,212- 450- 4785,answer
+83553333_3334.json,256,270,363,284,Sender Fax Number,question
+83553333_3334.json,257,286,346,303,212- 450- 3785,answer
+83553333_3334.json,466,285,539,302,17555 002,answer
+83553333_3334.json,201,323,271,338,Fax Number,question
+83553333_3334.json,362,324,415,338,Company,question
+83553333_3334.json,520,318,654,335,Recipient Phone Number,question
+83553333_3334.json,45,342,164,361,Thomas M. Sobol,answer
+83553333_3334.json,201,341,293,358,617- 439- 3278,answer
+83553333_3334.json,362,341,511,372,Brown Rudnick Freed & Gesmer,answer
+83553333_3334.json,520,338,612,355,617- 330- 9000,answer
+83553333_3334.json,520,391,610,408,843- 720 9000,answer
+83553333_3334.json,360,394,479,458,"Ness, Motley, Loadholt, Richardson & Poole",answer
+83553333_3334.json,204,394,295,410,843- 720- 9290,answer
+83553333_3334.json,45,397,147,412,Joseph F. Rice,answer
+83553333_3334.json,45,479,169,511,Robert V. Costello Jeffrey D. Woolf,answer
+83553333_3334.json,203,479,295,494,617- 722- 0286,answer
+83553333_3334.json,204,531,293,548,415- 956- 1008,answer
+83553333_3334.json,47,531,184,548,Richard M. Heimann,answer
+83553333_3334.json,46,582,181,600,Michael P. Thornton,answer
+83553333_3334.json,204,585,295,599,617- 720- 2445,answer
+83553333_3334.json,363,582,482,615,"Thomton, Early & Naumes",answer
+83553333_3334.json,520,582,611,599,617- 720- 1333,answer
+83553333_3334.json,521,531,610,548,415- 956- 1000,answer
+83553333_3334.json,521,478,612,493,617- 227- 7500,answer
+83553333_3334.json,362,476,497,510,"Schneider, Reilly, Zabin & Costello",answer
+83553333_3334.json,362,531,476,561,"Lieff, Cabraser & Heimann",answer
+83553333_3334.json,67,897,152,907,Confidentiality Note,question
+83553333_3334.json,152,894,660,907,This only for the person or entity may besi pavilegedal ,answer
+83553333_3334.json,67,905,666,940,"of otherwis protected from disclosos. Disscnlation, distribution popying of the facile the information herein by anyone other than the poupil, waployee responsible for delivering the message the prohibited. You thisfacsimile in error please notify as immediately by telephone and return the facsimile by mail.",answer
+
+file_name,box.0,box.1,box.2,box.3,text,label
+83573282.json,91,279,123,294,Date:,question
+83573282.json,92,310,130,324,From:,question
+83573282.json,89,337,111,352,Re:,question
+83573282.json,92,367,177,384,COMMENTS:,question
+83573282.json,94,437,168,451,Recipient(s):,question
+83573282.json,254,437,315,452,Company:,question
+83573282.json,655,832,677,938,83573282,other
+83573282.json,274,779,316,796,Urgent!,header
+83573282.json,321,779,364,794,Deliver,header
+83573282.json,365,779,439,796,Immediately,header
+83573282.json,52,73,259,91,04/ 14/ 99 18: 36 FAX 206 623 0594,other
+83573282.json,310,77,395,92,HAGENS BERMAN,header
+83573282.json,289,140,417,171,HAGENS BERMAN Attorney Law,header
+83573282.json,543,66,710,159,WA Fee Pay Agree XC: JAW,other
+83573282.json,225,179,482,204,"1301 FIFTH AVENUE, SUITE 2900 SEATTLE, WA 98101 TELEPHONE (206) 623 7293 FACSIMILE (206) 623- 0594",other
+83573282.json,265,230,442,247,FACSIMILE COVER SHEET,header
+83573282.json,152,279,247,297,"January 14, 1999",answer
+83573282.json,359,279,431,293,No. of Pages,question
+83573282.json,432,272,544,297,37 (including this page),answer
+83573282.json,451,303,529,323,1129. 01,answer
+83573282.json,359,306,409,321,File No.:,question
+83573282.json,152,335,412,352,Tobacco - Fee Payment Agreement and Release,answer
+83573282.json,152,309,250,324,Steve W. Berman,answer
+83573282.json,401,437,465,451,Phone No.:,question
+83573282.json,513,436,566,451,Fax No.:,question
+83573282.json,511,471,602,489,(212) 403- 2000,answer
+83573282.json,513,515,604,535,(212) 450- 4800,answer
+83573282.json,514,546,603,563,(917) 663- 5399,answer
+83573282.json,513,574,602,592,(502) 568- 7297,answer
+83573282.json,513,620,602,639,(336) 335- 7707,answer
+83573282.json,513,649,604,668,(336) 741- 2998,answer
+83573282.json,515,696,601,713,(312) 861- 2200,answer
+83573282.json,399,696,487,712,(312) 861- 2000,answer
+83573282.json,399,517,487,534,(212) 450- 4000,answer
+83573282.json,398,471,484,489,(212) 403- 1000,answer
+83573282.json,254,472,390,503,"Wachtell, Lipton, Rosen & Katz",answer
+83573282.json,254,515,391,534,"Davis, Polk & Wardwell",answer
+83573282.json,254,546,352,564,Philip Morris Inc.,answer
+83573282.json,256,575,374,609,Brown & Williamson Tobacco Corp.,answer
+83573282.json,254,620,377,636,Lorillard Tobacco Co.,answer
+83573282.json,254,651,382,680,R. J. Reynolds Tobacco Co,answer
+83573282.json,256,694,351,713,Kirkland & Ellis,answer
+83573282.json,94,696,218,711,Mr. Stephen R. Patton,answer
+83573282.json,95,649,212,666,Mr. Charles A. Blixt,answer
+83573282.json,94,620,205,637,Mr. Ronald Milstein,answer
+83573282.json,95,575,217,592,Mr. F. Anthony Burke,answer
+83573282.json,92,546,217,561,Mr. Martin Barrington,answer
+83573282.json,94,517,213,534,Mr. Arthur F. Golden,answer
+83573282.json,92,472,216,487,Mr. Meyer G. Koplow,answer
+83573282.json,94,811,372,828,Please call the Support Center at (206) 268- 9312 or,question
+83573282.json,476,813,512,828,at ext,question
+83573282.json,561,811,614,827,if you do,question
+83573282.json,95,827,380,845,not receive all of these pages or if there is a problem.,question
+83573282.json,94,860,619,915,"The information contained in this facsimile is confidential and may also be attorney privileged. The information is intended only for the use of the individual or entity to whom it is addressed. If you are not the intended recipient, or the employee or agent responsible for delivering it to the intented recipient, you are hereby notified any use, dissemination, distribution or copying of this communication is strictly prohibited. If you have received this facsimile in error, please immcdiately notify us by a collect call to (206) 623- 7292, and return the original message to us at the address above via the US Postal Service. Thank you.",other
+83573282.json,288,927,430,940,A PROFESSIONAL SERVICE CORPORATION,other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+83594639.json,103,268,131,282,Date:,question
+83594639.json,102,297,120,311,To:,question
+83594639.json,103,328,159,345,Company:,question
+83594639.json,381,297,416,314,From:,question
+83594639.json,563,360,574,373,3,answer
+83594639.json,209,328,256,343,Lorillard,answer
+83594639.json,641,687,662,802,83594639,other
+83594639.json,638,68,673,90,☑001,other
+83594639.json,54,78,278,91,89/ 22/ 97 MON 15: 35 FAX 12124554900,other
+83594639.json,338,74,481,88,ROPER STARCH WORLDWIDE,other
+83594639.json,267,109,447,168,ROPER STARCH,header
+83594639.json,196,186,524,203,TURNING DATA INTO INTELLIGENCE WORLDWIDE,other
+83594639.json,119,225,594,250,Fax Fax Fax Fax Fax Fax Fax Fax Fax,header
+83594639.json,208,296,278,313,Ron Milstein,answer
+83594639.json,209,359,287,375,(910) 335 7707,answer
+83594639.json,383,359,541,375,Pages (Including cover page):,question
+83594639.json,489,297,544,314,"""JJ"" Klein",answer
+83594639.json,102,358,170,375,Fax Number:,question
+83594639.json,98,860,201,914,Roper Starch Worldwide nc 205 East 42nd Street New York NY 0017 212 599 0700 212 887 7008 Fax,other
+83594639.json,466,872,625,913,Roper Marketing and Public Option Research Search Advertising and Media Research Frederen Marketing Services INRA World Headquarters,other
+83594639.json,208,268,316,283,"September 22, 1997",answer
+
+file_name,box.0,box.1,box.2,box.3,text,label
+83624198.json,448,84,462,95,TO,question
+83624198.json,499,123,615,240,,other
+83624198.json,102,243,137,257,DATE:,question
+83624198.json,101,331,164,344,COMPANY:,question
+83624198.json,102,387,147,398,PHONE:,question
+83624198.json,101,422,140,435,FROM:,question
+83624198.json,101,450,147,463,PHONE:,question
+83624198.json,101,494,164,511,MESSAGE:,question
+83624198.json,494,475,519,488,YES,question
+83624198.json,580,476,598,487,NO,question
+83624198.json,288,475,303,489,12,answer
+83624198.json,645,824,667,925,83624198,other
+83624198.json,392,933,406,944,Tel,question
+83624198.json,482,933,499,944,Fax,question
+83624198.json,109,84,261,97,FEB 25 '98 18: 23 FR ,other
+83624198.json,468,84,600,97,#1 28557 002# P. 2101,other
+83624198.json,98,126,319,150,FAX TRANSMISSION,header
+83624198.json,187,240,294,257,"February 25, 1998",answer
+83624198.json,187,267,259,285,L8557 002,answer
+83624198.json,186,302,295,317,Ronald S. Milstein,answer
+83624198.json,187,330,350,348,Lorillard Tobacco Company,answer
+83624198.json,187,358,279,373,910/ 335- 7707,answer
+83624198.json,187,384,278,401,910 /335 -7718,answer
+83624198.json,189,420,271,435,Andy Zausner,answer
+83624198.json,189,446,277,462,202 /828 -2259,answer
+83624198.json,101,359,179,373,FAX NUMBER:,question
+83624198.json,101,303,182,317,MESSAGE TO:,question
+83624198.json,102,270,167,283,CLIENT NO.:,question
+83624198.json,102,475,274,490,PAGES (including Cover Sheet):,question
+83624198.json,318,475,458,490,HARD COPY TO FOLLOW:,header
+83624198.json,168,499,574,532,See attached fax from the Committee on Commerce just received in my office. Call me discuss.,answer
+83624198.json,168,712,600,757,"If your receipt of this transmission is in error, please notify this firm immediately by collect call to our Facsimile Department at 202- 861 -9106 and send the original transmission to us by return mail at the address below.",other
+83624198.json,169,768,609,821,"This transmission is intended for the sole use of the individual and entity to whom it is addressed, and may contain information that is privileged, confidential and exempt from disclosure under applicable law. You are hereby notified that any dissemination, distribution duplication of this transmission by somcong other than the intended addressee or its designated agent is strictly prohibited.",other
+83624198.json,161,932,383,945,2101 L. Street NW Washington DC 20037 1528,other
+83624198.json,408,932,471,945,202 785 9700,answer
+83624198.json,501,933,564,946,202 -887 -0589,answer
+
+file_name,box.0,box.1,box.2,box.3,text,label
+83635935.json,85,366,130,383,DATE:,question
+83635935.json,91,399,116,414,TO:,question
+83635935.json,84,432,134,447,FROM:,question
+83635935.json,651,796,672,898,83635935,other
+83635935.json,75,71,310,89,JUN 05 97 02:00 PM LOEWS CORP ,other
+83635935.json,578,77,612,91,P. 1/ 6,other
+83635935.json,310,175,379,199,LOEWS CORPORATION,header
+83635935.json,149,203,534,217,"667 Madison Avenue, New York, N. / 10021 8087 (212) 545 2920 Fax (212) 935 6801",other
+83635935.json,67,267,185,301,BARRY HIRSCH Senior Vice President Secretary & General Counsel,other
+83635935.json,295,288,401,332,FAX CONFIDENTIAL,header
+83635935.json,165,366,237,383,"June 4, 1997",answer
+83635935.json,169,397,356,414,Dr. Spears/ A. J. Stevens/ R. Milstein,answer
+83635935.json,165,430,236,446,Barry Hirsch,answer
+83635935.json,85,462,502,510,"TOTAL NUMBER OF PAGES INCLUDING THIS COVER SHEET- 6 IF YOU DO NOT RECEIVE ALL THE PAGES, PLEASE CALL CAROL DOKTORSKI AT (212) 545- 2934.",other
+83635935.json,103,527,244,542,OUR FAX NUMBER ,question
+83635935.json,249,528,335,545,(212) 935 6801,answer
+83635935.json,85,788,603,844,THIS TRANSMISSION IS INTENDED ONLY FOR THE USE OF THIS INDIVIDUAL OR ENTITY TO FROM IT IS ADDRESSED. AND MAY CONTAIN INFORMATION THAT IS PRIVILEGED CONFIDENTIAL AND You YOU ARE THAT MY DIRAYDOTIG DISAISONICAR OF THIS COMKONICATION TA ATRICTLY PROHIBITED HAVE RECEIVED TINCOFMONTTIOS PYTHOND ROU ORIGDOL YILSON ATITE ABOVE ADDR359 VIA POSTAL SERVICE THANK YOU.,other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+83641919_1921.json,292,493,303,504,31,answer
+83641919_1921.json,292,514,305,525,1818,answer
+83641919_1921.json,292,532,305,542,22,answer
+83641919_1921.json,292,549,305,560,15,answer
+83641919_1921.json,292,567,303,577,24,answer
+83641919_1921.json,293,585,304,595,19,answer
+83641919_1921.json,292,602,305,615,15,answer
+83641919_1921.json,289,620,307,631,209,answer
+83641919_1921.json,293,638,304,649,32,answer
+83641919_1921.json,211,492,240,505,151/15,answer
+83641919_1921.json,214,513,235,526,81/9,answer
+83641919_1921.json,212,532,236,540,138/9,answer
+83641919_1921.json,209,549,240,560,140/13,answer
+83641919_1921.json,212,568,237,576,117/9,answer
+83641919_1921.json,214,585,239,596,118/8,answer
+83641919_1921.json,211,602,240,615,166/15,answer
+83641919_1921.json,209,622,240,632,115/13,answer
+83641919_1921.json,209,638,240,649,163/11,answer
+83641919_1921.json,165,406,246,419,DISTRIBUTION,header
+83641919_1921.json,75,307,134,318,DIVISION:,header
+83641919_1921.json,77,261,126,274,REGION:,header
+83641919_1921.json,293,307,324,320,FULL,question
+83641919_1921.json,385,376,407,386,Flint,answer
+83641919_1921.json,355,307,366,320,X,other
+83641919_1921.json,295,263,324,274,FULL,question
+83641919_1921.json,487,261,533,272,PARTIAL,question
+83641919_1921.json,486,309,535,320,PARTIAL,question
+83641919_1921.json,567,331,580,345,13,answer
+83641919_1921.json,570,352,581,363,12,answer
+83641919_1921.json,567,374,580,387,13,answer
+83641919_1921.json,582,263,593,274,X,answer
+83641919_1921.json,483,496,511,507,196/13,answer
+83641919_1921.json,568,496,581,507,16,answer
+83641919_1921.json,77,119,99,130,TO:,question
+83641919_1921.json,78,148,116,162,FROM:,question
+83641919_1921.json,78,205,131,216,SUBJECT:,question
+83641919_1921.json,168,239,243,247,GEOGRAPHY,header
+83641919_1921.json,582,149,590,160,X,answer
+83641919_1921.json,291,732,308,745,142,answer
+83641919_1921.json,288,751,308,764,237,answer
+83641919_1921.json,292,768,307,781,102,answer
+83641919_1921.json,292,788,305,799,39,answer
+83641919_1921.json,289,806,310,817,184,answer
+83641919_1921.json,292,824,305,835,32,answer
+83641919_1921.json,293,841,304,852,40,answer
+83641919_1921.json,293,860,304,868,31,answer
+83641919_1921.json,77,751,102,764,Emra,answer
+83641919_1921.json,78,786,119,797,Walmart,answer
+83641919_1921.json,697,788,718,898,83641919,other
+83641919_1921.json,144,119,205,130,S. P. ZOLOT,answer
+83641919_1921.json,142,148,244,160,R. W. RICHARDSON,answer
+83641919_1921.json,359,147,398,158,OCT 05,question
+83641919_1921.json,440,119,543,132,SUBMISSION DATE,header
+83641919_1921.json,499,148,535,159,DEC 21,question
+83641919_1921.json,360,175,399,186,NOV 16,question
+83641919_1921.json,145,205,413,216,OLD GOLD- LIGHT BOX 100'S PROGRESS REPORT,answer
+83641919_1921.json,73,279,416,298,"(ONLY IF PARTIAL REGION, CONTINUE WITH DIVISION(S) SCOPE)",other
+83641919_1921.json,99,332,187,344,DIVISION NAME:,question
+83641919_1921.json,98,353,187,364,DIVISION NAME:,question
+83641919_1921.json,99,374,187,385,DIVISION NAME:,question
+83641919_1921.json,191,332,249,342,Detroit North,answer
+83641919_1921.json,190,353,243,364,Detroit East,answer
+83641919_1921.json,190,374,252,385,Grand Rapids,answer
+83641919_1921.json,292,331,382,344,DIVISION NAME:,question
+83641919_1921.json,293,353,380,364,DIVISION NAME:,question
+83641919_1921.json,293,374,381,385,DIVISION NAME:,question
+83641919_1921.json,385,332,447,345,Detroit South,answer
+83641919_1921.json,385,353,443,366,Detroit West,answer
+83641919_1921.json,482,331,519,343,# REPS:,question
+83641919_1921.json,482,353,522,363,# REPS:,question
+83641919_1921.json,482,374,520,385,# REPS:,question
+83641919_1921.json,77,432,369,456,Direct Accounts and Chains Headquartered within the Region (15+ Stores) Stocking No Old Gold Light Box 100's,other
+83641919_1921.json,91,468,175,480,Name of Account,question
+83641919_1921.json,205,464,244,486,Ind/Lor Volume,question
+83641919_1921.json,270,462,324,489,Number of Stores,question
+83641919_1921.json,362,468,447,479,Name of Account,question
+83641919_1921.json,478,462,516,486,Ind/Lor Volume,question
+83641919_1921.json,547,464,600,488,Number of Stores,question
+83641919_1921.json,77,492,138,505,Quality Dairy,answer
+83641919_1921.json,77,513,134,526,Bay Stations,answer
+83641919_1921.json,77,531,147,542,Schmuckal Dil,answer
+83641919_1921.json,80,547,127,560,Wilson Oil,answer
+83641919_1921.json,77,566,126,579,Quik Stop,answer
+83641919_1921.json,78,585,119,595,Forwards,answer
+83641919_1921.json,75,601,118,614,Phil Flint,answer
+83641919_1921.json,78,620,121,632,Arbor Rx,answer
+83641919_1921.json,77,638,132,651,Imperial Oil,answer
+83641919_1921.json,335,494,380,508,Speedy Q,answer
+83641919_1921.json,77,670,375,696,Direct Accounts and Chains Headquartered Outside the Region. (15+ Stores) Stocking No Old Gold Light Box 100's,other
+83641919_1921.json,92,707,176,718,Name of Account,question
+83641919_1921.json,205,701,245,726,Ind/Lor Volume,question
+83641919_1921.json,271,703,326,727,Number of Stores,question
+83641919_1921.json,362,707,444,720,Name of Account,question
+83641919_1921.json,478,701,517,726,Ind/Lor Volume,question
+83641919_1921.json,547,703,603,726,Number of Stores,question
+83641919_1921.json,78,732,125,743,Clark Gas,answer
+83641919_1921.json,78,770,168,781,7- Eleven Southland,answer
+83641919_1921.json,80,804,146,815,Ultra Diamond,answer
+83641919_1921.json,82,823,130,834,Dairy Mart,answer
+83641919_1921.json,78,841,123,853,Mobil Oil,answer
+83641919_1921.json,80,859,141,869,ACA Amoco,answer
+83641919_1921.json,75,953,196,961,GOD ,other
+83641919_1921.json,666,950,703,959,Page 1 of 3,other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+83772145.json,528,63,548,83,NO.,other
+83772145.json,550,64,581,82,1796,other
+83772145.json,594,63,611,83,P.,question
+83772145.json,447,264,462,281,#:,question
+83772145.json,420,296,463,314,TIME:,question
+83772145.json,110,229,135,246,TO:,question
+83772145.json,110,261,156,279,FROM:,question
+83772145.json,110,296,155,313,DATE:,question
+83772145.json,483,265,512,276,392,answer
+83772145.json,482,373,495,388,,answer
+83772145.json,110,503,191,524,OPERATOR:,question
+83772145.json,190,490,271,529,,answer
+83772145.json,99,575,130,595,Jack,question
+83772145.json,109,846,184,857,CONFIDENTIALITY,question
+83772145.json,184,845,218,856,NOTICE,question
+83772145.json,677,786,698,885,83772145,other
+83772145.json,57,73,188,95,JAN 31. 1997 11: 48 AM,other
+83772145.json,68,113,143,160,FAX COVER,other
+83772145.json,242,91,507,129,LAW OFFICES SHOOK HARDY & BACON L. L. P.,header
+83772145.json,616,60,638,81,1/ 3,other
+83772145.json,580,113,650,163,FAX COVER,other
+83772145.json,212,133,533,200,One Kansas City Place 1200 Main Street Kansas City Missouri 64105- 2118 Telephone (816) 474 6550 Facsimile (816) 421- 5547,other
+83772145.json,165,229,261,247,JACK REILLY,answer
+83772145.json,362,228,461,246,TELECOPY NO:,question
+83772145.json,482,229,565,247,212/ 545- 3297,answer
+83772145.json,483,338,560,356,LORI 45048,answer
+83772145.json,154,404,591,425,ORIGINAL DOCUMENT WILL FOLLOW VIA FEDERAL EXPRESS,other
+83772145.json,112,372,339,392,Pages transmitted including cover sheet:,question
+83772145.json,110,337,247,355,SHB Client Matter No:,question
+83772145.json,163,296,288,317,"JANUARY 31, 1997",answer
+83772145.json,163,263,243,281,JIM DALEY,answer
+83772145.json,109,466,481,491,"If you experience any problems, please call extension 21000",answer
+83772145.json,95,610,647,781,"Per your request, attached is a memo regarding the process of labeling reviewed diskettes for the purpose of later identification Please call me if you have any questions regret I cannot join you and the electronic document collection team for lunch today. I hope you agree they have done an outstanding job! I look forward to seeing you on February 5 for the Legal Edge presentation. Best Regards, Jim Daley",answer
+83772145.json,222,846,634,859,The documents accompanying this transmission contain confidential information belonging to the  sender ,other
+83772145.json,108,856,633,889,"Legally privileged The information is intented only for the Individual or entity named above pol pre intended recipen you heret notified that copying distribuar dhe crion Islance content or lecoled normation och If you have received this telecopy in error,  please immediately notify us by telephone to arrange for return of the origin documents to us.",other
+83772145.json,99,541,253,561,COMMENTS/ MESSAGE:,question
+83772145.json,112,437,228,458,Special Instructions:,question
+
+file_name,box.0,box.1,box.2,box.3,text,label
+83823750.json,630,74,641,85,,other
+83823750.json,641,73,661,86,001,other
+83823750.json,454,161,479,172,Date,question
+83823750.json,258,158,273,171,To,question
+83823750.json,455,335,465,352,2,answer
+83823750.json,258,209,308,227,Company,question
+83823750.json,258,313,294,324,Sender,question
+83823750.json,454,415,507,426,Reference,question
+83823750.json,59,462,111,479,Message:,question
+83823750.json,666,804,690,914,83823750,other
+83823750.json,81,895,138,906,Confidentiality,question
+83823750.json,140,895,161,905,Note:,question
+83823750.json,85,75,280,89,/97 TUE 18: 39 FAX 212 5578,other
+83823750.json,335,77,391,91,DPW 30 -59,other
+83823750.json,249,112,465,127,DAVIS POLK & WARDWELL,header
+83823750.json,60,158,146,171,Fax Transmittal,question
+83823750.json,56,183,167,221,450 Lexington Avenue New York NY 10017 212- 450 4000,other
+83823750.json,258,184,394,200,"Robert H. Shaw, Esq.",answer
+83823750.json,454,184,578,201,"November 11, 1997",answer
+83823750.json,257,235,432,252,Lorillard Tobacco Company,answer
+83823750.json,258,261,322,274,Fax Number,question
+83823750.json,454,261,528,274,Voice Number,question
+83823750.json,258,285,343,303,910 -335- 7077,answer
+83823750.json,455,286,539,301,910 -335- 7720,answer
+83823750.json,453,311,641,327,Number of Pages (this page included),question
+83823750.json,260,337,360,355,Charles Duggan,answer
+83823750.json,258,363,368,377,Sender Voice Number,question
+83823750.json,455,362,627,377,Main Fax Operator Voice Number,question
+83823750.json,258,387,341,402,212 -450- 4785,answer
+83823750.json,260,413,358,427,Sender Fax Number,question
+83823750.json,258,437,343,454,212 -450 -5578,answer
+83823750.json,455,436,521,453,17560 -188,answer
+83823750.json,162,894,643,907,"This facsimile intended only the person or entity to which it is addressed and may contain information that is privileged, confidential",other
+83823750.json,82,905,647,939,"or otherwise protected from disclosure distribution or copying of this facsimile or the information herein by anyone other than the intended recipient, or an employee or agent responsible for delivering the message to the intended recipient is prohibited. If you love received the facsimile in error, please notify us immediately by telephone and return the facsimile by mail.",other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+83996357.json,73,147,93,160,TO:,question
+83996357.json,73,176,109,191,FROM:,question
+83996357.json,74,208,95,221,CC:,question
+83996357.json,142,649,219,664,PACK/CARTON,question
+83996357.json,142,779,229,794,REQUIREMENTS,question
+83996357.json,380,649,412,664,PACK,answer
+83996357.json,142,860,174,873,JOB#,question
+83996357.json,314,844,359,861,07809,answer
+83996357.json,317,862,349,876,594,answer
+83996357.json,332,878,361,891,14%,answer
+83996357.json,546,824,603,851,30165,other
+83996357.json,662,799,687,904,83996357,other
+83996357.json,74,112,277,130,COUPON CODE REGISTRATION FORM,header
+83996357.json,140,144,229,161,KELLI SCRUGGS,answer
+83996357.json,137,173,235,190,LEONARD JONES,answer
+83996357.json,138,205,352,263,V. LOSITO M. TAHMASEB G. BAROODY L. STEVENS B. VON DER LIPPE D. Risling,answer
+83996357.json,140,300,264,320,BRAND(S) APPLICABLE,question
+83996357.json,378,302,437,319,OLD GOLD,answer
+83996357.json,380,330,449,348,DIRECT MAIL,answer
+83996357.json,140,334,206,348,MEDIA TYPE,question
+83996357.json,140,365,209,382,MEDIA NAME,question
+83996357.json,140,395,276,415,ISSUE FREQUENCY YEAR,question
+83996357.json,140,429,220,444,SPACE/ COLOR,question
+83996357.json,380,459,419,475,10/ 4/ 99,answer
+83996357.json,378,492,416,508,3/ 31/ 00,answer
+83996357.json,142,619,227,632,COUPON VALUE,question
+83996357.json,142,587,274,602,GEOGRAPHICAL AREA(S),question
+83996357.json,141,554,254,569,CIRCULATION DATES,question
+83996357.json,141,521,230,541,CIRCULATION(#),question
+83996357.json,141,492,291,509,COUPON EXPIRATION DATE,question
+83996357.json,141,459,258,476,COUPON ISSUE DATE,question
+83996357.json,380,522,422,540,"201, 500",answer
+83996357.json,381,553,464,571,OCTOBER 1999,answer
+83996357.json,380,585,608,603,DISCOUNT SMOKERS OG GROUPS IANDII,answer
+83996357.json,381,616,466,634,$1 00 OFF PACK,answer
+83996357.json,378,707,531,753,,answer
+83996357.json,380,747,419,764,4/ 14/ 99,other
+83996357.json,140,683,307,698,ADVERTISING CREATIVE TITLE,question
+83996357.json,140,714,279,732,SIGNATURE OF INITIATOR,question
+83996357.json,141,746,225,764,DATE INITIATED,question
+83996357.json,274,778,400,792,REDEMPTION RESULTS,answer
+83996357.json,142,844,232,858,CODE ASSIGNED,question
+83996357.json,142,876,243,891,EST. REDEMPTION,question
+
+file_name,box.0,box.1,box.2,box.3,text,label
+85201976.json,149,292,188,305,NAME,question
+85201976.json,148,318,212,336,ADDRESS,question
+85201976.json,149,348,185,365,CITY,question
+85201976.json,321,348,364,366,STATE,question
+85201976.json,490,349,518,367,ZIP,question
+85201976.json,149,492,178,506,AGE,question
+85201976.json,173,633,190,651,1.,question
+85201976.json,175,662,189,679,2.,question
+85201976.json,175,689,189,709,3.,question
+85201976.json,373,779,433,796,SMOKING,question
+85201976.json,663,779,681,867,85201976,other
+85201976.json,67,75,295,102,"Marden - Kane, Inc.",header
+85201976.json,244,131,512,206,"TRUE ""YOU FOUND IT"" SWEEPSTAKES SECOND PRIZE WINNER TRAVEL INFORMATION SHEET",other
+85201976.json,145,233,616,266,THE DESTINATION IN THE CONTINENTAL UNITED STATES I WISH TO TRAVEL TO IS:,question
+85201976.json,148,388,239,406,HOME PHONE,question
+85201976.json,149,420,272,435,BUSINESS PHONE,question
+85201976.json,148,461,265,479,NAME OF GUEST,question
+85201976.json,152,520,255,550,RELATIONSHIP TO WINNER,question
+85201976.json,149,589,666,609,PLEASE LIST THREE ALTERNATIVE DATES YOU WOULD LIKE TO TRAVEL,question
+85201976.json,149,723,308,756,MAJOR AIRPORT NEAREST YOUR HOME,question
+85201976.json,152,768,246,797,AIRLINE: (CHECK ONE),question
+85201976.json,552,784,649,798,NON- SMOKING,question
+85201976.json,152,824,396,841,SPECIAL DIETARY REQUIREMENTS,question
+85201976.json,149,852,487,884,ANY ADDITIONAL INFORMATION YOU WOULD LIKE TO PROVIDE,question
+
+file_name,box.0,box.1,box.2,box.3,text,label
+85240939.json,87,212,137,230,NAME:,question
+85240939.json,87,243,147,263,TITLE:,question
+85240939.json,85,275,160,295,COMPANY:,question
+85240939.json,87,307,160,325,ADDRESS:,question
+85240939.json,85,339,142,357,PHONE:,question
+85240939.json,163,282,248,296,Lorillard,answer
+85240939.json,596,934,691,948,,other
+85240939.json,94,88,244,140,"SHERATON- CARLTON HOTEL WASHINGTON, D. C.",other
+85240939.json,265,64,527,178,THE TOBACCO INSTITUTE FIFTH ANNUAL COLLEGE TOBACCO KNOWLEDGE REGISTRATION FORM,header
+85240939.json,545,103,732,125,FEBRUARY 19-21 1980,other
+85240939.json,165,218,322,236,GEORGE R. TELFORD,answer
+85240939.json,163,250,283,266,Brand Manager,answer
+85240939.json,163,314,502,337,"666 Fifth Avenue, New York, NY 10019",answer
+85240939.json,163,338,292,357,(212) 841- 8787,answer
+85240939.json,82,404,177,421,CHECK ONE:,question
+85240939.json,229,406,722,440,Please reserve a room for me at the Sheraton- Carlton,answer
+85240939.json,191,433,599,468,X I will my own housing arrangements.,answer
+85240939.json,82,497,285,519,ARRIVAL DATE AND TIME:,question
+85240939.json,300,500,475,528,2/18/80 7:00 P. M.,answer
+85240939.json,80,528,303,549,DEPARTURE DATE AND TIME:,question
+85240939.json,311,536,476,559,2/21/80 4:00 P. M.,answer
+85240939.json,74,592,687,783,"Please attach a brief (50 words or so) autobiographical sketch. Note your first name or nickname, your current professional re- sponsibilities, employment background and whatever personal in- formation you feel would be helpful in giving your fellow students an idea of your activities and interests. The sketches will be assembled and provided at the opening class session.",other
+85240939.json,74,796,206,814,Any questions?,question
+85240939.json,221,802,705,836,Call Connie Drath or Carol Musgrave at 800/424- 9876.,answer
+85240939.json,75,876,736,919,"**PLEASE RETURN IN SELF- ADDRESSED ENVELOPE BY FRIDAY, JANUARY 18, 1980**",other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+85540866.json,60,189,94,204,(Name),question
+85540866.json,59,225,86,236,(Date),question
+85540866.json,412,190,461,207,(Position),question
+85540866.json,218,968,254,982,(Name),question
+85540866.json,733,714,750,803,85540866,other
+85540866.json,235,82,533,114,MEDIA CONTACT SHEET,header
+85540866.json,60,151,187,167,(Publication or station),question
+85540866.json,54,261,189,278,Reason for Contact,question
+85540866.json,56,422,208,440,Questions/ Responses,question
+85540866.json,54,760,208,781,Additional Comments,question
+85540866.json,54,953,194,973,Inquiry handled by:,question
+85540866.json,415,155,518,172,(Location address),question
+85540866.json,413,226,497,241,(Phone number),question
+
+file_name,box.0,box.1,box.2,box.3,text,label
+85629964.json,110,142,156,162,YEAR:,question
+85629964.json,416,297,501,315,OVERWRAP:,question
+85629964.json,282,385,364,406,NICOTINE:,question
+85629964.json,109,385,148,402,TAR:,question
+85629964.json,689,832,709,930,85629964,other
+85629964.json,311,101,507,121,CIGARETTE REPORT FORM,header
+85629964.json,112,175,210,193,BRAND NAME:,question
+85629964.json,510,147,631,168,NO. PER PACK,question
+85629964.json,112,207,203,222,VAR. DESC:,question
+85629964.json,552,208,701,229,(SEE EXPLANATION),question
+85629964.json,110,235,283,255,VARIETY UNIT SALES:,question
+85629964.json,420,237,613,259,VARIETY DOLLAR SALES:,question
+85629964.json,109,265,219,283,CIG. LENGTH:,question
+85629964.json,373,267,502,288,FILTER LENGTH:,question
+85629964.json,110,296,221,313,FILTER TYPE:,question
+85629964.json,285,296,376,316,FLAVORING:,question
+85629964.json,556,299,648,320,PACK TYPE:,question
+85629964.json,531,328,667,350,LAST SOLD DATE:,question
+85629964.json,113,325,283,344,IST MANUFACT. DATE:,question
+85629964.json,112,355,246,375,YEARLY SUMMARY:,question
+85629964.json,331,325,466,346,IST SALES DATE:,question
+85629964.json,556,391,665,409,CARBON MONO:,question
+85629964.json,214,492,598,515,ADVERTISING EXPENDITURES (SEE EXPLANATION),header
+85629964.json,108,520,246,539,CAT- A- EXPENSES:,question
+85629964.json,109,552,246,571,CAT- D- EXPENSES:,question
+85629964.json,110,582,247,601,CAT- G- EXPENSES:,question
+85629964.json,109,613,246,630,CAT- J- EXPENSES:,question
+85629964.json,110,644,247,662,CAT- M- EXPENSES:,question
+85629964.json,109,675,392,695,TOTAL ADVERTISING EXPENDITURES:,question
+85629964.json,310,522,447,542,CAT- B- EXPENSES:,question
+85629964.json,309,553,447,571,CAT- E- EXPENSES:,question
+85629964.json,310,584,447,604,CAT- H- EXPENSES:,question
+85629964.json,310,613,446,633,CAT- K- EXPENSES:,question
+85629964.json,307,645,451,663,CAT- N- EXPENSES:,question
+85629964.json,520,524,657,545,CAT- C- EXPENSES:,question
+85629964.json,518,553,659,576,CAT- F- EXPENSES:,question
+85629964.json,520,584,657,608,CAT- I- EXPENSES:,question
+85629964.json,520,616,656,634,CAT- L- EXPENSES:,question
+
+file_name,box.0,box.1,box.2,box.3,text,label
+86075409_5410.json,56,122,85,137,From:,question
+86075409_5410.json,57,149,72,162,To:,question
+86075409_5410.json,56,175,76,190,CC:,question
+86075409_5410.json,119,229,132,242,,other
+86075409_5410.json,145,425,211,439,Circulation(#),question
+86075409_5410.json,119,256,132,273,,other
+86075409_5410.json,120,284,131,299,,other
+86075409_5410.json,120,310,131,325,,other
+86075409_5410.json,120,341,133,354,,other
+86075409_5410.json,119,369,133,380,,other
+86075409_5410.json,119,397,132,410,,other
+86075409_5410.json,119,425,132,438,,other
+86075409_5410.json,119,451,130,464,,other
+86075409_5410.json,120,480,133,493,,other
+86075409_5410.json,122,507,132,520,,other
+86075409_5410.json,120,535,131,546,,other
+86075409_5410.json,120,577,133,594,,other
+86075409_5410.json,122,605,133,622,,other
+86075409_5410.json,689,809,716,922,86075409,other
+86075409_5410.json,279,453,304,470,Tiers,question
+86075409_5410.json,306,454,317,468,"II,",question
+86075409_5410.json,317,454,325,468,&,question
+86075409_5410.json,327,451,340,469,IV,question
+86075409_5410.json,101,120,177,136,Lynnette Stevens,answer
+86075409_5410.json,102,148,162,163,Kelli Scruggs,answer
+86075409_5410.json,101,175,176,204,Vincent Losito George Baroody,answer
+86075409_5410.json,232,183,361,206,S. Tesh C. Hill,answer
+86075409_5410.json,236,176,291,190,Don Kisling,question
+86075409_5410.json,145,229,236,244,Brand(s) Applicable,question
+86075409_5410.json,147,256,201,271,Media Type,question
+86075409_5410.json,145,284,204,299,Media Name,question
+86075409_5410.json,147,313,257,329,Issue Frequency/ Year,question
+86075409_5410.json,145,341,219,356,*Space/ Color,question
+86075409_5410.json,147,369,231,386,Coupon Issue Date,question
+86075409_5410.json,147,397,254,414,Coupon Expiration Date,question
+86075409_5410.json,145,451,242,467,Geographical Area(s),question
+86075409_5410.json,147,480,212,497,Coupon Value,question
+86075409_5410.json,144,507,243,524,Pack and/ or Carton?,question
+86075409_5410.json,147,536,273,551,Advertising Creative Title.,question
+86075409_5410.json,148,577,241,594,Signature of Initiator,question
+86075409_5410.json,147,605,209,620,Date Initiated,question
+86075409_5410.json,52,634,172,651,Analytical Requirements,question
+86075409_5410.json,344,229,491,243,"Newport Parent, Lights. & 120's",answer
+86075409_5410.json,345,256,396,271,Direct Mail,answer
+86075409_5410.json,344,285,459,301,Competitive 21- 34 years,answer
+86075409_5410.json,496,370,535,384,4/ 14/ 00,answer
+86075409_5410.json,497,397,535,412,9 /30 00,answer
+86075409_5410.json,344,423,605,454,"APPROX 600. 000 AR. AZ.A K CA CO FL ID IA. CT, ME, MASS, MN, MT, NE,",answer
+86075409_5410.json,345,453,570,521,"NV, NM, NY ND, DK, OR, RL, SD, WA, DC, WY $1. 50 OFF PACK",answer
+86075409_5410.json,335,547,646,626,21- Jan 00,answer
+86075409_5410.json,279,705,399,720,FOR CONTROL USE ONLY,header
+86075409_5410.json,235,732,300,750,Code Assigned,question
+86075409_5410.json,233,754,285,772,Job Number,question
+86075409_5410.json,233,778,305,796,Est. Redemption,question
+86075409_5410.json,397,728,464,749,05787,answer
+86075409_5410.json,404,784,438,805,13%,answer
+86075409_5410.json,54,839,151,857,* Where Applicable,other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+86079776_9777.json,95,154,183,171,SPECIFICS,header
+86079776_9777.json,223,264,291,281,Execution:,question
+86079776_9777.json,387,260,441,278,Media:,question
+86079776_9777.json,89,300,185,314,OBJECTIVE,header
+86079776_9777.json,103,439,171,454,TARGET,header
+86079776_9777.json,95,549,211,564,COMMUNICATION,header
+86079776_9777.json,211,546,278,566,PLATFORM,header
+86079776_9777.json,524,866,549,968,86079776,other
+86079776_9777.json,68,99,391,133,CREATIVE INPUT DOCUMENT,header
+86079776_9777.json,68,180,153,201,Date/ Time:,question
+86079776_9777.json,68,201,165,222,Prepared By:,question
+86079776_9777.json,180,183,285,198,10/30/98 1:46 PM,answer
+86079776_9777.json,70,219,285,242,Milestone Presentation Date:,question
+86079776_9777.json,68,242,271,262,Estimated Creative Budget:,question
+86079776_9777.json,70,264,129,282,Concept:,question
+86079776_9777.json,388,177,484,197,Client Name:,question
+86079776_9777.json,388,198,504,218,Matter Number:,question
+86079776_9777.json,387,218,485,239,Project Title:,question
+86079776_9777.json,388,237,561,257,Est. Production Budget:,question
+86079776_9777.json,68,324,255,357,Why are we advertising? What do we plan to achieve?,header
+86079776_9777.json,73,462,647,496,To whom are we talking? Who is the primary target? Is there a secondary target? What is their relationship to the brand what do they currently think about it?,question
+86079776_9777.json,74,570,669,607,What is the single most important message/idea we are trying to communicate? What is the unique selling position that will help us achieve our advertising goal? Are there any secondary messages?,question
+86079776_9777.json,74,638,350,671,What is the key benefit to the target? What's in it for the reader?,question
+86079776_9777.json,74,703,674,736,"Is there an offer/call to action? What are we offering the target to persuade him/her to act now? (A premium, sweepstakes, limited-time offer, free information, or something else?",question
+86079776_9777.json,75,765,366,799,What would we like our target to think? What would our target say after being exposed to our program?,question
+86079776_9777.json,67,932,243,947,c:\my documents\wp\sample cid. doc,other
+86079776_9777.json,363,930,393,944,1 of 2,other
+86079776_9777.json,598,930,695,944,10/30/98 01:46 PM,other
+86079776_9777.json,559,359,603,373,☐ Loyalty,question
+86079776_9777.json,559,374,653,387,☐ Lead Generation,question
+86079776_9777.json,559,387,592,400,☐ Trial,question
+86079776_9777.json,430,362,488,373,☐ Acquisition,question
+86079776_9777.json,430,374,477,387,☐ Up-Sell,question
+86079776_9777.json,430,390,490,401,☐ Awareness,question
+86079776_9777.json,293,360,345,375,☐ Retention,question
+86079776_9777.json,291,376,350,387,☐ Cross-Sell,question
+86079776_9777.json,291,390,352,404,☐ Direct Sale,question
+86079776_9777.json,293,404,331,415,☐ Other,question
+86079776_9777.json,110,406,236,417,☐ Change Image Perception,question
+86079776_9777.json,109,391,242,405,☐ New Product/Package Intro.,question
+86079776_9777.json,110,377,214,389,☐ Competitive Blocking,question
+86079776_9777.json,110,362,214,376,☐ Relationship-Building,question
+
+file_name,box.0,box.1,box.2,box.3,text,label
+86220490.json,168,261,192,276,To:,question
+86220490.json,168,282,204,297,Firm:,question
+86220490.json,169,304,196,319,FAX,question
+86220490.json,198,304,216,319,#:,question
+86220490.json,168,342,209,357,From:,question
+86220490.json,169,425,204,442,Date:,question
+86220490.json,270,282,304,297,MSA,answer
+86220490.json,271,306,327,320,Autodial,answer
+86220490.json,117,560,151,575,"Mike,",other
+86220490.json,258,761,310,782,,other
+86220490.json,661,711,682,814,8622042,other
+86220490.json,198,182,506,222,LORILLARD TOBACCO COMPANY Market Planning and Information Department,header
+86220490.json,271,260,354,277,Mike Mozina,answer
+86220490.json,271,342,358,359,Susan Smith,answer
+86220490.json,270,365,336,382,335- 7733,answer
+86220490.json,271,388,335,403,335- 7150,answer
+86220490.json,169,365,217,380,FAX #:,question
+86220490.json,169,387,233,404,Phone #:,question
+86220490.json,270,426,324,441,8/ 31/ 98,answer
+86220490.json,268,447,465,463,3 (including this cover page),answer
+86220490.json,168,447,230,464,# Pages:,question
+86220490.json,117,647,612,664,- Approval for AWS Quarterly Store Count Database to begin 3rd Quarter 1998,other
+86220490.json,116,693,587,731,- Table showing significant jump in Convenience Store market importance in 2nd Quarter 1998,other
+86220490.json,117,761,225,778,Talk to you soon!,question
+86220490.json,117,605,260,622,"As promised, here are:",question
+
+file_name,box.0,box.1,box.2,box.3,text,label
+86230203_0206.json,192,67,213,82,,question
+86230203_0206.json,61,138,80,153,TO:,question
+86230203_0206.json,61,171,100,181,FROM:,question
+86230203_0206.json,61,240,118,250,SUBJECT:,question
+86230203_0206.json,518,162,531,172,X,answer
+86230203_0206.json,66,293,144,305,GEOGRAPHY,header
+86230203_0206.json,66,331,117,344,REGION:,header
+86230203_0206.json,64,394,124,404,DIVISION:,header
+86230203_0206.json,226,328,257,340,FULL,question
+86230203_0206.json,367,326,412,338,PARTIAL,question
+86230203_0206.json,281,329,296,339,x,answer
+86230203_0206.json,225,391,252,403,FULL,question
+86230203_0206.json,368,388,413,398,PARTIAL,question
+86230203_0206.json,106,533,194,543,DISTRIBUTION,header
+86230203_0206.json,388,642,418,652,Seyle,answer
+86230203_0206.json,386,662,431,669,Dantzlen,answer
+86230203_0206.json,386,738,416,748,Econ,answer
+86230203_0206.json,362,644,380,653,180,answer
+86230203_0206.json,359,663,380,673,130,answer
+86230203_0206.json,647,636,662,651,20,answer
+86230203_0206.json,647,657,663,667,19,answer
+86230203_0206.json,648,677,663,689,18,answer
+86230203_0206.json,648,696,663,708,18,answer
+86230203_0206.json,648,716,663,728,17,answer
+86230203_0206.json,648,735,661,747,16,answer
+86230203_0206.json,73,647,98,659,K&B,answer
+86230203_0206.json,73,666,133,676,Delchamps,answer
+86230203_0206.json,75,762,103,775,Litco,answer
+86230203_0206.json,367,680,382,693,85,answer
+86230203_0206.json,367,699,383,715,39,answer
+86230203_0206.json,370,719,382,734,36,answer
+86230203_0206.json,367,735,380,751,36,answer
+86230203_0206.json,368,757,383,770,23,answer
+86230203_0206.json,368,777,383,792,23,answer
+86230203_0206.json,368,798,383,810,22,answer
+86230203_0206.json,669,735,690,841,86230203,other
+86230203_0206.json,638,927,698,943,Page 1 of 4,other
+86230203_0206.json,347,936,405,945,MAVPROG,other
+86230203_0206.json,51,940,120,950,11-Dec-96,other
+86230203_0206.json,57,70,172,82,12/12/96 08:33,other
+86230203_0206.json,210,69,284,82,204 7348616,other
+86230203_0206.json,359,66,452,81,LORILLARD TOB,other
+86230203_0206.json,475,66,540,79,NYO 1,other
+86230203_0206.json,626,63,689,78,0001/ 004,other
+86230203_0206.json,138,138,216,151,K. A. Sparrow,answer
+86230203_0206.json,139,168,205,180,F. Strickland,answer
+86230203_0206.json,142,234,392,249,MAVERICK SPECIALS- PROGRESS REPORT,answer
+86230203_0206.json,504,130,617,140,SUBMISSION DATE,header
+86230203_0206.json,461,162,503,174,DEC 13,question
+86230203_0206.json,461,193,501,202,JAN 25,question
+86230203_0206.json,579,159,620,172,FEB 24,question
+86230203_0206.json,579,190,615,201,APR 4,question
+86230203_0206.json,64,352,395,368,(ONLY IF PARTIAL REGION CONTINUE WITH DIVISION(S) SCOPE),question
+86230203_0206.json,379,412,463,422,DIVISION NAME:,question
+86230203_0206.json,382,436,463,449,DIVISION NAME:,question
+86230203_0206.json,379,461,467,473,DIVISION NAME:,question
+86230203_0206.json,575,410,616,422,# REPS,question
+86230203_0206.json,575,434,617,444,# REPS,question
+86230203_0206.json,575,458,617,473,# REPS,question
+86230203_0206.json,178,415,262,425,DIVISION: ,question
+86230203_0206.json,177,439,264,450,DIVISION NAME:,question
+86230203_0206.json,178,466,264,476,DIVISION NAME:,question
+86230203_0206.json,195,557,600,590,DIRECT ACCOUNTS AND CHAINS HEADQUARTERED WITHIN THE REGION (15+ STORES) STOCKING NO MAVERICK SPECIALS,other
+86230203_0206.json,136,623,253,638,NAME OF ACCOUNT,question
+86230203_0206.json,328,608,379,633,NO. OF STORES,question
+86230203_0206.json,431,617,548,630,NAME OF ACCOUNT,question
+86230203_0206.json,608,600,657,629,NO OF STORES,question
+86230203_0206.json,73,686,130,696,Winn Dixie,answer
+86230203_0206.json,73,704,145,717,Schwegmann,answer
+86230203_0206.json,76,723,139,735,Aurry Greer,answer
+86230203_0206.json,75,741,147,756,Double ,answer
+86230203_0206.json,76,783,127,792,Huber Oil,answer
+86230203_0206.json,76,802,137,814,Morris Corp,answer
+86230203_0206.json,388,719,457,731,Bayou Foods,answer
+86230203_0206.json,388,699,466,712,Compac Foods,answer
+86230203_0206.json,389,681,475,693,Southeast Foods,answer
+
+file_name,box.0,box.1,box.2,box.3,text,label
+86236474_6476.json,47,102,74,120,TO:,question
+86236474_6476.json,47,141,96,159,FROM:,question
+86236474_6476.json,683,800,707,912,8623474,other
+86236474_6476.json,616,138,638,155,☑,answer
+86236474_6476.json,124,102,244,122,Mrs. K. A. Sparrow,answer
+86236474_6476.json,126,138,196,158,R. G. Ryan,answer
+86236474_6476.json,511,140,560,155,JUNE7,question
+86236474_6476.json,510,156,562,174,AUG.2,question
+86236474_6476.json,511,175,561,192,OCT.7,question
+86236474_6476.json,518,101,655,121,SUBMISSION DATE:,header
+86236474_6476.json,169,211,545,234,NEWPORT LIGHTS HEAVY UP PROGRESS REPORT,header
+86236474_6476.json,46,267,416,289,EFFECTIVENESS OF DISTRIBUTION ALLOWANCE:,header
+86236474_6476.json,45,307,287,327,DIRECT ACCOUNT/ WHOLESALERS:,question
+86236474_6476.json,49,327,599,364,Distribution allowance was very effective in accomplishing our objectives. All accounts have purchased introductory products.,answer
+86236474_6476.json,47,437,236,454,DIRECT ACCOUNT CHAINS:,question
+86236474_6476.json,47,457,235,477,Eagle Foods is the only Void.,answer
+86236474_6476.json,47,552,280,570,NON- DIRECT ACCOUNT CHAINS:,question
+86236474_6476.json,47,571,575,590,Reception from these accounts is most positive with a solid incentitive to purchase.,answer
+86236474_6476.json,46,662,243,721,EFFECTIVENESS OF THE RETAIL (1 00 OFF CARTON) DISTRIBUTION ALLOWANCE:,question
+86236474_6476.json,279,701,647,739,Has been most helpful in acquiring desireable distribution when needed by Sales Reps.,answer
+86236474_6476.json,47,795,234,816,PROMOTIONAL ACTIVITY,header
+86236474_6476.json,46,834,181,871,40c OFF PACK- GENERAL MARKET:,question
+86236474_6476.json,203,852,605,888,"The 40c off promotions continue to be well received at the retail stores and by consumers, as well.",answer
+
+file_name,box.0,box.1,box.2,box.3,text,label
+86244113.json,39,141,92,156,DIVISION:,question
+86244113.json,39,168,100,186,ACCOUNT:,question
+86244113.json,169,211,216,226,(STATE),question
+86244113.json,492,142,535,155,DATES:,question
+86244113.json,39,342,80,355,BRAND,question
+86244113.json,39,588,80,599,NOTE:,question
+86244113.json,41,711,84,724,ACTION,other
+86244113.json,85,711,120,725,PLAN:,question
+86244113.json,85,642,110,653,CC:,question
+86244113.json,666,703,687,804,8624113,other
+86244113.json,620,915,670,926,STYLEREP,other
+86244113.json,39,196,137,211,INVENTORY FOR:,question
+86244113.json,170,271,524,292,DIRECT ACCOUNT STATUS REPORT,header
+86244113.json,235,325,324,357,# OF CARTONS ON HAND,question
+86244113.json,355,327,460,356,AVERAGE WEEKLY MOVEMENT,question
+86244113.json,492,327,563,354,# OF WEEKS ON HAND,question
+86244113.json,39,369,148,383,STYLE LIGHT 100'S,answer
+86244113.json,39,397,205,410,STYLE LIGHT MENTHOL 100'S,answer
+86244113.json,39,422,176,437,STYLE LIGHT BOX 100'S,answer
+86244113.json,38,450,207,465,STYLE MEN. LIGHT BOX 100'S,answer
+86244113.json,41,476,185,493,STYLE SLIM LIGHT 100's,answer
+86244113.json,41,506,194,520,STYLE SLIM MEN. LT. 100's,answer
+86244113.json,85,588,504,630,REPORT STYLE INVENTORY ONLY. SUBMIT REPORT ONLY IF STYLE IS STILL ON HAND IN THIS ACCOUNT.,answer
+86244113.json,115,642,563,657,"REGIONAL SALES MANAGER, ALL DIVISIONS SERVICED BY THIS ACCOUNT.",answer
+
+file_name,box.0,box.1,box.2,box.3,text,label
+86263525.json,466,288,507,306,DATE,question
+86263525.json,469,392,510,410,DATE,question
+86263525.json,469,499,507,514,DATE,question
+86263525.json,468,602,509,623,DATE,question
+86263525.json,466,708,507,728,DATE,question
+86263525.json,468,816,509,833,DATE,question
+86263525.json,359,179,390,197,141,answer
+86263525.json,229,499,242,513,N,other
+86263525.json,242,499,264,514,/A,answer
+86263525.json,230,709,244,726,N,answer
+86263525.json,244,711,261,728,/A,answer
+86263525.json,719,764,743,904,2051119008,other
+86263525.json,201,45,580,91,RECORDS RETENTION SCHEDULE RECONCILIATION RECORDS MANAGEMENT DEPARTMENT - M /C,header
+86263525.json,89,135,234,153,DEPARTMENT NAME,question
+86263525.json,321,133,507,153,SCIENCE & TECHNOLOGY,answer
+86263525.json,95,182,261,199,COST CENTER NUMBER,question
+86263525.json,94,240,367,259,INDEX BINDERS CONSOLIDATED BY:,question
+86263525.json,230,286,265,305,N /A,answer
+86263525.json,95,346,340,365,INDEX BINDER RE- LABELED BY:,question
+86263525.json,106,388,283,426,Mallery,answer
+86263525.json,557,390,623,408,2 /15 /90,answer
+86263525.json,96,451,658,472,RETENTION & RECOMMENDATION FILE REORGANIZED AND RE- LABELED BY:,question
+86263525.json,96,559,687,579,RECORDS RETENTION SCHEDULE PLACED IN INDEX BINDER AND IN FILE BY:,question
+86263525.json,156,591,307,640,Wayne Boughan,answer
+86263525.json,556,602,624,620,4 /18 /90,answer
+86263525.json,95,663,631,685,BOXES CREATED FOR HARD COPY PERMANENT RETENTION RECORDS BY:,question
+86263525.json,98,770,494,792,RECORDS TRANSFER INVENTORY FORMS UPDATED BY:,question
+86263525.json,155,799,314,853,Wayne Baughan,answer
+86263525.json,556,814,624,834,7 /25 /90,answer
+
+file_name,box.0,box.1,box.2,box.3,text,label
+86328049_8050.json,99,250,131,263,TO:,question
+86328049_8050.json,101,263,146,283,Name:,question
+86328049_8050.json,99,296,144,310,Name:,question
+86328049_8050.json,101,327,143,341,Name:,question
+86328049_8050.json,99,359,142,373,Name:,question
+86328049_8050.json,99,387,142,402,Name:,question
+86328049_8050.json,96,419,141,436,Name:,question
+86328049_8050.json,98,450,141,468,Name:,question
+86328049_8050.json,98,482,143,500,Name:,question
+86328049_8050.json,95,514,140,529,Name:,question
+86328049_8050.json,95,672,140,685,Name:,question
+86328049_8050.json,94,701,141,716,Name:,question
+86328049_8050.json,92,749,138,764,Name:,question
+86328049_8050.json,92,779,135,792,Name:,question
+86328049_8050.json,267,820,282,841,4,answer
+86328049_8050.json,404,860,431,874,Yes,question
+86328049_8050.json,464,863,481,877,No,question
+86328049_8050.json,444,865,457,876,☑,answer
+86328049_8050.json,96,545,139,560,Name:,question
+86328049_8050.json,95,575,141,589,Name:,question
+86328049_8050.json,98,608,141,623,Name:,question
+86328049_8050.json,95,640,137,654,Name:,question
+86328049_8050.json,391,84,415,94,1426,other
+86328049_8050.json,665,797,694,902,86328049,other
+86328049_8050.json,59,84,138,95,Feb-24-99 10:53,other
+86328049_8050.json,163,82,241,95,From- UNTON WILL,other
+86328049_8050.json,503,82,616,95,T-122 P.01/04 F-066,other
+86328049_8050.json,267,108,458,235,"TELECOPY INFORMATION HUNTON & WILLIAMS Riverfront Plaza 951 East Byrd Street Richmond, Virginia 23219 -4074 (804)788-8200 2nd Floor Telecopier",header
+86328049_8050.json,528,176,622,191,Telecopier Nos.,question
+86328049_8050.json,531,193,625,238,(804) 788- 8218 (804) 788- 8219 (804) 788- 8669,answer
+86328049_8050.json,140,281,201,295,FAX NO:,question
+86328049_8050.json,140,311,201,326,FAX NO:,question
+86328049_8050.json,140,342,201,356,FAX NO.:,question
+86328049_8050.json,138,372,202,387,FAX NO.:,question
+86328049_8050.json,140,402,201,419,FAX NOc.:,question
+86328049_8050.json,138,436,201,451,FAX NOv,question
+86328049_8050.json,140,466,198,481,FAX NOv,question
+86328049_8050.json,140,497,198,514,FAX NOv,question
+86328049_8050.json,138,529,202,544,FAX NOv,question
+86328049_8050.json,137,561,200,576,FAX NOv,question
+86328049_8050.json,134,589,197,607,FAX NOv,question
+86328049_8050.json,137,623,196,638,FAX NOv,question
+86328049_8050.json,138,654,199,668,FAX NOv,question
+86328049_8050.json,135,686,197,700,FAX NOv,question
+86328049_8050.json,137,732,197,747,FAX NOv,question
+86328049_8050.json,135,763,195,777,FAX NOv,question
+86328049_8050.json,134,796,195,810,FAX NO.:,question
+86328049_8050.json,295,828,450,847,Pages (Including Cover),question
+86328049_8050.json,226,858,372,874,Original to follow in mail:,header
+86328049_8050.json,235,267,310,282,Ken Forrest,answer
+86328049_8050.json,233,284,321,299,212- 403- 2211,answer
+86328049_8050.json,237,297,325,313,Tom Frederick,answer
+86328049_8050.json,235,314,321,327,312- 558- 5700,answer
+86328049_8050.json,235,330,301,344,Tom Griffin,answer
+86328049_8050.json,235,342,320,360,617- 523- 1231,answer
+86328049_8050.json,233,360,315,374,Ever Hurwitz,answer
+86328049_8050.json,233,374,320,391,202- 342- 5999,answer
+86328049_8050.json,235,388,372,408,Barry Levin/ Curl Caton,answer
+86328049_8050.json,233,405,322,422,415- 772- 6268,answer
+86328049_8050.json,235,422,335,437,Barbara Robbins,answer
+86328049_8050.json,233,439,322,453,212- 403- 2033,answer
+86328049_8050.json,235,455,372,472,Greg Stone/Ron Olson,answer
+86328049_8050.json,235,469,321,484,213- 687- 3702,answer
+86328049_8050.json,232,486,373,501,Bill Allinder/Jeff Nelson,answer
+86328049_8050.json,233,501,320,516,816- 421- 2708,answer
+86328049_8050.json,232,517,331,531,Steve Krigbaum,answer
+86328049_8050.json,232,531,319,545,917- 663- 5593,answer
+86328049_8050.json,233,547,312,561,Tom Stoever,answer
+86328049_8050.json,235,561,319,576,303- 832- 0428,answer
+86328049_8050.json,232,578,363,592,Judy Bernstein- Gaeta,answer
+86328049_8050.json,233,592,320,610,202- 942- 5999,answer
+86328049_8050.json,229,610,296,623,Dal Burton,answer
+86328049_8050.json,230,626,320,640,404- 581- 8330,answer
+86328049_8050.json,232,642,318,655,Andy McGaan,answer
+86328049_8050.json,233,658,319,672,312- 861- 2200,answer
+86328049_8050.json,230,672,317,686,James Wilson,answer
+86328049_8050.json,232,687,316,703,336- 335- 7707,answer
+86328049_8050.json,230,704,402,719,Eric Sarner/ Doug Flemming/,answer
+86328049_8050.json,232,721,325,735,Peter Mckenna,answer
+86328049_8050.json,230,736,317,749,212- 735- 2000,answer
+86328049_8050.json,232,751,327,766,Thomas McKim,answer
+86328049_8050.json,230,767,316,781,336- 741- 0671,answer
+86328049_8050.json,229,781,314,795,D. Scott Wise,answer
+86328049_8050.json,229,797,315,811,212- 450- 4800,answer
+
+file_name,box.0,box.1,box.2,box.3,text,label
+87086073.json,88,142,110,152,,question
+87086073.json,492,138,513,151,DATE,question
+87086073.json,88,222,134,236,STRUCTURE,question
+87086073.json,88,385,134,399,COMMENTS,question
+87086073.json,469,603,484,616,J.,question
+87086073.json,490,602,503,617,D.,question
+87086073.json,513,601,548,616,Engle,question
+87086073.json,469,687,484,701,R.,question
+87086073.json,490,686,505,700,F.,question
+87086073.json,513,687,572,700,Dufresne,question
+87086073.json,115,186,182,204,Vanitrope,answer
+87086073.json,208,369,236,386,III,answer
+87086073.json,451,366,482,381,B134,answer
+87086073.json,479,570,559,622,,answer
+87086073.json,471,648,657,711,,answer
+87086073.json,654,785,669,873,87086073,other
+87086073.json,212,113,556,136,DECISION TREE ESTIMATION OF TOXIC RISK,header
+87086073.json,115,142,329,161,J. D. Ergle and R. F. Dufresne,answer
+87086073.json,522,135,630,159,"August 14, 1990",answer
+87086073.json,89,169,155,180,COMPOUND NAME,question
+87086073.json,279,221,532,343,CH3CH2O OH,answer
+87086073.json,89,359,195,373,ESTIMATED TOXICITY CLASS,question
+87086073.json,387,356,535,371,LORILLARO COMPOUND CODE NUMBER,question
+87086073.json,119,409,496,428,This ethoxy substitued aromatic falls into class III.,answer
+87086073.json,469,700,585,718,Research Chemist,question
+87086073.json,471,616,587,631,Research Chemist,question
+87086073.json,92,926,210,937,LORILLARD RESEARCH CENTER,other
+87086073.json,635,919,694,932,FORM ,other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+87093315_87093318.json,476,32,513,46,Date:,question
+87093315_87093318.json,299,99,315,110,on,question
+87093315_87093318.json,50,167,91,179,BLEND,question
+87093315_87093318.json,157,165,203,184,CASTING,question
+87093315_87093318.json,271,166,331,183,RECASING,question
+87093315_87093318.json,547,167,598,181,MENIHOL,question
+87093315_87093318.json,319,211,374,223,Filters,header
+87093315_87093318.json,50,208,126,223,Cigarettes,header
+87093315_87093318.json,72,237,109,251,Maker,question
+87093315_87093318.json,72,261,118,275,Length,question
+87093315_87093318.json,72,303,166,317,Circumference,question
+87093315_87093318.json,71,325,116,337,Weight,question
+87093315_87093318.json,72,347,111,362,Paper,question
+87093315_87093318.json,342,281,373,296,Kind,question
+87093315_87093318.json,340,367,435,384,Circumference,question
+87093315_87093318.json,340,390,384,405,Weight,question
+87093315_87093318.json,339,413,383,424,Plast.,question
+87093315_87093318.json,520,30,570,49,3/14/90,answer
+87093315_87093318.json,49,181,111,195,Attached,answer
+87093315_87093318.json,157,182,189,193,None,answer
+87093315_87093318.json,271,182,331,196,Attached,answer
+87093315_87093318.json,390,183,421,195,None,answer
+87093315_87093318.json,546,183,580,197,None,answer
+87093315_87093318.json,575,262,594,273,mm,answer
+87093315_87093318.json,213,413,238,425,430,answer
+87093315_87093318.json,213,434,224,444,G,answer
+87093315_87093318.json,213,545,250,560,White,answer
+87093315_87093318.json,212,569,242,583,Blue,answer
+87093315_87093318.json,213,589,252,603,White,answer
+87093315_87093318.json,213,612,253,621,White,answer
+87093315_87093318.json,475,590,512,602,James,answer
+87093315_87093318.json,476,632,512,644,James,answer
+87093315_87093318.json,475,566,504,581,MFG.,answer
+87093315_87093318.json,49,524,110,541,Wrapping,header
+87093315_87093318.json,319,524,420,541,Responsibility,header
+87093315_87093318.json,72,567,131,579,Closures,question
+87093315_87093318.json,70,545,119,557,Labels,question
+87093315_87093318.json,72,610,127,622,Cartons,question
+87093315_87093318.json,71,628,130,645,Markings,question
+87093315_87093318.json,340,610,401,625,Shipping,question
+87093315_87093318.json,51,681,138,695,Requirements,header
+87093315_87093318.json,318,682,392,697,Laboratory,header
+87093315_87093318.json,397,682,463,696,Analysis:,header
+87093315_87093318.json,678,762,697,853,87093315,other
+87093315_87093318.json,620,31,662,47,90- B- 1,other
+87093315_87093318.json,398,46,450,62,1194- 90,answer
+87093315_87093318.json,405,61,500,75,100 mm Filter,answer
+87093315_87093318.json,392,75,455,88,47.5 lbs.,answer
+87093315_87093318.json,52,95,223,113,Original Request Made By,question
+87093315_87093318.json,227,95,293,112,J. H. Bell,answer
+87093315_87093318.json,319,95,371,110,2/15/90,answer
+87093315_87093318.json,51,117,172,134,Purpose of Sample,question
+87093315_87093318.json,176,116,379,133,Cigarette Modification B- 451,answer
+87093315_87093318.json,50,137,280,154,Sample Specifications Written By,question
+87093315_87093318.json,283,138,379,152,C. W. Lassiter,answer
+87093315_87093318.json,390,166,479,183,FINAL FLAVOR,question
+87093315_87093318.json,213,238,245,253,MK 8,answer
+87093315_87093318.json,216,259,268,274,99.0 mm,answer
+87093315_87093318.json,214,281,252,295,27 mm,answer
+87093315_87093318.json,214,303,266,317,24.8 mm,answer
+87093315_87093318.json,214,324,279,343,78.0 g / 100,answer
+87093315_87093318.json,213,344,271,359,81- 01- 07,answer
+87093315_87093318.json,214,365,273,382,25- 04- 07,answer
+87093315_87093318.json,214,388,293,404,67 mm White,answer
+87093315_87093318.json,320,49,393,61,Sample No.,question
+87093315_87093318.json,277,59,399,76,Type of Cigarette,question
+87093315_87093318.json,313,74,384,89,Batch Size,question
+87093315_87093318.json,71,279,166,296,Filter Length,question
+87093315_87093318.json,70,367,145,384,Tip. Paper,question
+87093315_87093318.json,70,410,179,425,Tip. Paper Por.,question
+87093315_87093318.json,71,430,152,445,Glue Roller,question
+87093315_87093318.json,70,453,160,468,Air Dilution,question
+87093315_87093318.json,213,454,260,466,13.0 %,answer
+87093315_87093318.json,475,238,542,254,Section A,question
+87093315_87093318.json,575,238,642,254,Section B,question
+87093315_87093318.json,475,261,515,277,27 mm,answer
+87093315_87093318.json,475,283,550,298,"3.3/ 35,000",answer
+87093315_87093318.json,475,304,520,318,OG Lt.,answer
+87093315_87093318.json,475,324,522,339,108 mm,answer
+87093315_87093318.json,476,348,522,361,400 mm,answer
+87093315_87093318.json,475,367,536,383,24.45 mm,answer
+87093315_87093318.json,476,387,544,407,75.3 30g / 100,answer
+87093315_87093318.json,475,410,531,425,7 % Kent,answer
+87093315_87093318.json,475,430,534,447,84- 52- 28,answer
+87093315_87093318.json,475,454,513,468,655 ,answer
+87093315_87093318.json,342,323,414,341,Rod Length,question
+87093315_87093318.json,339,347,435,364,Pressure Drop,question
+87093315_87093318.json,340,433,409,449,Plug Wrap,question
+87093315_87093318.json,340,454,439,469,Plug Wrap Por.,question
+87093315_87093318.json,340,474,414,488,Comb. Wrap,question
+87093315_87093318.json,340,494,447,512,Comb. Wrap Por.,question
+87093315_87093318.json,339,545,436,559,Tobacco Blend,question
+87093315_87093318.json,339,565,465,581,Filter Production,question
+87093315_87093318.json,339,586,456,603,Making & Packing,question
+87093315_87093318.json,339,632,464,662,Sample Requistion (Form 02: 20: 06),question
+87093315_87093318.json,474,545,591,561,Lassiter/ Douglas,answer
+87093315_87093318.json,72,589,136,603,Tear Tape,question
+87093315_87093318.json,212,632,312,666,Sample No. on each Carton,answer
+87093315_87093318.json,70,693,144,730,Laboratory Other,question
+87093315_87093318.json,213,695,258,711,1 Tray,answer
+87093315_87093318.json,338,696,520,712,Mainstream Smoke Analysis,question
+87093315_87093318.json,310,759,455,774,Special Requirements,other
+87093315_87093318.json,486,894,695,910,"Director, Product Development",other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+87125460.json,524,54,697,176,,other
+87125460.json,680,672,700,773,87125460,other
+87125460.json,77,683,166,703,APPROVALS,question
+87125460.json,80,730,122,747,DATE,question
+87125460.json,81,821,119,834,DATE,question
+87125460.json,451,725,500,745,STUDY,question
+87125460.json,510,725,583,743,DIRECTOR,question
+87125460.json,427,649,630,758,,other
+87125460.json,419,770,708,826,,answer
+87125460.json,269,106,474,126,FINAL REPORT AMENDMENT,header
+87125460.json,74,152,170,173,STUDY NAME,question
+87125460.json,177,152,492,175,Induction of Hepatic Enzymes in rats (B202),answer
+87125460.json,77,182,187,204,STUDY NUMBER,question
+87125460.json,191,183,264,203,I- 7016. 401,answer
+87125460.json,80,215,215,233,INITIATION DATE,question
+87125460.json,215,212,334,228,"October 27, 1986",answer
+87125460.json,359,211,542,231,DATE OF FINAL REPORT,question
+87125460.json,545,211,667,231,"February 26, 1987",answer
+87125460.json,81,237,541,263,PART OF FINAL REPORT TO BE AMENDED (EXACT LOCATION),question
+87125460.json,110,270,250,292,Page 14 and Table 4,answer
+87125460.json,77,306,298,324,REASON FOR THE AMENDMENT,question
+87125460.json,320,306,466,324,Request from sponsor,answer
+87125460.json,81,455,524,477,AMENDMENT (Attach additional sheets as necessary),question
+87125460.json,184,489,275,503,see attached,answer
+87125460.json,102,698,186,744,8/ 7/ 87,answer
+87125460.json,92,788,188,830,08/ 14/ 87,answer
+87125460.json,451,814,608,835,QUALITY ASSURANCE,question
+
+file_name,box.0,box.1,box.2,box.3,text,label
+87137840.json,124,761,163,776,DATE:,question
+87137840.json,471,627,509,641,DATES:,question
+87137840.json,585,278,632,295,BROKEN,question
+87137840.json,659,278,708,293,LEAKED,question
+87137840.json,522,279,556,297,GOOD,answer
+87137840.json,201,148,255,166,T07281A,answer
+87137840.json,272,190,340,208,Lorillard,answer
+87137840.json,194,278,239,292,012590,answer
+87137840.json,302,411,324,425,One,answer
+87137840.json,358,233,389,248,B220,answer
+87137840.json,378,697,581,751,,answer
+87137840.json,215,608,392,667,,answer
+87137840.json,670,802,691,891,87137840,other
+87137840.json,351,103,498,121,TEST ARTICLE RECEIPT,header
+87137840.json,138,152,178,167,TA #:,question
+87137840.json,138,194,251,214,SPONSOR'S NAME:,question
+87137840.json,134,239,348,255,TEST ARTICLE IDENTIFICATION:,question
+87137840.json,135,282,182,297,LOT #:,question
+87137840.json,352,278,510,299,CONDITION OF SHIPMENT:,question
+87137840.json,134,325,225,341,SHIPPED VIA,question
+87137840.json,249,324,352,339,Direct Exress,answer
+87137840.json,302,363,433,380,Clear brown liquid,answer
+87137840.json,133,369,290,383,PHYSICAL DESCRIPTION:,question
+87137840.json,133,412,267,429,NO. OF CONTAINERS:,question
+87137840.json,133,457,229,473,GROSS WEIGHT,question
+87137840.json,247,453,338,470,Not provided,answer
+87137840.json,411,453,595,473,NET WEIGHT (if provided):,question
+87137840.json,602,450,641,464,100 g,answer
+87137840.json,263,494,354,509,Not provided,answer
+87137840.json,133,500,251,515,EXPIRATION DATE:,question
+87137840.json,131,542,355,559,SPECIAL HANDLING REQUIREMENTS:,question
+87137840.json,372,535,564,553,Store refrigerated in dark.,answer
+87137840.json,128,630,221,645,RECEIVED BY:,question
+87137840.json,564,619,623,639,03 /01 /90,answer
+87137840.json,126,675,322,690,STUDY DIRECTOR /DEPARTMENT,question
+87137840.json,352,670,419,684,Ray David,answer
+87137840.json,126,716,377,733,SIGATURE OF DEPARTMENT CONSIGNEE:,question
+87137840.json,189,749,279,788,03 /02 /90,answer
+
+file_name,box.0,box.1,box.2,box.3,text,label
+87147607.json,41,73,84,84,VENDOR,question
+87147607.json,70,117,102,128,TERMS,question
+87147607.json,155,197,184,211,CODE,question
+87147607.json,373,200,441,214,DESCRIPTION,question
+87147607.json,47,197,101,212,QUANTITY,question
+87147607.json,296,75,364,85,DEPARTMENT,other
+87147607.json,366,77,387,87,USE,other
+87147607.json,385,77,416,87,ONLY,other
+87147607.json,561,89,582,103,NC,question
+87147607.json,575,39,603,50,DATE,question
+87147607.json,571,108,596,118,Prev.,question
+87147607.json,641,201,668,214,UNIT,question
+87147607.json,670,203,701,216,PRICE,question
+87147607.json,296,754,334,768,4111,answer
+87147607.json,436,757,470,768,8700,answer
+87147607.json,627,785,645,874,87147607,other
+87147607.json,207,75,228,83,FOR,other
+87147607.json,228,75,295,85,PURCHASING,other
+87147607.json,59,42,140,53,☐ PURCHASING,question
+87147607.json,60,56,140,68,☐ STATIONARY,question
+87147607.json,265,45,428,57,PURCHASE REQUISITION,header
+87147607.json,182,59,531,73,PLEASE INCLUDE ONLY ONE TYPE OF MATERIAL ON THIS REQUISITION,other
+87147607.json,472,36,569,55,P. O. 1534 LT-1979,other
+87147607.json,581,56,701,71,"April 19, 1988",answer
+87147607.json,46,84,563,103,"Piedmont Research Laboratory 2748 Patterson Ave., Greensboro,",answer
+87147607.json,574,78,630,88,ORDER NO,question
+87147607.json,598,106,711,119,or Recommended Supplier,answer
+87147607.json,43,140,257,156,Lorillard Research Center,answer
+87147607.json,338,144,462,159,N. A. Thaggard,answer
+87147607.json,545,147,641,161,As required,answer
+87147607.json,503,134,577,145,DATE WANTED,question
+87147607.json,42,131,165,143,SHIP TO (DEPT BRANCH),question
+87147607.json,140,105,539,133,27407 NET 15 F. O. B. N/A VIA N/A,answer
+87147607.json,43,168,359,186,"420 English St., Greensboro, NC 27405",question
+87147607.json,123,225,705,528,"This is your authorization to prepare cigarette smoke condensate according to the protocol ""Standard Operating Procedure før the Preparation of Smoke Condensate for Mouse Skin Bioassay,"" for the period April 1, 1988 through December 31, 1988. Condensate will be prepared acording to a time schedule provided by Lorillard. The fixed price for condensate collection will be at a rate of $1, 750/10, 000 cigarettes smoked. Piedmont will pay the cost of consumable supplies. This work is to be conducted in accordance with the December 10, 1984 formal agreement between Piedmont Reseach Laboratories and Lorillard. All work is to be coordinated with our Mr. Neil Thaggard (919) 373-6628",answer
+87147607.json,105,679,197,693,FOLLOW UP DATE,question
+87147607.json,120,730,182,745,BUDGET NO.,question
+87147607.json,338,682,425,693,REQUISITION NO.,question
+87147607.json,578,683,632,696,ISSUED BY,question
+87147607.json,571,735,644,749,APPROVED BY,question
+87147607.json,511,749,673,788,,answer
+87147607.json,411,732,462,747,DEPT. NO.,question
+87147607.json,295,733,350,746,ACCT. NO.,question
+
+file_name,box.0,box.1,box.2,box.3,text,label
+87332450.json,108,203,149,217,Name:,question
+87332450.json,242,215,264,228,First,question
+87332450.json,189,214,211,228,Title,question
+87332450.json,346,215,377,226,Middle,question
+87332450.json,464,214,485,227,Last,question
+87332450.json,112,244,171,259,Institution:,question
+87332450.json,189,292,217,305,Street,question
+87332450.json,191,337,208,350,City,question
+87332450.json,307,335,331,348,State,question
+87332450.json,385,335,430,346,ZIP Code,question
+87332450.json,504,334,540,348,Country,question
+87332450.json,110,363,171,380,Telephone:,question
+87332450.json,472,561,517,575,TOTAL,question
+87332450.json,191,655,229,669,DATE,question
+87332450.json,270,654,308,668,TIME,question
+87332450.json,112,686,164,701,Arrival:,question
+87332450.json,115,716,175,731,Departure:,question
+87332450.json,390,655,449,668,CARRIER,question
+87332450.json,642,777,662,855,87332450,other
+87332450.json,476,835,535,849,Telephone:,question
+87332450.json,475,851,504,866,FAX:,question
+87332450.json,110,275,159,290,Address:,question
+87332450.json,163,145,570,176,47th TCRC REGISTRATION FORM,header
+87332450.json,110,187,218,201,Please type or print,other
+87332450.json,331,363,372,376,FAX #:,question
+87332450.json,306,292,355,303,P.O. Box#,question
+87332450.json,113,394,196,411,Name of guest:,question
+87332450.json,165,426,315,440,Continental Breakfast on Tuesday,question
+87332450.json,165,441,297,456,Fall Foliage Tour on Tuesday,question
+87332450.json,402,425,506,439,Breakfast on Wednesday,question
+87332450.json,402,440,570,454,Craftsman Village Tour Wednesday,question
+87332450.json,112,489,257,502,Advance Registration Fee:,question
+87332450.json,264,486,385,504,(prior to September 1),other
+87332450.json,239,503,343,519,after September ,other
+87332450.json,112,504,237,519,Late Registration Fee,question
+87332450.json,427,486,473,500,$135 00,answer
+87332450.json,427,501,475,516,$150 00,answer
+87332450.json,427,532,471,547,$ 30. 00,answer
+87332450.json,113,534,309,550,Ground Transportation (round trip),question
+87332450.json,152,518,326,534,Extra banquet tickets tickets $40. 00,question
+87332450.json,113,591,616,611,Please complete this portion if you need transportation from and to the Knoxville Airport.,question
+87332450.json,113,626,189,639,No. in Party:,question
+87332450.json,508,654,570,668,FLIGHT #,question
+87332450.json,113,774,630,806,"Send this registration form, along with payment to the address noted below. Enclose a check or international money order payable in U. S. funds to the University of Tennessee - 47th TCRC",other
+87332450.json,116,824,160,837,Mail to:,question
+87332450.json,166,823,355,881,"Dr. Phil P. Hunter U. T. Tobacco Experiment Station Route 5 Box 113 Greeneville, TN 37743",answer
+87332450.json,541,834,625,850,(615) ) 638- 5532,answer
+87332450.json,508,851,595,865,(615) ) 638- 6458,answer
+
+file_name,box.0,box.1,box.2,box.3,text,label
+87428306.json,115,207,127,215,pH,question
+87428306.json,112,349,155,358,SOLUBILITY,question
+87428306.json,124,434,132,443,,question
+87428306.json,123,485,144,494,ORAL,question
+87428306.json,127,162,158,173,A221,answer
+87428306.json,119,885,156,893,SIGNATURE,question
+87428306.json,190,909,221,918,CENTER,other
+87428306.json,154,909,186,918,RESEARCH,other
+87428306.json,115,912,152,921,LORILLARD,other
+87428306.json,646,643,667,731,87428306,other
+87428306.json,511,880,530,891,DATE,question
+87428306.json,258,119,545,136,COMPOUND PHYSICAL PARAMETERS,header
+87428306.json,114,152,175,162,LRC FILE NUMBER,question
+87428306.json,508,147,556,158,LOT NUMBER,question
+87428306.json,115,179,171,188,PHYSICAL STATE,question
+87428306.json,128,184,547,202,A crystalline solid at room temperature which melts at > 56 C.,answer
+87428306.json,128,219,588,277,"The pH of a 50 % concentration of A221 in water was theoretically calculated to be 7.26 at 22 C from a 0.5 % solution in 79.5 % aqueous dioxane according to the extrapolation procedures of Dr. P. D. Schickedantz, Lozillard Accession Number 1662. Referenced 45- 10- 1.",answer
+87428306.json,115,287,178,298,SPECIFIC GRAVITY,question
+87428306.json,128,305,234,317,Not Determined.,answer
+87428306.json,126,361,536,399,"MUTAGENICITY SOLVENTS A221 is soluble EtOH at 0.2 g/ ml, with stirring, at room temperature. Reference BC30- 88.",answer
+87428306.json,127,436,567,466,"A221 forms a solution in corn oil at 0.5 g/ 0.5 mL, with stirring at room temperature. Reference BC30- 8888.",answer
+87428306.json,127,504,568,535,"A221 forms a solution in corn oil at 0.5 g/ 0.5 mL, with stirring at room temperature. Reference BC30- 88.",answer
+87428306.json,116,574,205,584,ACUTE CARDIOVASCULAR,question
+87428306.json,127,598,516,615,A221 is insoluble for this procedure. Reference BC30- 38,answer
+87428306.json,115,635,220,644,STORAGE RECOMMENDATIONS,question
+87428306.json,126,680,517,698,Refrigerate in an amber glass bottle at no more than 8 C.,answer
+87428306.json,116,739,206,751,COMPOUND SENSITIVE TO,header
+87428306.json,135,765,158,774,☐ AIR,question
+87428306.json,171,763,200,774,☐ HEAT,question
+87428306.json,214,761,262,773,☐ MOISTURE,question
+87428306.json,273,761,309,773,☐ OTHER,question
+87428306.json,119,790,312,802,SAFETY COMMENTS (SUGGESTED HANDLING PROCEDURE:,question
+87428306.json,144,882,352,921,,answer
+87428306.json,372,890,425,903,A - 13,other
+87428306.json,513,885,672,907,,answer
+87428306.json,652,904,700,915,FORM ,other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+87528321.json,27,15,62,27,RJRT,other
+87528321.json,486,140,488,142,,question
+87528321.json,29,87,95,101,Position,question
+87528321.json,92,180,141,191,Change,question
+87528321.json,69,180,89,192,of,question
+87528321.json,29,181,64,192,Type,question
+87528321.json,75,209,142,223,Addition,question
+87528321.json,75,224,142,236,Deletion,question
+87528321.json,75,242,127,252,Change,question
+87528321.json,232,162,258,176,Mat,question
+87528321.json,216,147,283,158,Affected,question
+87528321.json,185,162,225,174,Glass,question
+87528321.json,31,148,77,162,Brand/,question
+87528321.json,76,147,147,162,Assembly/,question
+87528321.json,146,150,210,161,Material,question
+87528321.json,146,165,181,175,Slit,question
+87528321.json,117,165,141,176,and,question
+87528321.json,82,165,111,177,Mat,question
+87528321.json,37,165,79,177,Glass,question
+87528321.json,269,207,320,221,Design,question
+87528321.json,269,222,358,236,Compatibity,question
+87528321.json,269,237,406,251,Manufacturability,question
+87528321.json,460,237,500,249,Other,question
+87528321.json,646,204,718,219,Emergency,question
+87528321.json,647,219,694,233,Urgent,question
+87528321.json,647,234,703,248,Routine,question
+87528321.json,607,55,644,67,Page,question
+87528321.json,683,55,718,65,Date,question
+87528321.json,607,112,654,126,Change,question
+87528321.json,662,115,703,124,Order,question
+87528321.json,707,113,756,124,Number,question
+87528321.json,637,125,708,142,8410059,answer
+87528321.json,455,71,517,80,8-17-88,answer
+87528321.json,474,97,510,112,5398,other
+87528321.json,678,24,724,36,880029,answer
+87528321.json,637,25,667,37,RFC,question
+87528321.json,42,242,56,254,X,answer
+87528321.json,431,236,447,251,X,answer
+87528321.json,621,236,637,250,X,answer
+87528321.json,741,581,755,628,51484,other
+87528321.json,742,638,756,672,3791,other
+87528321.json,728,722,759,736,Date,question
+87528321.json,729,784,760,796,DATE,question
+87528321.json,575,786,621,797,HOLDER,question
+87528321.json,534,787,569,797,SPEC,question
+87528321.json,507,723,549,737,Title,question
+87528321.json,224,727,300,741,Signature,question
+87528321.json,228,787,293,801,Approved,question
+87528321.json,392,786,457,802,Rejected,question
+87528321.json,652,828,723,842,COMMITTEE,question
+87528321.json,596,829,646,843,REVIEW,question
+87528321.json,534,829,590,841,PRODUCT,question
+87528321.json,683,889,753,904,COMMITTEE,question
+87528321.json,597,892,677,902,ACCEPTANCE,question
+87528321.json,535,889,590,901,PRODUCT,question
+87528321.json,682,800,768,826,8-17-88,answer
+87528321.json,514,784,657,848,,other
+87528321.json,673,833,727,858,,other
+87528321.json,602,835,652,857,,other
+87528321.json,541,842,578,863,KA,other
+87528321.json,608,857,675,904,,other
+87528321.json,531,859,607,886,,other
+87528321.json,335,916,400,941,9/8/88,answer
+87528321.json,244,10,389,25,REQUEST FOR CHANGE,header
+87528321.json,252,25,357,38,F- 1001 7/ 88,other
+87528321.json,29,59,156,71,ORIGINATOR Name:,question
+87528321.json,167,55,248,72,Dan Straka,answer
+87528321.json,441,55,549,70,Date Prepared,question
+87528321.json,620,66,671,81,1 of 1,answer
+87528321.json,702,66,757,81,B-17-88,answer
+87528321.json,700,82,768,96,D. Marsh,answer
+87528321.json,606,82,694,95,Received By,question
+87528321.json,440,85,543,99,Telephone No,question
+87528321.json,32,117,251,131,Department Name and Location,question
+87528321.json,97,131,223,147,611- 13 3rd Floor,answer
+87528321.json,29,269,207,283,Description of Problem,header
+87528321.json,460,206,549,221,Spec Change,question
+87528321.json,460,221,570,235,Cost Reduction,question
+87528321.json,59,281,731,315,The current specifications for glass mat and slit glass mat can be made more accurate and complete with the following changes:,question
+87528321.json,61,332,138,344,Glass Mat:,question
+87528321.json,62,392,180,407,slit Glass Mat:,question
+87528321.json,216,328,685,374,Delete C- glass from Iten description. Change glass softening point to 756 + / - 10 degrees from 750. Change rolls per pallet to 2 from 1.,answer
+87528321.json,216,389,649,433,"Delete C- glass from item description Change bobbins per stack to 47 from 45. Add outside diameter specs of 30.0, 26.0 - 31.0 inches.",answer
+87528321.json,32,527,167,544,Proposed Solution,question
+87528321.json,64,540,500,559,Change the current MSS specifications as outlined above.,answer
+87528321.json,55,742,162,771,Accepted for Investigation,question
+87528321.json,34,787,167,802,Final Disposition,question
+87528321.json,36,815,317,833,Action Taken or Reason for Rejection,question
+87528321.json,323,892,512,907,Proposed Effective Date,question
+87528321.json,525,899,761,967,habanisy Dhes ,other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+87528380.json,612,59,678,81,10675,other
+87528380.json,300,186,440,204,PROPOSAL,header
+87528380.json,418,215,442,228,FOR,question
+87528380.json,409,229,440,242,DATE,question
+87528380.json,34,214,52,227,TO,question
+87528380.json,34,232,83,242,ADDRESS,question
+87528380.json,34,244,63,257,CITY,question
+87528380.json,34,260,72,270,STATE,question
+87528380.json,120,270,165,287,Attn:,question
+87528380.json,46,339,84,357,ITEM:,question
+87528380.json,47,358,120,372,MATERIAL:,header
+87528380.json,232,358,300,372,ALUMINUM,question
+87528380.json,436,341,471,358,SIZE:,question
+87528380.json,514,356,561,370,GAUGE,question
+87528380.json,47,385,100,399,COLORS:,question
+87528380.json,47,426,93,443,HOLES:,header
+87528380.json,101,427,125,441,YES,question
+87528380.json,302,469,370,483,EMBOSSED,question
+87528380.json,207,443,263,456,SQUARE,question
+87528380.json,47,441,113,455,CORNERS:,header
+87528380.json,46,469,92,483,EDGES:,header
+87528380.json,46,514,109,529,PACKING:,header
+87528380.json,46,527,95,541,OTHER:,question
+87528380.json,303,356,323,371,☑,answer
+87528380.json,163,397,238,411,Aluminum,answer
+87528380.json,385,399,405,414,☑,answer
+87528380.json,332,427,350,440,4,answer
+87528380.json,131,427,151,442,☑,answer
+87528380.json,374,469,391,483,☑,answer
+87528380.json,142,485,162,499,☑,answer
+87528380.json,106,543,174,557,Tooling:,question
+87528380.json,49,582,130,603,QUANTITIES:,question
+87528380.json,45,613,92,628,PRICE:,question
+87528380.json,46,680,103,693,BILLING:,header
+87528380.json,47,700,146,715,WAREHOUSING:,header
+87528380.json,180,679,198,694,☑,answer
+87528380.json,163,700,183,715,☑,answer
+87528380.json,578,846,666,863,87528380,other
+87528380.json,462,874,616,940,,other
+87528380.json,45,757,112,770,CONDITIONS:,header
+87528380.json,527,630,611,657,4050,other
+87528380.json,592,696,603,714,,other
+87528380.json,479,716,575,757,TOTAL,question
+87528380.json,592,701,683,753,8650,other
+87528380.json,577,719,599,732,,question
+87528380.json,31,41,192,163,S,other
+87528380.json,263,441,285,458,☑,answer
+87528380.json,223,508,245,530,10,answer
+87528380.json,204,109,598,135,"STOUT INDUSTRIES, INC.",header
+87528380.json,203,138,674,153,6425 W. FLORISSANT AVE. ST. LOUIS MO 63136 . (314) 385- 2280,other
+87528380.json,105,211,286,229,Lorillard Corporation,answer
+87528380.json,106,226,243,240,666 Fifth Avenue,answer
+87528380.json,106,240,174,257,New York,answer
+87528380.json,106,254,233,268,New York 10103,answer
+87528380.json,485,207,653,225,"Metal ""Pack"" Plaque",answer
+87528380.json,487,222,624,240,"October 16, 1987",answer
+87528380.json,485,253,653,270,Mr. A. D. Steinberg,answer
+87528380.json,513,267,640,279,YOUR REPRESENTATIVE,question
+87528380.json,49,304,415,332,It is our pleasure to propose the following:,other
+87528380.json,170,270,329,285,Mr. Robert Kennedy,answer
+87528380.json,103,339,348,357,Harley Davidson Metal Plaque,answer
+87528380.json,521,335,608,357,"171/4 x 231/2 """,answer
+87528380.json,617,352,660,368,".025"" ",answer
+87528380.json,124,356,190,373,STEEL ☐,question
+87528380.json,363,355,431,373,OTHER ☐,question
+87528380.json,103,378,517,399,"Transparent gold, opaque black, white and orange",answer
+87528380.json,47,399,128,416,BASE COLOR,question
+87528380.json,292,399,381,416,SINGLE FACE,question
+87528380.json,444,398,561,416,DOUBLE FACE ☐,question
+87528380.json,172,427,211,444,NO ☐,question
+87528380.json,244,427,323,441,NUMBER OF,question
+87528380.json,117,441,186,455,ROUND ☐,question
+87528380.json,309,443,373,456,ANGLE ☐,question
+87528380.json,392,441,511,458,CUT TO SHAPE ☐,question
+87528380.json,99,469,177,486,HEMMED ☐,question
+87528380.json,47,485,140,500,STAMP FRAME,question
+87528380.json,406,468,540,486,BEADED BORDER ☐,question
+87528380.json,358,485,466,500,BACK FRAME ☐,question
+87528380.json,183,483,337,499,RIGHT ANGLE BEND ☐,question
+87528380.json,201,469,279,484,CURLED ☐,question
+87528380.json,115,515,204,529,PER CARTON,question
+87528380.json,274,513,350,531,PER CRATE,question
+87528380.json,415,514,504,527,PER BUNDLE,question
+87528380.json,105,525,644,544,"Price is based on reproduction of customer supplied ""Pack"" box.",answer
+87528380.json,190,538,650,556,"Form die, brass emboss die to achieve detail on eagle.",answer
+87528380.json,172,584,272,602,500 Plaques,answer
+87528380.json,156,613,246,630,$ 9.18 each,answer
+87528380.json,367,581,507,601,One time tooling,question
+87528380.json,370,603,457,621,Steel tips,question
+87528380.json,511,581,609,598,"@ $ 3,015.00",answer
+87528380.json,532,603,611,620,"$ 1,045.00",answer
+87528380.json,200,679,351,695,BILL AS MANUFACTURE,question
+87528380.json,376,676,509,696,☐ BILL AS SHIP FOR.,question
+87528380.json,510,676,578,694,☐ 6 MOS.,question
+87528380.json,588,676,656,694,☐ 12 MOS,question
+87528380.json,182,703,304,717,SHIP IMMEDIATELY,question
+87528380.json,332,698,440,716,☐ 6 MOS. WHSE.,question
+87528380.json,459,698,570,715,☐ 12 MOS. WHSE,question
+87528380.json,240,728,338,743,PER SHIPMENT,question
+87528380.json,46,728,150,745,DROP SHIPPING:,header
+87528380.json,56,894,284,937,TERMS - NET 10 DAYS A service charge of 11/2 per month will be applied to all unpaid balances over 30 days.,other
+87528380.json,531,946,679,954,,other
+87528380.json,339,898,441,929,"STOUT INDUSTRIES INC,",other
+87528380.json,47,863,485,875,A 15 service charge will be added to reight costs for all prepaid shipments involving 5 or more pieces.,other
+87528380.json,42,768,698,828,"PRICES QUOTED HEREIN ARE BASED ON CURRENT COSTS AND ARE FOR IMMEDIATE ACCEPTANCE *These prices will be updated periodically from date of order, to reflect changes in material and labor costs. Prices and terms quoted herein are not subject to verbal changes unless confirmed in writing by the home office of this company in S. T. LOUIS M. O. All contracts for delivers are contingent upon fires, strikes or other causes beyond our control. Purchaser agrees to accept overun or underrun to the extent of 10% of the quantity ordered.",other
+87528380.json,47,827,698,840,"Any taxes or governmental changes which the seller may be required to pay or collect upon the production sale storage, or delivery under any existing or",other
+87528380.json,46,839,504,851,future law shall be for the account of the buyer who shall promptly pay the amount hereof to the seller upon,other
+87528380.json,46,852,368,863,F. O. B. S. T. LOUIS MISSOURI Shipments via truck shipped freight collect.,other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+87594142_87594144.json,338,367,379,381,ADDRESS,question
+87594142_87594144.json,105,384,173,399,Baltimore,answer
+87594142_87594144.json,88,440,106,457,(A),question
+87594142_87594144.json,88,462,105,476,(B),question
+87594142_87594144.json,541,243,579,260,21205,answer
+87594142_87594144.json,342,539,367,552,THRU,question
+87594142_87594144.json,344,561,369,571,THRU,question
+87594142_87594144.json,439,539,449,550,$,question
+87594142_87594144.json,439,559,449,570,$,question
+87594142_87594144.json,440,578,448,592,$,question
+87594142_87594144.json,344,581,368,592,THRU,question
+87594142_87594144.json,211,532,272,546,01/01/94,answer
+87594142_87594144.json,261,550,322,570,01/01/95,answer
+87594142_87594144.json,263,574,323,592,01/01/96,answer
+87594142_87594144.json,369,531,429,549,12/31/94,answer
+87594142_87594144.json,372,550,431,567,12/31/95,answer
+87594142_87594144.json,372,575,431,592,12/31/96,answer
+87594142_87594144.json,553,654,631,693,5/26/93,answer
+87594142_87594144.json,687,800,707,887,87594142,other
+87594142_87594144.json,88,109,338,160,APPLICATION FOR RESEARCH CONTRACT,header
+87594142_87594144.json,411,82,690,127,"CENTER FOR INDOOR AIR RESEARCH 1099 WINTERSON ROAD SUITE 280 LINTHICUM, MD. 21090 (410) 684-3777 FAX (410) 684-3729",other
+87594142_87594144.json,91,161,455,180,"1. PRINCIPAL INVESTIGATOR NAME, TITLE, TELEPHONE # AND MAILING ADDRESS.",question
+87594142_87594144.json,108,180,301,197,"Steven R. Kleeberger, Ph. D.",answer
+87594142_87594144.json,370,180,507,196,Associate Professor,answer
+87594142_87594144.json,584,182,749,196,(410) 955-3515/955-0299,answer
+87594142_87594144.json,370,211,750,231,"Johns Hopkins University, School of Hyg. & Pub. Hlth.",answer
+87594142_87594144.json,108,211,317,227,Environmental Health Sciences,answer
+87594142_87594144.json,108,242,416,259,"615 North Wolfe Street, Baltimore, Maryland",answer
+87594142_87594144.json,89,281,172,294,2. PROJECT TITLE,question
+87594142_87594144.json,175,279,599,296,Mechanisms of Chronic Ozone Exposure: Role of Inflammation,question
+87594142_87594144.json,89,302,569,320,"3. KEY WORDS PLEASE PROVIDE THREE (3) KEY WORDS WHICH WILL BE USED AS REFERENCE HEADINGS Ozone,",question
+87594142_87594144.json,575,303,740,320,"Inflammation, Mast Cell",question
+87594142_87594144.json,89,323,679,346,4. INSTITUTION NAME AND ADDRESS OF INSTITUTION RESPONSIBLE AND ACCOUNTABLE FOR OF AWARDED ON THE OF DISPOSITION FUNDS BASIS THIS APPLICATION.,question
+87594142_87594144.json,106,351,283,368,Johns Hopkins University,answer
+87594142_87594144.json,324,348,486,369,615 North Wolfe Street,answer
+87594142_87594144.json,534,384,651,401,Maryland 21205,answer
+87594142_87594144.json,88,415,602,435,5. LOCATION LIST LOCATION WHERE RESEARCH WILL BE CONDUCTED IF OTHER THAN INSTITUTION IDENTIFIED IN #4 ABOVE.,question
+87594142_87594144.json,88,482,661,520,6. INCLUSIVE DATES AND TOTAL COSTS OF THIS SPECIFIC PROJECT RELATED TO EACH 12 MONTH PERIOD IF MORE THAN ONE YEAR IS REQUIRED TO COMPLETE PROJECT. SUMMARIZE FROM BUDGET PAGE ITEM 12(s). IT MUST BE UNDERSTOOD THAT AWARDS FOR 2ND AND 3RD PERIODS ARE DEPENDENT ON CENTER APPROVAL OF CONTINUATION APPLICATION.,question
+87594142_87594144.json,88,535,198,551,(A) 1ST 12 MONTH PERIOD,question
+87594142_87594144.json,88,557,253,573,(B) 2ND 12 MONTH PERIOD IF REQUIRED,question
+87594142_87594144.json,89,578,251,593,(C) 3RD 12 MONTH PERIOD IF REQUIRED,question
+87594142_87594144.json,258,522,336,536,INCLUSIVE DATE,question
+87594142_87594144.json,454,534,505,549,"210, 910",answer
+87594142_87594144.json,454,553,507,570,"212, 481",answer
+87594142_87594144.json,453,573,509,590,"220, 416",answer
+87594142_87594144.json,473,525,532,538,TOTAL COST,question
+87594142_87594144.json,85,599,682,637,"7. INSTITUTIONAL OFFICER. NAME, TITLE AND TELEPHONE NUMBER OF INDIVIDUAL AUTHORIZED TO SIGN FOR THE INSTITUTION IDENTIFIED IN #4 ABOVE. IT IS UNDERSTOOD THAT THE OFFICER, IN APPLYING FOR A CONTACT. HAS READ AND FOUND ACCEPTABLE THE CENTER'S MANAGEMENT OF RESEARCH CONTRACTS AND CONTRACT ADMINISTRATION POLICY.",question
+87594142_87594144.json,102,635,270,654,"Alan M. Goldberg, Ph. D.",answer
+87594142_87594144.json,318,637,488,654,Assoc. Dean for Research,answer
+87594142_87594144.json,105,655,204,676,(410) 955-9253,answer
+87594142_87594144.json,85,642,113,663,(A) NAME,question
+87594142_87594144.json,87,663,137,688,(C) TELEPHONE,question
+87594142_87594144.json,299,663,363,688,(D) SIGNATURE OF,question
+87594142_87594144.json,300,647,328,666,(B) TITLE,question
+87594142_87594144.json,511,668,540,692,(E) DATE,question
+87594142_87594144.json,88,387,115,412,(C) City,question
+87594142_87594144.json,514,390,563,415,(D) STATE/ZIP,question
+87594142_87594144.json,302,356,337,382,(a) STREET,question
+87594142_87594144.json,89,353,142,381,(A) INSTITUTION,question
+87594142_87594144.json,89,250,131,271,(F) MAILING,question
+87594142_87594144.json,91,216,155,240,(D) DEPARTMENT,question
+87594142_87594144.json,91,183,120,210,(A) NAME,question
+87594142_87594144.json,346,184,373,207,(a) TITLE,question
+87594142_87594144.json,345,219,401,240,(E) INSTITUTION,question
+87594142_87594144.json,559,187,610,209,(c) TELEPHONE,question
+87594142_87594144.json,515,250,560,274,(G) STATE/ZIP,question
+87594142_87594144.json,87,696,246,731,8. PRELIMINARY STUDIES* QUALIFICATIONS OF INVESTIGATOR,question
+87594142_87594144.json,85,736,251,813,9. EXPERIMENTAL PLAN* (A) METHODS DATA INTERPRETATION RESULTS INVESTIGATION LITERATURE CITED,question
+87594142_87594144.json,87,817,315,832,10. AVAILABLE FACILITIES AND RESOURCES,question
+87594142_87594144.json,84,838,187,853,11. OTHER SUPPORT,question
+87594142_87594144.json,85,862,679,917,"* APPEND AS MUCH MATERIAL AS REQUIRED TYPE, SINGLE SPACE USE 8-1/2 x 11"" WHITE PAPER AND LABEL EACH SHEET WITH NAME THE PRINCIPAL NVESTIGATOR IN THE UPPER RIGHT HAND CORNER AND PAGE NUMBER AT THE BOTTOM. CONSECUTIVELY NUMBER EACH ADDENDUM BEGINNING WITH PAGES 5. DO NOT INSERT PACES BETWEEN PAGES 1 AND 6 E.G. 2A 2B 3A ETC. INCLUDE NINE COPIES AND AN ORIGINAL If SENDING PHOTOGRAPHS, INCLUDE 2 ORIGINAL SETS. NOTE: EACH OF THE NINE COPIES MUST BE PLACED IN BINDER PER MAILING INSTRUCTIONS.",question
+
+file_name,box.0,box.1,box.2,box.3,text,label
+89856243.json,100,42,148,99,file,other
+89856243.json,104,116,157,130,PRODUCT,question
+89856243.json,559,24,589,38,Date,question
+89856243.json,199,116,249,127,Triumph,answer
+89856243.json,260,654,280,667,yes,question
+89856243.json,259,671,282,683,yes,question
+89856243.json,314,657,333,667,no,question
+89856243.json,314,670,333,682,no,question
+89856243.json,106,725,165,738,Approved,question
+89856243.json,170,727,190,740,by:,question
+89856243.json,470,665,532,678,Incidence,question
+89856243.json,645,670,657,679,-,answer
+89856243.json,613,726,623,736,4,answer
+89856243.json,617,752,630,763,1,answer
+89856243.json,471,780,521,795,Topline,question
+89856243.json,469,825,505,838,Final,question
+89856243.json,606,869,691,886,89856243,other
+89856243.json,106,768,170,785,Marketing,question
+89856243.json,175,771,231,784,Research,question
+89856243.json,239,767,293,782,Director,question
+89856243.json,157,719,323,799,,other
+89856243.json,185,750,257,822,,other
+89856243.json,243,802,380,856,,other
+89856243.json,607,21,719,40,"October 17, 1979",answer
+89856243.json,314,36,558,55,MARKETING RESEARCH RPROJECT APPROVAL,header
+89856243.json,261,52,616,71,(To be filled out by Marketing Research Department),other
+89856243.json,323,99,380,124,PROJECT TITLE,question
+89856243.json,399,111,594,126,Triumph Disaster Check Study,answer
+89856243.json,671,109,734,127,5546/ 1979,other
+89856243.json,104,152,711,172,"Research Design (N, Cells, Elegibility, Design, Key Danner Breaks, Methodololy, Cities)",other
+89856243.json,106,207,720,320,Contact respondents from Buffalo and Kansas City who had previously participated in a steak knife offer This will consist of one cell of approximately 175 respondents who are Triumph most often smokers /triers This study is intended to provide us with any negatives associated with Triumph Banner points will include Triumph most often smokers (we anticipate approximately 25 most of ten people Switchers away from Triumph (N approximately 45). It should be noted that an action standard of at least 50% be obtained in acting upon any product negatives associated with these groups see research limitations below for additional action standard.,other
+89856243.json,363,345,496,361,(See attached memo,other
+89856243.json,101,441,282,454,Key Criteria for Analysis,question
+89856243.json,150,458,539,476,-Triumph switchers asked why no longer smoking Triumph,answer
+89856243.json,153,476,618,491,-Present smokers of Triumph asked reasons for switching to Triumph,answer
+89856243.json,154,486,336,501,"-Mentions of ""harshness""",answer
+89856243.json,102,513,243,531,Research Limitations,question
+89856243.json,104,531,725,573,Due to sample size and experience we feel 25 respondents will presently be Triumph smokers. An action standard of 75% should be utilized for judgments on product negatives only among this group,answer
+89856243.json,100,572,704,613,"If 75% of Triumph smokers mention harshness we could consider it a 50- 75% problem If of Triumph smokers mention ""harshness"" we could it a look consider possible problem at other areas).",answer
+89856243.json,139,610,744,628,"If below 50% of Triumph smokers mention ""harshness"" we could consider it at a problem",answer
+89856243.json,470,637,559,652,Research Firm,question
+89856243.json,471,696,542,708,Lenght Int,question
+89856243.json,469,724,551,737,# Open ,question
+89856243.json,469,752,533,766,# Reports,question
+89856243.json,588,637,719,654,The Data Group. Inc,answer
+89856243.json,608,695,680,708,10 minutes,answer
+89856243.json,588,778,754,794,2 wks from start of fid.,answer
+89856243.json,588,824,756,839,4 wks from start of fld,answer
+89856243.json,106,855,254,870,Group Product Manager,question
+89856243.json,107,812,212,826,Product Manager,question
+89856243.json,106,696,191,713,Prepared by:,question
+89856243.json,101,641,238,683,Cost Estimate + - 10% Contingency Final Report Inc.,question
+89856243.json,237,686,385,711,Scott R. Benson ,other
+89856243.json,243,640,290,653,$ 2.250,answer
+
+file_name,box.0,box.1,box.2,box.3,text,label
+91814768_91814769.json,204,409,277,424,November,answer
+91814768_91814769.json,285,408,302,426,"3,",answer
+91814768_91814769.json,313,406,348,424,1992,answer
+91814768_91814769.json,392,406,509,421,Massachusetts,answer
+91814768_91814769.json,697,408,732,422,ballot,question
+91814768_91814769.json,60,459,102,473,*Note:,question
+91814768_91814769.json,451,490,466,508,19,question
+91814768_91814769.json,472,492,493,505,92,answer
+91814768_91814769.json,444,679,490,696,Address,question
+91814768_91814769.json,151,598,299,630,,answer
+91814768_91814769.json,480,616,509,631,Date,question
+91814768_91814769.json,594,677,641,692,Purpose,question
+91814768_91814769.json,742,765,764,842,91814768,other
+91814768_91814769.json,580,240,593,248,☑,answer
+91814768_91814769.json,594,239,619,250,Final,question
+91814768_91814769.json,346,133,419,213,,other
+91814768_91814769.json,39,236,74,258,,other
+91814768_91814769.json,43,494,79,523,,other
+91814768_91814769.json,201,29,551,112,"""CORRECTED FORM"" The Commonwealth of Massachusetts OFFICE OF CAMPAIGN AND POLITICAL FINANCE",header
+91814768_91814769.json,612,50,682,64,Office Use Only,other
+91814768_91814769.json,444,140,547,171,Form CPF 22 (formerly CPF 10),other
+91814768_91814769.json,99,130,267,162,REPORT OF CORPORATE TREASURER,header
+91814768_91814769.json,52,172,107,192,File with:,question
+91814768_91814769.json,110,175,338,222,"Director, Office of Campaign & Political Finance One Ashburton Place, Boston, MA 02108",answer
+91814768_91814769.json,580,197,710,214,☐ 60th Day Prior to Election,question
+91814768_91814769.json,581,212,691,226,☐ 5th Day of the Month,question
+91814768_91814769.json,578,223,697,239,☐ 20th Day of the Month,question
+91814768_91814769.json,612,182,683,196,(CHECK ONE),header
+91814768_91814769.json,82,235,300,253,"Please Print or Type, except Signatures.",question
+91814768_91814769.json,56,270,177,288,1. Name of Treasurer,question
+91814768_91814769.json,53,295,190,310,2. Name of Corporation,question
+91814768_91814769.json,56,318,204,336,3. Address of Corporation,question
+91814768_91814769.json,177,258,710,278,M. Alfred Peterson; Assistant Treasurer Peter J. Marzullo,answer
+91814768_91814769.json,222,284,449,305,Lorillard Tobacco Company,answer
+91814768_91814769.json,221,310,440,352,One Park Avenue New York. NY 10016 -5895,answer
+91814768_91814769.json,56,373,143,393,4. Question No.,question
+91814768_91814769.json,173,366,536,389,1 relating to Tobacco Excise Tax Increase,answer
+91814768_91814769.json,439,384,588,399,(Describe question briefly),question
+91814768_91814769.json,56,416,201,436,submitted to the voters on,question
+91814768_91814769.json,226,429,316,446,(Election Date),question
+91814768_91814769.json,334,412,368,429,on the,question
+91814768_91814769.json,459,423,633,446,(Name of City/ Town of State)*,question
+91814768_91814769.json,106,448,736,488,"If this expenditure is made to influence a local ballot question, a copy of this form should be filed with the city or town clerk or election commission.",answer
+91814768_91814769.json,84,497,161,517,Fil in Dates:,question
+91814768_91814769.json,180,497,332,515,Reporting Period Beginning,question
+91814768_91814769.json,341,490,437,508,"October 16,",answer
+91814768_91814769.json,497,490,562,509,and Ending,question
+91814768_91814769.json,564,485,710,504,November 5. 1992,answer
+91814768_91814769.json,56,518,739,573,"contribution I certify that this report is a true statement of the amount of value of gift, payment, expenditure or or whom promise to give, pay,, expend or contribute, together with the date, purpose, and full name and address of the person to Mass. Laws, Section, as amended. It was made. I make this General report in accordance with the requirements of Chapter,",other
+91814768_91814769.json,60,577,262,600,Signed under the penalties of perjury.,question
+91814768_91814769.json,53,591,178,643,Preasurer Senato,other
+91814768_91814769.json,384,596,509,613,"March 30, 1993",answer
+91814768_91814769.json,60,631,235,651,Assistant Treasurer,other
+91814768_91814769.json,84,673,114,698,Date Paid,question
+91814768_91814769.json,161,669,345,699,To Whom Paid (Alphabetical Listing Mandatory),question
+91814768_91814769.json,275,635,520,657,EXPENDITURES OR DISBURSEMENTS,header
+91814768_91814769.json,666,662,729,689,Amount or Value**,question
+91814768_91814769.json,77,712,127,726,10/ 26/ 92,answer
+91814768_91814769.json,75,729,129,745,10/ 30/ 92,answer
+91814768_91814769.json,154,709,335,724,Committee Against Unfair Taxes,answer
+91814768_91814769.json,154,729,336,745,Committee Against Unfair Taxes,answer
+91814768_91814769.json,370,703,563,717,"P. O. B03 5979 Boston, MA 0212",answer
+91814768_91814769.json,370,726,563,742,"P. O. Box 5979. Boston, MA 02114",answer
+91814768_91814769.json,581,694,655,716,Oppose Tax Increase,answer
+91814768_91814769.json,581,721,651,740,Oppose Tax increas,answer
+91814768_91814769.json,676,701,738,717,"28, 482. 00",answer
+91814768_91814769.json,676,721,740,736,"19, 503 00",answer
+91814768_91814769.json,67,933,307,968,**In- kind contributions should be included here. Attach additional pages if necessary.,other
+91814768_91814769.json,161,983,568,1000,REPORTING REQUIREMENTS CONTINUED ON REVERSE SIDE,other
+91814768_91814769.json,398,905,660,926,Total Expenditures or Disbursements on This Report,question
+91814768_91814769.json,373,929,660,947,Total Expenditures for Disbursements Previously Reported,question
+91814768_91814769.json,437,951,663,970,Total Expenditures or Disbursements to Date,question
+91814768_91814769.json,675,899,741,916,"48, 585 00",answer
+91814768_91814769.json,672,923,742,940,508. 789 00,answer
+91814768_91814769.json,672,944,740,961,556 874. 00,answer
+
+file_name,box.0,box.1,box.2,box.3,text,label
+92380595.json,293,152,398,176,RECEIVED,question
+92380595.json,27,155,63,172,DATE:,question
+92380595.json,28,183,50,197,TO:,question
+92380595.json,88,228,126,241,ATTN:,question
+92380595.json,28,284,52,299,RE:,question
+92380595.json,546,240,556,255,x,answer
+92380595.json,546,265,591,280,033052,answer
+92380595.json,433,378,453,389,via:,question
+92380595.json,249,401,257,414,x,answer
+92380595.json,68,432,124,447,Summons,question
+92380595.json,68,453,124,466,Complaint,question
+92380595.json,68,510,104,523,Other:,question
+92380595.json,49,508,62,522,X,answer
+92380595.json,317,468,388,481,Garnishment,question
+92380595.json,525,464,579,481,Subpoena,question
+92380595.json,31,591,49,602,vs.,question
+92380595.json,32,655,82,670,RETURN,question
+92380595.json,85,656,119,670,DATE,question
+92380595.json,194,673,233,690,Collect,question
+92380595.json,374,556,381,571,),other
+92380595.json,374,570,382,584,),other
+92380595.json,374,584,381,599,),other
+92380595.json,374,595,381,612,),other
+92380595.json,559,564,613,578,"475,592",answer
+92380595.json,32,697,107,712,COMMENTS:,question
+92380595.json,490,792,529,806,Phone,question
+92380595.json,32,851,67,865,Other,question
+92380595.json,98,841,112,856,X,answer
+92380595.json,708,817,722,892,92380595,other
+92380595.json,444,920,487,935,Signed:,question
+92380595.json,342,943,399,960,ORIGINAL,other
+92380595.json,151,35,544,87,"Executive Offices 1 GULF+ WESTE PLAZA . NEW YORK, NEW YORK 23- 7773 (212) 373- 7500",other
+92380595.json,133,88,563,115,PRENTICE HALL CORPORATE SERVICES,header
+92380595.json,27,128,224,146,United States Corporation Company,other
+92380595.json,437,123,668,141,"The Prentice- Hall Corporation System, Inc.",other
+92380595.json,443,159,616,181,TX 3951 U,other
+92380595.json,87,152,146,167,12- 13- 89,answer
+92380595.json,87,180,254,225,"LORILLARD, INC. ONE PARK AVENUE 18TH FL NEW YORK, N. Y. 10016",answer
+92380595.json,306,187,393,209,DEC 14 89,other
+92380595.json,131,216,398,240,"MR. ARTHUR STEVENS, ESQ A. J. STEVENS",answer
+92380595.json,447,219,551,232,MOTOR CARRIER,question
+92380595.json,447,233,520,262,OR STATUTORY,question
+92380595.json,447,278,507,293,Account #,question
+92380595.json,88,275,199,292,"LORILLARD, INC.",answer
+92380595.json,162,296,295,311,(Represented Company),other
+92380595.json,244,317,475,332,NOTICE OF SERVICE OF PROCESS,header
+92380595.json,52,335,393,352,We enclose the following documents which were served upon:,question
+92380595.json,138,348,500,368,UNITED STATES CORPORATION COMPANY IN TEXAS,answer
+92380595.json,38,378,355,395,as registered agent for the above- captioned corporation on,question
+92380595.json,362,377,421,391,12- 13- 89,answer
+92380595.json,138,401,230,417,Personal Service,question
+92380595.json,278,399,352,415,Mail: Regular,question
+92380595.json,406,399,470,412,or Certified,question
+92380595.json,521,398,580,411,Certified #,question
+92380595.json,68,468,249,504,Duplicate copies of the Notice and Acknowledgement enclosed,question
+92380595.json,316,429,458,463,A self- addressed stamped envelope enclosed,question
+92380595.json,317,485,453,502,Notice of Attorney's Lien,question
+92380595.json,524,423,665,442,Notice of Mechanic's Lien,question
+92380595.json,524,444,673,461,Notice of Default Jucgment,question
+92380595.json,130,500,391,519,CITATION AND FIRST ORIGINAL PETITION,answer
+92380595.json,31,559,140,574,TITLE OF ACTION:,question
+92380595.json,172,560,269,574,WEBSTER CRECC,answer
+92380595.json,94,591,360,615,"R. J. REYNOLDS TOBACCO COMPANY, ET AL",answer
+92380595.json,493,568,546,584,Case No.,question
+92380595.json,31,634,187,649,COURT OR JURISDICTION,question
+92380595.json,204,624,543,646,345th Judicial District Court Travis County. Tx,answer
+92380595.json,147,642,434,662,Monday next 20 days from date of service,answer
+92380595.json,465,670,635,687,Agent called New York Office,question
+92380595.json,31,677,158,694,Tel Call Placed Direct,question
+92380595.json,272,676,323,690,Spoke to,question
+92380595.json,31,743,201,759,ATTORNEYS FOR CLAIMANT,question
+92380595.json,209,736,338,781,"Mary Ellen Felps 1000 West Ave. Austin, Tx. 78701",answer
+92380595.json,494,785,583,799,512/478- 4873,answer
+92380595.json,32,823,239,837,PAPERS TRANSMITTED TO CLIENT,header
+92380595.json,34,838,68,852,Fed X,question
+92380595.json,148,837,202,851,Reg Mail,question
+92380595.json,352,846,483,861,FORM PREPARED BY,question
+92380595.json,494,841,576,856,PAT HIGGINS,answer
+92380595.json,31,926,114,940,Date Received:,question
+92380595.json,144,911,278,954,12/ 14/ 89,answer
+92380595.json,32,890,580,912,DUPLICATE COPY A BUSINESS REPLY ENVELOPE IS ENCLOSED FOR YOUR CONVENIENCE,other
+92380595.json,31,874,544,896,PLEASE ACKNOWLEDGE RECEIPT OF THIS NOTICE AND THE ENCLOSURES BY SIGNING,other
+92380595.json,546,873,673,891,AND RETURNING THE,other
+
+file_name,box.0,box.1,box.2,box.3,text,label
+93106788.json,99,196,114,206,TO:,question
+93106788.json,156,242,184,253,ATTN:,question
+93106788.json,496,191,523,202,DATE:,question
+93106788.json,464,223,523,234,ADVERTISER:,question
+93106788.json,475,256,522,267,PRODUCT:,question
+93106788.json,536,223,590,233,LORILLARD,answer
+93106788.json,538,256,585,267,NEWPORT,answer
+93106788.json,96,376,120,387,AD#:,question
+93106788.json,229,374,272,385,CAPTION:,question
+93106788.json,377,373,411,384,SPACE:,question
+93106788.json,524,373,552,384,DATE:,question
+93106788.json,377,404,402,415,P5CE,answer
+93106788.json,98,453,112,463,PO,question
+93106788.json,115,453,144,463,#77219,answer
+93106788.json,447,827,475,837,ATTN:,question
+93106788.json,677,792,695,865,93106788,other
+93106788.json,582,617,617,630,Cigarette,other
+93106788.json,208,81,555,143,"LORILLARD MEDIA SERVICES ONE PARK AVENUE, NEW YORK, NY 10016- 5896 MAGAZINE INSERTION ORDER",header
+93106788.json,156,196,259,236,"ESSENCE 1500 BROADWAY NEW YORK, NY 10036",answer
+93106788.json,191,242,273,252,JOYCE WINSTON,answer
+93106788.json,538,193,616,201,"MARCH 17, 1995",answer
+93106788.json,96,302,659,354,"THIS ADVERTISEMENT COMPLIES WITH THE FTC REQUIREMENT FOR A WARNING STATEMENT AND TAR AND NICOTINE LINE WHICH MUST APPEAR IN ALL CIGARETTE ADVERTISING CHECK MATERIAL YOU RECEIVE AGAINST THE PROOF TO BE SURE IT IS CORRECT, UNDER NO CIRCUMSTANCES ARE TO YOU RUN SUBSTITUTE MATERIALS, ALTERIOR OR OMIT ANY COPY WITHOUT PRIOR APPROVAL FROM LORILLARD MEDIA SERVICES.",other
+93106788.json,98,405,155,418,NPT- 533- 7,answer
+93106788.json,229,402,324,417,FOUNTAIN COUPLE,answer
+93106788.json,525,404,576,415,JUNE 1995,answer
+93106788.json,96,478,648,504,IF UNABLE TO INSERT ON THE DATE ORDERED KINDLY NOTIFY US AT ONCE AND WAIT FOR NEW INSERTION DATE. NO CREDIT CAN BE ALLOWED SHOULD THIS ADVERTISEMENT APPEAR INCORRECTLY OR ON A DATE OTHER THAN THAT AUTHORIZED.,other
+93106788.json,96,518,249,529,POSITION URGENTLY REQUESTED:,question
+93106788.json,96,549,305,560,"FAR FORWARD, OPPOSITE FULL EDITORIAL",other
+93106788.json,96,581,240,592,- No coupon ad on backing page.,other
+93106788.json,253,580,499,593,- Maintain at least six page separation from bompetitive ads.,other
+93106788.json,96,595,430,608,- No aditional/ advertising matter to cigarette within 6 pages of our ad.,other
+93106788.json,96,613,194,624,COPY INSTRUCTIONS:,question
+93106788.json,96,642,430,657,"5 COLOR PROOF ATTACHED, FILM FROM COLLIER WITH ""D"" WARNING",other
+93106788.json,461,619,578,631,SURGEON GENERALS WARNING,question
+93106788.json,459,630,600,641,Smoke contains carbon Monoxide,other
+93106788.json,96,676,220,687,IMPORTANT INSTRUCTIONS:,question
+93106788.json,96,703,269,736,A. Check material carefully against proof to make sure it corresponds in every respect,other
+93106788.json,95,744,292,778,B. Please inspect repro material immediately. They should produce good printing results. Advise us promptly if Hor satisfactory,other
+93106788.json,95,786,250,798,C. Poor printing will not be paid for.,other
+93106788.json,96,807,277,830,D. Advise us at once if instructions are not clear.,other
+93106788.json,95,839,287,873,E. Under no circumstances are you to space out our advertisement without specific instructions from us.,other
+93106788.json,448,672,589,685,SPACE BILLING INSTRUCTIONS:,question
+93106788.json,447,701,579,714,The space is being brdered by:,question
+93106788.json,448,722,577,734,LOAILLARD MEDIA SERVICES,other
+93106788.json,447,751,622,773,Direct all invoices and full checking copies of all regional and national additions to:,other
+93106788.json,448,785,605,828,LORILLARD MEDIA SERVICES ONE PARK AVENUE 17TH FLOOR NEW YORK NEW YORK 10016- 5896,other
+93106788.json,479,827,546,836,STEVE MOLLOY,other
+

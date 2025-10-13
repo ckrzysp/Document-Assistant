@@ -1,0 +1,31 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+660978.json,383,112,422,126,DATE:,question
+660978.json,383,140,428,154,PLACE:,question
+660978.json,520,117,542,130,NO.,question
+660978.json,106,105,155,119,CLIENT:,question
+660978.json,103,131,167,146,PRODUCT:,question
+660978.json,105,159,165,176,PRESENT:,question
+660978.json,99,282,166,300,SUMMARY:,question
+660978.json,447,328,546,343,CONFIDENTIAL,question
+660978.json,95,501,113,514,PH:,question
+660978.json,94,532,114,543,cc:,question
+660978.json,623,714,643,829,670121460,other
+660978.json,115,506,130,517,mg,answer
+660978.json,437,141,501,158,Telephone,answer
+660978.json,186,135,236,150,Viceroy,answer
+660978.json,71,56,574,84,GREY ADVERTISING INC. - MEETING REPORT,header
+660978.json,605,56,685,91,FEB 23 1982,other
+660978.json,170,106,299,123,Brown & Williamson,answer
+660978.json,437,113,487,130,1/ 19/ 82,answer
+660978.json,550,116,606,132,482 -2 R1,answer
+660978.json,166,163,251,180,(For the client),answer
+660978.json,101,182,172,197,T. Parrack,answer
+660978.json,383,166,473,183,DATE OF REPORT:,question
+660978.json,476,170,529,187,2/ 17/ 82,answer
+660978.json,165,226,259,242,(For the agency),other
+660978.json,99,244,183,261,P. Hendricks,other
+660978.json,447,306,525,322,Written by:,question
+660978.json,538,306,624,323,P. Hendricks,answer
+660978.json,95,374,580,436,"Client confirmed agreement for Agency to pay advance to with official photographer, signed estimate to follow, for 1/ 25/ 82. This was Viceroy Shoot week of agreed to by T. and January Parrack A. 18 pre- Forsythe production at the meeting",other
+660978.json,127,531,219,574,R. Schoenfein S. Dammers P. Hendricks,answer
+660978.json,1,953,232,982,670121460 PRODUCED FROM B& W WEB SITE,other

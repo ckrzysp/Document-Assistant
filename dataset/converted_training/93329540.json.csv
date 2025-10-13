@@ -1,0 +1,43 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+93329540.json,133,204,174,219,DATE:,question
+93329540.json,260,203,295,217,TIME:,question
+93329540.json,78,254,195,274,MANUFACTURER:,question
+93329540.json,84,782,104,796,cc:,question
+93329540.json,735,799,753,870,93329540,other
+93329540.json,311,87,524,107,NEW COMPETITIVE PRODUCTS,header
+93329540.json,80,151,180,168,REPORTED BY:,question
+93329540.json,258,147,584,166,"A. REID, DIVISION MANAGER, SAN FRANCISCO, CA",answer
+93329540.json,177,201,229,216,8/ 13/ 93,answer
+93329540.json,256,256,436,272,AMERICAN TOBACCO COMPANY,answer
+93329540.json,260,304,348,323,SPECIAL 10' s,answer
+93329540.json,80,309,178,327,BRAND NAME:,question
+93329540.json,80,362,150,396,TYPE OF PRODUCT:,question
+93329540.json,82,430,186,449,SIZE OR SIZES:,question
+93329540.json,81,483,162,501,LIST PRICE:,question
+93329540.json,81,536,184,571,EXTENT OF DISTRIBUTION:,question
+93329540.json,80,642,185,676,OTHER INFORMATION:,question
+93329540.json,263,652,542,671,SEE ATTACHED COPY OF CIRCULAR NO. 4848,answer
+93329540.json,84,799,154,815,A. H. Tisch,answer
+93329540.json,84,818,162,833,R. H. Orcutt,answer
+93329540.json,82,837,181,851,M. A. Peterson,answer
+93329540.json,85,853,179,868,M. L. Orlowsky,answer
+93329540.json,84,872,154,883,L. Gordon,answer
+93329540.json,85,887,149,899,G. Telford,answer
+93329540.json,242,797,314,811,V. Norman,answer
+93329540.json,240,817,326,831,A. W. Spears,answer
+93329540.json,242,834,325,848,A. J. Giacoio,answer
+93329540.json,242,851,320,865,N. P. Ruffalo,answer
+93329540.json,242,869,319,883,T. L. Achey,answer
+93329540.json,242,887,312,900,R. B. Spell,answer
+93329540.json,240,901,327,915,P. J. McCann,answer
+93329540.json,370,796,443,811,J. J. Tatulli,answer
+93329540.json,372,813,444,829,L. H. Kersh,answer
+93329540.json,373,831,444,845,J. R. Slater,answer
+93329540.json,373,849,450,864,A. Pasheluk,answer
+93329540.json,373,867,490,882,R. S. Goldbrenner,answer
+93329540.json,373,884,463,898,N. Simeonidis,answer
+93329540.json,374,901,446,916,S. F. Smith,answer
+93329540.json,547,795,646,810,K. P. Augustyn,answer
+93329540.json,547,811,638,826,V. D. Lindsley,answer
+93329540.json,549,830,629,844,R. C. Bondy,answer
+93329540.json,550,846,642,861,R. D. Hammer,answer

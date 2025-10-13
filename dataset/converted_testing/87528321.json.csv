@@ -1,0 +1,91 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+87528321.json,27,15,62,27,RJRT,other
+87528321.json,486,140,488,142,,question
+87528321.json,29,87,95,101,Position,question
+87528321.json,92,180,141,191,Change,question
+87528321.json,69,180,89,192,of,question
+87528321.json,29,181,64,192,Type,question
+87528321.json,75,209,142,223,Addition,question
+87528321.json,75,224,142,236,Deletion,question
+87528321.json,75,242,127,252,Change,question
+87528321.json,232,162,258,176,Mat,question
+87528321.json,216,147,283,158,Affected,question
+87528321.json,185,162,225,174,Glass,question
+87528321.json,31,148,77,162,Brand/,question
+87528321.json,76,147,147,162,Assembly/,question
+87528321.json,146,150,210,161,Material,question
+87528321.json,146,165,181,175,Slit,question
+87528321.json,117,165,141,176,and,question
+87528321.json,82,165,111,177,Mat,question
+87528321.json,37,165,79,177,Glass,question
+87528321.json,269,207,320,221,Design,question
+87528321.json,269,222,358,236,Compatibity,question
+87528321.json,269,237,406,251,Manufacturability,question
+87528321.json,460,237,500,249,Other,question
+87528321.json,646,204,718,219,Emergency,question
+87528321.json,647,219,694,233,Urgent,question
+87528321.json,647,234,703,248,Routine,question
+87528321.json,607,55,644,67,Page,question
+87528321.json,683,55,718,65,Date,question
+87528321.json,607,112,654,126,Change,question
+87528321.json,662,115,703,124,Order,question
+87528321.json,707,113,756,124,Number,question
+87528321.json,637,125,708,142,8410059,answer
+87528321.json,455,71,517,80,8-17-88,answer
+87528321.json,474,97,510,112,5398,other
+87528321.json,678,24,724,36,880029,answer
+87528321.json,637,25,667,37,RFC,question
+87528321.json,42,242,56,254,X,answer
+87528321.json,431,236,447,251,X,answer
+87528321.json,621,236,637,250,X,answer
+87528321.json,741,581,755,628,51484,other
+87528321.json,742,638,756,672,3791,other
+87528321.json,728,722,759,736,Date,question
+87528321.json,729,784,760,796,DATE,question
+87528321.json,575,786,621,797,HOLDER,question
+87528321.json,534,787,569,797,SPEC,question
+87528321.json,507,723,549,737,Title,question
+87528321.json,224,727,300,741,Signature,question
+87528321.json,228,787,293,801,Approved,question
+87528321.json,392,786,457,802,Rejected,question
+87528321.json,652,828,723,842,COMMITTEE,question
+87528321.json,596,829,646,843,REVIEW,question
+87528321.json,534,829,590,841,PRODUCT,question
+87528321.json,683,889,753,904,COMMITTEE,question
+87528321.json,597,892,677,902,ACCEPTANCE,question
+87528321.json,535,889,590,901,PRODUCT,question
+87528321.json,682,800,768,826,8-17-88,answer
+87528321.json,514,784,657,848,,other
+87528321.json,673,833,727,858,,other
+87528321.json,602,835,652,857,,other
+87528321.json,541,842,578,863,KA,other
+87528321.json,608,857,675,904,,other
+87528321.json,531,859,607,886,,other
+87528321.json,335,916,400,941,9/8/88,answer
+87528321.json,244,10,389,25,REQUEST FOR CHANGE,header
+87528321.json,252,25,357,38,F- 1001 7/ 88,other
+87528321.json,29,59,156,71,ORIGINATOR Name:,question
+87528321.json,167,55,248,72,Dan Straka,answer
+87528321.json,441,55,549,70,Date Prepared,question
+87528321.json,620,66,671,81,1 of 1,answer
+87528321.json,702,66,757,81,B-17-88,answer
+87528321.json,700,82,768,96,D. Marsh,answer
+87528321.json,606,82,694,95,Received By,question
+87528321.json,440,85,543,99,Telephone No,question
+87528321.json,32,117,251,131,Department Name and Location,question
+87528321.json,97,131,223,147,611- 13 3rd Floor,answer
+87528321.json,29,269,207,283,Description of Problem,header
+87528321.json,460,206,549,221,Spec Change,question
+87528321.json,460,221,570,235,Cost Reduction,question
+87528321.json,59,281,731,315,The current specifications for glass mat and slit glass mat can be made more accurate and complete with the following changes:,question
+87528321.json,61,332,138,344,Glass Mat:,question
+87528321.json,62,392,180,407,slit Glass Mat:,question
+87528321.json,216,328,685,374,Delete C- glass from Iten description. Change glass softening point to 756 + / - 10 degrees from 750. Change rolls per pallet to 2 from 1.,answer
+87528321.json,216,389,649,433,"Delete C- glass from item description Change bobbins per stack to 47 from 45. Add outside diameter specs of 30.0, 26.0 - 31.0 inches.",answer
+87528321.json,32,527,167,544,Proposed Solution,question
+87528321.json,64,540,500,559,Change the current MSS specifications as outlined above.,answer
+87528321.json,55,742,162,771,Accepted for Investigation,question
+87528321.json,34,787,167,802,Final Disposition,question
+87528321.json,36,815,317,833,Action Taken or Reason for Rejection,question
+87528321.json,323,892,512,907,Proposed Effective Date,question
+87528321.json,525,899,761,967,habanisy Dhes ,other

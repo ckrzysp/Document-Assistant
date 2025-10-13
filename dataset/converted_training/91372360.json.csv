@@ -1,0 +1,34 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+91372360.json,156,270,211,290,DATE,question
+91372360.json,360,271,403,290,TIME,question
+91372360.json,160,380,215,399,NAME:,question
+91372360.json,158,406,228,429,OFFICE:,question
+91372360.json,156,516,216,536,NAME:,question
+91372360.json,156,540,224,564,OFFICE:,question
+91372360.json,235,273,295,286,11/4/93,answer
+91372360.json,155,611,266,627,COMMENTS:,question
+91372360.json,285,786,308,799,cc:,question
+91372360.json,754,745,775,820,91372360,other
+91372360.json,120,84,350,152,Lorillard TOBACCO COMPANY,header
+91372360.json,104,29,213,45,Nov. 4 93 16:33,other
+91372360.json,297,29,390,44,KONICA FAX 285,other
+91372360.json,690,19,727,42,P. 1,other
+91372360.json,116,152,559,167,101 N. CLASSEN BLVD. SUITE 102. OKLAHOMA CITY OK. 73118 TELEPHONE 405) 543- 0455 or 04600460,other
+91372360.json,318,214,524,235,FACSIMILE COVER PAGE,header
+91372360.json,428,273,494,286,3:28 CST,answer
+91372360.json,160,298,653,320,"The following document, including cover page is 3 pages long.",other
+91372360.json,156,337,507,356,PLEASE TRANSMIT THIS DOCUMENT TO:,header
+91372360.json,249,382,392,398,Mr. A. J. Giacoio,answer
+91372360.json,249,406,458,425,New York- Sales Planning,answer
+91372360.json,365,436,475,455,212 545- 3299,answer
+91372360.json,159,434,342,454,FAX PHONE NUMBER:,question
+91372360.json,160,476,385,493,THIS DOCUMENT IS FROM:,header
+91372360.json,253,519,349,535,R F ,answer
+91372360.json,226,544,383,562,Oklahoma City. OK,answer
+91372360.json,154,571,345,590,FAX PHONE NUMBER:,question
+91372360.json,349,572,472,591,(400) 840- 0639,answer
+91372360.json,285,611,588,689,The attached Competitive information was secured in Oklahoma today. If you should have any questions.,answer
+91372360.json,154,709,633,743,"If any of these pages are not legible, or you do not receive all pages, please call this office as soon as possible.",other
+91372360.json,316,783,443,798,Mr. R. B. Spell,answer
+91372360.json,321,798,444,812,Mr. S. L. Enloe,answer
+91372360.json,286,691,493,708,please advise. Dick,other

@@ -1,0 +1,32 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0000990274.json,61,207,97,221,DATE:,question
+0000990274.json,61,235,129,249,INITIATED,question
+0000990274.json,134,236,156,250,BY:,question
+0000990274.json,60,261,138,276,COMPLETION,question
+0000990274.json,59,320,119,337,COUNTRY:,question
+0000990274.json,59,348,119,363,PRODUCT:,question
+0000990274.json,191,321,247,335,BELGIUM,answer
+0000990274.json,56,549,80,562,BY:,question
+0000990274.json,56,591,92,604,DATE:,question
+0000990274.json,54,626,100,639,NOTES:,question
+0000990274.json,501,839,623,871,620429480,other
+0000990274.json,527,162,621,189,RECEIVED,question
+0000990274.json,214,94,455,140,SERVICE REQUEST FROM R & D BY INTERNATIONAL LICENSEE OPERATIONS,header
+0000990274.json,563,11,667,51,,other
+0000990274.json,60,177,149,192,REQUEST NO.:,question
+0000990274.json,196,177,232,194,25- 84,answer
+0000990274.json,191,207,299,222,"March 27, 1984",answer
+0000990274.json,193,221,346,252,P. H. HARPER PHH,answer
+0000990274.json,74,292,164,307,TARGET DATE:,question
+0000990274.json,191,292,296,308,"April 13, 1984",answer
+0000990274.json,193,348,422,365,LUCKY STRIKE Filter and VICEROY,answer
+0000990274.json,59,377,167,393,NATURE OF WORK:,question
+0000990274.json,168,404,527,437,Advise if locally obtained Yucatan Honey (sample enclosed) is an acceptable substitute for HALWAY.,answer
+0000990274.json,56,462,153,477,R & D COMMENTS:,question
+0000990274.json,183,465,416,540,Target the P A 29Mar 84,answer
+0000990274.json,182,626,575,641,a) Nature of work should be specified in exact terms.,answer
+0000990274.json,180,652,547,681,b) R & D should advise if completion date cannot be met.,answer
+0000990274.json,179,697,532,740,c) Two copies of this form to be sent to R & D by initiator and R & D is to return to T. O. one completed copy.,answer
+0000990274.json,53,751,101,767,MH/ enm,other
+0000990274.json,53,796,115,824,0036/ (r) # 2894M,other
+0000990274.json,531,193,623,248,APR 2 1984 P. H. H.,answer

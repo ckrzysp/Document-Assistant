@@ -1,0 +1,51 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0060068489.json,554,181,590,193,DATE,question
+0060068489.json,534,201,613,210,DESCRIPTION,question
+0060068489.json,307,198,352,211,MEDIUM,question
+0060068489.json,606,178,667,191,3/17/82,answer
+0060068489.json,299,219,362,234,Outdoor,answer
+0060068489.json,25,177,74,190,AGENCY,question
+0060068489.json,69,198,112,208,BRAND,question
+0060068489.json,416,178,434,193,NO.,question
+0060068489.json,223,289,269,302,April,answer
+0060068489.json,407,293,446,305,THRU,answer
+0060068489.json,534,287,570,302,July,answer
+0060068489.json,100,382,137,395,SPACE,question
+0060068489.json,99,488,184,501,CONTINGENCY,question
+0060068489.json,21,344,70,357,"1,680",question
+0060068489.json,391,513,461,523,2.000.00,answer
+0060068489.json,292,591,332,606,TOTAL,question
+0060068489.json,569,594,638,607,APPROVALS,header
+0060068489.json,506,624,542,637,Agency,question
+0060068489.json,506,648,546,658,Product,question
+0060068489.json,504,674,537,686,Media,question
+0060068489.json,506,699,536,711,Sales,question
+0060068489.json,506,725,555,737,Marketing,question
+0060068489.json,507,750,555,762,Executive,question
+0060068489.json,506,775,563,787,Accounting,question
+0060068489.json,25,645,83,660,REMARKS:,question
+0060068489.json,418,78,706,97,ADVERTISING AND SELLING AUTHORIZATION,header
+0060068489.json,636,67,704,77,NYO 09 (10-81),other
+0060068489.json,25,55,305,110,"The American Tobacco Company DIVISION OF AMERICAN BRANDS INC. 265 PARK AVENUE, NEW YORK, NEW YORK 00267",header
+0060068489.json,94,132,638,157,DO NOT MAKE ANY COMMITMENT OR AUTHORIZE ANY EXPENDITURE OF ANY KIND FOR. ACCOUNT OF THIS COMPANY UNTIL EXECUTIVE APPROVAL HAS BEEN OBTAINED HEREON.,other
+0060068489.json,123,175,345,190,corporate Media Department,answer
+0060068489.json,512,220,663,249,30 sheet Posters (White Background),answer
+0060068489.json,13,216,187,246,LUCKY STRIKE LOW Tar Filters Box- 100%,answer
+0060068489.json,69,290,155,305,PERIOD. FROM,question
+0060068489.json,175,307,683,332,"ENTER ESTIMATES OF AMOUNTS TO BE EXPENDED BY MONTHS UNDER ""REMARKS"" OR ON ATTACHMENT. MAXIMUM EXPENDITURES AUTHORIZED",other
+0060068489.json,516,356,674,401,"1,600 posters plus 5% overrun (80) $ 16.00 each",other
+0060068489.json,376,355,463,370,"$ 26,880,00",answer
+0060068489.json,352,584,462,600,"$ 28,880.00",answer
+0060068489.json,93,668,434,695,"For posting in Cincinnati, Covington and Tampa/St. Petersburg.",answer
+0060068489.json,93,705,494,816,"Posters are captioned for identification, ""LUCKY STRIKES AGAIN (printed in red) with the word ""New"" printed in a snipe effect in the upper left corner. These posters have a white background and will be further identified as such in order to differentiate from a second design which will have a solid red background with white lettering.",answer
+0060068489.json,93,823,468,864,Posters are printed six colors (four color process and two impressions of red) on white 70# outdoor poster paper.,answer
+0060068489.json,509,826,596,839,Budget Allocation,question
+0060068489.json,506,852,593,866,Authorization No.,question
+0060068489.json,618,850,656,863,M- 49,answer
+0060068489.json,617,825,655,838,L- 3a,answer
+0060068489.json,94,512,312,525,Estimated Freight Charges,question
+0060068489.json,100,460,215,473,DISPLAY MATERIAL,question
+0060068489.json,97,436,259,449,MECHANICAL PRODUCTION,question
+0060068489.json,100,409,164,422,ART WORK,question
+0060068489.json,102,332,157,347,AIR TIME,question
+0060068489.json,96,346,261,371,30 Sheet Posters ,question

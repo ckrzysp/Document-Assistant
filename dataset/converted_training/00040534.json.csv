@@ -1,0 +1,82 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+00040534.json,84,109,136,119,COMPOUND,question
+00040534.json,85,141,119,152,SOURCE,question
+00040534.json,84,203,155,214,INVESTIGATOR(S),question
+00040534.json,84,232,141,243,SIGNATURE(S),question
+00040534.json,508,170,551,183,REPORTED,question
+00040534.json,327,170,361,183,TESTED,question
+00040534.json,334,296,361,310,MALE,question
+00040534.json,404,296,438,309,FEMALE,question
+00040534.json,404,328,440,339,SOURCE,question
+00040534.json,180,162,219,182,Unk.,answer
+00040534.json,300,360,317,373,P.O.,question
+00040534.json,669,127,697,151,A4,answer
+00040534.json,377,163,451,180,12/28/78,answer
+00040534.json,369,284,387,302,X,answer
+00040534.json,591,286,630,303,Unk.,answer
+00040534.json,473,323,514,338,Camm,answer
+00040534.json,522,320,596,335,Research,answer
+00040534.json,288,360,302,373,☑,answer
+00040534.json,201,388,218,406,☑,answer
+00040534.json,216,487,231,504,5,answer
+00040534.json,208,517,228,532,10,answer
+00040534.json,209,546,230,561,10,answer
+00040534.json,211,578,231,593,10,answer
+00040534.json,208,606,230,620,10,answer
+00040534.json,122,483,132,496,1,answer
+00040534.json,122,511,133,526,2,answer
+00040534.json,123,541,133,555,3,answer
+00040534.json,122,571,133,585,4,answer
+00040534.json,123,602,133,615,5,answer
+00040534.json,383,487,424,504,1800,answer
+00040534.json,380,518,421,532,2160,answer
+00040534.json,383,547,419,562,2592,answer
+00040534.json,384,577,420,594,3732,answer
+00040534.json,381,605,420,620,4479,answer
+00040534.json,82,740,135,753,CONCLUSION,question
+00040534.json,680,824,701,920,00040534,other
+00040534.json,295,56,512,79,ACUTE TOXICITY IN MICE,header
+00040534.json,145,98,507,116,3-Hydroxy-3-methylbutanoic acid (Tur 13),answer
+00040534.json,144,128,409,152,Lorillard - Organic Chemistry,answer
+00040534.json,411,141,473,152,LORILLARD NO,question
+00040534.json,499,127,564,144,OR39- 23,answer
+00040534.json,615,141,650,153,,question
+00040534.json,85,172,149,183,DATE RECEIVED,question
+00040534.json,573,148,713,184,"5/3/79 10/6/80 , Update",answer
+00040534.json,198,194,427,213,H. S. Tong & M. S. Forte',answer
+00040534.json,186,211,730,264,,answer
+00040534.json,637,194,714,209,B1014- 23,answer
+00040534.json,543,203,617,215,NOTEBOOK PAGE,question
+00040534.json,82,297,149,310,STRAIN OF MICE,question
+00040534.json,162,286,282,306,Swiss- Webster,answer
+00040534.json,493,297,560,310,DATE RECEIVED,question
+00040534.json,84,327,208,339,AVERAGE WEIGHT RANGE (GM),question
+00040534.json,84,362,246,373,ROUTE OF COMPOUND ADMINISTRATION,header
+00040534.json,362,362,386,373,☐ I.P.,question
+00040534.json,429,362,455,373,☐ I.V.,question
+00040534.json,499,363,562,375,☐ INHALATION,question
+00040534.json,82,390,169,403,COMPOUND ,header
+00040534.json,221,390,328,405,.5 % METHYL CELULOSE,question
+00040534.json,369,390,423,403,☐ CORN OIL,question
+00040534.json,466,390,506,401,☐ SALINE,question
+00040534.json,550,391,589,404,☐ OTHER,question
+00040534.json,105,447,153,458,GROUP NO.,question
+00040534.json,218,448,269,459,% SOLUTION,question
+00040534.json,370,448,455,470,DOSAGE (mg/ kg BODY WEIGHT),question
+00040534.json,588,450,679,468,RESULTS (NO TESTED),question
+00040534.json,574,489,603,506,1/ 6,answer
+00040534.json,575,515,607,532,0/ 6,answer
+00040534.json,575,545,603,563,0/ 6,answer
+00040534.json,575,575,605,594,3/ 6,answer
+00040534.json,575,605,604,623,6/ 6,answer
+00040534.json,82,651,203,662,REFERENCE FOR CALCULATION,question
+00040534.json,228,638,700,661,"Litchfield, J. T. and Wilcoxin F. , J. of Pharmacol",answer
+00040534.json,92,670,364,690,"and Exper. Ther. , 90: 99 , 1948.",answer
+00040534.json,239,703,420,721,3.5 (3.1 to 3.9 g /kg,answer
+00040534.json,345,863,530,895,Dr. H. J. Minnemeyer Ms. L. B. Gray,answer
+00040534.json,91,865,310,884,Copies to the Following:,question
+00040534.json,80,946,202,956,LORILLARO RESEARCH CENTER,other
+00040534.json,676,946,732,958,FORM 7 5/80,other
+00040534.json,89,753,688,831,"of respiratory depression, constriction of blood vessels, and in- activity. Survivors recovered in 48 hours. The recommended safe dose for a single trial by inhalation in man is 0.3 mg.",answer
+00040534.json,135,728,704,749,This compound appears to act as a CNS depressant with symptons,answer
+00040534.json,82,711,203,723,LD50 (95% CONFIDENCE LIMITS),question

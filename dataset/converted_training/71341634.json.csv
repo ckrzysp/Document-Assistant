@@ -1,0 +1,105 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+71341634.json,309,74,372,94,Home,header
+71341634.json,378,70,442,91,Office,header
+71341634.json,450,67,520,89,Check,header
+71341634.json,134,122,165,132,20182,answer
+71341634.json,166,77,260,101,Request,header
+71341634.json,67,198,109,206,Attention:,question
+71341634.json,66,212,108,222,Address:,question
+71341634.json,584,180,601,190,No,answer
+71341634.json,137,239,154,249,City,question
+71341634.json,302,232,323,242,State,question
+71341634.json,309,216,327,227,CA,other
+71341634.json,419,214,448,225,94080,other
+71341634.json,346,289,366,299,OR,other
+71341634.json,372,377,410,388,Quantity,question
+71341634.json,439,373,466,386,Units,question
+71341634.json,574,369,610,380,Amount,question
+71341634.json,254,395,272,406,288,answer
+71341634.json,258,468,275,479,296,answer
+71341634.json,318,392,336,403,725,answer
+71341634.json,318,465,339,478,725,answer
+71341634.json,441,461,468,472,CTNS,answer
+71341634.json,440,390,468,400,CTNS,answer
+71341634.json,366,552,384,565,Date,question
+71341634.json,441,566,479,577,39A00A,answer
+71341634.json,511,563,535,574,0607,other
+71341634.json,554,543,578,553,ID#,question
+71341634.json,80,613,129,623,Verification,question
+71341634.json,80,628,100,638,Ref,question
+71341634.json,302,603,326,617,Date,question
+71341634.json,366,602,405,613,Vendor#,question
+71341634.json,303,620,341,630,Check#,answer
+71341634.json,246,651,298,662,Description,question
+71341634.json,313,648,358,661,Account#,question
+71341634.json,373,645,425,656,Department,question
+71341634.json,443,644,482,654,Product,question
+71341634.json,580,637,616,648,Amount,question
+71341634.json,244,795,268,805,Date:,question
+71341634.json,489,784,521,797,00000,answer
+71341634.json,493,802,522,812,Check,answer
+71341634.json,503,816,517,827,Y,answer
+71341634.json,570,811,581,824,N,other
+71341634.json,85,844,138,855,Distribution:,question
+71341634.json,265,74,303,96,For,header
+71341634.json,468,897,645,913,425 481 31 46 PAGE 02,other
+71341634.json,0,954,231,986,210180429 PRODUCED FROM B & W WEB SITE,other
+71341634.json,66,906,181,923,MAR 24 1999 16: 16,other
+71341634.json,142,837,317,855,Fax to Field Payments at (502) 588- 7826,answer
+71341634.json,433,788,489,801,Pay Terms,question
+71341634.json,433,800,494,816,Pay Method,question
+71341634.json,433,817,500,828,Separate Pay-,question
+71341634.json,307,793,363,803,Prepared By:,question
+71341634.json,84,799,166,810,Voucher Approval:,question
+71341634.json,127,654,191,665,Account Name,question
+71341634.json,496,640,556,651,Business Unit,question
+71341634.json,430,613,486,626,Pay Handling,answer
+71341634.json,366,616,416,627,Check Date,answer
+71341634.json,427,598,494,614,Account Month,question
+71341634.json,115,575,202,592,Robert ,answer
+71341634.json,78,560,142,574,Requested By:,question
+71341634.json,237,553,317,566,Robert E. Muhonin,other
+71341634.json,383,567,423,579,03/ 24/ 99,answer
+71341634.json,427,546,521,560,Dist/Asgmt C.F. #,question
+71341634.json,490,500,546,514,Check Total,other
+71341634.json,575,496,633,511,$166 586 6060,other
+71341634.json,578,453,632,468,$12 784 00,answer
+71341634.json,503,455,532,468,$2 00,answer
+71341634.json,377,462,404,476,6. 382,answer
+71341634.json,237,510,323,524,"March 15- 19, 1999",answer
+71341634.json,77,471,222,486,Section 18 Narl Chain Walgreens,answer
+71341634.json,77,517,136,531,Promo Dates,question
+71341634.json,77,531,164,545,Charge To Section:,question
+71341634.json,170,527,247,541,PER ATTACHED,answer
+71341634.json,85,429,161,440,SEE ATTACHED,answer
+71341634.json,74,397,212,412,GPC BUYDOWN PROGRAMS,answer
+71341634.json,127,372,172,397,Promotion Name,question
+71341634.json,239,366,285,389,Promotion Number,question
+71341634.json,303,365,350,389,Promotion Code,question
+71341634.json,493,370,539,382,AVG Rate,question
+71341634.json,573,381,627,394,$143 922 80,answer
+71341634.json,501,384,528,397,$2 84,answer
+71341634.json,373,390,405,402,"50, 759",answer
+71341634.json,71,313,449,337,1099 name for number listed above proper name of egal as shown on IRS form (please print),other
+71341634.json,68,281,244,297,Enter Federal Employer Identification Number,other
+71341634.json,418,271,510,284,Social Security Number,other
+71341634.json,187,256,509,277,"Please complete the following If checked ""NO"" for corporation above:",question
+71341634.json,67,182,105,195,Pay To:,question
+71341634.json,123,176,257,191,COREMARK NTERNATIONAL,answer
+71341634.json,120,193,201,207,DAVID DRESSER,answer
+71341634.json,117,204,290,235,395 DYSTER POINT BLVD SUITE 415 S. SAN FRANCISCO,answer
+71341634.json,506,163,596,179,Is this a corporation,question
+71341634.json,511,180,531,206,Yes X,answer
+71341634.json,64,120,129,136,Distributor No,question
+71341634.json,66,137,109,151,Char No,question
+71341634.json,61,13,185,28,MAR- 24- 1999 14: 39,other
+71341634.json,239,8,360,22,BROWN & WILL IMASON,other
+71341634.json,237,54,397,70,Brown & Williamson Tobacco Corporation,other
+71341634.json,64,64,134,75,(Records Retention:,question
+71341634.json,61,50,120,62,,other
+71341634.json,138,61,170,74,30 days),answer
+71341634.json,304,115,397,141,Check Required ASAP/ PROMPT,other
+71341634.json,419,110,485,123,Mai Check To:,question
+71341634.json,486,105,600,121,PLEASE OVERNIGHT to,other
+71341634.json,510,122,604,149,X Payee (Name),other
+71341634.json,388,228,424,240,Zip Code,question

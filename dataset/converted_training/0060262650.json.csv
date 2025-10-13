@@ -1,0 +1,82 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0060262650.json,503,63,560,81,Telephone:,question
+0060262650.json,444,134,521,154,TELEPHONE,question
+0060262650.json,14,165,42,182,AME,question
+0060262650.json,372,166,453,186,AFFILLATION,question
+0060262650.json,13,193,62,211,DDRESS,question
+0060262650.json,446,222,524,242,TELEPHONE,question
+0060262650.json,372,254,453,269,AFFILIATION,question
+0060262650.json,8,254,46,268,AME,question
+0060262650.json,7,282,64,299,DDRESS,question
+0060262650.json,349,448,390,463,Position,question
+0060262650.json,8,447,53,462,resider,question
+0060262650.json,20,468,70,486,Affiliation,question
+0060262650.json,22,521,69,538,Affiliation,question
+0060262650.json,349,500,388,515,Position,question
+0060262650.json,351,573,390,588,Position,question
+0060262650.json,20,592,72,609,Affiliation,question
+0060262650.json,20,615,51,632,Topic.,question
+0060262650.json,21,666,71,680,Affiliation,question
+0060262650.json,21,689,50,702,Topic,question
+0060262650.json,352,642,391,662,Position,question
+0060262650.json,349,718,391,733,Position,question
+0060262650.json,349,788,391,803,Position,question
+0060262650.json,22,807,72,824,Affiliation,question
+0060262650.json,20,831,49,846,Tοpic,question
+0060262650.json,22,737,72,754,Affiliation,question
+0060262650.json,21,761,49,775,Topic,question
+0060262650.json,529,149,551,159,,other
+0060262650.json,552,151,574,161,,other
+0060262650.json,605,149,641,162,,other
+0060262650.json,605,237,643,247,,other
+0060262650.json,419,493,504,513,Professor,answer
+0060262650.json,413,635,498,656,Professor,answer
+0060262650.json,419,707,510,725,Professor,answer
+0060262650.json,413,779,544,796,Cytogeneticist,answer
+0060262650.json,21,546,50,561,Topic,question
+0060262650.json,75,11,225,56,Annual Meeting Los Angeles,header
+0060262650.json,106,53,197,73,26- 31 May 1983,other
+0060262650.json,256,0,469,21,ACCEPTED SYMPOSIUM,question
+0060262650.json,261,22,463,44,Preliminary Program Information,other
+0060262650.json,254,59,473,81,Submit not later than 1 November,other
+0060262650.json,501,0,636,20,Return this form to:,question
+0060262650.json,500,17,632,64,"AAAS Meetings Office 1101 Vermont Ave., N W. Washington, D. C. 20005",answer
+0060262650.json,559,64,641,81,(202) 842- 9530,answer
+0060262650.json,173,101,516,119,READ REVERSE SIDE BEFORE FILLING OUT THIS FORM,header
+0060262650.json,527,127,641,151,202/ 457- 4850,answer
+0060262650.json,14,137,337,155,RINCIPAL ORGANIZER (who will receive correspondence):,question
+0060262650.json,61,165,248,182,Marvin A Kastenbaum,answer
+0060262650.json,61,191,320,214,"1825 Eye Street, NW Suite 800",answer
+0060262650.json,323,193,426,213,"CITY STATE, ",question
+0060262650.json,433,190,618,211,Washington DC 20006,answer
+0060262650.json,529,236,573,249,,other
+0060262650.json,10,221,186,243,O ORGANIZER (if applicable):,question
+0060262650.json,324,282,424,299,"CITY, STATE, ZIP",question
+0060262650.json,10,360,188,380,INAL TITLE OF SYMPOSIUM,question
+0060262650.json,288,324,402,342,FOR ONE SESSION,header
+0060262650.json,279,351,470,373,THE HUMAN CHROMOSOME,answer
+0060262650.json,64,439,258,461,Dr. William J. Schull,answer
+0060262650.json,391,436,638,460,Director - Genetics Centers,answer
+0060262650.json,73,461,658,485,Univ. of Texas Graduate School of Biomedical Sciences (Houston),answer
+0060262650.json,10,499,63,517,- Speaker,question
+0060262650.json,74,494,233,512,Dr. Jorge J. Yunis,answer
+0060262650.json,94,510,433,532,Univ. of Minnesota School of Medicine,answer
+0060262650.json,67,534,586,557,"The Oncogene, the Fragile Site, and Nonrandom Aberrations",answer
+0060262650.json,10,571,65,591,- Speaker,question
+0060262650.json,75,561,238,584,Dr. Sheldon Wolff,answer
+0060262650.json,391,559,713,582,Chairman - Professor of Cytogenetic,answer
+0060262650.json,74,582,713,606,Laborat. Radiobiology& Environmental Health - U. of Cal. San Francis,answer
+0060262650.json,92,608,332,630,Sister- -Chromatid Exchanges,answer
+0060262650.json,10,645,63,662,- Speaker,question
+0060262650.json,67,637,245,657,Dr. Patricia Jacobs,answer
+0060262650.json,87,656,444,679,University of Hawai - Dept. of Anatomy,answer
+0060262650.json,66,679,409,703,Abnormal Human Chromosome Complements,answer
+0060262650.json,92,707,257,729,Dr. Raymond White,answer
+0060262650.json,8,716,63,733,- Speaker,question
+0060262650.json,95,729,264,752,University of Utah,answer
+0060262650.json,95,749,463,773,Human Linkage Map based on DNA Markers,answer
+0060262650.json,10,788,64,806,- Speaker,question
+0060262650.json,75,779,265,801,Dr. Michael A. Bender,answer
+0060262650.json,98,799,581,823,Brookhaven National Laboratory - Medical Department,answer
+0060262650.json,94,824,318,846,Cyrogeneric Epidemiology,answer
+0060262650.json,603,852,691,870,See Reverse Side,other

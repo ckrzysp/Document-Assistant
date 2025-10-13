@@ -1,0 +1,37 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+82562350.json,118,249,238,309,Fax,header
+82562350.json,272,128,458,186,LORILLARD TOBACCO COMPANY,header
+82562350.json,184,71,202,86,,question
+82562350.json,595,58,661,76,001/004,other
+82562350.json,116,331,144,348,To:,question
+82562350.json,120,360,152,377,Fax:,question
+82562350.json,120,385,148,402,CC:,question
+82562350.json,118,414,146,432,Re:,question
+82562350.json,362,334,407,347,From:,question
+82562350.json,364,359,402,376,Date:,question
+82562350.json,365,387,400,404,Fax:,question
+82562350.json,364,415,411,430,Pages:,question
+82562350.json,133,449,176,466,Urgent,question
+82562350.json,445,414,460,431,4,answer
+82562350.json,120,495,200,510,Comments:,question
+82562350.json,312,744,390,754,CONFIDENTIALITY,question
+82562350.json,390,744,418,752,NOTE,question
+82562350.json,307,905,355,918,Telephone:,question
+82562350.json,653,756,683,861,82562350,other
+82562350.json,56,73,162,87,05/01/00 10:21,other
+82562350.json,201,70,279,85,612 894 9690,other
+82562350.json,349,65,453,81,LORILLARD RGNY 11,other
+82562350.json,169,331,267,350,Mr. Randy Spell,answer
+82562350.json,409,334,493,349,Rick Redfield,answer
+82562350.json,410,357,487,377,"May 1, 2000",answer
+82562350.json,409,385,496,405,952 894- 9690,answer
+82562350.json,166,385,294,405,Mr. Fred Paternostro,answer
+82562350.json,169,412,251,434,Legal- lowa,answer
+82562350.json,199,449,263,465,For Review,question
+82562350.json,296,450,388,465,Please Comment,question
+82562350.json,420,449,495,464,Please Reply,question
+82562350.json,518,450,603,464,please Recycle,question
+82562350.json,115,522,608,600,"Attached is the Iowa Department of Revenue and Finance Minimum Legal Prices on Cigarettes as of April 3, 2000. I am attempting to obtain a copy of the actual Fair Trade Law and will forward as soon as obtained. Rick",answer
+82562350.json,116,764,609,819,"This facsimile may contain privileged and confidential information intended only for the use of the individual entity named above. If the mader of the facsimile is not the intended recipient or employee or delivering. It to the intended recipient you are hereby notified that any dissemination for copying of this facsimile is strictly prohibited. If you have received his facsimile in error, please notify us immediately by telephone (number indicated below) and return the original facsimile to us at the address below via the U.S Postal Service.",other
+82562350.json,319,864,410,895,"205 River Ridge Circle P. O. Box 7589 Bumsville, MN 5337",other
+82562350.json,355,907,420,917,(952) 694-2238,answer

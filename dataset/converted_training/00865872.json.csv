@@ -1,0 +1,41 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+00865872.json,166,182,202,196,B164,answer
+00865872.json,99,225,112,236,pH,question
+00865872.json,135,408,218,423,Reference:,question
+00865872.json,120,390,140,403,ORAL,question
+00865872.json,103,370,142,378,SOLUBILITY,question
+00865872.json,119,508,210,517,ACUTE CADCOVASCULAR,question
+00865872.json,135,559,219,571,Reference:,question
+00865872.json,634,702,653,792,00865872,other
+00865872.json,96,770,139,779,COMPOUND,question
+00865872.json,179,770,187,781,TO,question
+00865872.json,140,771,176,779,SENSITIVE,question
+00865872.json,96,920,137,929,SIGNATURE:,question
+00865872.json,259,793,296,804,[] OTHER,answer
+00865872.json,198,795,246,803,[MOISTURE],answer
+00865872.json,158,793,185,805,[] HEAT,answer
+00865872.json,118,793,143,805,[] Air,answer
+00865872.json,96,822,124,831,SAFETY,other
+00865872.json,211,824,250,832,,other
+00865872.json,251,824,300,831,PROCEDURE,other
+00865872.json,164,824,212,832,(SUGGESTED,other
+00865872.json,126,822,162,831,COMMENT:,other
+00865872.json,135,921,315,944,,answer
+00865872.json,499,922,518,932,DATE,question
+00865872.json,531,924,619,948,8/22/83,answer
+00865872.json,246,141,537,159,COMPOUND PHYSICAL PARAMETERS,header
+00865872.json,98,172,164,181,LRC FILE NUMBER,question
+00865872.json,501,172,553,183,LOT NUMBER,question
+00865872.json,98,198,157,209,PHYSICAL STATE,question
+00865872.json,169,211,337,228,Brownish- gray powder,answer
+00865872.json,131,267,653,323,"The pH of a 50% concentration of B164 in water was calculated to be 4.82 at 25°C according to the extrapolation procedures by Dr. P. D. Schickedantz, Lorillard Research Center Accession Number 1662.",answer
+00865872.json,152,377,435,395,(See SOP FOX Biological Solutions),answer
+00865872.json,226,405,286,421,BC20- 48,answer
+00865872.json,130,430,563,475,B164 forms a suspension in corn oil at 0.5g/ 1.5 ml Triple dosing is required,answer
+00865872.json,130,516,683,546,(See SOP for Determination of Solubility of Materials for Acute Cardiovascular and Respiratory Effects Study Beagle Dogs),answer
+00865872.json,222,559,286,574,BC20- 48,answer
+00865872.json,131,584,509,603,B164 is insoluble according to this procedure,answer
+00865872.json,98,663,207,672,STORAGE RECOMMENDATIONS,question
+00865872.json,134,679,588,698,Refrigerate in amber glass bottle at no more than 8°C,answer
+00865872.json,94,945,203,958,LORILLARD RESEARCH CENTER,other
+00865872.json,644,949,696,961,FORM 1921,other

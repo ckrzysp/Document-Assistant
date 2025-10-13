@@ -1,0 +1,89 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0012529295.json,54,132,92,150,Date:,question
+0012529295.json,104,265,168,279,Supplier,question
+0012529295.json,52,364,131,381,Projected:,header
+0012529295.json,574,204,588,218,x,answer
+0012529295.json,410,296,431,309,-0-,answer
+0012529295.json,410,322,431,339,-O-,answer
+0012529295.json,413,706,447,720,Date,question
+0012529295.json,414,732,446,749,Date,question
+0012529295.json,412,761,447,779,Date,question
+0012529295.json,412,787,446,809,Date,question
+0012529295.json,410,818,444,836,Date,question
+0012529295.json,50,848,111,866,Original,question
+0012529295.json,42,867,75,876,cc:,question
+0012529295.json,496,133,517,151,No.,question
+0012529295.json,545,204,570,223,Yes,question
+0012529295.json,593,206,611,223,No,question
+0012529295.json,440,483,473,498,-0-,other
+0012529295.json,461,893,503,910,CAPRI,answer
+0012529295.json,45,921,116,938,/lsbg1006,other
+0012529295.json,560,919,689,943,465915288,other
+0012529295.json,114,850,125,862,-,question
+0012529295.json,263,86,477,105,MARKET RESEARCH AUTHORIZATION,header
+0012529295.json,261,103,483,121,(Recommended Proposal Attached),other
+0012529295.json,505,17,710,122,6DR IV per II Revised MRA request one on LS to be,other
+0012529295.json,567,131,610,148,C- 40,answer
+0012529295.json,103,131,169,150,10/ /9 87,answer
+0012529295.json,53,159,266,179,Description: CAPRI Expansion:,question
+0012529295.json,277,160,457,179,California- A&U Wave II,answer
+0012529295.json,54,205,150,222,Requested By:,question
+0012529295.json,162,203,285,221,S. H. Trebilcock,answer
+0012529295.json,344,206,534,223,Research Request Attached:,header
+0012529295.json,54,233,280,252,Competitive Proposals Obtained:,header
+0012529295.json,284,263,346,279,Cost ($),question
+0012529295.json,394,250,442,281,Est. Travel,question
+0012529295.json,488,265,565,279,Total Cost,question
+0012529295.json,605,251,677,281,Cost Per Interview,question
+0012529295.json,605,294,656,312,$47 .22,answer
+0012529295.json,605,318,658,340,$74 .67,answer
+0012529295.json,459,322,579,341,$112 000 +/ - 10%,answer
+0012529295.json,465,291,570,310,"$70 ,825 + - 10%",answer
+0012529295.json,252,291,375,313,"$70 70,825 +/ - 10%",answer
+0012529295.json,256,321,377,341,"$112, 000 +/ - 10%",answer
+0012529295.json,59,292,228,313,Kapuler Market Research,answer
+0012529295.json,60,322,194,341,"Market Facts, Inc.",answer
+0012529295.json,48,381,166,398,Initiation Date,question
+0012529295.json,52,409,137,424,Field Start,question
+0012529295.json,52,436,157,455,Field Complete,question
+0012529295.json,52,466,171,485,Final Report Due,question
+0012529295.json,171,380,222,400,8/ 3/ 87,answer
+0012529295.json,177,407,244,428,9/ 23/ 87*,answer
+0012529295.json,169,438,230,457,10/ 11/ 87,answer
+0012529295.json,180,466,243,487,11/ 16/ 87,answer
+0012529295.json,301,364,493,383,Summary of Research Budget,header
+0012529295.json,296,382,434,401,Total Area Budget:,question
+0012529295.json,300,409,468,429,Current Bal. Available:,question
+0012529295.json,297,440,454,470,This Change (From Current Budget),question
+0012529295.json,534,379,625,400,"780, 900. 00",answer
+0012529295.json,525,408,628,430,"(381, 583. 08)",answer
+0012529295.json,535,440,624,459,"-70, 825. 00",answer
+0012529295.json,297,525,389,544,New Balance,question
+0012529295.json,525,525,630,546,"(452 ,408, 08)",answer
+0012529295.json,513,570,626,592,"1, 233, 308. 08",answer
+0012529295.json,295,571,430,606,Committed to Date: (Current Year),question
+0012529295.json,50,613,139,631,Sample Size,question
+0012529295.json,152,614,194,632,1. 500,answer
+0012529295.json,47,629,206,647,Recommemded Supplier:,question
+0012529295.json,224,630,419,651,Kapuler Marketing Research,answer
+0012529295.json,52,645,263,663,Reason(s) for Recommendation,question
+0012529295.json,274,643,356,659,Low bidder.,answer
+0012529295.json,52,702,145,720,Submitted By:,question
+0012529295.json,34,496,298,619,*Actual start date on the part of supplier Technically was due to start 9/ 7 (the) 10 week post intro period) See Project File Note) LJS 10/ 13/ 87,other
+0012529295.json,51,730,143,747,Approved By:,question
+0012529295.json,52,763,139,777,Approved By:,question
+0012529295.json,47,791,141,807,Approved By:,question
+0012529295.json,47,817,145,835,Budget Check:,question
+0012529295.json,150,697,316,737,L J L. J. Spurtier,answer
+0012529295.json,147,719,383,767,L. E. Gravely ,answer
+0012529295.json,147,836,231,851,K. F. Lyle,answer
+0012529295.json,131,849,222,866,Project File,answer
+0012529295.json,125,864,248,879,S. Willinger (3),answer
+0012529295.json,130,880,235,894,G. D. Raphael,answer
+0012529295.json,130,892,291,912,V. Hansberry (If Int.),answer
+0012529295.json,367,864,451,883,Project No.,question
+0012529295.json,355,894,449,909,Account Name,question
+0012529295.json,462,861,536,880,1987- 113CA,answer
+0012529295.json,461,699,544,728,10/ 9/ 87,answer
+0012529295.json,456,725,542,750,10/ 13/ 87,answer
+0012529295.json,298,483,482,516,This Amount (From Next Year's Budget),question

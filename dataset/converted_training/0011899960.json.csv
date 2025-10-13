@@ -1,0 +1,31 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0011899960.json,15,102,95,120,Attention,question
+0011899960.json,15,159,71,177,Copies,question
+0011899960.json,430,106,518,121,Department,question
+0011899960.json,314,159,373,176,Subject,question
+0011899960.json,603,43,653,89,7,other
+0011899960.json,18,237,113,261,Publication,question
+0011899960.json,348,296,386,311,Time,question
+0011899960.json,515,297,550,314,Date,question
+0011899960.json,552,736,620,756,RECEIVED,question
+0011899960.json,642,708,662,830,516007780,other
+0011899960.json,102,101,401,125,"DR. HUGHES, MESSRS. ALAR, SANDEFUR,",answer
+0011899960.json,524,103,669,124,CORPORATE AFFAIRS,answer
+0011899960.json,103,128,637,151,"BLOTT, BUTLER, MIDDLETON, CHRISTENSEN, PEPPLES, SACHS FREEDMAN",answer
+0011899960.json,85,158,265,179,"T. HUMBER, M. BATEMAN",answer
+0011899960.json,406,159,503,176,L&M Lawsuit,answer
+0011899960.json,253,209,441,231,PRESS QUERY,header
+0011899960.json,151,240,290,260,ADWEEK - Midwest,answer
+0011899960.json,15,270,149,289,Reporter/ Editor,question
+0011899960.json,186,267,655,290,Fran Brock (312) 467- 6500,answer
+0011899960.json,18,296,114,314,Received by,question
+0011899960.json,133,296,233,311,Mark Ahearn,answer
+0011899960.json,406,292,481,316,1: 45 P. M.,answer
+0011899960.json,581,295,637,314,7/ 9/ 84,answer
+0011899960.json,18,323,196,343,Deadline for response,question
+0011899960.json,218,324,352,344,Already handled,answer
+0011899960.json,17,349,680,386,"Describe the storyline, list the questions and proposed answers, and summarize handling, including clearances.",question
+0011899960.json,18,433,612,470,Ms. Brock requested information regarding L&M lawsuit. I provided the approved prepared response.,other
+0011899960.json,17,473,677,523,Reporter then requested clarification of generic cigarette vs. 'private label cigarette' and asked to be notified when further announcements regarding generics were made.,other
+0011899960.json,314,528,440,577,J. M. A. JMA,other
+0011899960.json,547,764,639,811,JUL 10 1984 JOHN ALAR,answer

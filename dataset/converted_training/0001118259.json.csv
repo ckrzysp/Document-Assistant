@@ -1,0 +1,32 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0001118259.json,221,71,264,89,B&W,header
+0001118259.json,221,41,263,70,,other
+0001118259.json,377,366,416,380,WCC,answer
+0001118259.json,697,796,721,927,621800455,other
+0001118259.json,511,50,730,82,Reconstituted Tobacco Leaf Substitutions Export Formulas,other
+0001118259.json,601,84,678,95,Revision Date:,question
+0001118259.json,254,154,510,194,Allowable Grade Substitutions for Export CPCL,header
+0001118259.json,148,253,331,274,Standard Grade Mark,question
+0001118259.json,412,257,609,278,Allowable Substitutions,question
+0001118259.json,108,282,286,305,PCFS Flue cured fines,answer
+0001118259.json,108,328,256,349,PCBS Burley fines,answer
+0001118259.json,105,406,306,428,MC- 4 Manufacturing fines,answer
+0001118259.json,102,542,243,559,MC -6 Stem Meal,answer
+0001118259.json,101,588,244,605,MC -7 Winnowers,answer
+0001118259.json,99,634,308,654,RXF Fine flue cured stem,answer
+0001118259.json,98,742,280,761,RBF Fine Burely stem,answer
+0001118259.json,378,291,522,307,RPCFS or RPCFS-O ,answer
+0001118259.json,378,337,523,354,RPCBS OT RPCBS- O,answer
+0001118259.json,377,411,430,429,MC -4 -S,answer
+0001118259.json,378,439,441,457,MC -4 -PH,answer
+0001118259.json,376,471,440,486,MC -4 -RC,answer
+0001118259.json,376,500,434,517,MC -4 -W,answer
+0001118259.json,374,547,411,564,MC -1,answer
+0001118259.json,374,594,425,609,C Stem,answer
+0001118259.json,374,638,494,656,RRXF or RRXF -O,answer
+0001118259.json,372,670,433,684,RRXM -B,answer
+0001118259.json,372,700,431,716,RRXM -T,answer
+0001118259.json,370,747,491,765,RRBF or RRBF -O,answer
+0001118259.json,370,778,417,793,RRB -B,answer
+0001118259.json,369,809,415,823,RRB -L,answer
+0001118259.json,369,838,415,852,RRB -T,answer
