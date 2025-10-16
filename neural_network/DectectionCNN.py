@@ -35,7 +35,7 @@ class ConvolutionalNN(NN.Module):
                NN.MaxPool2d(2,2)              
           )
 
-          self.detector_head = NN.Conv2d(48, 5, 1)
+          self.detector_head = NN.Conv2d(48, 4, 1)
 
      # Output Tensors
      def forward(self, x):

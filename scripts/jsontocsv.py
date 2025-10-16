@@ -6,10 +6,10 @@ import os
 ### TRAINING
 
 # Change PATH files once uploaded
-path = "../Document-Assistant/dataset/training_data/annotations/"
+# path = "../Document-Assistant/dataset/training_data/annotations/"
 path1 = "../Document-Assistant/dataset/training_data/annotations/"
 path2 = "../Document-Assistant/dataset/converted_training/"
-files = os.listdir(path)
+files = os.listdir(path1)
 
 for i in range(len(files)):
      # Path
