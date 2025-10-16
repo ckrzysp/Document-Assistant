@@ -1,0 +1,83 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+71108371.json,110,109,185,124,Department:,question
+71108371.json,109,147,158,161,System:,question
+71108371.json,112,205,127,220,x,answer
+71108371.json,207,127,236,138,7970,answer
+71108371.json,271,176,289,190,x,answer
+71108371.json,462,189,476,202,X,answer
+71108371.json,480,122,523,137,4/20/98,answer
+71108371.json,482,102,528,117,4/17/98,answer
+71108371.json,480,175,536,188,Immediate,question
+71108371.json,483,189,510,200,High,question
+71108371.json,480,201,523,214,Medium,question
+71108371.json,482,216,506,227,Low,question
+71108371.json,482,229,511,240,Defer,question
+71108371.json,511,155,581,169,PRIORITY,header
+71108371.json,408,712,451,726,designed,other
+71108371.json,99,848,297,855,,other
+71108371.json,257,13,467,49,MIS PROJECT REQUEST PART I - CLIENT REQUEST,header
+71108371.json,109,74,193,90,Requested by:,question
+71108371.json,200,73,294,88,Karl Hutchison,answer
+71108371.json,384,71,482,85,Project Number:,question
+71108371.json,485,70,573,85,(assigned by MIS),answer
+71108371.json,196,108,251,122,BD & SS,answer
+71108371.json,109,127,203,141,Phone Number:,question
+71108371.json,384,103,481,119,Date Submitted:,question
+71108371.json,384,123,474,137,Date Required:,question
+71108371.json,130,162,238,178,REQUEST TYPE,header
+71108371.json,307,159,412,173,REASON CODE,header
+71108371.json,131,180,217,192,1. Enhancement,question
+71108371.json,133,194,215,206,2. Maintenance,question
+71108371.json,135,207,243,221,3. Special Processing,question
+71108371.json,133,221,187,234,4. Ad Hoc,question
+71108371.json,131,235,205,249,5. Emergency,question
+71108371.json,296,177,443,190,1. Productivity Improvement,question
+71108371.json,295,190,420,204,2. Return On Investment,question
+71108371.json,293,204,398,218,3. Customer Impact,question
+71108371.json,293,216,440,231,4. Government Requirement,question
+71108371.json,295,232,394,245,5. Business Change,question
+71108371.json,295,244,377,259,6. System Error,question
+71108371.json,296,258,399,273,7. Procedural Error,question
+71108371.json,110,292,267,307,PROBLEM DEFINITION,header
+71108371.json,109,310,226,324,Description of Request:,question
+71108371.json,109,318,606,352,"Please run job FRMRXUM2 for GPC, Misty, and Kool against file b:\common\khutchi\r892unm.lst. Please place output in the same directory.",answer
+71108371.json,110,406,211,421,Reason for Request:,question
+71108371.json,109,430,536,447,Calculation of 1997 STR volumes for these brands for allocation of Period 2A budgets.,answer
+71108371.json,110,506,254,523,Request Authorized By:,question
+71108371.json,309,520,393,537,Karl Hutchison,answer
+71108371.json,98,588,191,603,REQUEST TYPE:,header
+71108371.json,387,584,476,599,REASON CODE:,header
+71108371.json,101,782,267,797,REQUEST AUTHORIZED BY,question
+71108371.json,98,603,196,616,1. Enhancement,question
+71108371.json,198,602,347,615,"productivity improvement, new",other
+71108371.json,119,615,279,630,"functionality, nice to have feature",other
+71108371.json,98,630,193,644,2. Maintenance-,question
+71108371.json,194,628,371,642,fix program error new business need,other
+71108371.json,98,645,221,658,3. Special Processing,question
+71108371.json,222,642,376,656,high volume file maintenance or,other
+71108371.json,120,656,376,672,data correction which is not part of normal processing,other
+71108371.json,99,672,167,686,4. Ad Hoc-,question
+71108371.json,169,672,369,686,reporting requirement which is not part of,other
+71108371.json,120,687,208,700,normal processing,other
+71108371.json,99,701,186,714,5. Emergency-,question
+71108371.json,187,700,344,714,application or technology failure,other
+71108371.json,388,599,546,613,1. Productivity Improvement,question
+71108371.json,387,612,522,627,2. Return on Investment-,question
+71108371.json,388,627,502,641,3. Customer Impact,question
+71108371.json,524,612,592,625,dollar savings,other
+71108371.json,547,596,611,610,time savings,other
+71108371.json,503,624,621,638,requested change affects,other
+71108371.json,408,640,535,654,B&W's external customers,other
+71108371.json,388,655,546,669,4. Government Requirement,question
+71108371.json,547,652,622,667,required by law,other
+71108371.json,388,668,500,683,5. Business Change,question
+71108371.json,501,668,600,682,change in a business,other
+71108371.json,409,682,604,698,"process, or implement strategic direction",other
+71108371.json,388,697,483,711,6. System Error-,question
+71108371.json,486,696,617,711,System is not functioning as,other
+71108371.json,388,725,502,739,7. Procedural Error,question
+71108371.json,506,722,634,738,"caused by user, scheduling,",other
+71108371.json,409,740,481,753,"operations, etc.",other
+71108371.json,270,777,627,797,MUST BE AUTHORIZED BY THE DEPARTMENT DIRECTOR OR THE,answer
+71108371.json,101,793,621,810,DESIGNATED SYSTEM OWNER BEFORE SUBMISSION TO THE MIS CLIENT SYSTEMS MANAGER.,answer
+71108371.json,0,954,232,982,12009596 PRODUCED FROM B&W WEB SITE,other

@@ -1,0 +1,18 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0060091229.json,183,860,271,868,Attention:,question
+0060091229.json,203,50,509,97,"MARDEN- KANE. INC. 666 FIFTH AVE. NEW YORK, N.Y. 10103 (212) 582-6600",header
+0060091229.json,262,164,445,179,TRAVEL INFORMATION SHEET,header
+0060091229.json,75,201,636,241,"This information will be used by Marden- Kane in making travel arrangements for your round- trip to Los Angeles, California.",other
+0060091229.json,71,259,178,276,Finalist Name:,question
+0060091229.json,75,304,171,317,Home Address:,question
+0060091229.json,76,347,186,360,Home Telephone:,question
+0060091229.json,76,390,215,404,Business Telephone:,question
+0060091229.json,73,432,178,449,Name of Guests,question
+0060091229.json,80,473,259,488,Relationship to Finalist:,question
+0060091229.json,78,515,234,545,Major Airport Nearest your home:,question
+0060091229.json,78,575,212,602,Distance from your home to airport:,question
+0060091229.json,78,630,237,673,Do you prefer airline seats in smoking or non- smoking section:,question
+0060091229.json,78,713,256,754,Any special dietary meal and/ you or your guest would prefer,question
+0060091229.json,78,817,165,827,RETURN TO:,question
+0060091229.json,183,814,358,858,"Harden- Kane, Inc. 666 Fifth Avenue New York, N. Y. 10103",answer
+0060091229.json,277,855,384,871,Ms. L. Sobel,answer

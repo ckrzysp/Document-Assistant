@@ -1,0 +1,28 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+80707440_7443.json,49,229,87,243,CLIENT:,question
+80707440_7443.json,49,257,95,271,PRODUCT:,question
+80707440_7443.json,596,147,667,176,,other
+80707440_7443.json,373,225,437,240,PUBLICATION,question
+80707440_7443.json,373,254,404,268,ISSUE:,question
+80707440_7443.json,373,278,407,292,SPACE:,question
+80707440_7443.json,547,275,575,289,DATE:,question
+80707440_7443.json,102,391,193,405,ALTERNATIVES:,question
+80707440_7443.json,103,434,167,447,HEADLINE:,question
+80707440_7443.json,106,461,194,474,ILLUSTRATION:,question
+80707440_7443.json,599,832,621,917,80707440,other
+80707440_7443.json,108,228,256,242,LORILLARD CORPORATION,answer
+80707440_7443.json,110,251,328,271,"Kent, Newport, True and Old Gold",answer
+80707440_7443.json,50,281,91,295,JOB NO:,question
+80707440_7443.json,457,223,567,238,Daily Newspapers,answer
+80707440_7443.json,455,251,561,266,"August 19, 1969",answer
+80707440_7443.json,415,278,542,307,1000 lines B&W 1750 lines 2- color,answer
+80707440_7443.json,587,274,630,291,8/ 8/ 69,answer
+80707440_7443.json,172,362,323,377,New York Football Fans,answer
+80707440_7443.json,105,365,161,379,LEAD- IN:,question
+80707440_7443.json,205,388,377,419,Los Angeles Football Fans Chicago Football Fans,answer
+80707440_7443.json,180,430,436,449,"Pick The Winners And Win Up $ 5 ,000",answer
+80707440_7443.json,207,458,426,474,Line Drawings of Football Scenes,answer
+80707440_7443.json,106,487,202,502,BOLD SUB- HEAD:,question
+80707440_7443.json,214,497,574,567,"1st Prize $ 5,000 2nd Prize 2,000 3rd Prize 1,000 4th Prizes 500 fans will receive copies of ""The Golden Anniversary of Pro- Football""",answer
+80707440_7443.json,105,580,352,595,TEXT: Over 500 Prizes To Be Awarded,question
+80707440_7443.json,154,592,597,702,"Now you can win up $ 5,000 for simply picking the winners of the games listed below. Just check the box next to the team you think will win. Allow for the point spread in your selections. (For example, if a team is quoted as +7 pts. this means they must win the game by at least 7 points.) Prizes will be awarded by random drawings to those who have the greatest official number of winning selections. Full details are in the Rules.",answer

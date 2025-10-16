@@ -1,0 +1,109 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+87528380.json,612,59,678,81,10675,other
+87528380.json,300,186,440,204,PROPOSAL,header
+87528380.json,418,215,442,228,FOR,question
+87528380.json,409,229,440,242,DATE,question
+87528380.json,34,214,52,227,TO,question
+87528380.json,34,232,83,242,ADDRESS,question
+87528380.json,34,244,63,257,CITY,question
+87528380.json,34,260,72,270,STATE,question
+87528380.json,120,270,165,287,Attn:,question
+87528380.json,46,339,84,357,ITEM:,question
+87528380.json,47,358,120,372,MATERIAL:,header
+87528380.json,232,358,300,372,ALUMINUM,question
+87528380.json,436,341,471,358,SIZE:,question
+87528380.json,514,356,561,370,GAUGE,question
+87528380.json,47,385,100,399,COLORS:,question
+87528380.json,47,426,93,443,HOLES:,header
+87528380.json,101,427,125,441,YES,question
+87528380.json,302,469,370,483,EMBOSSED,question
+87528380.json,207,443,263,456,SQUARE,question
+87528380.json,47,441,113,455,CORNERS:,header
+87528380.json,46,469,92,483,EDGES:,header
+87528380.json,46,514,109,529,PACKING:,header
+87528380.json,46,527,95,541,OTHER:,question
+87528380.json,303,356,323,371,☑,answer
+87528380.json,163,397,238,411,Aluminum,answer
+87528380.json,385,399,405,414,☑,answer
+87528380.json,332,427,350,440,4,answer
+87528380.json,131,427,151,442,☑,answer
+87528380.json,374,469,391,483,☑,answer
+87528380.json,142,485,162,499,☑,answer
+87528380.json,106,543,174,557,Tooling:,question
+87528380.json,49,582,130,603,QUANTITIES:,question
+87528380.json,45,613,92,628,PRICE:,question
+87528380.json,46,680,103,693,BILLING:,header
+87528380.json,47,700,146,715,WAREHOUSING:,header
+87528380.json,180,679,198,694,☑,answer
+87528380.json,163,700,183,715,☑,answer
+87528380.json,578,846,666,863,87528380,other
+87528380.json,462,874,616,940,,other
+87528380.json,45,757,112,770,CONDITIONS:,header
+87528380.json,527,630,611,657,4050,other
+87528380.json,592,696,603,714,,other
+87528380.json,479,716,575,757,TOTAL,question
+87528380.json,592,701,683,753,8650,other
+87528380.json,577,719,599,732,,question
+87528380.json,31,41,192,163,S,other
+87528380.json,263,441,285,458,☑,answer
+87528380.json,223,508,245,530,10,answer
+87528380.json,204,109,598,135,"STOUT INDUSTRIES, INC.",header
+87528380.json,203,138,674,153,6425 W. FLORISSANT AVE. ST. LOUIS MO 63136 . (314) 385- 2280,other
+87528380.json,105,211,286,229,Lorillard Corporation,answer
+87528380.json,106,226,243,240,666 Fifth Avenue,answer
+87528380.json,106,240,174,257,New York,answer
+87528380.json,106,254,233,268,New York 10103,answer
+87528380.json,485,207,653,225,"Metal ""Pack"" Plaque",answer
+87528380.json,487,222,624,240,"October 16, 1987",answer
+87528380.json,485,253,653,270,Mr. A. D. Steinberg,answer
+87528380.json,513,267,640,279,YOUR REPRESENTATIVE,question
+87528380.json,49,304,415,332,It is our pleasure to propose the following:,other
+87528380.json,170,270,329,285,Mr. Robert Kennedy,answer
+87528380.json,103,339,348,357,Harley Davidson Metal Plaque,answer
+87528380.json,521,335,608,357,"171/4 x 231/2 """,answer
+87528380.json,617,352,660,368,".025"" ",answer
+87528380.json,124,356,190,373,STEEL ☐,question
+87528380.json,363,355,431,373,OTHER ☐,question
+87528380.json,103,378,517,399,"Transparent gold, opaque black, white and orange",answer
+87528380.json,47,399,128,416,BASE COLOR,question
+87528380.json,292,399,381,416,SINGLE FACE,question
+87528380.json,444,398,561,416,DOUBLE FACE ☐,question
+87528380.json,172,427,211,444,NO ☐,question
+87528380.json,244,427,323,441,NUMBER OF,question
+87528380.json,117,441,186,455,ROUND ☐,question
+87528380.json,309,443,373,456,ANGLE ☐,question
+87528380.json,392,441,511,458,CUT TO SHAPE ☐,question
+87528380.json,99,469,177,486,HEMMED ☐,question
+87528380.json,47,485,140,500,STAMP FRAME,question
+87528380.json,406,468,540,486,BEADED BORDER ☐,question
+87528380.json,358,485,466,500,BACK FRAME ☐,question
+87528380.json,183,483,337,499,RIGHT ANGLE BEND ☐,question
+87528380.json,201,469,279,484,CURLED ☐,question
+87528380.json,115,515,204,529,PER CARTON,question
+87528380.json,274,513,350,531,PER CRATE,question
+87528380.json,415,514,504,527,PER BUNDLE,question
+87528380.json,105,525,644,544,"Price is based on reproduction of customer supplied ""Pack"" box.",answer
+87528380.json,190,538,650,556,"Form die, brass emboss die to achieve detail on eagle.",answer
+87528380.json,172,584,272,602,500 Plaques,answer
+87528380.json,156,613,246,630,$ 9.18 each,answer
+87528380.json,367,581,507,601,One time tooling,question
+87528380.json,370,603,457,621,Steel tips,question
+87528380.json,511,581,609,598,"@ $ 3,015.00",answer
+87528380.json,532,603,611,620,"$ 1,045.00",answer
+87528380.json,200,679,351,695,BILL AS MANUFACTURE,question
+87528380.json,376,676,509,696,☐ BILL AS SHIP FOR.,question
+87528380.json,510,676,578,694,☐ 6 MOS.,question
+87528380.json,588,676,656,694,☐ 12 MOS,question
+87528380.json,182,703,304,717,SHIP IMMEDIATELY,question
+87528380.json,332,698,440,716,☐ 6 MOS. WHSE.,question
+87528380.json,459,698,570,715,☐ 12 MOS. WHSE,question
+87528380.json,240,728,338,743,PER SHIPMENT,question
+87528380.json,46,728,150,745,DROP SHIPPING:,header
+87528380.json,56,894,284,937,TERMS - NET 10 DAYS A service charge of 11/2 per month will be applied to all unpaid balances over 30 days.,other
+87528380.json,531,946,679,954,,other
+87528380.json,339,898,441,929,"STOUT INDUSTRIES INC,",other
+87528380.json,47,863,485,875,A 15 service charge will be added to reight costs for all prepaid shipments involving 5 or more pieces.,other
+87528380.json,42,768,698,828,"PRICES QUOTED HEREIN ARE BASED ON CURRENT COSTS AND ARE FOR IMMEDIATE ACCEPTANCE *These prices will be updated periodically from date of order, to reflect changes in material and labor costs. Prices and terms quoted herein are not subject to verbal changes unless confirmed in writing by the home office of this company in S. T. LOUIS M. O. All contracts for delivers are contingent upon fires, strikes or other causes beyond our control. Purchaser agrees to accept overun or underrun to the extent of 10% of the quantity ordered.",other
+87528380.json,47,827,698,840,"Any taxes or governmental changes which the seller may be required to pay or collect upon the production sale storage, or delivery under any existing or",other
+87528380.json,46,839,504,851,future law shall be for the account of the buyer who shall promptly pay the amount hereof to the seller upon,other
+87528380.json,46,852,368,863,F. O. B. S. T. LOUIS MISSOURI Shipments via truck shipped freight collect.,other

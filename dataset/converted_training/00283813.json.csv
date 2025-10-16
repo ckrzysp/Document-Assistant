@@ -1,0 +1,77 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+00283813.json,461,22,508,40,Date:,question
+00283813.json,571,75,593,93,on,question
+00283813.json,380,49,421,62,5031,answer
+00283813.json,54,123,106,137,BLEND,question
+00283813.json,179,124,238,141,CASING,question
+00283813.json,309,124,389,142,RECASING,question
+00283813.json,56,295,161,310,Cigarettes:,header
+00283813.json,74,321,124,335,Brand,question
+00283813.json,74,339,133,353,Length,question
+00283813.json,74,355,198,370,Circumference,question
+00283813.json,75,373,122,387,Paper,question
+00283813.json,75,388,152,403,Firmness,question
+00283813.json,75,406,114,420,Draw,question
+00283813.json,73,422,132,436,Weight,question
+00283813.json,75,455,120,469,Print,question
+00283813.json,419,426,513,444,Wrappings:,header
+00283813.json,439,450,499,467,Labels,question
+00283813.json,439,471,516,486,Closures,question
+00283813.json,437,504,505,519,Cartons,question
+00283813.json,436,521,517,536,Markings,question
+00283813.json,550,489,591,503,Gold,answer
+00283813.json,53,515,175,532,Requirements:,header
+00283813.json,50,651,192,666,Responsibility:,header
+00283813.json,73,542,168,557,Laboratory,question
+00283813.json,73,559,130,576,Others,question
+00283813.json,71,726,148,743,Shipping,question
+00283813.json,50,760,130,777,Reports:,header
+00283813.json,658,768,676,862,00283913,other
+00283813.json,440,899,705,951,,other
+00283813.json,316,638,337,646,-,other
+00283813.json,20,95,48,127,,other
+00283813.json,20,469,48,500,,other
+00283813.json,21,825,38,866,,other
+00283813.json,601,21,670,42,7/ 16/ 68,answer
+00283813.json,663,73,735,94,7/ 10/ 68,answer
+00283813.json,334,71,525,89,"Mr. C. L. Tucker, Jr.",answer
+00283813.json,56,70,285,90,Original request made by,question
+00283813.json,263,45,357,65,Sample No.,question
+00283813.json,57,95,360,116,Sample specifications written by,question
+00283813.json,426,98,595,118,John H. M. Bohlken,answer
+00283813.json,64,158,353,210,OLD GOLD STRAIGHT Tobacco Blend Control for Sample No. 5030,other
+00283813.json,637,128,771,146,MENTHOL FLAVOR,question
+00283813.json,448,126,564,144,FINAL FLAVOR,question
+00283813.json,239,323,398,340,OLD GOLD STRAIGHT,answer
+00283813.json,239,339,294,353,85 mm.,answer
+00283813.json,240,355,313,371,25. 3 mm.,answer
+00283813.json,237,372,332,386,Ecusta 556,answer
+00283813.json,237,387,397,403,OLD GOLD STRAIGHT,answer
+00283813.json,239,405,397,420,OLD GOLD STRAIGHT,answer
+00283813.json,237,420,398,435,OLD GOLD STRAIGHT,answer
+00283813.json,237,459,396,476,OLD GOLD STRAIGHT,answer
+00283813.json,73,440,197,455,Tipping Paper,question
+00283813.json,73,473,198,488,Filter Length,question
+00283813.json,550,454,711,472,OLD GOLD STRAIGHT,answer
+00283813.json,550,471,672,487,Standard Blue,answer
+00283813.json,552,506,710,521,OLD GOLD STRAIGHT,answer
+00283813.json,550,522,747,554,Sample number on each pack and carton,answer
+00283813.json,439,486,526,502,Tear Tape,question
+00283813.json,236,542,314,562,One Tray,answer
+00283813.json,52,591,242,607,Laboratory Analysis:,question
+00283813.json,232,566,441,621,,other
+00283813.json,581,582,714,623,,other
+00283813.json,344,634,533,659,,other
+00283813.json,78,634,310,652,Benzo (A) Pyrene Analyses,answer
+00283813.json,70,617,680,641,"Tars and Nicotine, Taste Panel, Burning Time, Gas Phase Analysis,",answer
+00283813.json,73,676,196,693,Tobacco Blend,question
+00283813.json,73,690,233,708,Filter Production,question
+00283813.json,71,708,223,726,Making & Packing,question
+00283813.json,263,677,487,694,Manufacturing - A. Kraus,answer
+00283813.json,264,707,632,727,"Product Development, John H. M. Bohlker",answer
+00283813.json,70,784,165,800,Written by,question
+00283813.json,70,802,175,817,Original to,question
+00283813.json,68,818,157,835,Copies to,question
+00283813.json,197,786,365,801,John H. M. Bohlken,answer
+00283813.json,196,803,392,818,"Mr. C. L. Tucker, Jr.",answer
+00283813.json,196,818,346,834,Dr. A. W. Spears,answer

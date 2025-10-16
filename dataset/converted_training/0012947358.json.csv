@@ -1,0 +1,84 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0012947358.json,53,228,74,243,VIA:,header
+0012947358.json,422,43,440,56,TO:,question
+0012947358.json,405,99,440,112,FROM:,question
+0012947358.json,420,128,437,139,Per,question
+0012947358.json,408,183,437,198,DATE:,question
+0012947358.json,542,177,566,190,VIA:,header
+0012947358.json,53,270,70,281,RE:,question
+0012947358.json,47,309,69,322,FOR,question
+0012947358.json,250,267,271,282,IN,question
+0012947358.json,70,412,131,425,Document(s),question
+0012947358.json,134,412,172,425,Served:,question
+0012947358.json,71,440,102,451,Court:,question
+0012947358.json,73,684,118,697,Remarks,question
+0012947358.json,426,781,443,795,BY:,question
+0012947358.json,427,811,444,824,Per,question
+0012947358.json,47,130,67,144,,question
+0012947358.json,78,230,98,243,(X),answer
+0012947358.json,310,265,381,280,FLORIDA,answer
+0012947358.json,568,190,585,203,(X),answer
+0012947358.json,475,166,496,177,(city),other
+0012947358.json,596,165,624,176,(State),other
+0012947358.json,471,82,493,92,(City),other
+0012947358.json,515,109,561,119,(Originating,other
+0012947358.json,564,109,589,119,Agent),other
+0012947358.json,589,81,617,92,(State),other
+0012947358.json,535,54,546,64,(C,other
+0012947358.json,546,54,554,62,T.,other
+0012947358.json,554,54,583,62,Office),other
+0012947358.json,608,317,635,327,(Name,other
+0012947358.json,635,316,659,329,State),other
+0012947358.json,434,209,560,332,,other
+0012947358.json,553,606,687,743,,other
+0012947358.json,535,848,571,859,(Address),other
+0012947358.json,60,684,71,697,9.,other
+0012947358.json,59,631,70,644,8.,other
+0012947358.json,59,603,69,614,7.,other
+0012947358.json,56,578,69,589,6.,other
+0012947358.json,59,521,70,535,5.,other
+0012947358.json,54,466,68,477,4.,other
+0012947358.json,57,441,67,454,3.,other
+0012947358.json,57,413,68,424,2.,other
+0012947358.json,57,370,67,383,1.,other
+0012947358.json,28,32,237,106,C T SYSTEM The Corporation Trust Company C T Corporation System and Associated Companies,header
+0012947358.json,440,38,672,54,The Corporation Trust Company,answer
+0012947358.json,457,64,612,80,"New York, New York",other
+0012947358.json,458,92,634,107,C T Corporation System,answer
+0012947358.json,458,122,600,137,Phyllis G. Jennings,answer
+0012947358.json,461,148,615,164,"Jacksonville, Florida",answer
+0012947358.json,454,180,514,195,1- -27 -69,answer
+0012947358.json,568,176,659,189,() Certified Mail,question
+0012947358.json,587,189,674,203,Certified Air Mail,question
+0012947358.json,81,126,330,186,Walliam Degenhardt Tax Director The American Tobacco Company 245 Park Avenue New York New York 1001,other
+0012947358.json,148,186,232,199,Recipienti,other
+0012947358.json,99,229,171,243,Certified Mail,question
+0012947358.json,175,229,247,243,() Messenger,question
+0012947358.json,80,246,191,260,() Certified Air Mail,question
+0012947358.json,75,267,242,285,PROCESS SERVED,answer
+0012947358.json,589,300,631,315,N. J.,other
+0012947358.json,88,307,371,322,THE AMERICAN TOBACCO COMPANY,answer
+0012947358.json,261,323,341,331,Name of Company,other
+0012947358.json,77,335,598,354,Enclosed are copies of legal proces served upon the statutory agent of the above company as follows:,question
+0012947358.json,70,369,143,382,Title of Action:,question
+0012947358.json,147,356,658,397,"Reuben Sunstein, Plaintiff, v. The American Tobacco Company, a New Jorsey corporation, Defendant.",answer
+0012947358.json,186,408,362,425,Summons and Complaint,answer
+0012947358.json,117,430,486,453,"Circuit Court, Dade County, Florida. No. 69 -1351",answer
+0012947358.json,71,465,158,479,Nature of Action:,question
+0012947358.json,168,454,667,476,"For personal injuries resulting after smoking ""Pall Mall"" and ""Lucky",other
+0012947358.json,63,469,683,510,"Strike"" cigarettes manufactured by defendant, wherein plaintiff alleges breach of was- anties, seeks damages in excess of $5, 000 and demands trial by jury.",answer
+0012947358.json,71,520,228,535,On Whom Process was Served:,question
+0012947358.json,244,510,689,549,"Phyllis G. Jonnings, Asst. Socy,. The Corporation Company, Jacksonville, Florida",answer
+0012947358.json,70,575,204,590,Date and Hour of Service,question
+0012947358.json,74,602,215,615,Appearance or Answer Dues,question
+0012947358.json,71,628,181,643,Plaintiff's Attorney(s):,question
+0012947358.json,244,624,405,671,"Max A. Goldfarb 414 Biscayne Building Miami, Florida",answer
+0012947358.json,246,568,478,589,"January 27, 1969 9: 00 a. m.",answer
+0012947358.json,247,592,658,613,"Within 20 days after service, exclusive of day of service.",answer
+0012947358.json,418,751,588,767,RECEIVED AND FORWARDED ON,question
+0012947358.json,610,746,690,764,1 29/29/ 69 (Date),answer
+0012947358.json,448,778,659,794,THE CORPORATION TRUST COMPANY,answer
+0012947358.json,448,795,614,851,V. Colvellm Asst. Secy. 277 Park Avenue,answer
+0012947358.json,450,856,622,872,"New York, New York 10017",other
+0012947358.json,574,880,683,893,,other
+0012947358.json,25,782,377,812,"KINDLY ACKNOWLEDGE RECEIPT BY SIGNING AND RETURNING TO US THE ENCLOSED CARBON COPY OF THIS TRANSMITTAL FORM,",other

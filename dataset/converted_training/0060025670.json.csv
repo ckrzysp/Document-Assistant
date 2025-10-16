@@ -1,0 +1,15 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0060025670.json,149,170,217,181,Supplier:,question
+0060025670.json,196,352,259,363,APPROVED,question
+0060025670.json,149,596,196,610,Tester,question
+0060025670.json,149,655,206,670,Manager,question
+0060025670.json,288,92,479,105,TEST ADHESIVE EVALUATION,header
+0060025670.json,149,208,260,222,Adhesive Code:,question
+0060025670.json,148,249,404,276,"Application: tipping, carton end flaps, etc.)",question
+0060025670.json,148,299,243,312,Test Period:,question
+0060025670.json,405,353,500,366,NOT APPROVED,question
+0060025670.json,149,402,381,418,If not approved state reasons.,other
+0060025670.json,148,616,268,631,Quality Control,question
+0060025670.json,147,634,275,651,Local Purchasing,question
+0060025670.json,147,689,617,720,"Complete and return to D. R. Brickey, Department of Research and Development, as soon as possible.",other
+0060025670.json,520,883,634,897,ATXO2 0083035,other

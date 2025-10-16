@@ -1,0 +1,18 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0013255595.json,91,158,134,179,DATE:,question
+0013255595.json,89,187,160,207,SUBJECT:,question
+0013255595.json,89,240,148,260,WRITER:,question
+0013255595.json,87,286,178,306,APPROVALS:,question
+0013255595.json,87,508,143,528,Other:,question
+0013255595.json,439,426,470,447,YES,question
+0013255595.json,570,433,590,450,NO,question
+0013255595.json,602,323,644,341,DATE,question
+0013255595.json,218,91,525,140,PUBLIC COMMUNICATIONS APPROVAL SHEET The Tobacco Institute,header
+0013255595.json,539,53,641,75,Attachment A,header
+0013255595.json,415,314,556,338,NAME OR INITIALS,question
+0013255595.json,88,342,198,361,Division Head,answer
+0013255595.json,87,367,200,388,Bill Kloepfer,answer
+0013255595.json,88,397,191,415,Sam Chilcote,answer
+0013255595.json,88,425,394,447,Legal Approval Recommended/ Required:,header
+0013255595.json,88,448,123,468,SH &B,other
+0013255595.json,87,479,118,496,C& B,other

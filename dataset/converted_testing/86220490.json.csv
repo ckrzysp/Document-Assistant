@@ -1,0 +1,26 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+86220490.json,168,261,192,276,To:,question
+86220490.json,168,282,204,297,Firm:,question
+86220490.json,169,304,196,319,FAX,question
+86220490.json,198,304,216,319,#:,question
+86220490.json,168,342,209,357,From:,question
+86220490.json,169,425,204,442,Date:,question
+86220490.json,270,282,304,297,MSA,answer
+86220490.json,271,306,327,320,Autodial,answer
+86220490.json,117,560,151,575,"Mike,",other
+86220490.json,258,761,310,782,,other
+86220490.json,661,711,682,814,8622042,other
+86220490.json,198,182,506,222,LORILLARD TOBACCO COMPANY Market Planning and Information Department,header
+86220490.json,271,260,354,277,Mike Mozina,answer
+86220490.json,271,342,358,359,Susan Smith,answer
+86220490.json,270,365,336,382,335- 7733,answer
+86220490.json,271,388,335,403,335- 7150,answer
+86220490.json,169,365,217,380,FAX #:,question
+86220490.json,169,387,233,404,Phone #:,question
+86220490.json,270,426,324,441,8/ 31/ 98,answer
+86220490.json,268,447,465,463,3 (including this cover page),answer
+86220490.json,168,447,230,464,# Pages:,question
+86220490.json,117,647,612,664,- Approval for AWS Quarterly Store Count Database to begin 3rd Quarter 1998,other
+86220490.json,116,693,587,731,- Table showing significant jump in Convenience Store market importance in 2nd Quarter 1998,other
+86220490.json,117,761,225,778,Talk to you soon!,question
+86220490.json,117,605,260,622,"As promised, here are:",question

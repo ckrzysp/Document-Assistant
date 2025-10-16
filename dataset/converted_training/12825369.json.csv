@@ -1,0 +1,44 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+12825369.json,59,135,106,149,MARKET,question
+12825369.json,59,165,126,179,POPULATION,question
+12825369.json,56,194,116,208,OPERATOR,question
+12825369.json,367,134,406,147,BRAND,question
+12825369.json,367,163,426,177,SCHEDULE,question
+12825369.json,367,196,461,210,FULL INSPECTION,question
+12825369.json,367,226,459,237,NUMBER VIEWED,question
+12825369.json,119,131,268,146,Lakeland Metro Market,answer
+12825369.json,427,130,465,144,Misty,answer
+12825369.json,539,194,606,208,SPOT CHECK,question
+12825369.json,324,250,427,267,TYPE OF DISPLAY,header
+12825369.json,177,286,252,301,PERMANENT,header
+12825369.json,56,351,106,362,LOCATION,question
+12825369.json,59,420,181,437,DESIGN ON DISPLAY,question
+12825369.json,427,317,444,332,☑,answer
+12825369.json,384,316,425,334,ROTARY,question
+12825369.json,246,391,267,404,,answer
+12825369.json,216,388,244,406,,answer
+12825369.json,57,493,131,508,COMMENTS:,question
+12825369.json,59,689,194,706,COMMENT ON PLANT:,question
+12825369.json,545,888,627,902,INSPECTION BY,question
+12825369.json,496,844,705,915,,other
+12825369.json,165,47,583,92,"LAURENCE, CHARLES, FREE & LAWSON, INC. BULLETIN ADVERTISING- INSPECTION REPORT",header
+12825369.json,154,159,204,176,400.400 ,answer
+12825369.json,141,186,243,203,The Lamar Corp.,answer
+12825369.json,433,159,517,177,2/ 20 & 3/ 20,answer
+12825369.json,589,159,644,177,3/ 23/ 91,other
+12825369.json,57,313,126,334,BULLETIN ☐,question
+12825369.json,180,316,225,334,WALL ☐,question
+12825369.json,141,345,261,362,See attached list,answer
+12825369.json,383,346,468,366,NO OF ROTARIES,question
+12825369.json,508,351,542,368,8 RB,answer
+12825369.json,539,390,588,408,"218, 499",answer
+12825369.json,385,383,506,409,AVERAGE DAILY EFFECTIVE CIRCULATION,question
+12825369.json,56,383,178,413,DAILY EFFECTIVE CIRCULATION,question
+12825369.json,183,419,361,437,(Condition And Rendition of Copy),answer
+12825369.json,133,490,490,512,"(Description of Location or Rotary Plan, Brand Category Competition)",answer
+12825369.json,54,511,652,574,"This is a comparatively easy market to cover. It is less than an hour from Tampa airport. Our bulletins are on every major arterial and in all No quadrants of the area. changes were made. Some minor on- premise blocking and trees were noted, but deemed serious enough for correction. not",answer
+12825369.json,52,582,652,615,The only other tobacco in the market was a standing 6 Panel RJR buy currently showing Camel.,answer
+12825369.json,197,689,535,707,"(Condition, Structures, Painting Ability, Lighting, Cooperation, etc.)",answer
+12825369.json,52,708,648,753,"The plant is well maintained and covers all parts of the market. Lamar looks like a good citizen here, keeping a good- looking public and carrying lot operation. doing service, a of local advertisers.",answer
+12825369.json,31,890,100,905,(FORM NO ,other
+12825369.json,0,951,231,985,970518461 PRODUCED FROM B&W WEB SITE,other

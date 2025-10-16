@@ -1,0 +1,72 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+92091873.json,105,134,158,149,Location,question
+92091873.json,425,130,475,145,Division,question
+92091873.json,432,226,502,243,Invitations:,header
+92091873.json,103,254,139,269,Mugs,question
+92091873.json,105,300,157,315,Posters,question
+92091873.json,177,251,205,264,720,answer
+92091873.json,186,268,203,282,40,answer
+92091873.json,184,286,204,297,20,answer
+92091873.json,179,299,206,310,100,answer
+92091873.json,547,250,568,263,50,answer
+92091873.json,527,281,586,295,Unknown,answer
+92091873.json,433,253,517,268,#Requested,question
+92091873.json,105,327,133,341,Date,question
+92091873.json,138,324,174,342,Rec'd,question
+92091873.json,384,365,452,380,Attendees:,header
+92091873.json,106,387,155,402,Counter,question
+92091873.json,105,406,139,419,Floor,question
+92091873.json,102,420,152,433,Posters,question
+92091873.json,201,388,221,401,15,answer
+92091873.json,205,408,219,418,9,answer
+92091873.json,193,419,222,434,100,answer
+92091873.json,534,384,554,397,40,answer
+92091873.json,535,402,555,412,35,answer
+92091873.json,535,418,553,431,10,answer
+92091873.json,176,647,212,662,Food,question
+92091873.json,177,662,248,675,Cleanliness,question
+92091873.json,175,676,228,690,Service,question
+92091873.json,338,690,366,703,Fair,other
+92091873.json,464,689,514,706,Average,other
+92091873.json,475,641,493,656,X,answer
+92091873.json,616,659,627,674,X,answer
+92091873.json,616,675,631,688,X,answer
+92091873.json,598,687,657,700,Excellent,other
+92091873.json,155,884,177,901,cc:,question
+92091873.json,675,777,690,847,92091873,other
+92091873.json,190,321,207,339,6/,answer
+92091873.json,211,321,233,341,12/,answer
+92091873.json,235,321,250,339,95,answer
+92091873.json,244,101,516,117,NEWPORT RACING EVENT SURVEY,header
+92091873.json,176,133,381,148,"Leguna Seca, Monterey, Ca",answer
+92091873.json,518,126,618,147,San Jose/ 933,answer
+92091873.json,517,161,616,175,T. L. Roberts,answer
+92091873.json,105,161,155,181,Date (s),question
+92091873.json,177,159,324,177,"September 10, 1995",answer
+92091873.json,425,158,503,178,Division Mgr,question
+92091873.json,284,187,384,206,Date Submitted,question
+92091873.json,388,182,533,199,September 26 1995,answer
+92091873.json,311,204,471,221,(submit by 30 days after event),answer
+92091873.json,102,230,233,245,Promotion Quantity:,header
+92091873.json,105,267,178,287,Displays (8),question
+92091873.json,103,286,170,299,Floor (40),question
+92091873.json,434,268,520,282,Date Notified,question
+92091873.json,433,282,518,299,Date Ordered,question
+92091873.json,434,323,501,341,Date Rec'd,question
+92091873.json,532,267,586,284,9/ 5/ 95,answer
+92091873.json,520,321,566,340,9/ 6/ 95,answer
+92091873.json,105,363,226,381,#Displays Placed:,header
+92091873.json,384,385,512,405,#Customers Invited,question
+92091873.json,383,404,528,418,#Customers Attended,question
+92091873.json,383,418,520,435,#Lorillard Personnel,question
+92091873.json,106,450,236,465,Invitees' Comments:,question
+92091873.json,109,462,694,499,"""Thank You very much for the tickets, we had a great time"" Rogers Liquor, Marina California.",answer
+92091873.json,106,493,676,527,"""We really appreciate Lorillard thinking us."" Shiffert's Wholesale, Visalia, California.",answer
+92091873.json,108,524,675,558,"""Thank you so much for the invitations... We had a great time."" Mission Trail Oil Company (Rotten Robbie Stores) San Jose California.",answer
+92091873.json,106,556,641,589,"""The races were great the Newport Hospitality area was terrific"". Coremark, Sacramento, California.",answer
+92091873.json,105,601,201,616,Race Day Info:,question
+92091873.json,230,598,643,617,"Event Attendance 100, 000 Hospitality Tent Attendance 35- 40",answer
+92091873.json,106,628,274,646,Quality of Hospitality Tent:,header
+92091873.json,106,718,324,736,Suggestions/ Recommendations:,question
+92091873.json,148,733,673,781,Perhaps the tickets could be sent but a little sooner This year the tickets arrived on Thursday and the race was Sunday. This made it difficult to get the tickets to customers on tine.,answer
+92091873.json,191,887,284,902,R. P. Bonomo,answer

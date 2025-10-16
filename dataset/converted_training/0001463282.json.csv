@@ -1,0 +1,102 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0001463282.json,78,70,114,84,Date:,question
+0001463282.json,78,96,166,110,Description:,question
+0001463282.json,313,138,374,151,Budgeted:,header
+0001463282.json,507,126,529,140,Yes,question
+0001463282.json,508,138,530,153,Yes,question
+0001463282.json,570,137,585,151,No,question
+0001463282.json,570,123,585,138,No,question
+0001463282.json,538,127,553,137,x,answer
+0001463282.json,539,140,553,151,x,answer
+0001463282.json,534,152,568,166,23.3,answer
+0001463282.json,99,193,160,211,Supplier,question
+0001463282.json,274,194,308,209,Cost,question
+0001463282.json,313,191,331,209,($),question
+0001463282.json,376,177,401,191,Est.,question
+0001463282.json,366,194,408,209,Travel,other
+0001463282.json,78,219,132,237,Kapuler,answer
+0001463282.json,75,278,150,293,PROJECTED:,header
+0001463282.json,427,669,461,682,Date,question
+0001463282.json,429,696,461,713,Date,question
+0001463282.json,430,722,461,737,Date,question
+0001463282.json,427,749,459,764,Date,question
+0001463282.json,427,777,459,794,Date,question
+0001463282.json,78,821,106,834,cc:,question
+0001463282.json,534,277,573,294,1990,other
+0001463282.json,510,292,597,305,"370,000.00",answer
+0001463282.json,510,318,595,332,"199,900.00",answer
+0001463282.json,504,345,596,365,"-35,675,00",answer
+0001463282.json,434,388,465,401,-O-,answer
+0001463282.json,510,440,597,461,"164,225.00",answer
+0001463282.json,507,483,596,501,"205,775.00",answer
+0001463282.json,494,527,555,541,Product,answer
+0001463282.json,563,528,597,539,Test,answer
+0001463282.json,233,570,260,585,400,answer
+0001463282.json,242,598,292,613,Kapuler,answer
+0001463282.json,237,764,308,818,,answer
+0001463282.json,285,789,339,806,Howard,answer
+0001463282.json,260,791,281,805,,other
+0001463282.json,243,792,260,807,,other
+0001463282.json,486,832,536,849,BARCLAY,answer
+0001463282.json,532,862,651,889,670801704,other
+0001463282.json,538,67,553,82,6,answer
+0001463282.json,478,70,500,85,No.,question
+0001463282.json,237,42,459,56,MARKETING RESEARCH AUTHORIZATION,header
+0001463282.json,242,54,458,71,(Recommended Proposal Attached),other
+0001463282.json,170,95,447,113,Y- 1 Ultra 100' s vs. Winston Ultra 100' s,answer
+0001463282.json,176,124,284,138,W. T. Carpenter,answer
+0001463282.json,80,124,173,139,Requested By:,question
+0001463282.json,311,124,496,139,Research Request Attached:,header
+0001463282.json,310,149,483,168,Original Budgeted Amount,question
+0001463282.json,80,165,299,181,Competitive Proposals Obtained:,header
+0001463282.json,80,247,166,267,Market Facts,answer
+0001463282.json,236,221,347,238,"$ 33,675 + 10% Est.",answer
+0001463282.json,235,247,348,266,"$ 35,000 + 10 % Est.",answer
+0001463282.json,448,191,524,208,Total Cost,question
+0001463282.json,553,180,624,208,Cost Per Interview,question
+0001463282.json,437,219,491,237,"$ 35,675",answer
+0001463282.json,437,246,489,264,$ 37000,answer
+0001463282.json,353,219,394,236,$ 2000,answer
+0001463282.json,355,247,390,264,$ 2000,answer
+0001463282.json,550,221,590,236,$ 84.2,answer
+0001463282.json,552,247,588,264,$ 87.5,answer
+0001463282.json,77,289,216,306,Internal Init. Date,question
+0001463282.json,232,288,286,306,4/ ,answer
+0001463282.json,233,314,285,332,12/ 90,answer
+0001463282.json,77,317,190,349,Ext. Auth. Date Wave (s),question
+0001463282.json,81,401,185,434,Field Complete Wave (s),question
+0001463282.json,232,399,285,418,6/ 10/ 90,answer
+0001463282.json,77,471,196,515,Final Report Due (Supplier Rpt.) Wave (s),question
+0001463282.json,233,468,281,488,7/ 9/ 90,answer
+0001463282.json,318,275,467,294,Summary of MRD Budget,header
+0001463282.json,317,289,448,306,Total Area Budget:,question
+0001463282.json,317,317,481,334,Current Bal. Available:,question
+0001463282.json,316,345,463,377,This Change: (From Current Budget,question
+0001463282.json,318,388,397,404,This Amount,question
+0001463282.json,317,402,492,419,(From Next Year's Budget,question
+0001463282.json,318,444,402,459,New Balance,question
+0001463282.json,317,485,445,516,Commited to Date: (Current Year),question
+0001463282.json,387,524,472,542,Project Type,question
+0001463282.json,446,541,621,559,"(Product Test, A&U, etc.)",question
+0001463282.json,78,568,163,583,Sample Size,question
+0001463282.json,80,596,229,613,Recommended Supplier,question
+0001463282.json,80,623,283,643,Reason (s) for Recommendation,question
+0001463282.json,297,623,438,640,Lowest project costs,answer
+0001463282.json,78,662,170,683,Submitted by:,question
+0001463282.json,77,694,165,711,Approved By:,question
+0001463282.json,77,721,165,738,Approved By:,question
+0001463282.json,78,747,166,768,Approved By:,question
+0001463282.json,80,777,172,795,Budget Check:,question
+0001463282.json,80,806,153,820,Original -,question
+0001463282.json,77,848,195,878,MRD00005 (revised 3/ 20) PPs 0425,other
+0001463282.json,230,658,376,690,,answer
+0001463282.json,242,689,344,731,L. E. Gravely,answer
+0001463282.json,478,656,555,689,5/ 2/ 90,answer
+0001463282.json,472,684,548,717,5/3 90,answer
+0001463282.json,478,758,541,800,5/ 3/ 90,answer
+0001463282.json,487,820,546,835,1990- 488,answer
+0001463282.json,387,820,464,835,Project No.,question
+0001463282.json,387,835,472,851,Account Name,question
+0001463282.json,159,804,243,822,Project File,answer
+0001463282.json,155,820,272,837,S. Willinger (3),answer
+0001463282.json,154,834,354,852,K. A. Hutchison S. A. Howard,answer

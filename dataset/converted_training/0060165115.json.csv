@@ -1,0 +1,37 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0060165115.json,95,258,142,278,DATE:,question
+0060165115.json,96,309,145,327,FROM:,question
+0060165115.json,98,359,125,374,TO:,question
+0060165115.json,99,422,176,442,ADDRESS:,question
+0060165115.json,487,173,528,181,Telephone,question
+0060165115.json,486,182,518,190,Telefax,question
+0060165115.json,98,626,132,643,Re.:,question
+0060165115.json,303,154,360,175,2463,answer
+0060165115.json,648,779,691,923,2505430204,other
+0060165115.json,686,954,706,962,27/94,other
+0060165115.json,487,138,539,151,Contract,header
+0060165115.json,542,138,602,151,Research,header
+0060165115.json,486,94,648,139,INBIFO,header
+0060165115.json,95,110,385,130,INBIFO Institut für biologische Forschung GmbH,question
+0060165115.json,96,156,258,175,TELEFAX MESSAGE No.:,question
+0060165115.json,98,193,402,205,INBIFO bioloische Forschnung GmbH Fuggesstr 3- D- 51149 Cologne,other
+0060165115.json,267,263,338,277,28 Apr. 98,answer
+0060165115.json,267,309,404,326,Dr. Wolf Reininghaus,answer
+0060165115.json,267,359,422,389,"Dr. Don Leyden, Dept. Scientific Affairs",answer
+0060165115.json,487,330,631,359,98 -04 -28 12: 05 OUT,other
+0060165115.json,267,422,484,454,Philip Morris Europe Fabriques de Tabac Reunies S. A.,answer
+0060165115.json,267,469,396,485,CH- 2003 Neuchatel,answer
+0060165115.json,335,514,454,531,0041- 32- 888 5776,answer
+0060165115.json,267,517,322,531,Fax no:,question
+0060165115.json,511,401,645,500,Telefax- Original Ablage,other
+0060165115.json,99,563,335,578,NUMBER OF FOLLOWING PAGES,question
+0060165115.json,370,553,563,595,21 ,answer
+0060165115.json,135,627,278,642,TPM/ Nocotine ratio,answer
+0060165115.json,101,670,257,688,For your information!,other
+0060165115.json,552,936,620,946,Cologne HRB 367,answer
+0060165115.json,561,947,641,957,Dr. Wolf Reninghaus,answer
+0060165115.json,493,946,562,956,General Manager,question
+0060165115.json,493,937,551,947,Trade Register,question
+0060165115.json,529,172,588,183,(0 22 03) 303 -1,answer
+0060165115.json,518,182,585,192,(0 22 03) 303 -362,answer
+0060165115.json,494,212,553,238,-/BVI DLEY FAX,other

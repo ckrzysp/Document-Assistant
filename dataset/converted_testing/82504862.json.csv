@@ -1,0 +1,19 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+82504862.json,113,198,163,211,COURT:,question
+82504862.json,240,327,289,337,Asbestos,answer
+82504862.json,112,487,159,497,JUDGE:,question
+82504862.json,332,144,406,155,CASE FORM,header
+82504862.json,115,172,191,183,CASE NAME:,question
+82504862.json,113,229,189,255,LORILLARD ENTITIES,question
+82504862.json,115,270,191,283,DATE FILED,question
+82504862.json,115,299,203,310,DATE SERVED,question
+82504862.json,113,324,185,337,CASE TYPE:,question
+82504862.json,113,353,191,374,PLAINTIEE'S COUNSEL:,question
+82504862.json,112,446,187,471,LORILLARD COUNSEL:,question
+82504862.json,115,513,193,524,TRIAL DATE:,question
+82504862.json,584,777,658,893,82504862 946225115,other
+82504862.json,240,363,486,430,"Wartnick Chaber, Harowitz, Smith& Tigerman StephenM. Tigerman 101 California Street Suite 2200 San Francisco California 94111 ",answer
+82504862.json,240,296,319,311,"August 3, 1998",answer
+82504862.json,242,240,388,255,Lorillard Tobacco Company,answer
+82504862.json,243,196,461,211,San Francisco Superior Court- No. 996382,answer
+82504862.json,243,168,592,186,Donald D. Sellers and Robin J. Sellers v. Raybestos Manhattan et al.,answer

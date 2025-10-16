@@ -1,0 +1,37 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+80728670.json,91,148,115,165,TO:,question
+80728670.json,92,190,130,211,FROM:,question
+80728670.json,469,142,508,160,DATE:,question
+80728670.json,232,472,257,487,Air,question
+80728670.json,295,471,323,486,Auto,question
+80728670.json,360,469,401,484,Train,question
+80728670.json,434,466,473,484,Other,question
+80728670.json,541,644,580,662,Dates,question
+80728670.json,318,381,377,396,Boston,answer
+80728670.json,345,599,367,616,XX,answer
+80728670.json,676,729,691,744,X,answer
+80728670.json,719,782,743,883,80728670,other
+80728670.json,365,84,443,101,FIELD TRIP,header
+80728670.json,180,144,279,162,J. R. Mueller,answer
+80728670.json,159,182,321,203,Mary Anne Kayiatos,answer
+80728670.json,534,134,598,154,2 /28 /84,answer
+80728670.json,92,249,489,268,Please make the necessary Field Trip arrangements for,question
+80728670.json,497,239,634,259,Ted van de kamp,answer
+80728670.json,91,295,206,315,Purpose of trip,question
+80728670.json,230,282,715,306,To evaluate Satin's overall performance and results of,answer
+80728670.json,105,330,240,351,Special Cities.,answer
+80728670.json,91,383,295,403,Division (s) to be contacted,question
+80728670.json,91,426,211,444,Dates of contact,question
+80728670.json,240,423,531,443,"Tuesday 3 /13 and Wednesday, 3 /14",answer
+80728670.json,91,469,219,487,Method of travel:,header
+80728670.json,91,513,494,532,Arrival date and time (include airline and flight no.),question
+80728670.json,514,510,629,530,"Monday, 3 /12",answer
+80728670.json,103,550,242,568,Evening Shuttle,answer
+80728670.json,89,602,324,620,Hotel /Motel reservations needed,question
+80728670.json,92,648,242,666,Reservations made at,question
+80728670.json,91,690,326,708,Sales Personnel to be contacted,question
+80728670.json,91,733,347,753,Sales Personnel to be worked with:,question
+80728670.json,362,735,391,749,D. M.,question
+80728670.json,426,733,472,749,A. D. M.,question
+80728670.json,510,733,662,748,Sales Representative,question
+80728670.json,85,927,638,947,Return to J. R. Mueller no later than two weeks prior to anticipated trip.,other

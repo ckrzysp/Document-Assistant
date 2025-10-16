@@ -1,0 +1,22 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+83594639.json,103,268,131,282,Date:,question
+83594639.json,102,297,120,311,To:,question
+83594639.json,103,328,159,345,Company:,question
+83594639.json,381,297,416,314,From:,question
+83594639.json,563,360,574,373,3,answer
+83594639.json,209,328,256,343,Lorillard,answer
+83594639.json,641,687,662,802,83594639,other
+83594639.json,638,68,673,90,☑001,other
+83594639.json,54,78,278,91,89/ 22/ 97 MON 15: 35 FAX 12124554900,other
+83594639.json,338,74,481,88,ROPER STARCH WORLDWIDE,other
+83594639.json,267,109,447,168,ROPER STARCH,header
+83594639.json,196,186,524,203,TURNING DATA INTO INTELLIGENCE WORLDWIDE,other
+83594639.json,119,225,594,250,Fax Fax Fax Fax Fax Fax Fax Fax Fax,header
+83594639.json,208,296,278,313,Ron Milstein,answer
+83594639.json,209,359,287,375,(910) 335 7707,answer
+83594639.json,383,359,541,375,Pages (Including cover page):,question
+83594639.json,489,297,544,314,"""JJ"" Klein",answer
+83594639.json,102,358,170,375,Fax Number:,question
+83594639.json,98,860,201,914,Roper Starch Worldwide nc 205 East 42nd Street New York NY 0017 212 599 0700 212 887 7008 Fax,other
+83594639.json,466,872,625,913,Roper Marketing and Public Option Research Search Advertising and Media Research Frederen Marketing Services INRA World Headquarters,other
+83594639.json,208,268,316,283,"September 22, 1997",answer

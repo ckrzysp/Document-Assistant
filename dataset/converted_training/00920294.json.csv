@@ -1,0 +1,51 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+00920294.json,504,113,542,128,970220,answer
+00920294.json,155,130,173,147,To:,question
+00920294.json,138,148,173,162,From:,question
+00920294.json,141,166,172,180,Date:,question
+00920294.json,265,246,373,264,Mailfile Description,question
+00920294.json,122,300,172,317,Quantity:,question
+00920294.json,119,320,173,333,Maildate:,question
+00920294.json,108,332,174,347,Program#:,question
+00920294.json,141,469,173,484,Seeds,question
+00920294.json,105,487,172,501,Suppression,question
+00920294.json,78,725,112,740,Notes,header
+00920294.json,159,539,169,550,1,other
+00920294.json,161,557,171,568,2,other
+00920294.json,161,573,169,586,3,other
+00920294.json,161,591,169,602,4,other
+00920294.json,162,641,169,655,7,other
+00920294.json,161,623,169,637,6,other
+00920294.json,161,659,169,669,8,other
+00920294.json,162,675,170,688,9,other
+00920294.json,156,694,170,705,10,other
+00920294.json,161,608,169,619,5,other
+00920294.json,190,487,198,500,5,answer
+00920294.json,260,468,274,483,25,answer
+00920294.json,211,302,236,316,273,answer
+00920294.json,176,334,218,349,700418,answer
+00920294.json,203,250,214,265,"3,",answer
+00920294.json,214,250,234,265,984,other
+00920294.json,133,216,172,231,System,question
+00920294.json,78,89,320,112,RJR Mailfile Table Update Sheet,header
+00920294.json,432,112,503,126,Alert Number,question
+00920294.json,177,130,271,145,RJR IR - Suz /Art,answer
+00920294.json,176,149,246,162,Drew Huyett,answer
+00920294.json,176,165,213,179,3/ 7/ 97,answer
+00920294.json,179,198,242,213,102- Eclipse,answer
+00920294.json,87,198,171,212,Program Group,question
+00920294.json,179,215,265,229,Corp/ Multibrand,answer
+00920294.json,109,249,173,266,Mailfile ID:,question
+00920294.json,177,271,235,281,,other
+00920294.json,378,249,539,264,Mail Order- Indy Responders,answer
+00920294.json,299,265,374,282,Dataset Name,question
+00920294.json,433,286,489,296,(Complete by IR),other
+00920294.json,176,317,218,333,3/ 17/ 97,answer
+00920294.json,110,367,296,384,BRC Codes w81 carton order form,question
+00920294.json,127,418,195,435,T Codes NA,question
+00920294.json,99,521,172,535,Mailfile Cells,question
+00920294.json,177,536,318,553,HD home delivery,answer
+00920294.json,175,556,321,570,SP sneak preview,answer
+00920294.json,88,747,178,763,This is for notes,other
+00920294.json,680,784,693,875,51673 4300,other
+00920294.json,61,940,145,954,970220 XLS Mailfile,other

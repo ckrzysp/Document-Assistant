@@ -1,0 +1,41 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+91361993.json,115,172,161,192,DATE:,question
+91361993.json,244,173,283,191,TIME:,question
+91361993.json,64,225,186,245,MANUFACTURER:,question
+91361993.json,733,824,750,895,91361993,other
+91361993.json,66,751,90,764,cc:,question
+91361993.json,295,59,513,77,NEW COMPETITIVE PRODUCTS,header
+91361993.json,184,117,492,139,"C. M. WIECHMANN, D. M. , LUBBOCK, TX",answer
+91361993.json,63,119,164,138,REPORTED BY,question
+91361993.json,170,172,233,190,10 /5 /92,answer
+91361993.json,229,222,358,242,R. J. REYNOLDS,answer
+91361993.json,194,278,499,298,CARDINAL CIGARETTES (11 PACKINGS),answer
+91361993.json,63,278,162,297,BRAND NAME:,question
+91361993.json,64,332,140,368,TYPE OF PRODUCT:,question
+91361993.json,63,398,173,417,SIZE OR SIZES:,question
+91361993.json,64,454,150,472,LIST PRICE:,question
+91361993.json,64,507,172,540,EXTENT OF DISTRIBUTION:,question
+91361993.json,64,608,175,645,OTHER INFORMATION:,question
+91361993.json,235,624,364,644,SEE ATTACHMENT,answer
+91361993.json,534,763,631,779,K. P. Augustyn,other
+91361993.json,532,779,625,797,V. D. Lindsley,other
+91361993.json,532,797,629,813,R. D. Hammer,other
+91361993.json,355,764,430,780,J. J. Tatulli,other
+91361993.json,355,781,432,798,L. H. Kersh,other
+91361993.json,355,799,429,817,J. R. Slater,other
+91361993.json,356,818,434,833,A. Pasheluk,other
+91361993.json,353,834,474,851,R. R. S. Goldbrenner,other
+91361993.json,356,852,448,869,N. Simeonidis,other
+91361993.json,356,867,430,885,S. F. Smith,other
+91361993.json,222,767,307,781,F. J. Schultz,other
+91361993.json,222,781,310,799,A. W. Spears,other
+91361993.json,222,799,307,815,N. P. Ruffalo,other
+91361993.json,225,818,300,834,T. L. Achey,other
+91361993.json,222,835,314,851,P. J. McCann,other
+91361993.json,223,852,310,869,A. J. Giacoio,other
+91361993.json,66,767,137,781,A. H. Tisch,other
+91361993.json,67,785,146,800,R. H. Orcutt,other
+91361993.json,66,802,164,817,M. A. Peterson,other
+91361993.json,66,818,165,835,M. L. Orlowsky,other
+91361993.json,66,838,131,852,L. Gordon,other
+91361993.json,66,855,137,870,G. Telford,other

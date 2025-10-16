@@ -1,0 +1,12 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+81186212.json,89,232,135,250,Date:,question
+81186212.json,690,775,710,874,81186212,other
+81186212.json,89,943,128,961,4/79,other
+81186212.json,254,56,478,76,New Competitive Activity,header
+81186212.json,87,109,646,163,"Please fill in the following information, as appropriate and send to C. W. Toti, Marketing Services Director, at the New York Office. Thank you.",other
+81186212.json,85,198,200,215,Reported by:,question
+81186212.json,92,267,282,284,Manufacturer & Brand:,question
+81186212.json,89,303,438,321,"Type of product, size(s) & list price:",question
+81186212.json,91,408,301,425,Extent of distribution:,question
+81186212.json,91,514,510,530,Information and hearsay from outside contacts:,question
+81186212.json,89,684,621,719,"Further information (please attach any relevant materials; POS, advertising, brochures, etc.):",question

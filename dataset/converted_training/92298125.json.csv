@@ -1,0 +1,21 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+92298125.json,94,225,122,242,TO:,question
+92298125.json,95,256,142,273,FROM:,question
+92298125.json,96,288,137,302,DATE:,question
+92298125.json,96,353,121,367,RE:,question
+92298125.json,96,320,146,338,PAGES:,question
+92298125.json,630,809,644,877,92298125,other
+92298125.json,88,82,334,99,JAN 19 96 05:27 PM AB RESEARCH ASSOC.,other
+92298125.json,598,81,640,94,P 1/ 16,other
+92298125.json,74,115,349,146,"AB Research Associates, Inc.",header
+92298125.json,215,186,506,207,TELECOPIER TRANSMITTAL COVER SHEET,header
+92298125.json,539,169,655,297,Revisions,other
+92298125.json,176,222,271,239,MARY MAZZA,answer
+92298125.json,177,253,265,271,Pam Churchill,answer
+92298125.json,179,285,266,303,JAN 19. 1995,answer
+92298125.json,303,314,469,333,(Including this cover sheet),question
+92298125.json,189,348,384,366,CIGARETTE QUESTIONNAIRE,answer
+92298125.json,98,425,634,479,"Here is yet another version of the questionnaire. Please note that the last 2 pages are at the alternate versions that we discussed. Take a look at the alternate Q9 to try to get at the intensity issue, and maybe we can improve on it from here.",other
+92298125.json,101,486,635,542,"By the way, we received 13 more signature cards today and sent the cigarettes out. We are now up to 74 respondents who have been sent cigarettes. Hopefully we will get a lot of callbacks this weekend.",other
+92298125.json,102,556,284,574,Talk you Monday. Thanks,other
+92298125.json,117,934,621,954,"41 Kenosia Avenue, Danbury, CT 06810 Phone 203 794- 0323 Fax 203 748- 6304",other

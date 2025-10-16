@@ -1,0 +1,32 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+92314414.json,492,56,530,69,530:,question
+92314414.json,490,71,577,85,PAYROLL:,question
+92314414.json,589,71,620,86,700,answer
+92314414.json,465,318,518,333,OTHER,question
+92314414.json,580,837,636,855,(Date),question
+92314414.json,176,841,281,859,(Signature),question
+92314414.json,87,806,285,849,,answer
+92314414.json,788,802,809,886,92314414,other
+92314414.json,260,112,652,141,LOEWS/ LORILLARD PUBLIC AFFAIRS COMMITTEE CONTRIBUTION IDENTITY CARD,header
+92314414.json,538,54,651,70,274- 38- 3042,answer
+92314414.json,490,41,658,56,ANDREW TISCH,other
+92314414.json,63,187,347,206,COMPLETE EITHER A OR B BELOW:,question
+92314414.json,64,228,752,279,"A. I hereby authorize, until further notice, a voluntary contribution by salary deduction to the Loews/ Lorillard Public Affairs Committee (LOPAC) of the following amount per pay period:",other
+92314414.json,212,292,259,307,$ 1.00,other
+92314414.json,212,320,260,338,$ 4.00,other
+92314414.json,462,288,515,305,$ 2.00,other
+92314414.json,521,311,581,329,$20.00,answer
+92314414.json,466,332,623,349,(please specify),question
+92314414.json,64,359,625,397,B. Enclosed is a check or money order in the amount of $ as a contribution to LOPAC.,other
+92314414.json,63,420,755,547,My contribution is voluntary. I am aware of my right to refuse to contribute without reprisal of any kind.  I am aware of the politicial purpose of LOPAC. I am aware that a copy of the report of LOPAC is filed with the Federal Election Commission and is available for purchase. I am aware that the guidelines above as to the amount of my contribution are only suggestions. I am aware that my contribution counts against my individual contribution limit. I am an American citizen or I have been admitted to permanent U. S. residence.,other
+92314414.json,63,602,496,617,THE FOLLOWING INFORMATION MUST BE FURNISHED:,header
+92314414.json,64,631,193,648,1. Full Name,question
+92314414.json,66,676,273,693,2. Residence Address,question
+92314414.json,64,721,262,738,3. Business Address,question
+92314414.json,66,753,206,768,4. Occupation,question
+92314414.json,291,628,515,662,Andrew H. Tisch (Print or type),answer
+92314414.json,293,669,702,708,"26 East 63rd Street, New York, N. Y. 10021 (Include state and zip code)",answer
+92314414.json,292,716,667,735,"One Park Avenue, New York, N. Y. 10016",answer
+92314414.json,289,747,684,785,Chairman/ CEO - Lorillard Tobacco Company (Job title or position),answer
+92314414.json,492,820,618,842,1 November 1991,answer
+92314414.json,203,897,613,916,Return this form in the envelope provided.,other

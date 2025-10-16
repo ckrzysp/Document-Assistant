@@ -1,0 +1,26 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+85240939.json,87,212,137,230,NAME:,question
+85240939.json,87,243,147,263,TITLE:,question
+85240939.json,85,275,160,295,COMPANY:,question
+85240939.json,87,307,160,325,ADDRESS:,question
+85240939.json,85,339,142,357,PHONE:,question
+85240939.json,163,282,248,296,Lorillard,answer
+85240939.json,596,934,691,948,,other
+85240939.json,94,88,244,140,"SHERATON- CARLTON HOTEL WASHINGTON, D. C.",other
+85240939.json,265,64,527,178,THE TOBACCO INSTITUTE FIFTH ANNUAL COLLEGE TOBACCO KNOWLEDGE REGISTRATION FORM,header
+85240939.json,545,103,732,125,FEBRUARY 19-21 1980,other
+85240939.json,165,218,322,236,GEORGE R. TELFORD,answer
+85240939.json,163,250,283,266,Brand Manager,answer
+85240939.json,163,314,502,337,"666 Fifth Avenue, New York, NY 10019",answer
+85240939.json,163,338,292,357,(212) 841- 8787,answer
+85240939.json,82,404,177,421,CHECK ONE:,question
+85240939.json,229,406,722,440,Please reserve a room for me at the Sheraton- Carlton,answer
+85240939.json,191,433,599,468,X I will my own housing arrangements.,answer
+85240939.json,82,497,285,519,ARRIVAL DATE AND TIME:,question
+85240939.json,300,500,475,528,2/18/80 7:00 P. M.,answer
+85240939.json,80,528,303,549,DEPARTURE DATE AND TIME:,question
+85240939.json,311,536,476,559,2/21/80 4:00 P. M.,answer
+85240939.json,74,592,687,783,"Please attach a brief (50 words or so) autobiographical sketch. Note your first name or nickname, your current professional re- sponsibilities, employment background and whatever personal in- formation you feel would be helpful in giving your fellow students an idea of your activities and interests. The sketches will be assembled and provided at the opening class session.",other
+85240939.json,74,796,206,814,Any questions?,question
+85240939.json,221,802,705,836,Call Connie Drath or Carol Musgrave at 800/424- 9876.,answer
+85240939.json,75,876,736,919,"**PLEASE RETURN IN SELF- ADDRESSED ENVELOPE BY FRIDAY, JANUARY 18, 1980**",other

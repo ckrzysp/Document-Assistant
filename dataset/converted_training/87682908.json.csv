@@ -1,0 +1,32 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+87682908.json,105,331,146,346,Name:,question
+87682908.json,102,376,170,389,Institution:,question
+87682908.json,103,406,157,420,Address:,question
+87682908.json,184,420,215,434,Street,question
+87682908.json,186,468,210,479,City,question
+87682908.json,304,465,331,478,State,question
+87682908.json,184,344,206,359,First,question
+87682908.json,302,344,338,358,Middle,question
+87682908.json,420,344,444,355,Last,question
+87682908.json,503,464,546,474,Country,question
+87682908.json,109,497,175,511,Telephone:,question
+87682908.json,506,661,553,675,TOTAL,question
+87682908.json,324,617,345,631,10),question
+87682908.json,645,791,663,869,87682908,other
+87682908.json,203,135,397,174,46th Tobacco Chemists' Research Conference,header
+87682908.json,201,251,524,280,TH 46 TCRC REGISTRATION FORM,header
+87682908.json,105,299,218,317,Please type or print,other
+87682908.json,304,420,354,435,P. O. Box #,question
+87682908.json,384,464,435,477,ZIP Code,question
+87682908.json,299,496,365,509,Area Code:,question
+87682908.json,109,524,410,544,Name of spouse participating in the guest programs,question
+87682908.json,320,554,392,571,Monday (Y/ N),question
+87682908.json,441,554,512,567,Tuesday (Y/ N),question
+87682908.json,504,599,557,614,$ 170.00,answer
+87682908.json,506,616,558,630,$ $185.00,answer
+87682908.json,110,721,629,771,"Send this registration form, along with payment to address noted below in attached envelope. Enclose a cheque or international money order payable in Canadian funds to the 46th Tobacco Chemists Research Conference.",other
+87682908.json,310,784,563,862,"Ms. Susan Mathison Canadian Tobacco Manufacturers Council 701- 99 Bank Street Ottawa, Ontario, Canada K1P 6B9 (613) 238- 2799",answer
+87682908.json,232,785,281,800,Mail to:,question
+87682908.json,109,602,391,619,Advance Registration Fee: (prior to August 10),question
+87682908.json,110,619,323,635,Late Registration Fee: (after August,question
+87682908.json,176,634,364,651,Extra banquet tickets @ $ 40.00,question

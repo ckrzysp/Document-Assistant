@@ -1,0 +1,14 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+85540866.json,60,189,94,204,(Name),question
+85540866.json,59,225,86,236,(Date),question
+85540866.json,412,190,461,207,(Position),question
+85540866.json,218,968,254,982,(Name),question
+85540866.json,733,714,750,803,85540866,other
+85540866.json,235,82,533,114,MEDIA CONTACT SHEET,header
+85540866.json,60,151,187,167,(Publication or station),question
+85540866.json,54,261,189,278,Reason for Contact,question
+85540866.json,56,422,208,440,Questions/ Responses,question
+85540866.json,54,760,208,781,Additional Comments,question
+85540866.json,54,953,194,973,Inquiry handled by:,question
+85540866.json,415,155,518,172,(Location address),question
+85540866.json,413,226,497,241,(Phone number),question

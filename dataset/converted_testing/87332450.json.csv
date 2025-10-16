@@ -1,0 +1,49 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+87332450.json,108,203,149,217,Name:,question
+87332450.json,242,215,264,228,First,question
+87332450.json,189,214,211,228,Title,question
+87332450.json,346,215,377,226,Middle,question
+87332450.json,464,214,485,227,Last,question
+87332450.json,112,244,171,259,Institution:,question
+87332450.json,189,292,217,305,Street,question
+87332450.json,191,337,208,350,City,question
+87332450.json,307,335,331,348,State,question
+87332450.json,385,335,430,346,ZIP Code,question
+87332450.json,504,334,540,348,Country,question
+87332450.json,110,363,171,380,Telephone:,question
+87332450.json,472,561,517,575,TOTAL,question
+87332450.json,191,655,229,669,DATE,question
+87332450.json,270,654,308,668,TIME,question
+87332450.json,112,686,164,701,Arrival:,question
+87332450.json,115,716,175,731,Departure:,question
+87332450.json,390,655,449,668,CARRIER,question
+87332450.json,642,777,662,855,87332450,other
+87332450.json,476,835,535,849,Telephone:,question
+87332450.json,475,851,504,866,FAX:,question
+87332450.json,110,275,159,290,Address:,question
+87332450.json,163,145,570,176,47th TCRC REGISTRATION FORM,header
+87332450.json,110,187,218,201,Please type or print,other
+87332450.json,331,363,372,376,FAX #:,question
+87332450.json,306,292,355,303,P.O. Box#,question
+87332450.json,113,394,196,411,Name of guest:,question
+87332450.json,165,426,315,440,Continental Breakfast on Tuesday,question
+87332450.json,165,441,297,456,Fall Foliage Tour on Tuesday,question
+87332450.json,402,425,506,439,Breakfast on Wednesday,question
+87332450.json,402,440,570,454,Craftsman Village Tour Wednesday,question
+87332450.json,112,489,257,502,Advance Registration Fee:,question
+87332450.json,264,486,385,504,(prior to September 1),other
+87332450.json,239,503,343,519,after September ,other
+87332450.json,112,504,237,519,Late Registration Fee,question
+87332450.json,427,486,473,500,$135 00,answer
+87332450.json,427,501,475,516,$150 00,answer
+87332450.json,427,532,471,547,$ 30. 00,answer
+87332450.json,113,534,309,550,Ground Transportation (round trip),question
+87332450.json,152,518,326,534,Extra banquet tickets tickets $40. 00,question
+87332450.json,113,591,616,611,Please complete this portion if you need transportation from and to the Knoxville Airport.,question
+87332450.json,113,626,189,639,No. in Party:,question
+87332450.json,508,654,570,668,FLIGHT #,question
+87332450.json,113,774,630,806,"Send this registration form, along with payment to the address noted below. Enclose a check or international money order payable in U. S. funds to the University of Tennessee - 47th TCRC",other
+87332450.json,116,824,160,837,Mail to:,question
+87332450.json,166,823,355,881,"Dr. Phil P. Hunter U. T. Tobacco Experiment Station Route 5 Box 113 Greeneville, TN 37743",answer
+87332450.json,541,834,625,850,(615) ) 638- 5532,answer
+87332450.json,508,851,595,865,(615) ) 638- 6458,answer

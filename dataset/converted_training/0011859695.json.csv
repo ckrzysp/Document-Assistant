@@ -1,0 +1,30 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0011859695.json,60,247,102,261,Agency:,question
+0011859695.json,391,243,434,254,Contact:,question
+0011859695.json,388,201,416,215,Date:,question
+0011859695.json,60,352,99,369,Client:,question
+0011859695.json,60,300,110,314,Address:,question
+0011859695.json,61,409,107,424,Product:,question
+0011859695.json,61,465,134,479,Film Cleared:,question
+0011859695.json,573,384,623,401,RECEIVED,question
+0011859695.json,66,779,91,792,CF:,question
+0011859695.json,66,795,86,808,,question
+0011859695.json,91,779,113,793,cb,answer
+0011859695.json,225,61,431,105,AMERICAN BROADCASTING COMPANY TELEVISION NETWORK,header
+0011859695.json,208,113,450,147,"1333 Avenue of the Americas, New York, New York 10019 LT 1- 7777",other
+0011859695.json,119,236,207,254,"SSC&B, Inc",answer
+0011859695.json,440,190,596,210,"September 25, 1969",answer
+0011859695.json,448,232,539,253,Larry Odum,answer
+0011859695.json,120,289,522,308,"575 Lexington Avenue, New York, New York 10022",answer
+0011859695.json,120,346,331,366,American Tobacco Company,answer
+0011859695.json,119,395,297,416,Pall Mail Filter tip,answer
+0011859695.json,191,457,360,475,VIDEO TAPE APPROVAL,answer
+0011859695.json,553,419,639,443,SEP 30 ,answer
+0011859695.json,547,455,637,472,PERCY F. SMITH,other
+0011859695.json,123,490,500,524,"""Presenter/ Girl Rev"" AT-M B-T-64 :60 ""Pall Mall Filter Tip"" AT-P/ F-T-317 :30",answer
+0011859695.json,122,545,596,580,TAPE WILL FOLLOW AS SOON AS I RECEIVE IT FROM THE TAPE LIBRARY.,answer
+0011859695.json,63,673,522,693,PLEASE NOTIFY THIS DEPARTMENT OF ANY CHANGES IN THE CODE NUMBER(S).,question
+0011859695.json,63,698,510,721,"Final approval is, of course, dependent upon time and placement of the commercial(s).",question
+0011859695.json,66,747,162,761,Film(s) enclosed.,question
+0011859695.json,394,754,592,870,"Sincerely, American Broadcasting Company Cynthia Fates C.B Department BROADCAST STANDARDS AND PRACTICES",other
+0011859695.json,80,873,194,886,XER 264/ REV 5/ 68,other

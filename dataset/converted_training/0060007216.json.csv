@@ -1,0 +1,32 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0060007216.json,439,273,474,286,DATE,question
+0060007216.json,275,270,308,285,PMRM,answer
+0060007216.json,275,500,346,516,Cigarette,question
+0060007216.json,353,499,439,515,dimensions:,question
+0060007216.json,274,525,340,536,ference.,answer
+0060007216.json,114,725,137,736,cc:,question
+0060007216.json,151,722,176,735,RSS,answer
+0060007216.json,152,735,177,747,RDC,answer
+0060007216.json,154,747,177,760,PHL,answer
+0060007216.json,152,761,176,773,PRC,answer
+0060007216.json,152,773,176,784,BMC,answer
+0060007216.json,154,785,207,797,Records,answer
+0060007216.json,286,183,467,198,PROJECT INITIATION FORM,header
+0060007216.json,116,270,211,286,PROJECT CODE,question
+0060007216.json,116,309,209,323,PROJECT NAME,question
+0060007216.json,116,348,227,364,PROJECT LEADER,question
+0060007216.json,116,385,247,400,WORK REQUESTED BY,question
+0060007216.json,116,424,250,440,PROJECT OBJECTIVE,question
+0060007216.json,115,551,231,579,OTHER PERSONNEL ASSIGNED,question
+0060007216.json,483,270,594,286,"April 30, 1985",answer
+0060007216.json,275,307,467,324,PALL MALL Regular Menthol,answer
+0060007216.json,273,346,369,363,J. F. Anders,answer
+0060007216.json,275,384,422,400,"R. S. Sprinkle, III",answer
+0060007216.json,275,422,593,489,"To develop a nonfilter menthol cigarette delivering 21- 24 mg ""tar"" as a menthol companion to PALL MALL Famous Cigarettes.",answer
+0060007216.json,455,499,610,512,84 x 24.9 mm circum-,answer
+0060007216.json,275,563,368,578,E. P. Barbee,answer
+0060007216.json,390,684,478,698,Approved by,question
+0060007216.json,152,810,342,826,Other Personnel Assigned,answer
+0060007216.json,152,797,262,810,Project Leader,answer
+0060007216.json,504,869,619,887,ATX02 0226607,other
+0060007216.json,392,701,570,749,R. S. Sprinkle III,answer

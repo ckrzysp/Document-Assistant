@@ -1,0 +1,27 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0030031163.json,81,415,119,429,NAME,question
+0030031163.json,513,369,574,382,Strokes,question
+0030031163.json,85,797,124,810,NAME,question
+0030031163.json,701,898,725,932,A,other
+0030031163.json,465,353,501,366,<>,question
+0030031163.json,466,370,501,381,<>,question
+0030031163.json,258,45,476,69,SPORTS REGISTRATION,header
+0030031163.json,246,67,495,152,"37TH ANNUAL MEETING AUGUST 15-18, 1996 RYE- TOWN HILTON HOTEL RYE, NEW YORK",other
+0030031163.json,80,183,659,215,Make copies of this form if necessary. Complete applicable section (s) and return to NYSAWMD.,other
+0030031163.json,218,229,521,249,LORILLARD TOBACCO COMPANY,header
+0030031163.json,80,286,269,306,GOLF TOURNAMENT,question
+0030031163.json,254,291,660,324,"(Ladies & Men) . . . Friday, August 16, Tee off at 8:00 A. M. SHARP (no green fee)",answer
+0030031163.json,81,353,448,370,I will participate in the Golf Tournament,question
+0030031163.json,142,369,281,385,My handicap is:,question
+0030031163.json,82,444,165,459,FIRM NAME,question
+0030031163.json,155,549,612,570,BROWN & WILLIAMSON TOBACCO CORPORATION,header
+0030031163.json,84,594,294,611,TENNIS TOURNAMENT,question
+0030031163.json,265,595,623,630,"(Ladies & Men) . . . Friday, August 16, starting time is 3:00 P. M.",answer
+0030031163.json,84,661,591,691,I will participate in the Tennis Tournament I would classify myself as (please check appropriate box),question
+0030031163.json,85,705,203,721,<> Beginner,question
+0030031163.json,85,722,166,735,<> Fair,question
+0030031163.json,87,736,168,749,<> Good,question
+0030031163.json,87,751,212,764,<> Excellent,question
+0030031163.json,85,828,167,841,FIRM NAME,question
+0030031163.json,109,905,644,920,"NYSAWMD, INC. 211 EAST 43RD STREET, NEW YORK, NY 10017-4707",question
+0030031163.json,88,937,148,948,CONVFORM.96 ,other

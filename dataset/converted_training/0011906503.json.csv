@@ -1,0 +1,87 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0011906503.json,627,51,666,65,0465E,other
+0011906503.json,338,126,379,142,($000),other
+0011906503.json,49,147,83,157,Title,question
+0011906503.json,46,176,96,188,Purpose,header
+0011906503.json,75,193,85,204,1,question
+0011906503.json,74,207,84,219,2,question
+0011906503.json,74,221,84,235,3,question
+0011906503.json,74,236,85,247,4,question
+0011906503.json,365,237,377,252,7,question
+0011906503.json,364,197,375,211,5,question
+0011906503.json,365,212,380,222,6,question
+0011906503.json,46,259,91,271,Status,header
+0011906503.json,202,277,262,291,Proposed,question
+0011906503.json,206,292,268,306,Approved;,question
+0011906503.json,468,281,508,293,TOTAL,question
+0011906503.json,539,282,590,296,CAPITAL,question
+0011906503.json,612,283,663,295,EXPENSE,question
+0011906503.json,481,335,556,347,Completion,question
+0011906503.json,569,352,593,364,Mo.,question
+0011906503.json,625,352,650,364,Yr.,question
+0011906503.json,162,333,231,345,Submission,question
+0011906503.json,248,347,272,361,Yr.,question
+0011906503.json,312,333,346,348,Start,question
+0011906503.json,365,349,387,361,Mo.,question
+0011906503.json,423,350,443,364,Yr.,question
+0011906503.json,251,330,266,345,88,answer
+0011906503.json,183,276,195,287,x,answer
+0011906503.json,490,296,507,310,80,answer
+0011906503.json,565,296,582,311,80,answer
+0011906503.json,636,297,651,309,0,answer
+0011906503.json,627,337,643,347,88,answer
+0011906503.json,574,335,588,347,11,answer
+0011906503.json,420,333,436,348,88,answer
+0011906503.json,372,334,386,346,7,answer
+0011906503.json,431,617,481,631,CAPITAL,question
+0011906503.json,433,630,482,642,EXPENSE,question
+0011906503.json,65,616,115,626,CAPITAL,question
+0011906503.json,65,630,112,641,EXPENSE,question
+0011906503.json,147,600,176,612,1989,answer
+0011906503.json,146,617,162,626,80,answer
+0011906503.json,153,631,162,641,0,answer
+0011906503.json,105,709,132,721,JAN.,question
+0011906503.json,132,709,167,721,-MAR.,question
+0011906503.json,178,709,208,721,APR.,question
+0011906503.json,208,709,240,721,-JUN.,question
+0011906503.json,252,712,282,721,JUL.,question
+0011906503.json,357,712,391,723,-DEC,question
+0011906503.json,419,714,453,724,TOTAL,question
+0011906503.json,42,763,92,778,EXPENSE,question
+0011906503.json,42,737,92,752,CAPITAL,question
+0011906503.json,282,712,317,722,-SEP,question
+0011906503.json,329,712,356,722,OCT.,question
+0011906503.json,495,673,521,685,YEAR,question
+0011906503.json,616,673,666,685,EXPENSE,question
+0011906503.json,549,673,596,683,CAPITAL,question
+0011906503.json,495,711,522,728,1990,answer
+0011906503.json,494,739,521,750,1991,answer
+0011906503.json,493,767,522,778,1992,answer
+0011906503.json,493,794,523,805,1993,answer
+0011906503.json,525,897,630,917,621099940J,other
+0011906503.json,41,36,125,67,FA 956 (5- 85) g1 0081. (d),other
+0011906503.json,231,57,497,114,BROWN & WILLIAMSON TOBACCO CORPORATION CAPITAL BUDGET PROJECT R&D,header
+0011906503.json,560,128,656,145,Date Submitted,question
+0011906503.json,61,122,161,136,Capital Budget,question
+0011906503.json,76,165,288,180,CICARETTE TEST STATION (CT5400),answer
+0011906503.json,113,192,336,209,Maintenance of Existing Business,question
+0011906503.json,116,206,322,224,Expansion of Existing Business,question
+0011906503.json,115,221,200,233,New Products,question
+0011906503.json,117,234,218,251,Cost Reduction,question
+0011906503.json,406,198,658,215,Compliance with Outside Requirements,question
+0011906503.json,408,212,663,241,Company Improvements & Administrative Requirements,question
+0011906503.json,408,238,540,254,Quality Improvement,question
+0011906503.json,66,276,173,292,This Project is,question
+0011906503.json,272,291,354,306,Proposal No.,question
+0011906503.json,456,264,546,275,Estimate Cost,header
+0011906503.json,41,315,132,327,Project Dates,header
+0011906503.json,45,369,181,385,PROJECT DESCRIPTION,question
+0011906503.json,65,399,661,523,"The Cigarette Test Station (CTS400) combines many of the stand- alone instruments that R&D currently uses to measure cigarette weight, pressure drop, ventilation, and hardness into one compact module. The CTS400 has the additional measurement of cigarette hardness in comparison with the CTS300. With this added, measurement R&D will be able to replace the Firmness Integrator that measures cigarette firmness in addition to other measurements that are mentioned above. The Firmness Integrator is no longer manufactured and parts are becoming difficult to obtain. Lastly, purchase of this instrument would provide similar capability as the Macon Plant and help facilitate comparisions between laboratories.",answer
+0011906503.json,268,577,455,591,ESTIMATED SPENDING SCHEDULE,header
+0011906503.json,403,602,515,617,Balance to Spend,header
+0011906503.json,44,600,141,611,Spent Prior to,question
+0011906503.json,193,668,359,684,1989 SPENDING BY QUARTER,other
+0011906503.json,394,844,475,859,Approved by,question
+0011906503.json,42,840,125,854,Submitted by,question
+0011906503.json,61,858,140,872,W. O. Crain,answer
+0011906503.json,485,808,527,830,Beyond 1993,answer

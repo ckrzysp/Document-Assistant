@@ -1,0 +1,38 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+83772145.json,528,63,548,83,NO.,other
+83772145.json,550,64,581,82,1796,other
+83772145.json,594,63,611,83,P.,question
+83772145.json,447,264,462,281,#:,question
+83772145.json,420,296,463,314,TIME:,question
+83772145.json,110,229,135,246,TO:,question
+83772145.json,110,261,156,279,FROM:,question
+83772145.json,110,296,155,313,DATE:,question
+83772145.json,483,265,512,276,392,answer
+83772145.json,482,373,495,388,,answer
+83772145.json,110,503,191,524,OPERATOR:,question
+83772145.json,190,490,271,529,,answer
+83772145.json,99,575,130,595,Jack,question
+83772145.json,109,846,184,857,CONFIDENTIALITY,question
+83772145.json,184,845,218,856,NOTICE,question
+83772145.json,677,786,698,885,83772145,other
+83772145.json,57,73,188,95,JAN 31. 1997 11: 48 AM,other
+83772145.json,68,113,143,160,FAX COVER,other
+83772145.json,242,91,507,129,LAW OFFICES SHOOK HARDY & BACON L. L. P.,header
+83772145.json,616,60,638,81,1/ 3,other
+83772145.json,580,113,650,163,FAX COVER,other
+83772145.json,212,133,533,200,One Kansas City Place 1200 Main Street Kansas City Missouri 64105- 2118 Telephone (816) 474 6550 Facsimile (816) 421- 5547,other
+83772145.json,165,229,261,247,JACK REILLY,answer
+83772145.json,362,228,461,246,TELECOPY NO:,question
+83772145.json,482,229,565,247,212/ 545- 3297,answer
+83772145.json,483,338,560,356,LORI 45048,answer
+83772145.json,154,404,591,425,ORIGINAL DOCUMENT WILL FOLLOW VIA FEDERAL EXPRESS,other
+83772145.json,112,372,339,392,Pages transmitted including cover sheet:,question
+83772145.json,110,337,247,355,SHB Client Matter No:,question
+83772145.json,163,296,288,317,"JANUARY 31, 1997",answer
+83772145.json,163,263,243,281,JIM DALEY,answer
+83772145.json,109,466,481,491,"If you experience any problems, please call extension 21000",answer
+83772145.json,95,610,647,781,"Per your request, attached is a memo regarding the process of labeling reviewed diskettes for the purpose of later identification Please call me if you have any questions regret I cannot join you and the electronic document collection team for lunch today. I hope you agree they have done an outstanding job! I look forward to seeing you on February 5 for the Legal Edge presentation. Best Regards, Jim Daley",answer
+83772145.json,222,846,634,859,The documents accompanying this transmission contain confidential information belonging to the  sender ,other
+83772145.json,108,856,633,889,"Legally privileged The information is intented only for the Individual or entity named above pol pre intended recipen you heret notified that copying distribuar dhe crion Islance content or lecoled normation och If you have received this telecopy in error,  please immediately notify us by telephone to arrange for return of the origin documents to us.",other
+83772145.json,99,541,253,561,COMMENTS/ MESSAGE:,question
+83772145.json,112,437,228,458,Special Instructions:,question

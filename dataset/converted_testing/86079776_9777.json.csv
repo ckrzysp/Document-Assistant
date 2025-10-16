@@ -1,0 +1,43 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+86079776_9777.json,95,154,183,171,SPECIFICS,header
+86079776_9777.json,223,264,291,281,Execution:,question
+86079776_9777.json,387,260,441,278,Media:,question
+86079776_9777.json,89,300,185,314,OBJECTIVE,header
+86079776_9777.json,103,439,171,454,TARGET,header
+86079776_9777.json,95,549,211,564,COMMUNICATION,header
+86079776_9777.json,211,546,278,566,PLATFORM,header
+86079776_9777.json,524,866,549,968,86079776,other
+86079776_9777.json,68,99,391,133,CREATIVE INPUT DOCUMENT,header
+86079776_9777.json,68,180,153,201,Date/ Time:,question
+86079776_9777.json,68,201,165,222,Prepared By:,question
+86079776_9777.json,180,183,285,198,10/30/98 1:46 PM,answer
+86079776_9777.json,70,219,285,242,Milestone Presentation Date:,question
+86079776_9777.json,68,242,271,262,Estimated Creative Budget:,question
+86079776_9777.json,70,264,129,282,Concept:,question
+86079776_9777.json,388,177,484,197,Client Name:,question
+86079776_9777.json,388,198,504,218,Matter Number:,question
+86079776_9777.json,387,218,485,239,Project Title:,question
+86079776_9777.json,388,237,561,257,Est. Production Budget:,question
+86079776_9777.json,68,324,255,357,Why are we advertising? What do we plan to achieve?,header
+86079776_9777.json,73,462,647,496,To whom are we talking? Who is the primary target? Is there a secondary target? What is their relationship to the brand what do they currently think about it?,question
+86079776_9777.json,74,570,669,607,What is the single most important message/idea we are trying to communicate? What is the unique selling position that will help us achieve our advertising goal? Are there any secondary messages?,question
+86079776_9777.json,74,638,350,671,What is the key benefit to the target? What's in it for the reader?,question
+86079776_9777.json,74,703,674,736,"Is there an offer/call to action? What are we offering the target to persuade him/her to act now? (A premium, sweepstakes, limited-time offer, free information, or something else?",question
+86079776_9777.json,75,765,366,799,What would we like our target to think? What would our target say after being exposed to our program?,question
+86079776_9777.json,67,932,243,947,c:\my documents\wp\sample cid. doc,other
+86079776_9777.json,363,930,393,944,1 of 2,other
+86079776_9777.json,598,930,695,944,10/30/98 01:46 PM,other
+86079776_9777.json,559,359,603,373,☐ Loyalty,question
+86079776_9777.json,559,374,653,387,☐ Lead Generation,question
+86079776_9777.json,559,387,592,400,☐ Trial,question
+86079776_9777.json,430,362,488,373,☐ Acquisition,question
+86079776_9777.json,430,374,477,387,☐ Up-Sell,question
+86079776_9777.json,430,390,490,401,☐ Awareness,question
+86079776_9777.json,293,360,345,375,☐ Retention,question
+86079776_9777.json,291,376,350,387,☐ Cross-Sell,question
+86079776_9777.json,291,390,352,404,☐ Direct Sale,question
+86079776_9777.json,293,404,331,415,☐ Other,question
+86079776_9777.json,110,406,236,417,☐ Change Image Perception,question
+86079776_9777.json,109,391,242,405,☐ New Product/Package Intro.,question
+86079776_9777.json,110,377,214,389,☐ Competitive Blocking,question
+86079776_9777.json,110,362,214,376,☐ Relationship-Building,question

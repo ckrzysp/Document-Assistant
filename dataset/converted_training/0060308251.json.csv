@@ -1,0 +1,20 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0060308251.json,401,165,442,189,Date,question
+0060308251.json,344,433,426,457,Signature,question
+0060308251.json,211,295,256,312,From,header
+0060308251.json,492,293,520,310,To,header
+0060308251.json,126,547,175,567,NOTE:,question
+0060308251.json,154,385,167,402,3,answer
+0060308251.json,429,390,444,403,2,answer
+0060308251.json,443,420,584,454,,answer
+0060308251.json,229,94,526,114,A. T. Co. Tar & Nicotine Change Form,header
+0060308251.json,487,159,543,180,7/ 24/ 90,answer
+0060308251.json,285,228,418,250,CARLTON 100's FMSP,answer
+0060308251.json,124,230,242,258,Brand & Style,question
+0060308251.json,127,323,208,371,Tar (Mg /Cigt),question
+0060308251.json,265,323,348,369,Nicotine (Mg /Cigt),question
+0060308251.json,409,323,488,371,Tar (Mg /Cigt),question
+0060308251.json,543,324,625,370,Nicotine (Mg/ /Cigt),question
+0060308251.json,566,387,597,404,0 .2,answer
+0060308251.json,285,387,312,404,0 .3,answer
+0060308251.json,187,546,478,565,Use Separate Form For Each Change,answer

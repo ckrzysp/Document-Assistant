@@ -1,0 +1,20 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+82491256.json,105,196,157,207,COURT:,question
+82491256.json,103,485,153,498,JUDGE:,question
+82491256.json,233,320,279,335,Asbestos,answer
+82491256.json,325,138,398,155,CASE FORM,header
+82491256.json,108,168,184,182,CASE NAME:,question
+82491256.json,105,223,180,254,LORILLARD ENTITIES:,question
+82491256.json,105,265,184,279,DATE FILED:,question
+82491256.json,106,293,195,309,DATE SERVED:,question
+82491256.json,106,318,179,338,CASE TYPE:,question
+82491256.json,106,349,180,377,PLAINTIFF COUNSEL:,question
+82491256.json,105,443,180,472,LORILLARD COUNSEL:,question
+82491256.json,106,510,183,525,TRIAL DATE:,question
+82491256.json,232,360,479,431,"Wartnick, Chaber, Harowitz, Smith & Tigerman Madelyn J. Chaber 101 California Street, Suite 2200 San Francisco, California 94111 415 986- 5566",answer
+82491256.json,233,295,309,310,"August 3, 1998",answer
+82491256.json,232,264,303,279,"July 23, 1998",answer
+82491256.json,233,237,380,252,Lorillard Tobacco Company,answer
+82491256.json,232,193,454,211,San Francisco Superior Court - No. 996378,answer
+82491256.json,233,165,608,182,"Wanda G. Robinson and Carroll Robinson v Raybestos- Manhattan, et al.",answer
+82491256.json,588,775,653,888,82491256 94624999,other

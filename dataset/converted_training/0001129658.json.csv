@@ -1,0 +1,43 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0001129658.json,96,177,118,192,FAX:,question
+0001129658.json,75,337,116,351,DATE:,question
+0001129658.json,75,286,117,301,FROM:,question
+0001129658.json,457,288,544,305,CHARGEBACK:,question
+0001129658.json,106,404,176,418,RECIPIENT,question
+0001129658.json,235,402,298,419,COMPANY,question
+0001129658.json,398,404,425,418,FAX,question
+0001129658.json,426,405,451,418,No.,question
+0001129658.json,77,532,147,546,COMMENTS,question
+0001129658.json,538,934,562,952,No:,question
+0001129658.json,258,936,299,953,Name:,question
+0001129658.json,196,936,221,951,Yes,question
+0001129658.json,105,937,193,952,Confirmation:,header
+0001129658.json,686,831,706,926,2074956978,other
+0001129658.json,591,102,650,144,,other
+0001129658.json,77,95,488,151,WINSTON & STRAWN,header
+0001129658.json,514,137,614,158,Fax Cover Sheet,header
+0001129658.json,95,155,466,181,"MAMI TRIAL SITE, 2000 FIRST UNION FINANCIAL CENTER, 200 SOUTH BISCAYNE BOULEVARD MIAMI, FLORIDA 33131",other
+0001129658.json,126,179,225,192,(305) 400 6 06,answer
+0001129658.json,77,205,197,238,200 PARK AVENUE NEWYORK NY 10166 4193 212 294-6700,other
+0001129658.json,219,207,346,236,400 L. STREET N WASHWINGTON DC 20005 3502 202 371 5700,other
+0001129658.json,360,208,442,239,35 WEST WACKER CHICAGO. IL 30601 312- 588 5800,other
+0001129658.json,500,209,594,239,"21 AVENUE VICTOR HUGO 75 PARIS, FRANCE 33- 53 64 62 82",other
+0001129658.json,267,256,355,273,Fax Number:,question
+0001129658.json,359,256,454,273,305 400- 6107,answer
+0001129658.json,161,286,234,304,Kevin Narko,answer
+0001129658.json,161,335,213,349,10/ 13/ 99,answer
+0001129658.json,468,310,523,324,4162/ 158,answer
+0001129658.json,246,370,472,387,Please Deliver as soon Possible To:,header
+0001129658.json,108,430,193,449,John Mulderig,answer
+0001129658.json,109,458,192,476,Gregory Little,answer
+0001129658.json,235,430,315,450,Philip Morris,answer
+0001129658.json,236,459,313,479,Philip Morris,answer
+0001129658.json,399,432,482,449,917 -663 -5796,answer
+0001129658.json,397,461,481,476,917- 663 5979,answer
+0001129658.json,514,432,596,447,917- 663 3056,answer
+0001129658.json,514,404,588,420,PHONE No.,question
+0001129658.json,239,497,479,516,Total number of pages including this page:,question
+0001129658.json,85,677,620,722,"IF YOU DO NOT RECEIVE ALL THE PAGES, PLEASE CALL OUR FAX OPERATOR AS SOON AS POSSIBLE THANK YOU. 312- 558- 5948",other
+0001129658.json,82,821,639,873,"The information contained in this facsimile message is attorncy privileged and confidential information intended only for the use of the individual or entity named above. If the reader of this message is not the intended recipient, or the employee or agent responsible to deliver it to the intended recipient, you are hereby notified that any dissemination, distribution or copying this communication strictly prohibited.",other
+0001129658.json,84,881,636,908,"If you have received this communication in error, please immediately notify us by telephone, and return the original message to us at the above address via the U. S. Postal Service. Thank you.",other
+0001129658.json,105,919,204,935,Operator Initials:,question

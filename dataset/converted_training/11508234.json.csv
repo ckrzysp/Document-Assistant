@@ -1,0 +1,112 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+11508234.json,77,80,108,90,Date:,question
+11508234.json,78,94,144,109,Description:,question
+11508234.json,525,78,546,91,No.,question
+11508234.json,302,141,358,156,Budgeted:,header
+11508234.json,476,126,497,139,Yes,question
+11508234.json,476,141,497,155,Yes,question
+11508234.json,560,126,577,137,No,question
+11508234.json,560,141,575,154,No,question
+11508234.json,525,124,539,138,X,answer
+11508234.json,608,141,621,155,X,answer
+11508234.json,476,158,484,171,$,other
+11508234.json,483,158,490,169,,answer
+11508234.json,78,190,124,201,contract.,answer
+11508234.json,161,218,210,233,Supplier,question
+11508234.json,500,235,539,248,"29,500",answer
+11508234.json,501,251,537,264,"31,716",answer
+11508234.json,413,235,444,249,"2,500",answer
+11508234.json,415,251,444,265,"2,500",answer
+11508234.json,317,233,356,250,"27,000",answer
+11508234.json,316,250,358,264,"29,216",answer
+11508234.json,77,282,134,296,Projected:,question
+11508234.json,77,346,123,360,Wave(s),question
+11508234.json,78,411,125,425,Waves(s),question
+11508234.json,80,489,125,506,Wave(s),question
+11508234.json,391,536,433,551,Project,header
+11508234.json,432,538,466,552,Type:,question
+11508234.json,538,282,567,296,1995,answer
+11508234.json,543,297,588,311,"500,000",answer
+11508234.json,542,330,584,344,"382,575",answer
+11508234.json,546,359,587,377,"29,500",answer
+11508234.json,578,411,586,422,0,answer
+11508234.json,542,457,587,470,"353,075",answer
+11508234.json,542,486,588,501,"146,925",answer
+11508234.json,198,645,244,663,Analyst,question
+11508234.json,203,679,231,692,Asst,question
+11508234.json,232,677,257,691,Mgr.,question
+11508234.json,258,676,282,691,Con,question
+11508234.json,286,677,310,690,Res,question
+11508234.json,311,676,328,691,(to,question
+11508234.json,330,675,337,690,$,question
+11508234.json,338,676,385,691,"100,000)",question
+11508234.json,211,749,267,767,Musiclask,answer
+11508234.json,267,753,321,767,,other
+11508234.json,225,709,370,734,,answer
+11508234.json,189,644,361,691,,answer
+11508234.json,191,615,287,650,Lumea,answer
+11508234.json,293,615,382,664,,other
+11508234.json,461,631,490,646,Date:,question
+11508234.json,459,661,488,676,Date:,question
+11508234.json,458,693,490,707,Date:,question
+11508234.json,461,721,490,738,Date:,question
+11508234.json,461,753,492,768,Date:,question
+11508234.json,529,856,645,881,466840246,other
+11508234.json,77,827,123,841,Original:,question
+11508234.json,78,844,95,854,cc:,question
+11508234.json,78,862,116,873,MRADOM,other
+11508234.json,216,28,508,43,MARKETING RESEARCH AUTHORI TION,header
+11508234.json,261,45,467,77,DOMESTIC (Recommended Proposal Attached),other
+11508234.json,177,78,254,93,"March3, 1995",answer
+11508234.json,567,80,620,93,1995- 48D,answer
+11508234.json,179,92,588,123,LUCKY STRIKE QUALITATIVE ADVERTISING RESEARCH - GATEWAY CITIES,answer
+11508234.json,77,124,155,140,Requested by:,question
+11508234.json,177,124,247,140,A. A. Strobel,answer
+11508234.json,302,126,436,141,Research Req Attached:,header
+11508234.json,282,156,430,174,Original Budgeted Amount:,question
+11508234.json,77,170,255,188,Competitive Proposals Obtained:,question
+11508234.json,258,172,596,189,Only two bidders because third supplier has not yet signed B & W,answer
+11508234.json,77,232,183,250,"Analytic Insight, Inc.",answer
+11508234.json,78,251,187,265,Goldfarb Consultants,answer
+11508234.json,575,204,628,232,Cost per Interview,question
+11508234.json,487,216,547,233,Total Cost,question
+11508234.json,402,218,462,236,Est. Travel,question
+11508234.json,324,218,368,235,Cost ($),question
+11508234.json,78,299,176,314,Internal Init Date,question
+11508234.json,323,282,466,299,Summary of MRD Budget,question
+11508234.json,339,299,462,313,Total Area Authorized,question
+11508234.json,78,330,140,344,Field Start,question
+11508234.json,321,330,466,345,Current Balance Available,question
+11508234.json,392,360,464,377,This Change:,question
+11508234.json,338,377,466,392,(From Current Budget),question
+11508234.json,75,392,159,409,Field Complete,question
+11508234.json,226,408,267,425,3/ 25/ 95,answer
+11508234.json,225,346,267,359,3/ 20/ 95,answer
+11508234.json,230,299,265,312,3/ 1/ 95,answer
+11508234.json,390,455,466,472,New Balance:,question
+11508234.json,356,487,465,523,Committed to Date: (Current Year),question
+11508234.json,300,408,448,442,This amount: (From Next Year's Budget),question
+11508234.json,75,455,173,487,Final Report Due (Supplier Rpt.),question
+11508234.json,228,489,269,504,3/ 31/ 95,answer
+11508234.json,487,536,625,567,"Qualitative Research (Product Test, A & U etc.)",header
+11508234.json,78,552,148,567,Sample Size:,question
+11508234.json,78,568,209,583,Recommended Supplier:,question
+11508234.json,77,585,252,600,Reason(s) for Recommendation:,question
+11508234.json,302,584,364,598,Lowest Bid,answer
+11508234.json,302,567,409,583,"Analytic Insight, Inc.",answer
+11508234.json,78,631,159,646,Submitted By:,question
+11508234.json,80,661,159,678,Approved By:,question
+11508234.json,77,693,159,708,Approved By:,header
+11508234.json,78,722,158,737,Approved By:,question
+11508234.json,80,753,160,767,Budget Check:,question
+11508234.json,497,620,579,651,3433/ 3/ 95,answer
+11508234.json,510,640,584,682,3/ 3/ 95,answer
+11508234.json,511,714,579,743,3/ 3/ 95,answer
+11508234.json,461,782,528,795,Project No:,question
+11508234.json,461,796,531,810,Acct. Name:,question
+11508234.json,131,841,190,855,H. Williams,answer
+11508234.json,130,827,188,841,Project File,answer
+11508234.json,0,953,232,983,466840246 PRODUCED FROM B & W WEB SITE,other
+11508234.json,203,736,397,754,"Senior VP Marketing (to $ 1,000,000)",question
+11508234.json,201,704,445,724,"Director Forecasting Mkt (to $ 250,000)",question
+11508234.json,201,767,266,781,Vicki Clark,question

@@ -1,0 +1,66 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+80310840a.json,535,71,589,105,Scott,other
+80310840a.json,468,230,514,247,Job#:,question
+80310840a.json,80,250,137,264,Revision,question
+80310840a.json,142,246,166,268,☑,answer
+80310840a.json,243,250,297,270,Reason:,question
+80310840a.json,628,795,648,914,803108404,other
+80310840a.json,203,817,216,831,,other
+80310840a.json,221,817,277,835,Pasholuk,other
+80310840a.json,399,665,424,682,Jan,question
+80310840a.json,398,683,427,697,Feb,question
+80310840a.json,529,668,553,679,Jul,question
+80310840a.json,532,683,560,697,Aug,question
+80310840a.json,528,700,557,713,Sep,question
+80310840a.json,525,715,556,729,Oct,question
+80310840a.json,529,730,557,741,Nov,question
+80310840a.json,528,744,559,759,Dec,question
+80310840a.json,221,838,280,848,Director,question
+80310840a.json,186,834,217,848,MPIO,question
+80310840a.json,534,228,595,245,5543/295,answer
+80310840a.json,193,250,229,270,1,other
+80310840a.json,176,247,190,269,#,other
+80310840a.json,397,697,426,712,Mar,question
+80310840a.json,401,714,428,727,Apr,question
+80310840a.json,398,729,426,740,May,question
+80310840a.json,399,743,426,756,Jun,question
+80310840a.json,197,811,381,865,,other
+80310840a.json,536,119,643,135,"January 18, 1998",other
+80310840a.json,177,117,548,180,Date: PROJECT APPROVAL MARKET PLANNING AND INFORMATION DEPARTMENT,header
+80310840a.json,211,177,345,199,Sales Analysis ☐,question
+80310840a.json,358,180,523,200,Consumor Research ☑,other
+80310840a.json,194,214,289,229,Newport Lights,answer
+80310840a.json,193,229,395,246,Direct Mail Conversion Research,answer
+80310840a.json,81,229,166,244,Project Title:,question
+80310840a.json,324,251,430,267,Lower Incidence,answer
+80310840a.json,80,285,331,303,Marketing and or Research Objectives,question
+80310840a.json,78,316,618,349,Determine the level of interest and conversion opportunities among pompotitive smokers. receiving a Direct Mail offer for Newport Lights.,answer
+80310840a.json,78,362,594,392,Provide insight into the reasons for offer acceptance or rejection of offer and examine consumer perceptions about Newport Lights.,answer
+80310840a.json,80,398,191,411,Research Design,question
+80310840a.json,78,426,296,444,Interviews divided among 3 gorups:,question
+80310840a.json,140,458,533,506,Group 1= Best redeeming customers (2+ paid coupons): n= 750 Group 2= Paid redeoming customers 1 paid coupon) n= 750 Group 3= Non- redeeming customers (no redemption) n= 750,answer
+80310840a.json,78,515,451,535,"The total sample size is 2,250. All smokers 21+ years of age.",answer
+80310840a.json,71,578,157,615,Respondent Incidence:,question
+80310840a.json,168,596,250,629,38% revised from 70%,answer
+80310840a.json,332,587,398,615,Interview Length:,question
+80310840a.json,413,584,513,617,Screener Questionnaire,question
+80310840a.json,568,588,634,600,5 minutes,answer
+80310840a.json,564,605,632,616,10 minutes,answer
+80310840a.json,77,642,178,656,Research Firm:,question
+80310840a.json,77,675,175,692,Cost Estimate:,question
+80310840a.json,73,708,174,723,Revised From:,question
+80310840a.json,74,754,162,771,Prepared by,question
+80310840a.json,70,785,162,803,Approved by:,header
+80310840a.json,204,677,263,692,$100 600,answer
+80310840a.json,205,708,254,722,$76 600,answer
+80310840a.json,201,736,380,790,S. R. Benson ,answer
+80310840a.json,187,803,290,815,Group Manager,question
+80310840a.json,187,895,352,912,Group Product Manager,question
+80310840a.json,184,865,303,880,Product Manager,question
+80310840a.json,398,821,545,837,Start Field w/o 11 /13 /95,answer
+80310840a.json,388,852,537,866,Reporting Schedule:,question
+80310840a.json,397,881,528,914,Topline w/o 12 /18 /95 Final Report 12/ 31/ 95,answer
+80310840a.json,577,742,635,759,$100 600,other
+80310840a.json,398,761,560,779,Revised Costs (if any),question
+80310840a.json,397,788,532,806,Fieldwork Schedule:,question
+80310840a.json,204,642,295,659,A & G Research,answer

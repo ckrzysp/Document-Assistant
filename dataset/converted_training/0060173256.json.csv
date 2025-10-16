@@ -1,0 +1,39 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0060173256.json,264,133,344,150,Description,question
+0060173256.json,493,133,560,150,Displays,answer
+0060173256.json,155,186,219,201,BRANDS,question
+0060173256.json,370,225,452,239,Adjustment,question
+0060173256.json,166,225,218,239,Carlton,answer
+0060173256.json,584,314,641,328,Amount,question
+0060173256.json,156,342,208,357,Displays,answer
+0060173256.json,575,341,634,358,"31,000.00",answer
+0060173256.json,573,369,637,384,"(31,000.00)",answer
+0060173256.json,41,782,132,797,Distribution:,question
+0060173256.json,332,758,421,797,,answer
+0060173256.json,432,774,466,795,5/5,answer
+0060173256.json,570,757,680,796,,answer
+0060173256.json,603,737,635,751,0.00,other
+0060173256.json,663,841,687,855,Date,question
+0060173256.json,663,797,687,810,Date,question
+0060173256.json,425,797,449,811,Date,question
+0060173256.json,425,839,450,853,Date,question
+0060173256.json,36,21,139,92,THE AMERICAN TOBACCO COMPANY,header
+0060173256.json,355,36,685,74,APPROVED MARKETING PROJECT EXPENSE RECOMMENDATION,header
+0060173256.json,137,133,240,149,S0002 Supp 2,answer
+0060173256.json,149,205,235,220,Private Stock,answer
+0060173256.json,356,186,467,202,Current Budget,question
+0060173256.json,547,184,633,203,"$ 7,569,000.00",answer
+0060173256.json,356,263,468,280,Revised Budget,question
+0060173256.json,547,263,634,279,"$ 7,569,000.00",answer
+0060173256.json,598,225,635,240,$ 0.00,answer
+0060173256.json,349,341,452,358,CAR- MMT- DSP,answer
+0060173256.json,351,366,449,382,PRV- MMT- DSP,answer
+0060173256.json,253,782,331,800,Prepared By:,question
+0060173256.json,476,781,561,801,Approved By:,question
+0060173256.json,478,825,560,843,Approved By:,question
+0060173256.json,253,825,331,843,Prepared By:,question
+0060173256.json,138,795,192,828,,answer
+0060173256.json,53,799,124,825,Accounting File,question
+0060173256.json,41,134,116,149,Project No,question
+0060173256.json,87,313,206,330,Offer Description,question
+0060173256.json,395,313,492,331,Charge Code,question

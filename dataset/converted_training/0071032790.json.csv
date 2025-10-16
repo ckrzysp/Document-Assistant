@@ -1,0 +1,27 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0071032790.json,56,455,121,468,PROJECT,question
+0071032790.json,126,455,209,467,OBJECTIVE:,question
+0071032790.json,475,281,522,296,DATE:,question
+0071032790.json,248,271,280,289,BTF,answer
+0071032790.json,249,321,264,329,-,answer
+0071032790.json,53,86,81,104,To:,question
+0071032790.json,100,86,145,104,Files,answer
+0071032790.json,555,90,658,105,CONFIDENTIAL,other
+0071032790.json,53,826,91,844,EPB:,question
+0071032790.json,55,855,82,870,cc:,question
+0071032790.json,88,826,120,843,ODL,answer
+0071032790.json,259,166,460,183,PROJECT INITIATION FORM,header
+0071032790.json,527,269,685,292,"September 16, 1980",answer
+0071032790.json,53,281,166,298,PROJECT CODE:,question
+0071032790.json,53,324,166,341,PROJECT NAME:,question
+0071032790.json,56,367,183,382,PROJECT LEADER:,question
+0071032790.json,55,410,212,425,WORK REQUESTED BY:,question
+0071032790.json,249,355,353,377,E. P. Barbee,answer
+0071032790.json,248,402,410,420,"R. S. Sprinkle, III",answer
+0071032790.json,249,444,643,577,To develop cigarette Cigarette to utilize a filter tip with longitudinal grooves from the mouth end to the tobacco end in con- junction with perforated tipping paper.,answer
+0071032790.json,55,606,188,636,OTHER PERSONNEL ASSIGNED:,question
+0071032790.json,251,613,377,635,"J. E. Mann, Jr.",answer
+0071032790.json,249,643,365,663,D. E. Cawthon,answer
+0071032790.json,402,757,510,776,Approved by:,question
+0071032790.json,405,771,638,844,"R. S. Sprinkle, III",answer
+0071032790.json,98,855,196,902,BMC/RMI/EPB JEM/DEC PRC/DRB,answer

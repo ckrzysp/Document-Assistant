@@ -1,0 +1,42 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+89368010.json,154,618,197,636,DATE,question
+89368010.json,133,587,239,611,16/3/82,answer
+89368010.json,490,576,652,615,,answer
+89368010.json,114,657,189,669,APPROVALS,question
+89368010.json,364,684,442,709,Accept,answer
+89368010.json,368,726,446,757,Accept,answer
+89368010.json,361,775,433,805,Accept,answer
+89368010.json,469,668,692,707,,answer
+89368010.json,510,714,618,753,,answer
+89368010.json,475,766,691,796,,answer
+89368010.json,490,843,605,873,,answer
+89368010.json,370,850,463,875,,answer
+89368010.json,723,804,748,897,89368010,other
+89368010.json,45,28,145,46,RA/QA FORM 9,other
+89368010.json,280,76,489,94,FINAL REPORT AMENDMENT,header
+89368010.json,106,120,189,136,Study Name,question
+89368010.json,106,141,204,159,Study Number,question
+89368010.json,111,163,229,181,Initiation Date,question
+89368010.json,106,186,448,205,Date of Final Report (Review Completed Date),question
+89368010.json,109,208,498,226,Part of Final Report to be Amended (Exact location),question
+89368010.json,117,232,635,250,The attached is an addition to the I- 1725.001 Final Report,answer
+89368010.json,478,183,595,204,27 April 1982,answer
+89368010.json,266,162,386,178,25 March 1982,answer
+89368010.json,220,141,313,156,I- 1725.001,answer
+89368010.json,190,117,761,150,Acute Toxicity of Reference Cigarette Smoke lafter Inhalation in Mice.,answer
+89368010.json,108,310,297,325,Reason for the Amendment,question
+89368010.json,308,305,762,322,Survival after repeated doses over a 14 day period,answer
+89368010.json,123,328,716,366,may not be accurately predicted from survival after a single day's exposure.,answer
+89368010.json,111,404,485,424,Amendment (Attach additional sheets as necessary),question
+89368010.json,496,401,747,419,The report of the results of,answer
+89368010.json,133,425,723,467,A 14 Day Repeated Dose Assay for Reference Cigarette Smoke in Mice (I- 1725.001- M1 is attached.,answer
+89368010.json,504,615,615,628,STUDY DIRECTOR,question
+89368010.json,112,689,247,711,03 June 1982,answer
+89368010.json,132,725,250,770,3 June 1982,answer
+89368010.json,117,772,247,800,3 June 1982,answer
+89368010.json,380,651,630,672,ACCEPT/ REJECT (as per 58.185 (c)),question
+89368010.json,500,705,684,719,QUALITY ASSURANCE ASSOC.,question
+89368010.json,501,749,657,764,DIRECTOR OF RESEARCH,question
+89368010.json,499,795,636,809,DIRECTOR OF RA/QA,question
+89368010.json,499,870,646,886,REGULATORY AFFAIRS,question
+89368010.json,115,855,347,874,Received by REGULATORY AFFATRS,question

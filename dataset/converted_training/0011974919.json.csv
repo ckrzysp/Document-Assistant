@@ -1,0 +1,43 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0011974919.json,172,205,190,220,To,question
+0011974919.json,172,236,204,251,From:,question
+0011974919.json,173,265,201,280,Date:,question
+0011974919.json,70,309,105,326,Brand:,question
+0011974919.json,68,339,96,353,Title:,question
+0011974919.json,110,304,149,319,Eclipse,answer
+0011974919.json,70,359,134,379,Description:,question
+0011974919.json,211,459,247,474,APAC,answer
+0011974919.json,226,490,250,504,300,answer
+0011974919.json,226,549,248,564,300,answer
+0011974919.json,425,628,464,649,W25,answer
+0011974919.json,362,751,397,766,APAC,answer
+0011974919.json,68,845,83,860,C:,question
+0011974919.json,376,304,418,321,602399,answer
+0011974919.json,127,130,595,157,RESPONSE CODE REQUEST CONFIRMATION,header
+0011974919.json,219,201,289,216,Joe Leinster,answer
+0011974919.json,219,230,289,248,Joyce Bagby,answer
+0011974919.json,221,258,329,278,"September 10, 1996",answer
+0011974919.json,282,309,367,324,PPS Program #,question
+0011974919.json,440,307,519,326,Requested By:,question
+0011974919.json,109,334,366,354,Sneak Preview Confirmation Call- Charlotte Tests,answer
+0011974919.json,134,363,449,382,Record of confirmation calls for sneak preview appointments,answer
+0011974919.json,68,465,203,480,Fullfillment Data Entry at,question
+0011974919.json,68,494,179,511,Circulation Quantity:,question
+0011974919.json,70,525,185,539,Estimated Response:,question
+0011974919.json,70,554,192,569,Estimated Responders:,question
+0011974919.json,68,582,190,599,Distribution Drop Date:,question
+0011974919.json,207,580,252,597,10/ 03/ 96,answer
+0011974919.json,219,520,272,538,100.00 %,answer
+0011974919.json,358,582,440,600,Expiration Date:,question
+0011974919.json,228,630,405,651,Response Code Assigned:,question
+0011974919.json,66,705,410,737,"Address, postal requirements, barcodes, document storage, and batch numbers to be supplied by:",question
+0011974919.json,358,767,475,782,DE Fullfillment Vendor,question
+0011974919.json,91,844,195,861,Suzi Hicks RJR- IR,answer
+0011974919.json,91,862,174,882,Karen Giddens,answer
+0011974919.json,94,884,161,901,Drew Huyett,answer
+0011974919.json,89,908,173,923,Jackson Roper,answer
+0011974919.json,418,839,499,856,Debbie Lockery,answer
+0011974919.json,418,862,507,879,Vanessa Oakley,answer
+0011974919.json,418,884,544,903,Melissa Andrews - TBM,answer
+0011974919.json,416,906,538,924,Tammi LaManna - M/ B,answer
+0011974919.json,694,867,710,961,52251 2963,other

@@ -1,0 +1,72 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+92094751.json,341,110,400,124,LORILLARD,header
+92094751.json,473,204,507,218,DATE,question
+92094751.json,115,286,161,303,SCOPE:,header
+92094751.json,115,309,185,329,*EXPLAIN:,question
+92094751.json,233,285,265,299,AREA,question
+92094751.json,318,285,368,298,REGION,question
+92094751.json,420,282,487,297,DIVISION,question
+92094751.json,549,279,598,296,OTHER*,question
+92094751.json,550,374,623,389,EXCELLENT,question
+92094751.json,552,413,623,427,EXCELLENT,question
+92094751.json,552,453,623,468,EXCELLENT,question
+92094751.json,552,492,626,507,EXCELLENT,question
+92094751.json,476,374,511,389,GOOD,question
+92094751.json,478,415,512,429,GOOD,question
+92094751.json,479,454,511,469,GOOD,question
+92094751.json,479,493,514,508,GOOD,question
+92094751.json,337,377,368,391,POOR,question
+92094751.json,408,415,440,432,FAIR,question
+92094751.json,408,376,439,391,FAIR,question
+92094751.json,337,416,369,430,POOR,question
+92094751.json,338,457,370,471,POOR,question
+92094751.json,406,455,440,470,FAIR,question
+92094751.json,409,494,440,509,FAIR,question
+92094751.json,338,494,370,509,POOR,question
+92094751.json,117,535,188,552,COMMENTS:,question
+92094751.json,123,708,193,725,*EXPLAIN:,question
+92094751.json,412,679,434,693,YES,question
+92094751.json,499,679,523,693,NO*,question
+92094751.json,508,758,523,771,NO,question
+92094751.json,420,758,444,773,YES,question
+92094751.json,648,784,662,844,92094751,other
+92094751.json,180,236,195,247,28,answer
+92094751.json,518,284,532,295,x,answer
+92094751.json,318,416,329,430,x,answer
+92094751.json,321,457,329,468,x,answer
+92094751.json,321,494,331,505,x,answer
+92094751.json,387,680,398,693,X,answer
+92094751.json,487,758,497,769,x,answer
+92094751.json,66,109,164,122,09 /07 /35 15 15:48:48,other
+92094751.json,187,109,268,122,317 8450971,other
+92094751.json,587,108,642,123,001 /002,other
+92094751.json,258,151,479,167,SPECIAL PROMOTION EVALUATION,header
+92094751.json,120,193,228,207,03/ 07/ 415415 & 418418,answer
+92094751.json,112,208,274,222,AREA REGION DIVISION,question
+92094751.json,434,190,473,205,9/ 8 /95,answer
+92094751.json,112,233,172,250,PROMO #,question
+92094751.json,327,229,473,247,PROMOTIONAL PERIOD:,question
+92094751.json,494,229,588,244,June /July 1995,answer
+92094751.json,115,261,201,275,ITEM/ BRAND,question
+92094751.json,211,258,334,273,Newport Sunglasses,answer
+92094751.json,194,311,353,327,Newport Special Emphasis,answer
+92094751.json,116,377,250,392,CHAIN ACCEPTANCE:,header
+92094751.json,260,376,281,391,N/ A,other
+92094751.json,117,416,299,433,INDEPENDENT ACCEPTANCE:,header
+92094751.json,117,457,274,471,CONSUMER ACCEPTANCE:,header
+92094751.json,119,496,258,513,EFFICIENCY RATING:,header
+92094751.json,203,531,599,548,Premiums packaged to large to store on a van. Could not get,answer
+92094751.json,120,560,606,601,enough on a van to sell all day. Retailers only accepted small quantities of deals. Consumers perceived value and not meet expectations.,answer
+92094751.json,303,651,576,668,"22, 320 (Indy East & West) NO SHOW SAMPLES",answer
+92094751.json,122,654,293,669,#ITEMS/ DEALS RECEIVED:,question
+92094751.json,120,680,343,696,WERE QUANTITIES APPROPRIATE?,header
+92094751.json,214,704,581,722,Chain stores will not accept multiple Newport Promotions,answer
+92094751.json,123,735,322,750,(Tier system) at the same time.,answer
+92094751.json,122,758,349,778,SHOULD PROMOTION BE REPEATED?,header
+92094751.json,123,788,238,803,"IF NO, EXPLAIN:",question
+92094751.json,247,784,587,799,This model/ type of sunglass was not received well at,answer
+92094751.json,123,813,265,826,consumer/ retail level.,answer
+92094751.json,123,838,336,855,"IF YES, CAN IT BE IMPROVED?",question
+92094751.json,345,835,612,851,Velcro on strap did not hold. Two right,answer
+92094751.json,126,860,418,879,sides of velcro on same glass did not adhere.,answer
+92094751.json,591,881,648,961,R 9 95,other

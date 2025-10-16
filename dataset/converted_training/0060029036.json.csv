@@ -1,0 +1,49 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0060029036.json,448,216,504,234,Brand(s),question
+0060029036.json,84,214,143,232,Company,question
+0060029036.json,601,397,640,412,DATE,question
+0060029036.json,412,395,493,409,SIGNATURE,question
+0060029036.json,223,395,265,410,NAME,question
+0060029036.json,84,429,144,444,Originator,question
+0060029036.json,82,468,138,482,Manager,question
+0060029036.json,601,522,640,539,DATE,question
+0060029036.json,602,662,680,677,SECTION(S),question
+0060029036.json,412,522,493,537,SIGNATURE,question
+0060029036.json,411,662,467,677,PAGE(S),question
+0060029036.json,84,556,143,569,Insurance,question
+0060029036.json,82,589,110,602,Law,question
+0060029036.json,620,464,707,488,1-11-94,answer
+0060029036.json,409,842,443,856,SME,answer
+0060029036.json,226,63,581,99,SPORTS MARKETING ENTERPRISES DOCUMENT CLEARANCE SHEET,header
+0060029036.json,225,135,333,154,"January 11, 1994",answer
+0060029036.json,81,133,165,150,Date Routed:,question
+0060029036.json,412,133,487,151,Contract No.,question
+0060029036.json,554,135,625,151,4011 00 00,answer
+0060029036.json,226,180,350,200,Joe's Place Exhibits,answer
+0060029036.json,85,180,187,197,Contract Subject:,question
+0060029036.json,173,211,266,232,"SPEVCO, INC.",answer
+0060029036.json,522,215,619,230,Camel/ Winston,answer
+0060029036.json,418,249,526,267,Current Year Cost,question
+0060029036.json,81,250,200,267,Total Contract Cost,question
+0060029036.json,243,249,337,266,"$ 1,340,000.00",answer
+0060029036.json,582,250,648,267,1994-1995,answer
+0060029036.json,82,286,183,303,Brief Description,question
+0060029036.json,247,284,701,315,"2 Joe's Place Exhibits for use at Winston Cup, Winston Drag and Camel Super Bike Events.",answer
+0060029036.json,82,355,147,371,G/ L Code:,question
+0060029036.json,404,353,537,370,Program Budget Code,question
+0060029036.json,226,426,322,445,Michael Wright,answer
+0060029036.json,225,468,303,483,John Powell,answer
+0060029036.json,432,450,573,493,B J. Powell,answer
+0060029036.json,82,501,203,518,REVIEW ROUTING,question
+0060029036.json,82,624,172,641,FS - Marketing,question
+0060029036.json,81,887,295,917,"* UP TO AND INCLUDING $ 25,000 ** OVER $ 25,000",other
+0060029036.json,601,902,704,919,Revised 10/26/92,other
+0060029036.json,599,842,652,857,13 Plaza,answer
+0060029036.json,737,774,752,869,51669 8130,other
+0060029036.json,80,659,227,711,REVISIONS TO SHELL (Other than Term Compensation or Job,question
+0060029036.json,81,733,222,748,APPROVAL ROUTING,question
+0060029036.json,81,749,270,768,* Sr. Manager (B. J. Powell),question
+0060029036.json,84,767,245,788,* Director - (G. L. Littell),question
+0060029036.json,81,802,280,820,** Sr. VP T. W. Robertson,question
+0060029036.json,78,839,148,858,Return To:,question
+0060029036.json,222,841,348,873,MARY SEAGRAVES Ext 1485,answer

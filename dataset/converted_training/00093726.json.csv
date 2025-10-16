@@ -1,0 +1,93 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+00093726.json,457,7,504,29,Date:,question
+00093726.json,496,137,518,154,on,question
+00093726.json,7,203,57,220,BLEND,question
+00093726.json,142,200,202,218,CASING,question
+00093726.json,291,201,366,218,RECASING,question
+00093726.json,7,281,102,298,Cigarettes,header
+00093726.json,381,277,452,295,Filters,header
+00093726.json,384,476,518,498,Responsibility,header
+00093726.json,27,485,86,505,apping,header
+00093726.json,8,638,120,656,Requirements,header
+00093726.json,10,792,80,809,Reports,header
+00093726.json,385,46,426,63,6030,answer
+00093726.json,500,219,535,237,OGS,answer
+00093726.json,313,221,345,241,OGS,answer
+00093726.json,154,222,190,237,OGS,answer
+00093726.json,10,222,45,239,OGS,answer
+00093726.json,122,313,156,326,AMF,answer
+00093726.json,169,341,189,356,25.,answer
+00093726.json,189,342,209,359,0,other
+00093726.json,169,404,198,418,554,answer
+00093726.json,585,510,641,530,Ammons,answer
+00093726.json,580,529,644,542,Wicker,answer
+00093726.json,585,557,631,574,Routh,answer
+00093726.json,602,571,616,588,"""",answer
+00093726.json,159,514,208,532,White,answer
+00093726.json,161,529,203,546,Blue,answer
+00093726.json,161,545,210,560,White,answer
+00093726.json,177,561,194,574,"""",answer
+00093726.json,648,806,676,902,00093726,other
+00093726.json,35,311,81,325,Maker,question
+00093726.json,34,327,91,342,Length,question
+00093726.json,34,342,156,357,Circumference,question
+00093726.json,32,358,95,373,Weight,question
+00093726.json,35,406,81,421,Paper,question
+00093726.json,36,517,92,532,Labels,question
+00093726.json,35,532,112,545,Closures,question
+00093726.json,36,563,103,576,Cartons,question
+00093726.json,36,577,111,592,Markings,question
+00093726.json,36,669,130,684,Laboratory,question
+00093726.json,35,687,84,700,Other,question
+00093726.json,412,310,451,324,Kind,question
+00093726.json,413,342,477,356,Process,question
+00093726.json,413,388,535,403,Circumference,question
+00093726.json,413,401,472,415,Weight,question
+00093726.json,415,418,518,433,Plasticizer,question
+00093726.json,415,560,489,574,Shipping,question
+00093726.json,522,10,696,30,"September 21, 1976",answer
+00093726.json,270,43,365,63,Sample No.,question
+00093726.json,197,74,356,95,Type of Cigarette,question
+00093726.json,387,74,499,95,85 mm Filter,answer
+00093726.json,263,105,358,125,Batch Size,question
+00093726.json,385,105,451,123,50 lbs.,answer
+00093726.json,7,138,229,161,Original Request Made By,question
+00093726.json,257,135,405,157,Dr. A. W. Spears,answer
+00093726.json,535,133,701,154,"September 21, 1976",answer
+00093726.json,7,169,302,190,Sample Specifications Written By,question
+00093726.json,338,166,444,186,W. E. Routh,answer
+00093726.json,464,197,582,214,FINAL FLAVOR,question
+00093726.json,605,180,753,197,Additional Spray,question
+00093726.json,606,218,758,235,3. 4% PMO in EtoH,answer
+00093726.json,468,303,676,329,20 mm True plastic rod,answer
+00093726.json,413,358,507,371,Rod Length,question
+00093726.json,412,372,535,389,Pressure Drop,question
+00093726.json,413,434,504,449,Plug Wrap,question
+00093726.json,35,420,157,437,Tipping Paper,question
+00093726.json,35,387,155,406,Filter Length,question
+00093726.json,35,376,155,390,Pressure Drop,question
+00093726.json,124,325,173,342,85 mm,answer
+00093726.json,102,356,351,373,To be det. (803 mg tobacco),answer
+00093726.json,166,370,317,390,To be determined,answer
+00093726.json,172,390,222,405,20 mm,answer
+00093726.json,170,420,223,438,30 mm,answer
+00093726.json,35,547,122,562,Tear rape,question
+00093726.json,134,574,257,608,Sample No. on overwrap,answer
+00093726.json,413,513,537,528,Tobacco Blend,question
+00093726.json,413,529,574,542,Filter Production,question
+00093726.json,413,543,563,560,Making & Packing,question
+00093726.json,415,575,582,606,Sample Requisition [Form 02: 02: 06],question
+00093726.json,585,542,688,559,Brown /Routh,answer
+00093726.json,154,669,238,684,3 cartons,answer
+00093726.json,152,682,275,700,"20, 000 cigts.",answer
+00093726.json,190,743,319,780,Smoke Analysis PMO Analysis,answer
+00093726.json,10,729,185,748,Laboratory Analysis,question
+00093726.json,36,823,130,839,Written by,question
+00093726.json,36,838,139,852,Original to,question
+00093726.json,38,853,122,868,Copies to,question
+00093726.json,151,851,338,886,Dr. F. J. Schulz Dr. H. J. Minnemeyer,answer
+00093726.json,151,817,320,841,P. D. Schickedantz,answer
+00093726.json,152,837,303,854,Dr. A. W. Spears,answer
+00093726.json,388,669,735,778,Spray 50 lbs. tobacco with solution of 880 g (= 1. 94 lbs.) PMC in 1175 ml of denatured alcohol. This should give 3. 4% PMO add- on (3. 3% PMO contained) assuming 88% spraying efficiency. PMO delivery from 85 mm cigarette smoked to 30 mm butt should be 6. 5 mg/ cig.,answer
+00093726.json,387,633,574,653,Special Requirements,question
+00093726.json,415,925,708,987,"Manager, H.J. Minnemeyer Research",other

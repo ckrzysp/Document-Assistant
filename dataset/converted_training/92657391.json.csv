@@ -1,0 +1,38 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+92657391.json,47,39,273,114,Lorillard,header
+92657391.json,77,204,127,221,DATE:,question
+92657391.json,392,205,437,222,TIME:,question
+92657391.json,514,261,525,276,3,answer
+92657391.json,78,342,131,362,NAME:,question
+92657391.json,77,377,143,395,OFFICE:,question
+92657391.json,75,515,128,532,NAME:,question
+92657391.json,73,554,141,571,OFFICE:,question
+92657391.json,74,654,173,675,COMMENTS:,question
+92657391.json,274,729,298,742,cc:,question
+92657391.json,689,797,703,870,92657391,other
+92657391.json,74,25,187,40,12/ 29/ 94 10: 14,other
+92657391.json,214,25,311,40,713 591 0204,other
+92657391.json,380,27,625,42,LORILLARD HOUS. NEW YORK SALES,other
+92657391.json,651,29,715,43,001/ 003,other
+92657391.json,258,151,496,175,FACSIMILE COVER PAGE,header
+92657391.json,228,207,288,224,12/ 28/ 94,answer
+92657391.json,508,208,547,225,10: 15,answer
+92657391.json,80,256,475,282,"The following document, including cover page is",question
+92657391.json,577,260,672,284,pages long.,question
+92657391.json,218,309,535,331,PLEASE TRANSMIT THIS DOCUMENT TO:,header
+92657391.json,77,411,247,431,FAX PHONE NUMBER:,question
+92657391.json,278,348,364,363,R. H. Orcutt,answer
+92657391.json,277,381,423,399,Lorillard- New York,answer
+92657391.json,278,415,382,430,(212) 545- 3299,answer
+92657391.json,271,483,479,502,THIS DOCUMENT IS FROM:,header
+92657391.json,274,521,458,539,J. L. McGinnis - Region 9,answer
+92657391.json,263,553,662,577,"Lorillard Tobacco Company Houston N., Texas",answer
+92657391.json,261,587,373,609,(713) 591 0204,answer
+92657391.json,74,587,247,608,FAX PHONE NUMBER:,question
+92657391.json,275,658,549,677,Harley Davidson 100's Progress Report.,answer
+92657391.json,309,726,390,743,R. B. Spell,answer
+92657391.json,309,746,405,761,A. J. Giacoio,answer
+92657391.json,306,763,398,777,P. J. McCann,answer
+92657391.json,309,779,392,794,S. L. Enloe,answer
+92657391.json,307,796,391,811,T. L. Achey,answer
+92657391.json,70,865,669,912,"In the event that any of these pages are not legible, or you do not receive all pages, please call this office soon as possible at (713) 591- 6733",other

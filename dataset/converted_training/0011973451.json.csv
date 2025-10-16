@@ -1,0 +1,50 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0011973451.json,59,817,167,834,APPROVALS:,header
+0011973451.json,57,73,91,86,Date:,question
+0011973451.json,57,281,127,292,OBJECTIVE:,question
+0011973451.json,59,691,97,699,Cartons:,question
+0011973451.json,59,707,90,715,Cases:,question
+0011973451.json,57,737,128,750,TIMETABLE:,header
+0011973451.json,59,757,126,767,Manufacturing:,question
+0011973451.json,346,823,366,834,Date,question
+0011973451.json,60,422,85,433,TBD,answer
+0011973451.json,462,603,487,616,TBD,answer
+0011973451.json,67,521,91,534,TBD,answer
+0011973451.json,134,605,158,616,TBD,answer
+0011973451.json,289,705,310,716,500,answer
+0011973451.json,434,704,461,715,$250,answer
+0011973451.json,521,939,641,957,670886182,other
+0011973451.json,677,821,698,832,Date,question
+0011973451.json,385,756,428,769,Shipping:,question
+0011973451.json,56,591,78,599,Start,question
+0011973451.json,81,589,98,600,Up:,question
+0011973451.json,57,570,111,583,VOLUME:,question
+0011973451.json,54,52,473,70,NEW EXPORT PRODUCT DEVELOPMENT CHARTER,header
+0011973451.json,94,73,144,84,6/ 24/ 94,answer
+0011973451.json,56,105,202,119,BRAND/PROJECT NAME:,question
+0011973451.json,57,133,553,161,RICHLAND Kings (Soft Pack) -Duty Free (Phoenix),answer
+0011973451.json,57,191,127,207,MARKET (S):,question
+0011973451.json,57,221,265,243,World- wide Duty Free,answer
+0011973451.json,66,292,566,330,Generate incremental volume for B& W by providing a low price brand to various international duty- free markets.,answer
+0011973451.json,57,372,193,385,SOURCE OF BUSINESS:,header
+0011973451.json,57,391,179,401,Major Competitive Brands:,question
+0011973451.json,384,390,462,400,Target Audience:,question
+0011973451.json,384,420,524,433,Value- conscious Smokers,answer
+0011973451.json,57,489,212,500,COST OR RETAIL PRICING:,question
+0011973451.json,384,589,486,600,Est. Monthly Ongoing:,question
+0011973451.json,57,654,236,667,INITIAL MATERIALS REQUIRED:,header
+0011973451.json,289,656,343,667,Qty In Units,question
+0011973451.json,383,656,435,666,Dollar Cost,question
+0011973451.json,289,670,338,684,On Hand,answer
+0011973451.json,291,687,341,701,On Hand,answer
+0011973451.json,59,675,140,685,Pack Flats Labels:,question
+0011973451.json,59,774,150,784,Product Specs Date:,question
+0011973451.json,384,771,486,782,In- Market Arrival Date:,question
+0011973451.json,384,789,444,799,Launch Date:,question
+0011973451.json,59,791,164,799,Start Manufacture Date:,question
+0011973451.json,59,841,126,850,Group Prod Dir,question
+0011973451.json,59,874,125,884,Dir. Int' Admin,question
+0011973451.json,59,908,130,919,Regional Dir/ VP,question
+0011973451.json,384,839,458,851,VP Int'l Planning,question
+0011973451.json,383,873,465,884,VP Int'l Marketing,question
+0011973451.json,385,906,450,917,Senior VP Int'l,question

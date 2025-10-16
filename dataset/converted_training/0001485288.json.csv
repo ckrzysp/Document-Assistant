@@ -1,0 +1,31 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0001485288.json,482,102,497,115,☑,answer
+0001485288.json,345,454,362,468,20,answer
+0001485288.json,506,848,623,869,620745255,other
+0001485288.json,420,899,474,916,Signed,question
+0001485288.json,584,458,616,472,Free,answer
+0001485288.json,39,29,105,42,DC B38 (8 78),other
+0001485288.json,200,59,525,87,"BROWN & WILLIAMSON TOBACCO CORPORATION LOUISVILLE, KENTUCKY 40201",header
+0001485288.json,250,101,473,114,SPECIAL SAMPLE MANUFACTURE,question
+0001485288.json,405,123,499,137,SHIPMENT ☐,question
+0001485288.json,406,142,496,157,TRANSFER ☐,question
+0001485288.json,311,162,497,180,REDUCED TO MATERIAL ☐,question
+0001485288.json,436,186,565,203,Date of Request,question
+0001485288.json,436,201,557,216,Account Number,question
+0001485288.json,610,182,662,200,6/ 25/ 81,answer
+0001485288.json,596,204,662,219,22 244 00,answer
+0001485288.json,43,168,130,184,Copies to:,question
+0001485288.json,128,198,284,256,Factory Cost Dept. Writer Development Center Sue Livesay,answer
+0001485288.json,42,338,200,355,Sample Disposition,question
+0001485288.json,296,383,445,412,"Quantity, Cartons of 200 each",question
+0001485288.json,553,383,659,414,Tax Status Paid or Free,question
+0001485288.json,59,422,189,440,To Sample Stock,header
+0001485288.json,99,451,127,466,R & D,question
+0001485288.json,101,482,131,496,M. R.,question
+0001485288.json,54,549,212,567,Method of Shipment,question
+0001485288.json,36,592,220,609,Cigarette Description,question
+0001485288.json,127,634,504,678,KS 1 mg grooved product using 4. 3/ 37 filter material. Cigarette code 244131,answer
+0001485288.json,36,718,305,735,Special Instructions & Comments,question
+0001485288.json,34,895,164,913,Completion Date,question
+0001485288.json,221,895,272,909,6/ 25/ 81,answer
+0001485288.json,511,899,605,913,B. D. WINGLER,answer

@@ -1,0 +1,41 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0001123541.json,10,166,48,179,DATE:,question
+0001123541.json,144,165,224,179,DEPARTMENT:,question
+0001123541.json,455,208,486,221,Type,question
+0001123541.json,503,205,560,222,EQPR,answer
+0001123541.json,24,32,91,102,B&W,other
+0001123541.json,589,32,664,102,QUALITY,other
+0001123541.json,216,648,289,661,Implement:,header
+0001123541.json,493,647,524,661,Date,question
+0001123541.json,633,771,655,893,632120763,other
+0001123541.json,120,45,567,94,QUALITY IMPROVEMENT SUGGESTION OUR MISSION IS SUPERIOR CONSUMER SATISFACTION,header
+0001123541.json,124,94,563,109,"Highest Quality. Teamwork, Do Right Things Right The First Time",other
+0001123541.json,228,119,458,137,RESEARCH & DEVELOPMENT,header
+0001123541.json,497,149,628,163,Quality Coord Only,header
+0001123541.json,53,165,146,179,"June 21, 1993",answer
+0001123541.json,250,163,329,180,R&D Library,answer
+0001123541.json,144,191,260,207,Carol S. Lincoln,answer
+0001123541.json,147,219,225,235,407- 64- 3484,answer
+0001123541.json,11,194,102,207,SUBMITTED BY:,question
+0001123541.json,11,223,123,234,SUBMITTER'S SS#:,question
+0001123541.json,455,179,528,192,Date Rec'd,question
+0001123541.json,454,193,529,206,QIP Log #1,question
+0001123541.json,454,221,548,235,Status (1993),question
+0001123541.json,455,236,562,250,Keywords (1993),question
+0001123541.json,546,168,616,197,6/ 21/ 93,answer
+0001123541.json,541,190,627,210,93- 0301,answer
+0001123541.json,11,278,358,295,SUGGESTION: (Describe Current Situation and Idea),question
+0001123541.json,32,306,684,430,"The current system of managing records is too complex. The trend seems to be increasingly specific, when we should be getting more general. Right now, people must work to understand the system. We must spend too much time adninistering the system, labeling and cleaning our files. Complying is a real burden, both for the individual and for the records coordinators.",answer
+0001123541.json,11,476,301,491,Describe Possible Solutions And Benefits,question
+0001123541.json,32,500,362,519,1. Drop the category specifications altogether.,answer
+0001123541.json,31,528,259,546,2. Use moregeneral categories.,answer
+0001123541.json,32,549,654,601,hote: I have passed this to Scott Appleton for the task force to use in streamlining the records management program.,answer
+0001123541.json,11,591,145,605,PROFIT IMPROVEMENT:,question
+0001123541.json,152,591,261,606,(If Applicable),answer
+0001123541.json,11,647,99,662,RESPOND HERE,question
+0001123541.json,304,644,346,664,☐ Yes,question
+0001123541.json,362,644,397,664,☐ No,question
+0001123541.json,409,642,480,663,☐ Pending,question
+0001123541.json,54,874,222,891,Approval Signature/ Date,question
+0001123541.json,420,874,526,888,Responder/ Date,question
+0001123541.json,263,876,416,903,Sign & Print Names) (See Instructions On Back),question

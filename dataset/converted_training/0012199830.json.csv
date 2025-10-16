@@ -1,0 +1,28 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0012199830.json,165,140,225,153,Customer,question
+0012199830.json,275,142,297,155,B&W,answer
+0012199830.json,557,130,712,161,RECEIVED,question
+0012199830.json,147,912,221,926,Technician,question
+0012199830.json,570,964,692,992,605110969,other
+0012199830.json,295,615,349,630,Toluene,answer
+0012199830.json,254,68,527,88,AARBERG -STRAHAN INKS & COATINGS CORP.,header
+0012199830.json,316,99,473,118,Formula Composit Form,other
+0012199830.json,585,173,678,194,DEC 1 1 1989,answer
+0012199830.json,589,207,671,230,A. C. D.,other
+0012199830.json,274,173,361,188,Falcon Green,other
+0012199830.json,272,201,341,216,SKGC-4518 ,answer
+0012199830.json,163,196,244,211,Formula No.,question
+0012199830.json,250,244,362,261,Solids Composit,question
+0012199830.json,302,277,455,292,Lecithin (Food Grade),answer
+0012199830.json,302,299,471,317,Epoxidized Soy Bean Oil,answer
+0012199830.json,300,321,552,338,Cellulose Nitrate Wet w /2 Propanol,answer
+0012199830.json,299,344,433,359,"Pigment, Yellow 34",answer
+0012199830.json,299,365,431,382,"Pigment, Blue 15: 4",answer
+0012199830.json,300,385,712,407,Ester of Modified Tricyclic Carboxylic Acid Jonrez IM824,answer
+0012199830.json,155,543,244,558,Total Solids,question
+0012199830.json,243,582,460,602,Solvent Composit to % V. O. C. s,answer
+0012199830.json,296,637,423,654,Isopropyl Acetate,answer
+0012199830.json,295,659,412,675,N- Propyl Acetate,answer
+0012199830.json,140,835,237,853,Total V. O. C. s,question
+0012199830.json,251,860,306,879,100. 00%,answer
+0012199830.json,228,911,283,951,DLR 12/ 5/ 89,answer

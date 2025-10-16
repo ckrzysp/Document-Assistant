@@ -1,0 +1,46 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+87533049.json,138,137,177,150,FROM:,question
+87533049.json,137,173,162,187,TO:,question
+87533049.json,138,214,160,225,cc:,question
+87533049.json,423,258,454,271,TRUE,answer
+87533049.json,425,309,446,323,N/A,answer
+87533049.json,425,335,446,349,N/A,answer
+87533049.json,425,362,446,373,N/A,answer
+87533049.json,425,487,459,500,$2.00,answer
+87533049.json,423,515,466,525,Carton,answer
+87533049.json,415,549,637,599,,answer
+87533049.json,137,663,221,674,ANALYTICAL,question
+87533049.json,228,663,331,674,REQUIREMENTS:,question
+87533049.json,655,750,672,830,87533049,other
+87533049.json,415,774,509,798,530430,answer
+87533049.json,420,802,486,823,1112,answer
+87533049.json,268,85,503,100,COUPON CODE REGISTRATION FORM,header
+87533049.json,225,131,300,147,J. La Valle,answer
+87533049.json,219,170,349,186,S. A. Rapisarldi,answer
+87533049.json,218,211,307,243,R. G. Ryan ,answer
+87533049.json,186,261,344,276,Brand (s) Applicable,question
+87533049.json,187,286,269,300,Media Type,question
+87533049.json,187,311,269,325,Media Name,question
+87533049.json,179,337,349,350,*Issue Frequency / Year,question
+87533049.json,180,362,278,376,* Space / Color,question
+87533049.json,189,387,326,400,Coupon Issue Date,question
+87533049.json,187,411,364,426,Coupon Expiration Date,question
+87533049.json,187,436,306,450,Circulation (#),question
+87533049.json,189,461,346,476,Geographical Area (s),question
+87533049.json,189,487,285,502,Coupon Value,question
+87533049.json,189,513,341,525,Pack and / or Carton?,question
+87533049.json,180,538,399,552,* Advertising Creative Title,question
+87533049.json,179,587,359,602,Signature of Initiator,question
+87533049.json,179,612,293,626,Date Initiated,question
+87533049.json,422,612,498,626,"May 3, 1990",answer
+87533049.json,423,285,611,298,ON - Carton Instant Redeemable,answer
+87533049.json,425,383,458,397,10 / 90,answer
+87533049.json,423,408,471,422,6 / 30 / 91,answer
+87533049.json,425,436,485,447,"1. 213, 400",answer
+87533049.json,423,461,476,474,National,answer
+87533049.json,425,535,577,549,True Filter King Carton,answer
+87533049.json,349,659,643,672,Break - out separately byl packing as indicated,answer
+87533049.json,300,760,468,775,FOR CONTROL USE ONLY :,header
+87533049.json,300,785,405,799,Code Assigned,question
+87533049.json,300,811,382,824,Job Number,question
+87533049.json,142,860,278,873,,other

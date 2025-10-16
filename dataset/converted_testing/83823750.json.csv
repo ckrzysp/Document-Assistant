@@ -1,0 +1,35 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+83823750.json,630,74,641,85,,other
+83823750.json,641,73,661,86,001,other
+83823750.json,454,161,479,172,Date,question
+83823750.json,258,158,273,171,To,question
+83823750.json,455,335,465,352,2,answer
+83823750.json,258,209,308,227,Company,question
+83823750.json,258,313,294,324,Sender,question
+83823750.json,454,415,507,426,Reference,question
+83823750.json,59,462,111,479,Message:,question
+83823750.json,666,804,690,914,83823750,other
+83823750.json,81,895,138,906,Confidentiality,question
+83823750.json,140,895,161,905,Note:,question
+83823750.json,85,75,280,89,/97 TUE 18: 39 FAX 212 5578,other
+83823750.json,335,77,391,91,DPW 30 -59,other
+83823750.json,249,112,465,127,DAVIS POLK & WARDWELL,header
+83823750.json,60,158,146,171,Fax Transmittal,question
+83823750.json,56,183,167,221,450 Lexington Avenue New York NY 10017 212- 450 4000,other
+83823750.json,258,184,394,200,"Robert H. Shaw, Esq.",answer
+83823750.json,454,184,578,201,"November 11, 1997",answer
+83823750.json,257,235,432,252,Lorillard Tobacco Company,answer
+83823750.json,258,261,322,274,Fax Number,question
+83823750.json,454,261,528,274,Voice Number,question
+83823750.json,258,285,343,303,910 -335- 7077,answer
+83823750.json,455,286,539,301,910 -335- 7720,answer
+83823750.json,453,311,641,327,Number of Pages (this page included),question
+83823750.json,260,337,360,355,Charles Duggan,answer
+83823750.json,258,363,368,377,Sender Voice Number,question
+83823750.json,455,362,627,377,Main Fax Operator Voice Number,question
+83823750.json,258,387,341,402,212 -450- 4785,answer
+83823750.json,260,413,358,427,Sender Fax Number,question
+83823750.json,258,437,343,454,212 -450 -5578,answer
+83823750.json,455,436,521,453,17560 -188,answer
+83823750.json,162,894,643,907,"This facsimile intended only the person or entity to which it is addressed and may contain information that is privileged, confidential",other
+83823750.json,82,905,647,939,"or otherwise protected from disclosure distribution or copying of this facsimile or the information herein by anyone other than the intended recipient, or an employee or agent responsible for delivering the message to the intended recipient is prohibited. If you love received the facsimile in error, please notify us immediately by telephone and return the facsimile by mail.",other

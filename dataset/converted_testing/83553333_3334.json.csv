@@ -1,0 +1,52 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+83553333_3334.json,253,154,294,169,Sender,question
+83553333_3334.json,253,194,281,207,Date,question
+83553333_3334.json,46,325,61,339,To,question
+83553333_3334.json,465,268,521,281,Reference,question
+83553333_3334.json,253,214,327,227,November,answer
+83553333_3334.json,328,214,349,227,"12,",other
+83553333_3334.json,353,212,387,226,1999,answer
+83553333_3334.json,489,209,502,224,6,answer
+83553333_3334.json,45,640,99,657,Message:,question
+83553333_3334.json,638,722,662,825,8355333,other
+83553333_3334.json,42,63,258,76,11/ 12/ 99 19: 32 FAA 212 450 4800,other
+83553333_3334.json,316,66,374,76,DPW 1048,other
+83553333_3334.json,619,68,680,78,UUZ/ DUS,other
+83553333_3334.json,237,109,476,125,DAVIS POLK & WARDWELL,header
+83553333_3334.json,43,156,134,173,Fax Transmittal,question
+83553333_3334.json,43,176,158,214,"450 Lexington Avenue New York, NY 10017 212- 450- 4000",answer
+83553333_3334.json,253,173,366,192,Charles Duggan,answer
+83553333_3334.json,465,190,665,207,Number of Pages (this page included),question
+83553333_3334.json,254,229,373,246,Sender Voice Number,question
+83553333_3334.json,464,228,648,244,"If problems receiving this fax, call",question
+83553333_3334.json,464,246,557,262,212- 450- 4785,answer
+83553333_3334.json,256,250,347,265,212- 450- 4785,answer
+83553333_3334.json,256,270,363,284,Sender Fax Number,question
+83553333_3334.json,257,286,346,303,212- 450- 3785,answer
+83553333_3334.json,466,285,539,302,17555 002,answer
+83553333_3334.json,201,323,271,338,Fax Number,question
+83553333_3334.json,362,324,415,338,Company,question
+83553333_3334.json,520,318,654,335,Recipient Phone Number,question
+83553333_3334.json,45,342,164,361,Thomas M. Sobol,answer
+83553333_3334.json,201,341,293,358,617- 439- 3278,answer
+83553333_3334.json,362,341,511,372,Brown Rudnick Freed & Gesmer,answer
+83553333_3334.json,520,338,612,355,617- 330- 9000,answer
+83553333_3334.json,520,391,610,408,843- 720 9000,answer
+83553333_3334.json,360,394,479,458,"Ness, Motley, Loadholt, Richardson & Poole",answer
+83553333_3334.json,204,394,295,410,843- 720- 9290,answer
+83553333_3334.json,45,397,147,412,Joseph F. Rice,answer
+83553333_3334.json,45,479,169,511,Robert V. Costello Jeffrey D. Woolf,answer
+83553333_3334.json,203,479,295,494,617- 722- 0286,answer
+83553333_3334.json,204,531,293,548,415- 956- 1008,answer
+83553333_3334.json,47,531,184,548,Richard M. Heimann,answer
+83553333_3334.json,46,582,181,600,Michael P. Thornton,answer
+83553333_3334.json,204,585,295,599,617- 720- 2445,answer
+83553333_3334.json,363,582,482,615,"Thomton, Early & Naumes",answer
+83553333_3334.json,520,582,611,599,617- 720- 1333,answer
+83553333_3334.json,521,531,610,548,415- 956- 1000,answer
+83553333_3334.json,521,478,612,493,617- 227- 7500,answer
+83553333_3334.json,362,476,497,510,"Schneider, Reilly, Zabin & Costello",answer
+83553333_3334.json,362,531,476,561,"Lieff, Cabraser & Heimann",answer
+83553333_3334.json,67,897,152,907,Confidentiality Note,question
+83553333_3334.json,152,894,660,907,This only for the person or entity may besi pavilegedal ,answer
+83553333_3334.json,67,905,666,940,"of otherwis protected from disclosos. Disscnlation, distribution popying of the facile the information herein by anyone other than the poupil, waployee responsible for delivering the message the prohibited. You thisfacsimile in error please notify as immediately by telephone and return the facsimile by mail.",answer

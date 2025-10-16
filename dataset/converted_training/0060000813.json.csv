@@ -1,0 +1,49 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0060000813.json,334,172,377,192,Brand:,question
+0060000813.json,511,203,556,220,Power:,question
+0060000813.json,332,201,378,216,Pulse:,question
+0060000813.json,92,170,145,184,Modules:,question
+0060000813.json,91,286,179,303,Scorching:,question
+0060000813.json,91,313,178,328,Cratering:,question
+0060000813.json,89,335,177,355,Comments:,question
+0060000813.json,92,430,176,447,Scorching:,question
+0060000813.json,89,454,174,469,Cratering,question
+0060000813.json,91,480,178,497,Comments:,question
+0060000813.json,91,517,144,535,Module:,question
+0060000813.json,330,522,376,539,Brand:,question
+0060000813.json,330,547,376,564,Pulse:,question
+0060000813.json,91,631,175,649,Scorching:,question
+0060000813.json,89,658,173,675,Cratering:,question
+0060000813.json,91,684,173,702,Comments:,question
+0060000813.json,88,772,173,789,Scorching:,question
+0060000813.json,85,800,173,818,Cratering:,question
+0060000813.json,88,830,175,847,Comments:,question
+0060000813.json,506,549,555,564,Power:,question
+0060000813.json,197,169,221,184,412,answer
+0060000813.json,236,284,342,301,Insignificant.,answer
+0060000813.json,236,427,342,444,Insignificant.,answer
+0060000813.json,91,103,154,121,Week of:,question
+0060000813.json,249,80,285,95,P. S.,question
+0060000813.json,388,78,430,95,73 -91,answer
+0060000813.json,394,110,497,125,Date Received,question
+0060000813.json,547,110,606,126,1 /25 /91,answer
+0060000813.json,247,131,568,163,"LASER PERFORATED TIPPING APPEARANCE CHECK HOLE DEPTH, SCORCHING, CRATERING",header
+0060000813.json,94,196,193,214,Shift & Date:,question
+0060000813.json,387,169,646,187,CARLTON Filter 100's - 4 Mg Laser,answer
+0060000813.json,472,190,593,205,Mfg. for Taiwan,answer
+0060000813.json,339,237,465,257,FRONT CIGARETTES,header
+0060000813.json,228,260,483,275,<1 mm 13 .0 mm from end,answer
+0060000813.json,236,310,404,327,None to insignificant.,answer
+0060000813.json,233,334,480,354,Excellent appearance (18 holes).,answer
+0060000813.json,91,260,177,280,Hole Depth:,question
+0060000813.json,91,402,177,420,Hole Depth:,question
+0060000813.json,229,408,483,423,<1 mm 13 .0 mm from end,answer
+0060000813.json,346,381,465,398,BACK CIGARETTES,header
+0060000813.json,233,453,405,468,None to insignificant.,answer
+0060000813.json,237,476,481,494,Excellent appearance (18 holes).,answer
+0060000813.json,89,542,190,563,Shift & Date:,question
+0060000813.json,337,584,462,604,FRONT CIGARETTES,header
+0060000813.json,89,606,174,623,Hole Depth:,question
+0060000813.json,346,726,462,746,BACK CIGARETTES,header
+0060000813.json,88,749,173,766,Hole Depth:,question
+0060000813.json,534,877,645,897,ATXO2 0062194,other

@@ -1,0 +1,72 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0012529284.json,88,85,125,103,Date:,question
+0012529284.json,88,112,179,131,Description:,question
+0012529284.json,493,82,517,100,No.,question
+0012529284.json,91,177,157,189,Supplier:,question
+0012529284.json,90,290,159,309,Reasons:,question
+0012529284.json,207,235,280,250,Increase,question
+0012529284.json,301,232,365,248,Decrease,question
+0012529284.json,201,431,312,534,,other
+0012529284.json,85,394,166,413,PROJECTED:,header
+0012529284.json,573,409,612,424,1987,question
+0012529284.json,226,561,266,573,Com-,other
+0012529284.json,88,871,115,884,cc:,question
+0012529284.json,442,810,476,829,Date,question
+0012529284.json,443,781,474,797,Date,question
+0012529284.json,442,750,475,769,Date,question
+0012529284.json,442,722,476,737,Date,question
+0012529284.json,442,693,479,709,Date,question
+0012529284.json,85,945,149,961,MRD00008,other
+0012529284.json,608,934,732,962,465915249,other
+0012529284.json,253,829,293,842,,question
+0012529284.json,289,70,473,88,CHANGE OF AUTHORIZED COST,header
+0012529284.json,150,87,216,102,12- -4 -87,answer
+0012529284.json,552,85,588,103,C -5-51,answer
+0012529284.json,204,112,653,133,"CAPRI A&U EXPANSION - CALIFORNIA: WAVE 2 (87 -113) ,",answer
+0012529284.json,105,142,426,163,WAVE 3 (87 –114) AND WAVE 4 (87 -115) .,answer
+0012529284.json,204,177,430,193,Kapuler Marketing Research,answer
+0012529284.json,90,202,349,220,Previous $ Commitments This Project,question
+0012529284.json,395,202,531,221,"$ 212, 475 + 10%",answer
+0012529284.json,90,232,199,250,Amt. of Change:,header
+0012529284.json,397,232,666,250,$ NA ( % Change),other
+0012529284.json,395,262,530,281,"$ 212, 475 + 10%",answer
+0012529284.json,90,262,320,278,Adjusted Total Cost of Project:,question
+0012529284.json,201,319,594,349,Adjustment due to timing of projects falling into 1988.,answer
+0012529284.json,90,424,232,442,Internal Init. Date,question
+0012529284.json,88,454,202,471,Ext. Auth. Date,question
+0012529284.json,87,482,199,502,Field Complete,question
+0012529284.json,88,512,213,546,Final Report Due (Supplier Rpt.),question
+0012529284.json,323,394,519,413,Summary of Research Budget,header
+0012529284.json,543,424,636,441,,answer
+0012529284.json,540,451,642,472,"(886, 220. 53)",answer
+0012529284.json,545,481,636,502,"+14, 165. 00",answer
+0012529284.json,325,422,457,440,Total Area Budget:,question
+0012529284.json,323,454,520,471,Current Balance Available:,question
+0012529284.json,322,484,481,516,This Change: (From Current Budget),question
+0012529284.json,323,527,405,544,This Amount,question
+0012529284.json,326,545,514,561,(From Next Year' s Budget),question
+0012529284.json,421,528,515,543,"-14, 165. 00",answer
+0012529284.json,174,575,327,591,Start plete FR,question
+0012529284.json,540,584,642,605,"(872, 055. 53)",answer
+0012529284.json,525,644,638,663,"1, 652, 955. 53",answer
+0012529284.json,549,692,612,708,12 -4 -87,answer
+0012529284.json,525,799,650,830,12 /2 /87,answer
+0012529284.json,504,867,672,888,1987 -113 /114 /115 -CA,answer
+0012529284.json,412,871,498,886,Project No.,question
+0012529284.json,407,900,503,915,Account Name,question
+0012529284.json,90,856,165,868,Original -,question
+0012529284.json,169,856,262,873,Project File,answer
+0012529284.json,168,870,287,887,S. Willinger (3),answer
+0012529284.json,166,888,265,902,G. D. Raphael,answer
+0012529284.json,160,900,335,917,V. Hansberry (If Int.),answer
+0012529284.json,85,811,185,826,Budget Check,question
+0012529284.json,85,781,181,797,Approved By:,question
+0012529284.json,88,749,176,768,Approved By:,question
+0012529284.json,88,722,178,737,Approved By:,question
+0012529284.json,87,692,184,707,Submitted By:,question
+0012529284.json,210,692,336,707,S. L. Willinger,answer
+0012529284.json,323,645,458,663,Committed To Date:,question
+0012529284.json,325,588,413,603,New Balance:,question
+0012529284.json,30,585,326,636,"87 -113 (70, 825) 9 /23 10 /11 11 /16 87 -114 (70. 825) 10 /13 10 /29 12 /7 87 -115 (70, 825 11 /16 12 /7 1 /11",answer
+0012529284.json,186,795,346,847,,answer
+0012529284.json,210,828,244,838,,question

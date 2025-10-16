@@ -1,0 +1,19 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+0011856542.json,425,258,462,272,DATE,question
+0011856542.json,259,255,301,270,BD-FF,answer
+0011856542.json,500,259,551,273,1/4/90,answer
+0011856542.json,257,382,330,397,Marketing,answer
+0011856542.json,65,755,91,768,cc:,question
+0011856542.json,363,737,581,794,,answer
+0011856542.json,256,150,458,174,PROJECT INITIATION FORM,header
+0011856542.json,71,250,182,268,PROJECT CODE,question
+0011856542.json,72,294,178,310,PROJECT NAME,question
+0011856542.json,259,296,574,316,BULL DURHAM Full Flavor King Size Cigarettes,answer
+0011856542.json,262,338,425,359,J. F. Anders/ J. E. Mann,answer
+0011856542.json,68,334,194,353,PROJECT LEADER,question
+0011856542.json,71,375,218,393,WORK REQUESTED BY,question
+0011856542.json,66,417,220,437,PROJECT OBJECTIVE,question
+0011856542.json,255,423,639,581,"Develop 14- mg ""tar"" delivery king size cigarette for generic pricing directed toward young male smokers. Cigarette dimensions- 85 mm x 24.9 mm circumference- 20 mm filter- 24 mm tipping. Offshore tobacco blend with unique flavor formulation. Cork tipping.",answer
+0011856542.json,66,581,175,621,OTHER PERSONNEL ASSIGNED,question
+0011856542.json,368,718,466,732,Approved by,question
+0011856542.json,106,756,313,873,RSS RDC PHL PRC DRB Records Project Leader Other Personnel Assigned,answer

@@ -1,0 +1,55 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+71563825.json,117,92,177,141,,other
+71563825.json,575,99,632,144,,other
+71563825.json,524,205,556,219,Date:,question
+71563825.json,119,388,180,403,Market(s):,question
+71563825.json,120,543,151,557,Male:,question
+71563825.json,119,560,164,573,Female:,question
+71563825.json,187,606,232,620,Bogotá:,question
+71563825.json,189,635,242,650,Medellin:,question
+71563825.json,120,670,151,683,Note:,question
+71563825.json,218,205,229,219,#,answer
+71563825.json,219,270,251,284,Other,answer
+71563825.json,313,239,383,250,COLOMBIA,answer
+71563825.json,311,254,352,267,KOOL,answer
+71563825.json,190,541,215,559,60%,answer
+71563825.json,190,559,215,570,40%,answer
+71563825.json,120,444,131,455,1),other
+71563825.json,120,459,131,472,2),other
+71563825.json,122,475,132,488,3),other
+71563825.json,122,492,133,505,4),other
+71563825.json,233,155,539,177,Market Research - Initiating Project Brief,header
+71563825.json,124,204,208,218,Brief Number,question
+71563825.json,120,239,201,253,Client Group:,question
+71563825.json,573,205,624,218,02/ 12/ 98,answer
+71563825.json,216,237,256,250,R. B. U.,answer
+71563825.json,221,254,293,267,Brand Group,answer
+71563825.json,117,303,205,318,Client Contact:,question
+71563825.json,219,303,354,334,Maria Helena Argüelles/ Edwin Garcia,answer
+71563825.json,394,303,499,318,Research Liaison:,question
+71563825.json,504,302,634,334,Camilo Concha/ Andrea Suarez,answer
+71563825.json,120,353,271,369,Project Name/ Description,question
+71563825.json,274,352,472,369,K001 vs. Marlboro Menthol Lights,answer
+71563825.json,183,388,373,403,"Bogotá, Medellin and Barranquilla",answer
+71563825.json,120,426,226,441,Referent Brand(s):,question
+71563825.json,134,441,570,458,Current Kool Filter King Colombia 1 1 mg tar @ 0. 51% menthol white tipping.,answer
+71563825.json,135,458,483,472,Kool Milds KS Japan 9mg tar @ 0. 56% menthol white tipping,answer
+71563825.json,135,473,418,488,"Kool KS. 9 mg tar, @ 0. 51% menthol white tipping",answer
+71563825.json,135,490,602,507,"Current Marlboro Lights Menthol King US 9mg tar @ 0. 66% menthol, white tipping.",answer
+71563825.json,120,524,249,539,Consumer Segment(s):,header
+71563825.json,190,574,265,589,18 -29 (100%),answer
+71563825.json,122,575,162,589,By age:,question
+71563825.json,122,591,167,605,BY SEL:,question
+71563825.json,190,591,259,604,AB1 (100%),answer
+71563825.json,122,606,168,621,By City:,header
+71563825.json,249,605,572,622,KOOL Parent regular smokers 50% -alternate smokers 50%,answer
+71563825.json,249,622,572,636,KOOL Parent regular smokers 50% -alternate smokers 50%,answer
+71563825.json,250,638,574,652,KOOL Parent regular smokers 50% -alternate smokers 50%,answer
+71563825.json,154,668,651,686,"In order to establish a quantitative basis for determining the winning product, results will be",answer
+71563825.json,233,686,391,700,"Alternate 60%, Regular 40%.",answer
+71563825.json,119,722,310,736,Background Problem Definition:,question
+71563825.json,122,736,653,784,"On September 1 97, PMI simultaneously launched Marlboro Menthol KS Box (16mg tar and Menthol Lights KS Box (9mg tar) in Colombia. These two products became KOOL's direct competitors (Premium Menthol Brands).",answer
+71563825.json,122,785,649,817,At the same time KOOL replaced its product with a milder 11mg cigarette (the same KOOL Milds but with a 27mm cork tipping).,answer
+71563825.json,0,953,231,983,440026083 PRODUCED FROM B &W WEB SITE,other
+71563825.json,120,686,230,700,weighted as follows:,question
+71563825.json,190,622,238,636,B/ quilla:,question

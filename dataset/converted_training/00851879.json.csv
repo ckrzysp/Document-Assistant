@@ -1,0 +1,29 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+00851879.json,534,155,569,169,Date,question
+00851879.json,571,152,630,165,5-13-81,answer
+00851879.json,103,201,159,219,Subject,question
+00851879.json,409,279,448,296,Date,question
+00851879.json,454,275,515,295,5-13-81,answer
+00851879.json,532,282,586,296,Method,question
+00851879.json,279,392,292,407,☑,answer
+00851879.json,317,394,397,408,increased,question
+00851879.json,487,392,564,407,decreased,question
+00851879.json,622,693,639,788,00851879,other
+00851879.json,587,278,691,296,Verbal Phone,answer
+00851879.json,536,297,732,313,(Means of communication),answer
+00851879.json,102,358,400,377,Estimated cost of the study will be:,header
+00851879.json,633,392,736,407,not affected,question
+00851879.json,103,422,334,441,Description of change order:,question
+00851879.json,108,566,705,615,"The change was made so the protocol more closely conforms with the proposed regulations as stated in the Federal Register, Vol. 44, No. 145, 772.112-24 Primary Eye Irritation Study.",other
+00851879.json,144,503,705,554,"Twenty- four to 30 hours prior to dosing, both eyes of each rabbit will be examined by an experienced investigator using a slit lamp biomicroscope.",other
+00851879.json,102,450,705,493,Section III A. 2nd paragraph- the first sentence is to be changed to read as follows:,question
+00851879.json,589,8,745,58,19 MAY 26 1981,other
+00851879.json,251,45,491,127,ADDENDUM I DAWSON RESEARCH CORPORATION Protocol Change Order No. 1,header
+00851879.json,105,162,229,177,Protocol LRC-5A,other
+00851879.json,165,190,655,215,Change in the time of the Pre- dose Biomicroscopic Examination,answer
+00851879.json,105,281,210,296,Authorized by,question
+00851879.json,221,281,352,296,Dr. Connie Stone,answer
+00851879.json,102,331,213,344,Authorized to,question
+00851879.json,219,324,360,344,Mr. Charles Burns,answer
+00851879.json,123,848,409,947,Sponsor Signature,other
+00851879.json,444,842,754,946,Study Director Signature,other

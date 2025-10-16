@@ -1,0 +1,59 @@
+file_name,box.0,box.1,box.2,box.3,text,label
+89867723.json,47,31,85,102,file,other
+89867723.json,135,78,187,93,PRODUCT,question
+89867723.json,598,81,627,96,JOB#,question
+89867723.json,286,623,310,634,yes,question
+89867723.json,286,637,310,648,yes,question
+89867723.json,229,645,346,676,,answer
+89867723.json,228,679,278,708,,answer
+89867723.json,219,708,293,785,,answer
+89867723.json,264,750,324,763,Director,question
+89867723.json,226,852,278,866,Manager,question
+89867723.json,204,813,373,904,,answer
+89867723.json,363,623,380,634,no,question
+89867723.json,366,637,380,648,no,question
+89867723.json,476,608,542,622,Facility:,question
+89867723.json,476,622,529,636,Agency:,question
+89867723.json,472,634,538,649,Incidence,question
+89867723.json,490,824,556,838,Facility:,question
+89867723.json,490,839,542,850,Agency:,question
+89867723.json,703,820,721,911,89867723,other
+89867723.json,535,10,567,25,DATE,question
+89867723.json,320,622,331,635,X,answer
+89867723.json,318,637,333,647,X,answer
+89867723.json,307,24,558,38,MARKETING RESEARCH PROJECT APPROVAL,header
+89867723.json,577,10,680,27,"April 27, 1981",answer
+89867723.json,232,36,593,52,(To be filled out by Marketing Research Department),other
+89867723.json,203,82,289,97,New Products,answer
+89867723.json,370,70,424,95,PROJECT TITLE,question
+89867723.json,429,73,560,96,No Side Stream Smoke Focus Groups,answer
+89867723.json,634,80,700,98,5546/ 1481,answer
+89867723.json,135,108,753,127,"Research Design (N, Cells, Elegibility, Design, Key Banner Breaks, Methodology, Cities)",question
+89867723.json,123,158,678,190,"Three Groups (1 male/ 2 female) will be conducted in Ridgewood, N. J. on May 7th to explore the NSS concept/ product.",other
+89867723.json,122,201,650,234,"The groups will be comprised of random Reduced Tar smokers. No group will be over represented by brand, type or size of cigarettes.",other
+89867723.json,122,246,627,263,All smokers will be 18 years and over and smoke 10+ cigarettes per day.,other
+89867723.json,131,369,311,386,Key Criteria For Analysis,question
+89867723.json,122,402,686,419,To determine if the NSS concept/ product is viable based upon smokers reactions.,other
+89867723.json,131,471,275,487,Research Limitations,question
+89867723.json,122,504,571,523,Information from this exploratory research is directional only.,other
+89867723.json,251,591,296,606,$ 6.816,answer
+89867723.json,128,588,224,603,Cost Estimate,question
+89867723.json,128,617,267,648,+ - 10% Contingency Final Report Inc.,header
+89867723.json,126,659,215,676,Prepared by:,question
+89867723.json,127,689,213,706,Approved by,question
+89867723.json,126,749,259,766,Marketing Research,question
+89867723.json,127,793,236,808,Product Manager,question
+89867723.json,126,851,222,869,Group Product,question
+89867723.json,471,592,568,608,Research Firm,question
+89867723.json,584,591,703,609,Ruth Manko Assoc.,answer
+89867723.json,554,608,694,622,Suburban Associates,answer
+89867723.json,557,620,660,638,D' Arcy/ deGarmo,answer
+89867723.json,472,663,548,678,Length Int.,question
+89867723.json,472,690,549,707,# Open Ends,question
+89867723.json,469,719,535,736,# Banners,question
+89867723.json,469,747,715,765,Topline Oral presentation w/ o 5/ 18,other
+89867723.json,641,837,685,851,816. 00,answer
+89867723.json,624,823,685,836,1. 500. 00,answer
+89867723.json,622,807,685,822,$ 4. 500. 00,answer
+89867723.json,490,806,597,823,Moderators fee:,question
+89867723.json,468,791,737,811,Final Written presentation w/ o 5/ 25,other
