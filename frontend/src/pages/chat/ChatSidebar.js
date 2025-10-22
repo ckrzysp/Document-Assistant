@@ -97,6 +97,7 @@ export default function ChatSidebar({
         {/* needs backend. route to files page */}
         <Button
           variant='outlined'
+          onClick={() => window.location.href = '/documents'}
           sx={{
             justifyContent: 'flex-start',
             border: '1.5px solid #000',
