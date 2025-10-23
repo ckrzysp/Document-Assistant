@@ -1,9 +1,47 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import {Box, Typography, Button, Paper, TextField, Divider, IconButton} from "@mui/material";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import {Box, Typography, Button, Paper, TextField, Divider, IconButton, Alert} from "@mui/material";
 import { Google } from '@mui/icons-material';
+import axios from 'axios';
+import { API_BASE_URL } from '../config';
 
 export default function Login() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setError('');
+    setLoading(true);
+
+    axios.post(`${API_BASE_URL}/login`, {
+      email,
+      password
+    })
+    .then(response => {
+      if (response.data.success) {
+        // Store user_id in localStorage
+        localStorage.setItem('user_id', response.data.user_id);
+        localStorage.setItem('user_email', email);
+        // Redirect to dashboard
+        navigate('/dashboard');
+      }
+    })
+    .catch(error => {
+      if (error.response?.status === 401) {
+        setError('Invalid email or password');
+      } else {
+        setError('Login failed. Please try again.');
+      }
+    })
+    .finally(() => {
+      setLoading(false);
+    });
+  };
+
   return (
     <Box
       sx={{
@@ -75,29 +113,46 @@ export default function Login() {
               borderColor: 'black',
             }}
           >
-            <TextField
-              fullWidth
-              label="Username"
-              variant="outlined"
-              margin="normal"
-            />
-            <TextField
-              fullWidth
-              label="Password"
-              type="password"
-              variant="outlined"
-              margin="normal"
-              sx={{ mb: 3 }}
-            />
+            <form onSubmit={handleSubmit}>
+              {error && (
+                <Alert severity="error" sx={{ mb: 2 }}>
+                  {error}
+                </Alert>
+              )}
+              
+              <TextField
+                fullWidth
+                label="Email"
+                type="email"
+                variant="outlined"
+                margin="normal"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+              <TextField
+                fullWidth
+                label="Password"
+                type="password"
+                variant="outlined"
+                margin="normal"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                sx={{ mb: 3 }}
+                required
+              />
 
-            <Button
-              fullWidth
-              variant="contained"
-              size="large"
-              sx={{ backgroundColor: "black", mb: 2 }}
-            >
-              Log In
-            </Button>
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                size="large"
+                disabled={loading}
+                sx={{ backgroundColor: "black", mb: 2 }}
+              >
+                {loading ? 'Logging in...' : 'Log In'}
+              </Button>
+            </form>
 
             <Box sx={{ textAlign: 'center' }}>
               <Typography 

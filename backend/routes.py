@@ -139,7 +139,7 @@ def get_documents(user_id: int, db: Session = Depends(get_db)):
     user = UserCRUD.get_by_id(db=db, user_id=user_id)
 
     if not user:
-        raise HTTPException(status_code=404, detail="User not found")
+        raise HTTPException(status_code=404, detail='User not found')
 
     return [
         DocumentResponse(
@@ -186,6 +186,41 @@ def download_document(
         filename=f"{filename_prefix}{document.file_info.get('filename', 'download')}",
         media_type=document.file_info.get("media_type", "application/octet-stream")
     )
+
+# Get user chats
+@app.get("/chats/{user_id}")
+def get_user_chats(user_id: int, db: Session = Depends(get_db)):
+    user = UserCRUD.get_by_id(db=db, user_id=user_id)
+
+    if not user:
+        raise HTTPException(status_code=404, detail='User not found')
+
+    return [
+        {
+            'id': chat.id,
+            'document_id': chat.document_id,
+            'document_name': chat.document.file_info.get('filename', ''),
+            'title': chat.name or f'Chat {chat.id}',
+            'message_count': len(chat.message_history) if chat.message_history else 0
+        }
+        for chat in user.chats
+    ]
+
+# Get chat messages
+@app.get("/chat/{chat_id}")
+def get_chat(chat_id: int, db: Session = Depends(get_db)):
+    chat = ChatCRUD.get_by_id(db=db, chat_id=chat_id)
+    
+    if not chat:
+        raise HTTPException(status_code=404, detail='Chat not found')
+    
+    return {
+        'id': chat.id,
+        'document_id': chat.document_id,
+        'document_name': chat.document.file_info.get('filename', ''),
+        'title': chat.name or f'Chat {chat.id}',
+        'messages': chat.message_history
+    }
 
 
 

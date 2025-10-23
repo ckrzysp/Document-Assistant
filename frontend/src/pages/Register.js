@@ -1,6 +1,53 @@
-import React from "react";
-import {Box, Typography, Button, Paper, TextField, Divider} from "@mui/material";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import {Box, Typography, Button, Paper, TextField, Divider, Alert} from "@mui/material";
+import axios from 'axios';
+import { API_BASE_URL } from '../config';
 export default function Register() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setError('');
+
+    // Validate passwords match
+    if (password !== confirmPassword) {
+      setError('Passwords do not match');
+      return;
+    }
+
+
+    setLoading(true);
+
+    axios.post(`${API_BASE_URL}/register`, {
+      name,
+      email,
+      password
+    })
+    .then(response => {
+      if (response.data.message) {
+        // Registration successful, redirect to login
+        navigate('/login');
+      }
+    })
+    .catch(error => {
+      if (error.response?.status === 400) {
+        setError('Email is already registered');
+      } else {
+        setError('Registration failed. Please try again.');
+      }
+    })
+    .finally(() => {
+      setLoading(false);
+    });
+  };
+
   return (
     <Box
       sx={{
@@ -64,36 +111,65 @@ export default function Register() {
               borderColor: 'black',
             }}
           >
-            <TextField
-              fullWidth
-              label="Set your username"
-              variant="outlined"
-              margin="normal"
-            />
-            <TextField
-              fullWidth
-              label="Set your password"
-              type="password"
-              variant="outlined"
-              margin="normal"
-            />
-            <TextField
-              fullWidth
-              label="Enter your password again"
-              type="password"
-              variant="outlined"
-              margin="normal"
-              sx={{ mb: 3 }}
-            />
+            <form onSubmit={handleSubmit}>
+              {error && (
+                <Alert severity="error" sx={{ mb: 2 }}>
+                  {error}
+                </Alert>
+              )}
+              
+              <TextField
+                fullWidth
+                label="Full Name"
+                variant="outlined"
+                margin="normal"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+              />
+              <TextField
+                fullWidth
+                label="Email"
+                type="email"
+                variant="outlined"
+                margin="normal"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+              <TextField
+                fullWidth
+                label="Password"
+                type="password"
+                variant="outlined"
+                margin="normal"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+              <TextField
+                fullWidth
+                label="Confirm Password"
+                type="password"
+                variant="outlined"
+                margin="normal"
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                sx={{ mb: 3 }}
+                required
+              />
 
-            <Button
-              fullWidth
-              variant="contained"
-              size="large"
-              sx={{ backgroundColor: "black", mb: 2 }}
-            >
-              Sign up
-            </Button>
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                size="large"
+                disabled={loading}
+                sx={{ backgroundColor: "black", mb: 2 }}
+              >
+                {loading ? 'Signing up...' : 'Sign up'}
+              </Button>
+            </form>
 
             <Divider textAlign="center">
               <Typography variant="body2">
