@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Typography, Paper, Grid, Box, Button, IconButton, Alert, CircularProgress } from '@mui/material';
+import { Typography, Paper, Grid, Box, Button, IconButton, Alert, CircularProgress, TextField } from '@mui/material';
 import { 
   InsertDriveFileOutlined,
   MoreHoriz,
   Logout,
   History,
+  Settings,
   Stars 
 } from '@mui/icons-material';
 import { useDocuments } from '../hooks/useDocuments';
@@ -229,6 +230,69 @@ export default function Dashboard() {
           </Box>
         );
 
+        case 'settings':
+        return (
+          //backend intergation needed
+          <Box>
+            <Typography
+              sx={{
+                fontWeight: 800,
+                fontSize: 34,
+                mb: 4
+              }}
+            >
+              Settings - Reset Your Password
+            </Typography>
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'column', 
+                alignItems: 'flex-start', 
+                justifyContent: 'center'
+             }}
+            >
+              <Typography sx={{ fontWeight: 400, fontSize: 20 }}>
+                Enter your current password
+              </Typography>
+              <TextField
+                fullWidth
+                type='password'
+                variant='outlined'
+                margin='normal'
+              />
+              <Typography sx={{ fontWeight: 400, fontSize: 20 }}>
+                Enter your new password
+              </Typography>
+              <TextField
+                fullWidth
+                type='password'
+                variant='outlined'
+                margin='normal'
+              />
+              <Typography sx={{ fontWeight: 400, fontSize: 20 }}>
+                Re-enter your new password
+              </Typography>
+              <TextField
+                fullWidth
+                type='password'
+                variant='outlined'
+                margin='normal'
+              />
+            </Box>
+            <Button
+              variant='contained'
+              size='large'
+              sx={{ 
+                textTransform: 'none',
+                backgroundColor: 'black', 
+                fontSize: 20,
+                mt: 2 
+              }}
+            >
+              Confirm your change
+            </Button>
+          </Box>
+        );
       default:
         return null;
     }
@@ -299,6 +363,28 @@ export default function Dashboard() {
           }}
         >
           Documents
+        </Button>
+
+        <Button
+          fullWidth
+          startIcon={<Settings />}
+          variant={activeTab === 'settings' ? 'contained' : 'outlined'}
+          onClick={() => setActiveTab('settings')}
+          sx={{
+            border: '1.2px solid #000',
+            borderRadius: 2,
+            fontWeight: 600,
+            textTransform: 'none',
+            color: '#000',
+            mb: 1.2,
+            bgcolor: activeTab === 'settings' ? '#ddd' : '#f3f3f3ff',
+            boxShadow: '2px 2px 0 rgba(0,0,0,0.15)',
+            '&:hover': { bgcolor: activeTab === 'settings' ? '#ddd' : '#f8f8f8' },
+            justifyContent: 'flex-start',
+            pl: 2
+          }}
+        >
+          Settings
         </Button>
       </Box>
       

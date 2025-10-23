@@ -19,29 +19,36 @@ export default function Documents() {
   const [uploadProgress, setUploadProgress] = useState(0);
   const { documents: files, loading, error } = useDocuments();
   const activeTab = 'folders';
-
-  const handleOpenFile = (file) => {
-    // Download file from backend
-    axios.get(`${API_BASE_URL}/documents/${file.id}/download`, {
-      responseType: 'blob'
-    })
-    .then(response => {
-      // Create blob URL and download
-      const blob = new Blob([response.data]);
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = file.name;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      window.URL.revokeObjectURL(url);
-    })
-    .catch(error => {
-      console.error('Failed to download file:', error);
-      setDownloadError('Failed to download file. Please try again.');
-    });
-  };
+  
+const handleOpenFile = (file) => {
+  // Download file from backend
+  axios.get(`${API_BASE_URL}/documents/${file.id}/download`, {
+    responseType: 'blob'
+  })
+  .then(response => {
+    // Get file extension
+    const fileExt = file.name.split('.').pop().toLowerCase();
+    
+    // Set correct MIME type based on file extension
+    let mimeType = 'application/octet-stream'; // Default MIME type
+    if (fileExt === 'pdf') mimeType = 'application/pdf';
+    if (['jpg', 'jpeg'].includes(fileExt)) mimeType = 'image/jpeg';
+    if (fileExt === 'png') mimeType = 'image/png';
+    if (fileExt === 'gif') mimeType = 'image/gif';
+    if (fileExt === 'txt') mimeType = 'text/plain';
+    
+    // Create blob with correct MIME type
+    const blob = new Blob([response.data], { type: mimeType });
+    const url = window.URL.createObjectURL(blob);
+    
+    // Open in new window for preview
+    window.open(url, '_blank');
+  })
+  .catch(error => {
+    console.error('Failed to open file:', error);
+    setDownloadError('Failed to open file. Please try again.');
+  });
+};
 
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
