@@ -171,7 +171,7 @@ export default function Chat() {
   return (
     <Box
       sx={{
-        minHeight: '100vh',
+        minHeight: '50vh',
         bgcolor: '#fff',
         color: '#000',
         display: 'flex',
@@ -191,25 +191,45 @@ export default function Chat() {
         onToggleSidebar={() => setSidebarOpen(o => !o)} 
       />
 
-      <ChatWelcome fileRef={fileRef} uploadFile={uploadFile} oldFile={oldFile} />
+      <Box sx={{ 
+        flex: 1, 
+        display: 'flex', 
+        flexDirection: 'column',
+        overflow: 'hidden',
+        position: 'relative',
+        pb: 18
+      }}>
+        <ChatWelcome fileRef={fileRef} uploadFile={uploadFile} oldFile={oldFile} />
 
-      <ChatMessages
-        messages={messages}
-        lang={lang}
-        translating={translating}
-        savedDocs={userDocuments.map(doc => doc.filename)}
-        chooseLang={chooseLang}
-        selectOldDoc={selectOldDoc}
-        endRef={endRef}
-      />
+        <ChatMessages
+          messages={messages}
+          lang={lang}
+          translating={translating}
+          savedDocs={userDocuments.map(doc => doc.filename)}
+          chooseLang={chooseLang}
+          selectOldDoc={selectOldDoc}
+          endRef={endRef}
+        />
 
-      <ChatInput
-        input={input}
-        setInput={setInput}
-        sendMsg={sendMsg}
-        canChat={canChat}
-        uploadFile={uploadFile}
-      />
+        <Box sx={{ 
+          position: 'fixed',
+          bottom: 0,
+          left: 0,
+          right: 0,
+          display: 'flex',
+          justifyContent: 'center',
+          bgcolor: '#fff',
+          py: 2,
+          zIndex: 1000
+        }}>
+          <ChatInput
+            input={input}
+            setInput={setInput}
+            sendMsg={sendMsg}
+            uploadFile={uploadFile}
+          />
+        </Box>
+      </Box>
     </Box>
   );
 }

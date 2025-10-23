@@ -16,7 +16,7 @@ const NAV_ICONS = [
 
 export default function ChatHeader({ handleNewChat, onToggleSidebar }) {
   return (
-    <Box sx={{ position: 'fixed', top: 15, left: 20, display: 'flex', gap: 1.5 }}>
+    <Box sx={{ position: 'fixed', top: 15, left: 20, display: 'flex', gap: 1.5, zIndex: 1000}}>
       <Box
         component="img"
         src="/LDAALogo.png"
@@ -31,6 +31,7 @@ export default function ChatHeader({ handleNewChat, onToggleSidebar }) {
         sx={{
           display: 'flex',
           alignItems: 'center',
+          backgroundColor: '#fff',
           gap: 2,
           px: 1.5,
           py: 0.5,
