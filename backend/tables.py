@@ -11,6 +11,7 @@ class User(Base):
     name = Column(String(255), index=True, nullable=False)
     email = Column(String(255), unique=True, index=True, nullable=False)
     hashed_password = Column(String(255), nullable=False)
+    language = Column(String(50), nullable=True)
 
     documents = relationship("Document", back_populates="owner")
     chats = relationship("Chat", back_populates="owner")

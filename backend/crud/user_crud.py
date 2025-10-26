@@ -4,8 +4,8 @@ from typing import List, Optional
 
 class UserCRUD:
     @staticmethod
-    def create(db : Session, name : str, email : str, hashed_password : str) -> User:
-        user = User(name=name, email=email, hashed_password=hashed_password)
+    def create(db : Session, name : str, email : str, hashed_password : str, language : str = None) -> User:
+        user = User(name=name, email=email, hashed_password=hashed_password, language=language)
         db.add(user)
         db.commit()
         db.refresh(user)
