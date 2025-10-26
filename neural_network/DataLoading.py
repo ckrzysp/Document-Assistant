@@ -56,6 +56,18 @@ class DocumentCSVDataset(Dataset):
           # PYTORCH expects 3 channels not 1, needed to convert from grayscale (1) to RGB (3)
           image = Image.fromarray(image).convert("RGB")
 
+          # Transform
+
+          if self.transform:
+               transformed = self.transform(image)
+               # If the transform is a tuple, extract the first item
+               if isinstance(transformed, tuple):
+                    image = transformed[0]
+               else:
+                    image = transformed
+          else:
+               image = transforms.ToTensor()(image)
+
           # Finding those labels and boxes
           boxes = [] 
           labels = []
@@ -64,14 +76,21 @@ class DocumentCSVDataset(Dataset):
                next(csvReader, None) # Skip header
                for row in csvReader:
                     if len(row) > 0 and row[0] == image_name:
-                         boxes.append([row[1], row[2], row[3], row[4]])
+                         boxes.append([float(row[1]), float(row[2]), float(row[3]), float(row[4])])
                          labels.append(classification[row[-1]])
           
+          boxes = torch.as_tensor(boxes, dtype=torch.float32)
+          labels = torch.as_tensor(labels, dtype=torch.long)
+
           # Return box coords, labels, image
           sample = {'name': image_name, 'image': image, 'boxes': boxes, 'labels': labels}
-          if self.transform:
-               image = self.transform(image)
-               print(image.shape)
+
+          boxes = boxes[:1,:]
+          labels = labels[:1]
+
+          H, W = image.shape[1], image.shape[2]
+          boxes[:, [0,2]] /= W
+          boxes[:, [1,3]] /= H
 
           return image_name, image, boxes, labels
 
