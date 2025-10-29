@@ -4,7 +4,7 @@ from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from database import database, engine
-from schemas import LoginRequest, LoginResponse, RegisterRequest, RegisterResponse, SendMessageRequest, SendMessageResponse, DocumentResponse
+from schemas import LoginRequest, LoginResponse, RegisterRequest, RegisterResponse, SendMessageRequest, SendMessageResponse, DocumentResponse, UpdateUserRequest, UpdateUserResponse
 from crud.user_crud import UserCRUD
 from crud.document_crud import DocumentCRUD
 from crud.message_crud import MessageCRUD
@@ -48,7 +48,7 @@ async def register(request : RegisterRequest, db : Session = Depends(get_db)):
         raise HTTPException(status_code=400, detail="Email is already used.")
 
     hashed_password = pwd_context.hash(request.password)
-    await UserCRUD.create(db=db, name=request.name, email=request.email, hashed_password=hashed_password)
+    await UserCRUD.create(db=db, name=request.name, email=request.email, hashed_password=hashed_password, language=request.language)
     return {"message" : "User created successfully"}
 
 
@@ -222,6 +222,46 @@ def get_chat(chat_id: int, db: Session = Depends(get_db)):
         'messages': chat.message_history
     }
 
+@app.put("/update_user", response_model=UpdateUserResponse)
+def update_user_info(request: UpdateUserRequest, db: Session = Depends(get_db)):
+    user = UserCRUD.get_by_id(db=db, user_id=request.user_id)
 
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
 
+    # Prepare update data
+    update_data = {}
 
+    # Handle password change
+    if request.new_password:
+        # Password change requires current password verification
+        if not request.current_password:
+            raise HTTPException(
+                status_code=400,
+                detail="Current password is required to set a new password"
+            )
+
+        # Verify current password
+        if not pwd_context.verify(request.current_password, user.hashed_password):
+            raise HTTPException(status_code=401, detail="Current password is incorrect")
+
+        # Hash and set new password
+        update_data['hashed_password'] = pwd_context.hash(request.new_password)
+
+    if request.name is not None:
+        update_data['name'] = request.name
+
+    if request.email is not None:
+        existing_user = UserCRUD.get_by_email(db=db, email=request.email)
+        if existing_user and existing_user.id != request.user_id:
+            raise HTTPException(status_code=400, detail="Email is already used by another account")
+        update_data['email'] = request.email
+
+    if request.language is not None:
+        update_data['language'] = request.language
+
+    if update_data:
+        UserCRUD.update(db=db, user_id=request.user_id, **update_data)
+        return UpdateUserResponse(success=True, message="User information updated successfully")
+    else:
+        return UpdateUserResponse(success=True, message="No changes were made")
