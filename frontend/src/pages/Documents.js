@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Typography, Paper, Grid, Box, Button, LinearProgress } from '@mui/material';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Typography, Paper, Grid, Box, Button, LinearProgress, Alert, CircularProgress } from '@mui/material';
 import { 
   InsertDriveFileOutlined,
   MoreHoriz,
@@ -7,51 +8,90 @@ import {
   CloudQueueOutlined,
   Upload 
 } from '@mui/icons-material';
+import axios from 'axios';
+import { API_BASE_URL } from '../config';
+import { useDocuments } from '../hooks/useDocuments';
 
 export default function Documents() {
-  const [files, setFiles] = useState([]);
-
+  const navigate = useNavigate();
+  const [downloadError, setDownloadError] = useState('');
+  const [uploading, setUploading] = useState(false);
+  const [uploadProgress, setUploadProgress] = useState(0);
+  const { documents: files, loading, error } = useDocuments();
   const activeTab = 'folders';
-
-  useEffect(() => {
-    // replace with fetch() call
-    const mockFiles = [
-      {
-        name: 'Sample_file.pdf',
-        date: 'September 30, 2025',
-        url: '/404'
-      },
-      {
-        name: 'Sample_file_2.jpg',
-        date: 'October 6, 2025',
-        url: '/404'
-      }
-    ];
-    setFiles(mockFiles);
-  }, []);
-
-  const handleOpenFile = (file) => {
-    window.open(file.url, '_blank');
-  };
+  
+const handleOpenFile = (file) => {
+  // Download file from backend
+  axios.get(`${API_BASE_URL}/documents/${file.id}/download`, {
+    responseType: 'blob'
+  })
+  .then(response => {
+    // Get file extension
+    const fileExt = file.name.split('.').pop().toLowerCase();
+    
+    // Set correct MIME type based on file extension
+    let mimeType = 'application/octet-stream'; // Default MIME type
+    if (fileExt === 'pdf') mimeType = 'application/pdf';
+    if (['jpg', 'jpeg'].includes(fileExt)) mimeType = 'image/jpeg';
+    if (fileExt === 'png') mimeType = 'image/png';
+    if (fileExt === 'gif') mimeType = 'image/gif';
+    if (fileExt === 'txt') mimeType = 'text/plain';
+    
+    // Create blob with correct MIME type
+    const blob = new Blob([response.data], { type: mimeType });
+    const url = window.URL.createObjectURL(blob);
+    
+    // Open in new window for preview
+    window.open(url, '_blank');
+  })
+  .catch(error => {
+    console.error('Failed to open file:', error);
+    setDownloadError('Failed to open file. Please try again.');
+  });
+};
 
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
-    if (file) {
-      const newFile = {
-        name: file.name,
-        date: new Date().toLocaleDateString('en-US', { 
-          year: 'numeric', 
-          month: 'long', 
-          day: 'numeric' 
-        }),
-        url: URL.createObjectURL(file)
-      };
-      
-      setFiles(prevFiles => [newFile, ...prevFiles]);
-      
+    if (!file) return;
+
+    const userId = localStorage.getItem('user_id');
+    if (!userId) {
+      navigate('/login');
+      return;
+    }
+
+    setUploading(true);
+    setDownloadError('');
+
+    const formData = new FormData();
+    formData.append('user_id', userId);
+    formData.append('name', file.name);
+    formData.append('file', file);
+
+    axios.post(`${API_BASE_URL}/create_chat`, formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    })
+    .then(response => {
+      // Redirect to the new chat with the uploaded document
+      navigate(`/chat/${response.data.chat_id}`);
+    })
+    .catch(error => {
+      console.error('Failed to upload file:', error);
+      setDownloadError('Failed to upload file. Please try again.');
+    })
+    .finally(() => {
+      setUploading(false);
       // Reset file input
       event.target.value = '';
-    }
+    });
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('user_id');
+    localStorage.removeItem('user_email');
+    navigate('/login');
   };
 
   const DocumentsSidebar = (
@@ -155,7 +195,7 @@ export default function Documents() {
           <Button
             fullWidth
             variant='outlined'
-            onClick={() => window.location.href = '/chat/:docId'}
+            onClick={() => window.location.href = '/chat/new'}
             sx={{
               border: '1.2px solid #000',
               borderRadius: 2,
@@ -196,7 +236,7 @@ export default function Documents() {
             </Paper>
             <Typography sx={{ fontWeight: 600 }}>User</Typography>
             <Box sx={{ flex: 1 }} />
-            <Logout sx={{ fontSize: 20 }} />
+            <Logout sx={{ fontSize: 20, cursor: 'pointer' }} onClick={handleLogout} />
           </Box>
         </Box>
       </Box>
@@ -255,8 +295,25 @@ export default function Documents() {
           </Button>
         </Box>
 
-        <Grid container spacing={3}>
-          {files.map((file, i) => (
+        {error && (
+          <Alert severity="error" sx={{ mb: 2 }}>
+            {error}
+          </Alert>
+        )}
+
+        {loading ? (
+          <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 200 }}>
+            <CircularProgress />
+          </Box>
+        ) : files.length === 0 ? (
+          <Box sx={{ textAlign: 'center', mt: 4 }}>
+            <Typography sx={{ fontSize: 18, color: '#666' }}>
+              No documents found. Upload your first document to get started!
+            </Typography>
+          </Box>
+        ) : (
+          <Grid container spacing={3}>
+            {files.map((file, i) => (
             <Grid item key={i}>
               <Paper
                 onClick={() => handleOpenFile(file)}
@@ -318,7 +375,8 @@ export default function Documents() {
               </Paper>
             </Grid>
           ))}
-        </Grid>
+          </Grid>
+        )}
       </Box>
     </Box>
   );

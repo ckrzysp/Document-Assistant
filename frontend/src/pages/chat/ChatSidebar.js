@@ -1,40 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   Drawer,
   Box,
   Typography,
   Button,
   Paper,
-  IconButton,
-  OutlinedInput,
-  InputAdornment
+  IconButton
 } from '@mui/material';
 import {
   Add,
   InsertDriveFile,
-  FolderOpen,
-  Search,
   MoreHoriz,
   MenuOpen,
   LogoutRounded
 } from '@mui/icons-material';
+import { useDocuments } from '../../hooks/useDocuments';
+import { splitDocuments } from '../../utils/documentUtils';
 
 export default function ChatSidebar({
   open,
   onClose,
   handleNewChat
 }) {
-  // needs backend. get user's recent conversations
-  const recent = ['Sample title 1', 'Sample title 2', 'Sample title 3'];
-  // needs backend. get user's previous conversations
-  const previous = [
-    'Sample title 4',
-    'Sample title 5',
-    'Sample title 6',
-    'Sample title 7',
-    'Sample title 8',
-    'Sample title 9'
-  ];
+  const navigate = useNavigate();
+  const { documents: userDocuments, loading } = useDocuments();
+  
+  // split documents into recent and previous
+  const { recent, previous } = splitDocuments(userDocuments, 3);
+
+  const handleLogout = () => {
+    localStorage.removeItem('user_id');
+    localStorage.removeItem('user_email');
+    navigate('/login');
+  };
 
   return (
     <Drawer
@@ -47,161 +46,154 @@ export default function ChatSidebar({
             width: 300,
             bgcolor: '#fff',
             borderRight: '1.5px solid #000',
-            boxShadow: '3px 0 0 rgba(0,0,0,0.10)'
+            boxShadow: '3px 0 0 rgba(0,0,0,0.10)',
+            height: '100vh',
+            overflow: 'hidden'
           }
         }
       }}
     >
-      <Box sx={{ p: 2, display: 'flex', flexDirection: 'column', height: '100%' }}>
-        <Box
-          sx={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            mb: 2
-          }}
-        >
-          <Box>
-            <Typography sx={{ fontWeight: 700, lineHeight: 1.1 }}>
-              Legal Document
-            </Typography>
-            <Typography sx={{ fontWeight: 700, lineHeight: 1.1 }}>
-              AI Assistant
-            </Typography>
-          </Box>
-          <IconButton onClick={onClose} sx={{ color: '#000' }}>
-            <MenuOpen sx={{ fontSize: 20 }} />
-          </IconButton>
-        </Box>
-
-        <Button
-          variant='outlined'
-          onClick={handleNewChat}
-          sx={{
-            justifyContent: 'flex-start',
-            border: '1.5px solid #000',
-            borderRadius: 2,
-            color: '#000',
-            textTransform: 'none',
-            mb: 1,
-            gap: 1,
-            py: 1.2,
-            boxShadow: '2px 2px 0 #00000020',
-            '&:hover': { bgcolor: '#f8f8f8' }
-          }}
-          startIcon={<Add />}
-        >
-          New Chat
-        </Button>
-
-        {/* needs backend. route to files page */}
-        <Button
-          variant='outlined'
-          onClick={() => window.location.href = '/documents'}
-          sx={{
-            justifyContent: 'flex-start',
-            border: '1.5px solid #000',
-            borderRadius: 2,
-            color: '#000',
-            textTransform: 'none',
-            mb: 1,
-            gap: 1,
-            py: 1.2,
-            boxShadow: '2px 2px 0 #00000020',
-            '&:hover': { bgcolor: '#f8f8f8' }
-          }}
-          startIcon={<InsertDriveFile />}
-        >
-          My files
-        </Button>
-
-        {/* needs backend. route to folders page */}
-        <Button
-          variant='outlined'
-          sx={{
-            justifyContent: 'flex-start',
-            border: '1.5px solid #000',
-            borderRadius: 2,
-            color: '#000',
-            textTransform: 'none',
-            mb: 2,
-            gap: 1,
-            py: 1.2,
-            boxShadow: '2px 2px 0 #00000020',
-            '&:hover': { bgcolor: '#f8f8f8' }
-          }}
-          startIcon={<FolderOpen />}
-        >
-          Folders
-        </Button>
-
-        {/* needs backend. search conversations */}
-        <OutlinedInput
-          placeholder='Search'
-          startAdornment={
-            <InputAdornment position='start'>
-              <Search />
-            </InputAdornment>
-          }
-          sx={{
-            borderRadius: 2,
-            '& .MuiOutlinedInput-notchedOutline': {
-              border: '1.5px solid #000'
-            },
-            boxShadow: '2px 2px 0 #00000020',
-            mb: 2,
-            height: 44
-          }}
-        />
-
-        <Typography sx={{ fontWeight: 700, mb: 1 }}>Recent</Typography>
-        {recent.map((t, i) => (
-          <Paper
-            key={i}
+      <Box sx={{ 
+        p: 2, 
+        display: 'flex', 
+        flexDirection: 'column', 
+        height: '100%',
+        overflow: 'hidden'
+      }}>
+        <Box sx={{ flexShrink: 0 }}>
+          <Box
             sx={{
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
-              px: 1.2,
-              py: 0.8,
-              border: '1.5px solid #000',
-              borderRadius: 2,
-              boxShadow: '2px 2px 0 #00000020',
-              mb: 1
+              mb: 2,
             }}
           >
-            <Typography sx={{ fontSize: 14 }}>{t}</Typography>
-            {/* needs backend. edit/delete options */}
-            <IconButton size='small' sx={{ color: '#000' }}>
-              <MoreHoriz />
+            <Box>
+              <Typography sx={{ fontWeight: 700, lineHeight: 1.1 }}>
+                Legal Document
+              </Typography>
+              <Typography sx={{ fontWeight: 700, lineHeight: 1.1 }}>
+                AI Assistant
+              </Typography>
+            </Box>
+            <IconButton onClick={onClose} sx={{ color: '#000', marginRight: -1 }}>
+              <MenuOpen sx={{ fontSize: 20 }} />
             </IconButton>
-          </Paper>
-        ))}
+          </Box>
 
-        <Typography sx={{ fontWeight: 700, mt: 2, mb: 1 }}>Previous</Typography>
-        <Box sx={{ flexGrow: 1, overflowY: 'auto' }}>
-          {previous.map((t, i) => (
-            <Paper
-              key={i}
-              sx={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                px: 1.2,
-                py: 0.8,
-                border: '1.5px solid #000',
-                borderRadius: 2,
-                boxShadow: '2px 2px 0 #00000020',
-                mb: 1
-              }}
-            >
-              <Typography sx={{ fontSize: 14 }}>{t}</Typography>
-              {/* needs backend. edit/delete options */}
-              <IconButton size='small' sx={{ color: '#000' }}>
-                <MoreHoriz />
-              </IconButton>
-            </Paper>
-          ))}
+          <Button
+            variant='outlined'
+            onClick={handleNewChat}
+            sx={{
+              justifyContent: 'flex-start',
+              border: '1.5px solid #000',
+              borderRadius: 2,
+              color: '#000',
+              textTransform: 'none',
+              width: '100%',
+              mb: 1,
+              gap: 1,
+              py: 1.2,
+              boxShadow: '2px 2px 0 #00000020',
+              '&:hover': { bgcolor: '#f8f8f8' }
+            }}
+            startIcon={<Add />}
+          >
+            New Chat
+          </Button>
+
+          <Button
+            variant='outlined'
+            onClick={() => navigate('/documents')}
+            sx={{
+              justifyContent: 'flex-start',
+              border: '1.5px solid #000',
+              borderRadius: 2,
+              color: '#000',
+              textTransform: 'none',
+              width: '100%',
+              mb: 1,
+              gap: 1,
+              py: 1.2,
+              boxShadow: '2px 2px 0 #00000020',
+              '&:hover': { bgcolor: '#f8f8f8' }
+            }}
+            startIcon={<InsertDriveFile />}
+          >
+            My files
+          </Button>
+
+          <Typography sx={{ fontWeight: 700, mb: 1, mt: 1 }}>Recent</Typography>
+          {loading ? (
+            <Typography sx={{ fontSize: 14, color: 'gray' }}>Loading...</Typography>
+          ) : recent.length > 0 ? (
+            recent.map((doc) => (
+              <Paper
+                key={doc.id}
+                onClick={() => navigate(`/chat/${doc.id}`)}
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  px: 1.2,
+                  py: 0.8,
+                  border: '1.5px solid #000',
+                  borderRadius: 2,
+                  boxShadow: '2px 2px 0 #00000020',
+                  mb: 1,
+                  cursor: 'pointer',
+                  '&:hover': { bgcolor: '#f8f8f8' }
+                }}
+              >
+                <Typography sx={{ fontSize: 14 }}>{doc.filename}</Typography>
+                <IconButton size='small' sx={{ color: '#000' }}>
+                  <MoreHoriz />
+                </IconButton>
+              </Paper>
+            ))
+          ) : (
+            <Typography sx={{ fontSize: 14, color: 'gray' }}>No recent chats</Typography>
+          )}
+        </Box>
+
+        <Box sx={{ mt: 2, flexShrink: 0 }}>
+          <Typography sx={{ fontWeight: 700, mb: 1 }}>Previous</Typography>
+        </Box>
+        <Box sx={{ 
+          flex: 1, 
+          overflowY: 'auto',
+        }}>
+          {loading ? (
+            <Typography sx={{ fontSize: 14, color: 'gray' }}>Loading...</Typography>
+          ) : previous.length > 0 ? (
+            previous.map((doc) => (
+              <Paper
+                key={doc.id}
+                onClick={() => navigate(`/chat/${doc.id}`)}
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  px: 1.2,
+                  py: 0.8,
+                  border: '1.5px solid #000',
+                  borderRadius: 2,
+                  boxShadow: '2px 2px 0 #00000020',
+                  mb: 1,
+                  cursor: 'pointer',
+                  '&:hover': { bgcolor: '#f8f8f8' }
+                }}
+              >
+                <Typography sx={{ fontSize: 14 }}>{doc.filename}</Typography>
+                <IconButton size='small' sx={{ color: '#000' }}>
+                  <MoreHoriz />
+                </IconButton>
+              </Paper>
+            ))
+          ) : (
+            <Typography sx={{ fontSize: 14, color: 'gray' }}>No previous chats</Typography>
+          )}
         </Box>
 
         <Box
@@ -211,7 +203,8 @@ export default function ChatSidebar({
             pt: 1.5,
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
+            flexShrink: 0
           }}
         >
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
@@ -231,8 +224,7 @@ export default function ChatSidebar({
             </Box>
             <Typography>User</Typography>
           </Box>
-          {/* needs backend. user settings/logout */}
-          <IconButton sx={{ color: '#000' }}>
+          <IconButton onClick={handleLogout} sx={{ color: '#000' }}>
             <LogoutRounded />
           </IconButton>
         </Box>

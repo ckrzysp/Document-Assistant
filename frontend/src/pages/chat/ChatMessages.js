@@ -63,7 +63,6 @@ export default function ChatMessages({
                   <MenuItem value='' disabled>
                     Select language
                   </MenuItem>
-                  {/* needs backend */}
                   {SUPPORTED_LANGS.map((l) => (
                     <MenuItem key={l} value={l}>
                       {l}

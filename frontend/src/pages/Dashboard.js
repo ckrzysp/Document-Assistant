@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Typography, Paper, Grid, Box, Button, IconButton, TextField } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+import { Typography, Paper, Grid, Box, Button, IconButton, Alert, CircularProgress, TextField } from '@mui/material';
 import { 
   InsertDriveFileOutlined,
   MoreHoriz,
@@ -8,44 +9,56 @@ import {
   Settings,
   Stars 
 } from '@mui/icons-material';
+import { useDocuments } from '../hooks/useDocuments';
+import { API_BASE_URL } from '../config';
+import axios from 'axios';
 
 export default function Dashboard() {
-  const [files, setFiles] = useState([]);
-  const [activeTab, setActiveTab] = useState('history'); 
-
-  useEffect(() => {
-    // replace with fetch() call
-    const mockFiles = [
-      {
-        name: 'Sample_file.pdf',
-        date: 'September 30, 2025',
-        url: '/404'
-      },
-      {
-        name: 'Sample_file_2.jpg',
-        date: 'October 6, 2025',
-        url: '/404'
-      }
-    ];
-    setFiles(mockFiles);
-  }, []);
+  const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState('history');
+  const [chatHistory, setChatHistory] = useState([]);
+  const [chatLoading, setChatLoading] = useState(false);
+  const { documents: files, loading, error } = useDocuments();
 
   const handleOpenFile = (file) => {
-    window.open(file.url, '_blank');
+    // Simple file download - open in new tab
+    window.open(`${API_BASE_URL}/documents/${file.id}/download`, '_blank');
   };
 
-  //needs backend. get user's conversations
-  const previous = [
-    'Sample title 1',
-    'Sample title 2',
-    'Sample title 3',
-    'Sample title 4',
-    'Sample title 5',
-    'Sample title 6',
-    'Sample title 7',
-    'Sample title 8',
-    'Sample title 9'
-  ];
+  const handleChatHistory = (file) => {
+    // Navigate to chat for this specific document
+    navigate(`/chat/${file.id}`);
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('user_id');
+    localStorage.removeItem('user_email');
+    navigate('/login');
+  };
+
+  // Load chat history from backend
+  useEffect(() => {
+    const loadChatHistory = async () => {
+      const userId = localStorage.getItem('user_id');
+      if (!userId) return;
+
+      setChatLoading(true);
+      try {
+        const response = await axios.get(`${API_BASE_URL}/chats/${userId}`);
+        console.log('Chat history response:', response.data);
+        setChatHistory(response.data);
+      } catch (error) {
+        console.error('Failed to load chat history:', error);
+        console.error('Error details:', error.response?.data);
+      } finally {
+        setChatLoading(false);
+      }
+    };
+
+    if (activeTab === 'history') {
+      loadChatHistory();
+    }
+  }, [activeTab]);
 
   const renderContent = () => {
     switch (activeTab) {  
@@ -66,29 +79,44 @@ export default function Dashboard() {
             >
               Previous Chat
             </Typography>
-              <Box sx={{ flexGrow: 1, overflowY: 'auto' }}>
-                {previous.map((t, i) => (
-                <Paper
-                  key={i}
-                  sx={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    px: 2,
-                    py: 1,
-                    border: '1.5px solid #000',
-                    borderRadius: 2,
-                    boxShadow: '2px 2px 0 #00000020',
-                    mb: 1
-                  }}
-                >
-                  <Typography sx={{ fontSize: 14 }}>{t}</Typography>
-                  {/* needs backend. edit/delete options */}
-                  <IconButton size='small' sx={{ color: '#000' }}>
-                  <MoreHoriz />
-                  </IconButton>
-                </Paper>
-              ))}
+            <Box sx={{ flexGrow: 1, overflowY: 'auto' }}>
+              {chatLoading ? (
+                <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
+                  <CircularProgress />
+                </Box>
+              ) : chatHistory.length > 0 ? (
+                chatHistory.map((chat, i) => (
+                  <Paper
+                    key={chat.id || i}
+                    onClick={() => navigate(`/chat/${chat.document_id || chat.id}`)}
+                    sx={{
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      alignItems: 'center',
+                      px: 2,
+                      py: 1,
+                      border: '1.5px solid #000',
+                      borderRadius: 2,
+                      boxShadow: '2px 2px 0 #00000020',
+                      mb: 1,
+                      cursor: 'pointer',
+                      '&:hover': { bgcolor: '#f8f8f8' }
+                    }}
+                  >
+                    <Typography sx={{ fontSize: 14 }}>
+                      {chat.title || chat.document_name || `Chat ${i + 1}`}
+                    </Typography>
+                    {/* needs backend. edit/delete options */}
+                    <IconButton size='small' sx={{ color: '#000' }}>
+                      <MoreHoriz />
+                    </IconButton>
+                  </Paper>
+                ))
+              ) : (
+                <Typography sx={{ fontSize: 14, color: 'gray', textAlign: 'center', mt: 4 }}>
+                  No chat history found
+                </Typography>
+              )}
             </Box>
           </Box>
         );
@@ -106,93 +134,105 @@ export default function Dashboard() {
               Recent Documents
             </Typography>
 
-            <Grid container spacing={3}>
-              {files.map((file, i) => (
-                <Grid item key={i}>
-                  <Paper
-                    onClick={() => handleOpenFile(file)}
-                    sx={{
-                      width: 160,
-                      height: 160,
-                      border: '1.5px solid #000',
-                      borderRadius: 3,
-                      p: 2,
-                      boxShadow: '3px 3px 0 rgba(0,0,0,0.15)',
-                      display: 'flex',
-                      flexDirection: 'column',
-                      alignItems: 'center',
-                      justifyContent: 'space-between',
-                      cursor: 'pointer'
-                    }}
-                  >
-                    <Box sx={{ textAlign: 'center', mt: 2 }}>
-                      <InsertDriveFileOutlined sx={{ fontSize: 50 }} />
-                    </Box>
-                    <Box
-                      sx={{
-                        borderTop: '1px solid #000',
-                        width: '100%',
-                        mt: 2,
-                        pt: 1,
-                        textAlign: 'center',
-                        position: 'relative'
-                      }}
-                    >
-                      <Typography  // file name restriction generated by AI 
-                        sx={{ 
-                          fontSize: 14, 
-                          fontWeight: 500,
-                          overflow: 'hidden',
-                          textOverflow: 'ellipsis',
-                          whiteSpace: 'nowrap',
-                          width: '100%',
-                          px: 0.5 
-                        }} 
-                      >
-                        {file.name.length > 20 ? `${file.name.substring(0, 20)}...` : file.name }
-                      </Typography>
-                      
-                      <Typography sx={{ fontSize: 12, color: '#555' }}>
-                        {file.date}
-                      </Typography>
-                      <MoreHoriz
+            {loading ? (
+              <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
+                <CircularProgress />
+              </Box>
+            ) : error ? (
+              <Alert severity="error" sx={{ mb: 2 }}>
+                {error}
+              </Alert>
+            ) : (
+              <>
+                <Grid container spacing={3}>
+                  {files.map((file, i) => (
+                    <Grid item key={i}>
+                      <Paper
+                        onClick={() => handleOpenFile(file)}
                         sx={{
-                          position: 'absolute',
-                          right: 4,
-                          top: -30,
-                          fontSize: 22,
-                          color: '#000'
+                          width: 160,
+                          height: 160,
+                          border: '1.5px solid #000',
+                          borderRadius: 3,
+                          p: 2,
+                          boxShadow: '3px 3px 0 rgba(0,0,0,0.15)',
+                          display: 'flex',
+                          flexDirection: 'column',
+                          alignItems: 'center',
+                          justifyContent: 'space-between',
+                          cursor: 'pointer'
                         }}
-                      />
-                    </Box>
-                  </Paper>
+                      >
+                        <Box sx={{ textAlign: 'center', mt: 2 }}>
+                          <InsertDriveFileOutlined sx={{ fontSize: 50 }} />
+                        </Box>
+                        <Box
+                          sx={{
+                            borderTop: '1px solid #000',
+                            width: '100%',
+                            mt: 2,
+                            pt: 1,
+                            textAlign: 'center',
+                            position: 'relative'
+                          }}
+                        >
+                          <Typography  // file name restriction generated by AI 
+                            sx={{ 
+                              fontSize: 14, 
+                              fontWeight: 500,
+                              overflow: 'hidden',
+                              textOverflow: 'ellipsis',
+                              whiteSpace: 'nowrap',
+                              width: '100%',
+                              px: 0.5 
+                            }} 
+                          >
+                            {file.name.length > 20 ? `${file.name.substring(0, 20)}...` : file.name }
+                          </Typography>
+                          
+                          <Typography sx={{ fontSize: 12, color: '#555' }}>
+                            {file.date}
+                          </Typography>
+                          <MoreHoriz
+                            sx={{
+                              position: 'absolute',
+                              right: 4,
+                              top: -30,
+                              fontSize: 22,
+                              color: '#000'
+                            }}
+                          />
+                        </Box>
+                      </Paper>
+                    </Grid>
+                  ))}
                 </Grid>
-              ))}
-            </Grid>
 
-            <Button
-              onClick={() => window.location.href = '/documents'}
-              sx={{
-                textTransform: 'none',
-                textDecoration: 'underline',
-                fontWeight: 800,
-                color: '#000',
-                mt: 1,
-                mb: 2,
-                '&:hover': {
-                  backgroundColor: 'transparent', 
-                  textDecoration: 'underline', 
-                },
-              }}
-            >
-              View All Documents
-            </Button>
+                <Button
+                  onClick={() => navigate('/documents')}
+                  sx={{
+                    textTransform: 'none',
+                    textDecoration: 'underline',
+                    fontWeight: 800,
+                    color: '#000',
+                    mt: 1,
+                    mb: 2,
+                    '&:hover': {
+                      backgroundColor: 'transparent', 
+                      textDecoration: 'underline', 
+                    },
+                  }}
+                >
+                  View All Documents
+                </Button>
+              </>
+            )}
           </Box>
         );
-      
-      case 'settings':
+
+        case 'settings':
         return (
-          //needs backend
+          //backend intergation needed
           <Box>
             <Typography
               sx={{
@@ -253,7 +293,6 @@ export default function Dashboard() {
             </Button>
           </Box>
         );
-
       default:
         return null;
     }
@@ -353,7 +392,7 @@ export default function Dashboard() {
         <Button
           fullWidth
           variant='outlined'
-          onClick={() => window.location.href = '/chat/:docId'}
+          onClick={() => navigate('/chat/new')}
           sx={{
             border: '1.2px solid #000',
             borderRadius: 2,
@@ -394,7 +433,9 @@ export default function Dashboard() {
           </Paper>
           <Typography sx={{ fontWeight: 600 }}>User</Typography>
           <Box sx={{ flex: 1 }} />
-          <Logout sx={{ fontSize: 20 }} />
+          <IconButton onClick={handleLogout} sx={{ color: '#000' }}>
+            <Logout sx={{ fontSize: 20 }} />
+          </IconButton>
         </Box>          
       </Box>
     </>
