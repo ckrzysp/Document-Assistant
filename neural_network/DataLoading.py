@@ -26,6 +26,7 @@ datapata_testing_csv = "../Document-Assistant/dataset/TESTING.csv"
 datapath_testing_image = "../Document-Assistant/dataset/testing_data/images"
 
 classification = {"header": 0, "question": 1, "answer": 2, "other": 3}
+finder = {0:"header", 1:"question", 2:"answer", 3:"other"}
 
 class DocumentCSVDataset(Dataset):
      def __init__(self, csv_file, root_dir, transform=None):
@@ -79,8 +80,8 @@ class DocumentCSVDataset(Dataset):
                          boxes.append([float(row[1]), float(row[2]), float(row[3]), float(row[4])])
                          labels.append(classification[row[-1]])
           
-          boxes = torch.as_tensor(boxes, dtype=torch.float32)
-          labels = torch.as_tensor(labels, dtype=torch.long)
+          boxes = torch.as_tensor(boxes, dtype=torch.float32, device=device)
+          labels = torch.as_tensor(labels, dtype=torch.long, device=device)
 
           # Return box coords, labels, image
           sample = {'name': image_name, 'image': image, 'boxes': boxes, 'labels': labels}

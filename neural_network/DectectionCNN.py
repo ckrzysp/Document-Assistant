@@ -6,7 +6,6 @@ import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 from torchvision import datasets, transforms
 from torchvision.io import decode_image
-from torch.utils.tensorboard import SummaryWriter
 from datetime import datetime
 from torchvision.transforms import ToTensor
 import torch
@@ -58,6 +57,7 @@ class ConvolutionalNN(NN.Module):
 
 ## Loading
 
+
 # NOT EVERY image is the size resolution
 resize = transforms.Compose([transforms.Resize((1000,750)), transforms.ToTensor()])
 
@@ -81,7 +81,7 @@ model = ConvolutionalNN()
 
 reg_lossfn = NN.SmoothL1Loss()
 class_lossfn = NN.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(), lr= 0.001)
+optimizer = optim.Adam(model.parameters(), lr= 0.01)
 
 device = torch.device("cuda")
 model.to(device)
@@ -114,7 +114,7 @@ for epoch in range(num_epochs):
           boxP, classP = model(image)  # boxP: [1,4], classP: [1,4 classes]
 
           # CrossEntropyLoss expects labels 
-          loss = reg_lossfn(boxP, boxes) + 0.5 * class_lossfn(classP, labels.view(-1))
+          loss = reg_lossfn(boxP, boxes) + class_lossfn(classP, labels.view(-1))
 
           # Changes weights within network
           loss.backward()
@@ -124,6 +124,14 @@ for epoch in range(num_epochs):
                print(f"[Epoch {epoch+1}, Batch {i+1}] Loss: {loss / 20:.12f}")
 
      train_losses.append(loss / len(training_LOADER))
+
+
+# Save state
+statepath = "../Document-Assistant/model_state/CNNstate.pt"
+try:
+     torch.save(model.state_dict(), statepath)
+except:
+     print("Cannot Open.")
 
 # TRAINING
 
