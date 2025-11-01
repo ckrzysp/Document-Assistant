@@ -24,24 +24,24 @@ class ConvolutionalNN(NN.Module):
           super(ConvolutionalNN, self).__init__()
           self.convolutional_relu_seq = NN.Sequential(
                # 1
-               NN.Conv2d(3, 16, 5, 1, padding=1),
-               NN.BatchNorm2d(16),
+               NN.Conv2d(3, 25, 3, 1, padding=1),
+               NN.BatchNorm2d(25),
                NN.ReLU(),
                NN.MaxPool2d(2,2),
                # 2
-               NN.Conv2d(16, 24, 5, 1, padding=1), # 2D Convolutional Layer, Kernel Size 5, Moves 1 pixel (x,y) direction , 16 input layers to 24 output
-               NN.BatchNorm2d(24),                 # Batches are standardized so feature learning to even
+               NN.Conv2d(25, 75, 3, 1, padding=1), # 2D Convolutional Layer, Kernel Size 5, Moves 1 pixel (x,y) direction , 16 input layers to 24 output
+               NN.BatchNorm2d(75),                 # Batches are standardized so feature learning to even
                NN.ReLU(),                          # Retified Learning Unit, Non-Linearity // Outlier detection or uniqueness 
                NN.MaxPool2d(2,2),                  # 4x4 grid of 2x2 pools, extracting highest # / highest feature
                # 3
-               NN.Conv2d(24, 48, 5, 1, padding=1),
-               NN.BatchNorm2d(48),
+               NN.Conv2d(75, 150, 3, 1, padding=1),
+               NN.BatchNorm2d(150),
                NN.ReLU(), 
                NN.MaxPool2d(2,2)              
           )
 
-          self.box_head = NN.Conv2d(48, 4, 1)
-          self.class_head = NN.Conv2d(48, 4, 1)
+          self.box_head = NN.Conv2d(150, 4, 1)
+          self.class_head = NN.Conv2d(150, 4, 1)
 
      # Output Tensors, function used for training
      def forward(self, x):
@@ -55,8 +55,7 @@ class ConvolutionalNN(NN.Module):
           return boxP, classP
 
 
-## Loading
-
+## LOADING
 
 # NOT EVERY image is the size resolution
 resize = transforms.Compose([transforms.Resize((1000,750)), transforms.ToTensor()])
@@ -89,7 +88,7 @@ model.to(device)
 # TRAINING
 
 train_losses = []
-num_epochs = 5 
+num_epochs = 10
 for epoch in range(num_epochs):
      for i, (image_name, image, boxes, labels) in enumerate(training_LOADER):
           # Handle image tuple from DataLoader
