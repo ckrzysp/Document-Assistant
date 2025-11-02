@@ -12,34 +12,49 @@ export default function Login() {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const fetchUserInfo = async (userId) => {
+    const response = await axios.get(`${API_BASE_URL}/user/${userId}`);
+    return response.data;
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
     setLoading(true);
 
-    axios.post(`${API_BASE_URL}/login`, {
-      email,
-      password
-    })
-    .then(response => {
-      if (response.data.success) {
-        // Store user_id in localStorage
-        localStorage.setItem('user_id', response.data.user_id);
-        localStorage.setItem('user_email', email);
-        // Redirect to dashboard
-        navigate('/dashboard');
+    try {
+      const loginResponse = await axios.post(`${API_BASE_URL}/login`, {
+        email,
+        password
+      });
+
+      if (!loginResponse.data.success) {
+        throw new Error('Login failed');
       }
-    })
-    .catch(error => {
+
+      const userId = loginResponse.data.user_id;
+      
+      localStorage.setItem('user_id', userId);
+      localStorage.setItem('user_email', email);
+      
+      const userInfo = await fetchUserInfo(userId);
+      
+      localStorage.setItem('user_name', userInfo.name);
+      localStorage.setItem('user_language', userInfo.language || 'en');
+      
+      navigate('/dashboard');
+      
+    } catch (error) {
       if (error.response?.status === 401) {
         setError('Invalid email or password');
+      } else if (error.response?.status === 404) {
+        setError('User information not found');
       } else {
         setError('Login failed. Please try again.');
       }
-    })
-    .finally(() => {
+    } finally {
       setLoading(false);
-    });
+    }
   };
 
   return (
