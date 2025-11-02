@@ -17,6 +17,8 @@ import {
 } from '@mui/icons-material';
 import { useDocuments } from '../../hooks/useDocuments';
 import { splitDocuments } from '../../utils/documentUtils';
+import { API_BASE_URL } from '../../config';
+import axios from 'axios';
 
 export default function ChatSidebar({
   open,
@@ -25,13 +27,46 @@ export default function ChatSidebar({
 }) {
   const navigate = useNavigate();
   const { documents: userDocuments, loading } = useDocuments();
+  const [userName, setUserName] = useState('User');
+  const [userLoading, setUserLoading] = useState(true);
   
   // split documents into recent and previous
   const { recent, previous } = splitDocuments(userDocuments, 3);
 
+  // Fetch user info from API
+  useEffect(() => {
+    const fetchUserInfo = async () => {
+      const userId = localStorage.getItem('user_id');
+      if (!userId) {
+        setUserLoading(false);
+        return;
+      }
+
+      try {
+        const response = await axios.get(`${API_BASE_URL}/users/${userId}`);
+        if (response.data && response.data.name) {
+          setUserName(response.data.name);
+        }
+      } catch (error) {
+        console.error('Failed to fetch user info:', error);
+        // Fallback to localStorage if available
+        const storedName = localStorage.getItem('user_name');
+        if (storedName) {
+          setUserName(storedName);
+        }
+      } finally {
+        setUserLoading(false);
+      }
+    };
+
+    fetchUserInfo();
+  }, []);
+
   const handleLogout = () => {
     localStorage.removeItem('user_id');
     localStorage.removeItem('user_email');
+    localStorage.removeItem('user_name');
+    localStorage.removeItem('user_language');
     navigate('/login');
   };
 
@@ -220,9 +255,11 @@ export default function ChatSidebar({
                 fontWeight: 700
               }}
             >
-              U
+              {userLoading ? '' : userName.charAt(0).toUpperCase()}
             </Box>
-            <Typography>User</Typography>
+            <Typography>
+              {userLoading ? 'Loading...' : userName}
+            </Typography>
           </Box>
           <IconButton onClick={handleLogout} sx={{ color: '#000' }}>
             <LogoutRounded />

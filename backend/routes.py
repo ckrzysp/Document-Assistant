@@ -48,7 +48,8 @@ async def register(request : RegisterRequest, db : Session = Depends(get_db)):
         raise HTTPException(status_code=400, detail="Email is already used.")
 
     hashed_password = pwd_context.hash(request.password)
-    await UserCRUD.create(db=db, name=request.name, email=request.email, hashed_password=hashed_password, language=request.language)
+
+    user = UserCRUD.create(db=db, name=request.name, email=request.email, hashed_password=hashed_password, language=request.language)
     return {"message" : "User created successfully"}
 
 
@@ -66,6 +67,19 @@ def login(request: LoginRequest, db: Session = Depends(get_db)):
         )
     else:
         raise HTTPException(status_code=401, detail="Invalid email or password")
+
+@app.get("/user/{user_id}")
+def get_user_info(user_id: int, db: Session = Depends(get_db)):
+    user = UserCRUD.get_by_id(db=db, user_id=user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    return {
+        "id": user.id,
+        "name": user.name,
+        "email": user.email,
+        "language": user.language
+    }
 
 @app.post("/create_chat")
 async def create_chat(
