@@ -90,6 +90,7 @@ model.to(device)
 train_losses = []
 num_epochs = 10
 for epoch in range(num_epochs):
+     correction = 0
      for i, (image_name, image, boxes, labels) in enumerate(training_LOADER):
           # Handle image tuple from DataLoader
           if isinstance(image, (tuple, list)):
@@ -118,9 +119,13 @@ for epoch in range(num_epochs):
           # Changes weights within network
           loss.backward()
           optimizer.step()
+
+          #print(torch.unique(classP))
+          correction += (classP==labels).float().sum().item()
+          acc = correction/labels.size(0)
           
           if (i+1) % 10 == 9:
-               print(f"[Epoch {epoch+1}, Batch {i+1}] Loss: {loss / 20:.12f}")
+               print(f"[Epoch {epoch+1}, Batch {i+1}] Loss: {loss / 20:.12f}","Accuracy: {} ".format(acc))
 
      train_losses.append(loss / len(training_LOADER))
 

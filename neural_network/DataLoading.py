@@ -25,8 +25,8 @@ datapath_training_image = "../Document-Assistant/dataset/training_data/images"
 datapata_testing_csv = "../Document-Assistant/dataset/TESTING.csv"
 datapath_testing_image = "../Document-Assistant/dataset/testing_data/images"
 
-classification = {"header": 0, "question": 1, "answer": 2, "other": 3}
-finder = {0:"header", 1:"question", 2:"answer", 3:"other"}
+classification = {"header": 0, "question": 1, "answer": 3, "other":2}
+finder = {0:"header", 1:"question", 3:"answer", 2:"other"}
 
 class DocumentCSVDataset(Dataset):
      def __init__(self, csv_file, root_dir, transform=None):
