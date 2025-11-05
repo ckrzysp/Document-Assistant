@@ -128,11 +128,11 @@ def send_message(request : SendMessageRequest, db : Session = Depends(get_db)):
     # Get Response from GPT
     while not gemini_approved and retries < 5:
 
-        gpt_response = get_gpt_response_with_context(chat.message_history, chat.document.text)
+        gpt_response = get_gpt_response_with_context(chat.message_history, chat.document.text, language=request.language)
 
         content = user_message + " " + gpt_response
 
-        gemini_approved = check_logic_with_gemini(content=content, document_text=chat.document.text)
+        gemini_approved = check_logic_with_gemini(content=content, document_text=chat.document.text, language=request.language)
 
         retries += 1
     

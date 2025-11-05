@@ -26,7 +26,11 @@ async def saveFile(file : UploadFile, user_id : int, document_id : int, type : s
 
     return file_path
 
-def get_gpt_response_with_context(messages: list, document_text: str, model: str = "gpt-4o-mini") -> str:
+def get_gpt_response_with_context(messages: list, document_text: str, model: str = "gpt-4o-mini", language: str | None = None) -> str:
+    language_instruction = ""
+    if language:
+        language_instruction = f"\n        - Respond ONLY in {language}. All your responses must be in {language}."
+    
     system_prompt = {
         "role": "system",
         "content": f"""You are a helpful assistant that answers questions ONLY based on the provided document.
@@ -38,7 +42,7 @@ def get_gpt_response_with_context(messages: list, document_text: str, model: str
         - Only answer questions using information from the document above
         - If the answer is not in the document, say "I cannot find that information in the provided document"
         - Do not use external knowledge or make assumptions beyond what's in the document
-        - Quote relevant parts of the document when answering"""
+        - Quote relevant parts of the document when answering{language_instruction}"""
     }
 
     full_messages = [system_prompt] + messages
@@ -50,8 +54,11 @@ def get_gpt_response_with_context(messages: list, document_text: str, model: str
 
     return response.choices[0].message.content
 
-def check_logic_with_gemini(content: str, document_text: str) -> bool:
-
+def check_logic_with_gemini(content: str, document_text: str, language: str | None = None) -> bool:
+    lang_note = ""
+    if language:
+        lang_note = f"\n    6.  **Language Note**: The answer may be in {language}, but the validation should focus on factual correctness regardless of language."
+    
     system_instruction = f"""
     You are an **Expert Validation Engine** designed to check the factual basis of a given conclusion against a single, provided text document.
 
@@ -65,7 +72,7 @@ def check_logic_with_gemini(content: str, document_text: str) -> bool:
     2.  **Do not** use any external knowledge, common sense, or make assumptions.
     3.  Your task is to evaluate a question-and-answer pair (the "Conclusion") and determine if the answer is a **reasonable and direct consequence** of the facts stated in the 'DOCUMENT CONTEXT'.
     4.  If the answer can be logically inferred and fully supported by the document, the conclusion is **Reasonable**.
-    5.  If the answer contains any information *not* found in the document, contradicts the document, or cannot be logically supported by the document, the conclusion is **Unreasonable**.
+    5.  If the answer contains any information *not* found in the document, contradicts the document, or cannot be logically supported by the document, the conclusion is **Unreasonable**.{lang_note}
 
     OUTPUT FORMAT:
     Your final response **must be a single boolean value**.

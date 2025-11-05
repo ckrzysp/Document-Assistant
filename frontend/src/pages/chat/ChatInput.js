@@ -1,9 +1,8 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Paper, TextField, InputAdornment, IconButton } from '@mui/material';
-import { AttachFile, ArrowUpward } from '@mui/icons-material';
+import { ArrowUpward } from '@mui/icons-material';
 
-export default function ChatInput({ input, setInput, sendMsg, canChat, loading, uploadFile }) {
-  const fileRef = useRef(null);
+export default function ChatInput({ input, setInput, sendMsg, canChat, loading }) {
   const handleKeyPress = (e) => {
     if (e.key === 'Enter' && !e.shiftKey) sendMsg();
   };
@@ -37,26 +36,12 @@ export default function ChatInput({ input, setInput, sendMsg, canChat, loading, 
           ),
           endAdornment: (
             <InputAdornment position='end'>
-              <IconButton 
-                onClick={() => fileRef.current?.click()}
-                sx={{ color: '#000' }}
-              >
-                <AttachFile />
-              </IconButton>
-              <input 
-                type="file" 
-                ref={fileRef} 
-                onChange={uploadFile}
-                style={{ display: 'none' }}
-                accept=".pdf,.doc,.docx,.txt,.png,.jpg,.jpeg"
-              />
               <IconButton
                 onClick={sendMsg}
                 disabled={!canChat || !input.trim() || loading}
                 sx={{
                   bgcolor: '#000',
                   color: '#fff',
-                  ml: 1,
                   width: 36,
                   height: 36,
                   '&:hover': { bgcolor: '#000' },

@@ -22,6 +22,7 @@ class LoginResponse(BaseModel):
 class SendMessageRequest(BaseModel):
     chat_id: int
     text: str
+    language: str | None =None
 
 class SendMessageResponse(BaseModel):
     message: str
