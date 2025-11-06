@@ -7,7 +7,7 @@ import ChatMessages from './ChatMessages';
 import ChatInput from './ChatInput';
 import ChatSidebar from './ChatSidebar';
 import axios from 'axios';
-import { API_BASE_URL } from '../../config';
+import { API_BASE_URL, LANG_TRANSLATIONS } from '../../config';
 import { useDocuments } from '../../hooks/useDocuments';
 
 export default function Chat() {
@@ -27,15 +27,52 @@ export default function Chat() {
   const endRef = useRef(null);
   const { documents: userDocuments } = useDocuments();
 
+  // convert from language codes
+  const getLanguageFromCode = (code) => {
+    const languageMap = {
+      'en': 'English',
+      'es': 'Spanish',
+      'fr': 'French',
+      'de': 'German',
+      'zh': 'Chinese',
+      'ja': 'Japanese',
+      'ar': 'Arabic'
+    };
+    return languageMap[code];
+  };
+
+  const showLanguagePrompt = (delay = 100) => {
+    // check if prefered language is set, automatically select it if it is
+    const userLanguageCode = localStorage.getItem('user_language');
+    if (userLanguageCode) {
+      const fullLanguageName = getLanguageFromCode(userLanguageCode);
+      if (fullLanguageName && LANG_TRANSLATIONS[fullLanguageName]) {
+        // still show the prompt so user can change if needed
+        setLang(fullLanguageName);
+        setTimeout(() => {
+          chooseLang(fullLanguageName);
+        }, delay);
+        setMessages(m => [...m, { role: 'assistant', type: 'lang' }]);
+        return;
+      }
+    }
+    
+    // make user manually select from dropdown otherwise
+    setTimeout(() => {
+      setMessages(m => [...m, { role: 'assistant', type: 'lang' }]);
+    }, delay);
+  };
+
   // start chat when document is selected or existing chat is loaded
   useEffect(() => {
-    if (docId && userDocuments.length > 0) {
+    // Check if docId is "new" or a chat/document ID
+    if (docId === 'new') {
+      resetChat();
+    } else if (docId) {
       // Check if docId is a chat ID (from chat history) or document ID
       loadChatOrDocument(docId);
-    } else if (docId === 'new') {
-      resetChat();
     }
-  }, [docId, userDocuments]);
+  }, [docId]);
 
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -55,8 +92,20 @@ export default function Chat() {
         text: msg.content  // Backend uses 'content', frontend expects 'text'
       }));
       
-      // Load the actual chat history
       setCurrentChatId(chatData.id);
+      
+      // If chat has no messages, treat it like a new upload and show language selection
+      if (transformedMessages.length === 0) {
+        setHasUploadedFile(true);
+        setCanChat(true);
+        setMessages([
+          { role: 'user', text: `Uploaded ${chatData.document_name}` }
+        ]);
+        showLanguagePrompt();
+        return;
+      }
+      
+      // Load the actual chat history
       setMessages(transformedMessages);
       setHasUploadedFile(true);
       setCanChat(true);
@@ -72,13 +121,13 @@ export default function Chat() {
   const loadDocumentChat = (documentId) => {
     const document = userDocuments.find(doc => doc.id === parseInt(documentId));
     if (document) {
-      // start a new chat with the uploaded doc in the chat followed by an immediate language selection prompt
       setMessages([
-        { role: 'user', text: `Uploaded ${document.filename}` },
-        { role: 'assistant', type: 'lang' }
+        { role: 'user', text: `Uploaded ${document.filename}` }
       ]);
       setCurrentChatId(documentId);
       setHasUploadedFile(true);
+      setCanChat(true);
+      showLanguagePrompt();
     }
   };
 
@@ -95,12 +144,14 @@ export default function Chat() {
   const sendMsg = () => {
     if (!input.trim()) return;
     
-    setMessages(m => [...m, { role: 'user', text: input }]);
+    const messageText = input;
+    setMessages(m => [...m, { role: 'user', text: messageText }]);
     setInput('');
 
     axios.post(`${API_BASE_URL}/send_message`, {
       chat_id: currentChatId,
-      text: input
+      text: messageText,
+      language: lang
     }).then(response => setMessages(m => [...m, { role: 'assistant', text: response.data }]));
   };
 
@@ -116,10 +167,11 @@ export default function Chat() {
     }).then(response => {
       setCurrentChatId(response.data.chat_id);
       setMessages([
-        { role: 'user', text: `Uploaded ${file.name}` },
-        { role: 'assistant', type: 'lang' }
+        { role: 'user', text: `Uploaded ${file.name}` }
       ]);
       setHasUploadedFile(true);
+      setCanChat(true);
+      showLanguagePrompt();
     });
   };
 
@@ -136,15 +188,16 @@ export default function Chat() {
   const chooseLang = (val) => {
     setLang(val);
     setTranslating(true);
+    const translations = LANG_TRANSLATIONS[val];
     setMessages(m => [
       ...m,
-      { role: 'assistant', text: `I'll start processing your document now. I'll respond in ${val}...` }
+      { role: 'assistant', text: translations.processing }
     ]);
     
     setTimeout(() => {
       setMessages(m => [
         ...m,
-        { role: 'assistant', text: `You can now ask questions about your document in ${val}.` }
+        { role: 'assistant', text: translations.ready }
       ]);
       setTranslating(false);
       setCanChat(true);
@@ -163,9 +216,8 @@ export default function Chat() {
   const selectOldDoc = (docName) => {
     setMessages(m => [...m, { role: 'user', text: `Selected document: ${docName}` }]);
     setHasUploadedFile(true);
-    setTimeout(() => {
-      setMessages(m => [...m, { role: 'assistant', type: 'lang' }]);
-    }, 500);
+    setCanChat(true);
+    showLanguagePrompt(500);
   };
 
   return (
@@ -183,7 +235,10 @@ export default function Chat() {
       <ChatSidebar
         open={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
-        handleNewChat={() => navigate('/chat/new')}
+        handleNewChat={() => {
+          setSidebarOpen(false);
+          navigate('/chat/new');
+        }}
       />
 
       <ChatHeader 
@@ -226,7 +281,7 @@ export default function Chat() {
             input={input}
             setInput={setInput}
             sendMsg={sendMsg}
-            uploadFile={uploadFile}
+            canChat={canChat}
           />
         </Box>
       </Box>

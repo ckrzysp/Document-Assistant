@@ -26,7 +26,6 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/documents" element={<Documents />} />
           <Route path="/chat/:docId" element={<Chat />} />
-          <Route path="/chat/new" element={<Chat />} />
           <Route path="/upload" element={<Upload />} />
 
           {/* fallback: redirect to landing */}
