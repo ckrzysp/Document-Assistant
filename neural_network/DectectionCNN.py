@@ -8,6 +8,7 @@ from torchvision import datasets, transforms
 from torchvision.io import decode_image
 from datetime import datetime
 from torchvision.transforms import ToTensor
+from torchvision.ops import nms
 import torch
 import torch.optim as optim
 
@@ -40,8 +41,10 @@ class ConvolutionalNN(NN.Module):
                NN.MaxPool2d(2,2)              
           )
 
-          self.box_head = NN.Conv2d(150, 4, 1)
-          self.class_head = NN.Conv2d(150, 4, 1)
+          num_boxes = 1
+          num_classes = 4
+          self.box_head = NN.Conv2d(150, num_boxes*4, 1)
+          self.class_head = NN.Conv2d(150, num_boxes*num_classes, 1)
 
      # Output Tensors, function used for training
      def forward(self, x):
@@ -49,8 +52,16 @@ class ConvolutionalNN(NN.Module):
           boxP = self.box_head(seq)
           classP = self.class_head(seq)
 
-          boxP = boxP.mean(dim=[2,3])
-          classP = classP.mean(dim=[2,3])
+          # Single label, multi-class
+          #boxP = boxP.mean(dim=[2,3])
+          #classP = classP.mean(dim=[2,3])
+
+          # Multi-label, multi-class
+          inSize = x.size(0)
+          boxP = boxP.permute(0,1,2,3).contiguous().view(1,-1,4)
+          #boxP = boxP.view(inSize,-1,4)
+          classP = classP.permute(0,1,2,3).contiguous().view(1,-1,4)
+          #classP = classP.view(inSize,-1,4)
 
           return boxP, classP
 
@@ -59,16 +70,17 @@ class ConvolutionalNN(NN.Module):
 
 # NOT EVERY image is the size resolution
 resize = transforms.Compose([transforms.Resize((1000,750)), transforms.ToTensor()])
+batch = 1
 
 # Training loader
 training_LOADER = DataLoader(
                               DocumentCSVDataset(
                               csv_file=datapata_training_csv, root_dir=datapath_training_image, transform=resize), 
-                              batch_size=2, shuffle=True, collate_fn=collate_fn)
+                              batch_size=batch, shuffle=True, collate_fn=collate_fn)
 testing_LOADER = DataLoader(
                               DocumentCSVDataset(
                               csv_file= datapata_testing_csv, root_dir=datapath_testing_image, transform=resize), 
-                              batch_size=2, shuffle=False, collate_fn=collate_fn)
+                              batch_size=batch, shuffle=False, collate_fn=collate_fn)
 
 print('Training set has {} instances'.format(len(training_LOADER)))
 print('Testing set has {} instances'.format(len(testing_LOADER)))
@@ -79,8 +91,8 @@ print('Testing set has {} instances'.format(len(testing_LOADER)))
 model = ConvolutionalNN()
 
 reg_lossfn = NN.SmoothL1Loss()
-class_lossfn = NN.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(), lr= 0.01)
+class_lossfn = NN.BCEWithLogitsLoss()
+optimizer = optim.Adam(model.parameters(), lr= 0.001)
 
 device = torch.device("cuda")
 model.to(device)
@@ -88,8 +100,9 @@ model.to(device)
 # TRAINING
 
 train_losses = []
-num_epochs = 10
+num_epochs = 15
 for epoch in range(num_epochs):
+     correction = 0
      for i, (image_name, image, boxes, labels) in enumerate(training_LOADER):
           # Handle image tuple from DataLoader
           if isinstance(image, (tuple, list)):
@@ -110,17 +123,28 @@ for epoch in range(num_epochs):
 
           # forward function is called
           optimizer.zero_grad()
-          boxP, classP = model(image)  # boxP: [1,4], classP: [1,4 classes]
+          boxP, classP = model(image)  # boxP: [1,4], classP: [1,4 classes] :-: [1, n_classes*4]
+
+          #target_boxes = boxes.mean(dim=0, keepdim=True).repeat(boxP.size(1), 1) 
+          target_boxes = boxes 
+          target_boxes = target_boxes.view(1,4)               
+          boxP = boxP[:, :1, :]
+          target_classes = torch.ones_like(classP).to(device)
+          target_classes = target_classes.float()
 
           # CrossEntropyLoss expects labels 
-          loss = reg_lossfn(boxP, boxes) + class_lossfn(classP, labels.view(-1))
+          loss = reg_lossfn(boxP, target_boxes.unsqueeze(0)) + class_lossfn((classP), target_classes)
 
           # Changes weights within network
           loss.backward()
           optimizer.step()
+
+          #print(torch.unique(classP))
+          correction += (classP==labels).float().sum().item()
+          acc = correction/labels.size(0)
           
           if (i+1) % 10 == 9:
-               print(f"[Epoch {epoch+1}, Batch {i+1}] Loss: {loss / 20:.12f}")
+               print(f"[Epoch {epoch+1}, Batch {i+1}] Loss: {loss / 20:.12f}","Accuracy: {} ".format(acc))
 
      train_losses.append(loss / len(training_LOADER))
 

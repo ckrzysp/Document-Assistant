@@ -25,7 +25,7 @@ datapath_training_image = "../Document-Assistant/dataset/training_data/images"
 datapata_testing_csv = "../Document-Assistant/dataset/TESTING.csv"
 datapath_testing_image = "../Document-Assistant/dataset/testing_data/images"
 
-classification = {"header": 0, "question": 1, "answer": 2, "other": 3}
+classification = {"header": 0, "question": 1, "answer": 2, "other":3}
 finder = {0:"header", 1:"question", 2:"answer", 3:"other"}
 
 class DocumentCSVDataset(Dataset):
