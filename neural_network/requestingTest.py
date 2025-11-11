@@ -1,4 +1,5 @@
 import os
+import sys
 import pandas as pd
 import torch.nn as NN
 import torch.nn.functional as F
@@ -10,7 +11,10 @@ from torchvision.transforms import ToTensor
 import torch.optim as optim
 import torch
 
+sys.path.insert(0, "../Document-Assistant/backend")
 from DataLoading import *
+from getDoc import document_name # type: ignore
+print(document_name) # type: ignore
 
 ## CNN for text detection
 
@@ -62,25 +66,6 @@ class ConvolutionalNN(NN.Module):
 
           return boxP, classP
 
-
-## LOADING
-
-# NOT EVERY image is the size resolution
-resize = transforms.Compose([transforms.Resize((1000,750)), transforms.ToTensor()])
-
-# Training loader
-training_LOADER = DataLoader(
-                              DocumentCSVDataset(
-                              csv_file=datapata_training_csv, root_dir=datapath_training_image, transform=resize), 
-                              batch_size=2, shuffle=True, collate_fn=collate_fn)
-testing_LOADER = DataLoader(
-                              DocumentCSVDataset(
-                              csv_file= datapata_testing_csv, root_dir=datapath_testing_image, transform=resize), 
-                              batch_size=2, shuffle=False, collate_fn=collate_fn)
-
-print('Training set has {} instances'.format(len(training_LOADER)))
-print('Testing set has {} instances'.format(len(testing_LOADER)))
-
 # MODEL STATE LOADING
 
 statepath = "../Document-Assistant/model_state/CNNstate.pt"
@@ -108,8 +93,8 @@ for imaget in range(boxcount):
      tempy = 0
      box = model(img_tensor)[0]
      clss = model(img_tensor)[1]
-     print(box)
-     print(clss)
+     #print(box)
+     #print(clss)
 
      for i in range(int(len(box[0][0]))):
           # Dimensions
