@@ -8,3 +8,4 @@ python-dotenv==1.1.1
 passlib[argon2]==1.7.4
 google-genai
 python-multipart
+python-doctr
