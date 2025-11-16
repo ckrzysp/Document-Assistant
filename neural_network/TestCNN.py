@@ -55,9 +55,9 @@ class ConvolutionalNN(NN.Module):
           #classP = classP.mean(dim=[2,3])
 
           inSize = x.size(0)
-          boxP = boxP.permute(0,1,2,3).contiguous().view(1,-1,4)
+          boxP = boxP.permute(0,2,3,1).contiguous().view(1,-1,4)
           #boxP = boxP.view(inSize,-1,4)
-          classP = classP.permute(0,1,2,3).contiguous().view(1,-1,4)
+          classP = classP.permute(0,2,3,1).contiguous().view(1,-1,4)
           #classP = classP.view(inSize,-1,4)
 
           return boxP, classP
@@ -89,8 +89,7 @@ model = ConvolutionalNN()
 model.load_state_dict(torch.load(statepath, weights_only=True))
 model.to('cuda')
 
-boxcount = 5
-detected = 0
+boxcount = 1
 # Show prediction on every image
 dirc = os.listdir(datapath_testing_image)
 for imaget in range(boxcount):
@@ -108,7 +107,9 @@ for imaget in range(boxcount):
      tempy = 0
      box = model(img_tensor)[0]
      clss = model(img_tensor)[1]
-     print(box)
+     for i in range(len(box[0][0])):
+          print(box[0][i])
+     #print(box[0][0])
      print(clss)
 
      for i in range(int(len(box[0][0]))):

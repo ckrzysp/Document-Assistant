@@ -58,9 +58,9 @@ class ConvolutionalNN(NN.Module):
 
           # Multi-label, multi-class
           inSize = x.size(0)
-          boxP = boxP.permute(0,1,2,3).contiguous().view(1,-1,4)
+          boxP = boxP.permute(0,2,3,1).contiguous().view(1,-1,4)
           #boxP = boxP.view(inSize,-1,4)
-          classP = classP.permute(0,1,2,3).contiguous().view(1,-1,4)
+          classP = classP.permute(0,2,3,1).contiguous().view(1,-1,4)
           #classP = classP.view(inSize,-1,4)
 
           return boxP, classP

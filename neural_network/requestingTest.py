@@ -118,7 +118,6 @@ for imaget in range(boxcount):
           rect = patches.Rectangle((x1, y1), x2, y2, linewidth=2, edgecolor='r', facecolor='none')
           tempx = x
           tempy = y
-
           boxvector.append(rect)
      
      for i in range(int(len(box[0][0]))):
@@ -129,7 +128,6 @@ for imaget in range(boxcount):
      pyp.close()
      
      # OUTPUT 
-     print("IMG: "+name+" --- Class: " + finder[torch.argmax(model(img_tensor)[0][0][i]).item()])
+     print("IMG: "+name+" --- Class: "+finder[torch.argmax(model(img_tensor)[0][0][i]).item()])
 
      # print(torch.argmax(model(img_tensor)[0]).item())
-     print(len(boxvector))
