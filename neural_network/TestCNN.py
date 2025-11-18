@@ -1,3 +1,5 @@
+# Output file
+
 import os
 import pandas as pd
 import torch.nn as NN
@@ -54,11 +56,12 @@ class ConvolutionalNN(NN.Module):
           #boxP = boxP.mean(dim=[2,3])
           #classP = classP.mean(dim=[2,3])
 
-          inSize = x.size(0)
-          boxP = boxP.permute(0,2,3,1).contiguous().view(1,-1,4)
-          #boxP = boxP.view(inSize,-1,4)
-          classP = classP.permute(0,2,3,1).contiguous().view(1,-1,4)
-          #classP = classP.view(inSize,-1,4)
+          # Multi-label, multi-class
+          n, _, h, w = boxP.shape
+          boxP = boxP.permute(0,2,3,1).contiguous()
+          boxP = boxP.view(n,-1,4)
+          classP = classP.permute(0,2,3,1).contiguous()
+          classP = classP.view(n,-1,4)
 
           return boxP, classP
 
@@ -72,11 +75,11 @@ resize = transforms.Compose([transforms.Resize((1000,750)), transforms.ToTensor(
 training_LOADER = DataLoader(
                               DocumentCSVDataset(
                               csv_file=datapata_training_csv, root_dir=datapath_training_image, transform=resize), 
-                              batch_size=2, shuffle=True, collate_fn=collate_fn)
+                              batch_size=1, shuffle=True, collate_fn=collate_fn)
 testing_LOADER = DataLoader(
                               DocumentCSVDataset(
                               csv_file= datapata_testing_csv, root_dir=datapath_testing_image, transform=resize), 
-                              batch_size=2, shuffle=False, collate_fn=collate_fn)
+                              batch_size=1, shuffle=False, collate_fn=collate_fn)
 
 print('Training set has {} instances'.format(len(training_LOADER)))
 print('Testing set has {} instances'.format(len(testing_LOADER)))
@@ -107,10 +110,22 @@ for imaget in range(boxcount):
      tempy = 0
      box = model(img_tensor)[0]
      clss = model(img_tensor)[1]
-     for i in range(len(box[0][0])):
-          print(box[0][i])
-     #print(box[0][0])
-     print(clss)
+  
+     boxP, classP = model(img_tensor)
+
+     # Analyze repetition pattern
+     unique_boxes, counts = torch.unique(boxP[0], dim=0, return_counts=True)
+     print(f"unique boxes: {len(unique_boxes)}")
+     print(f"common box appears {counts.max().item()} ")
+
+     # Show the top 5 most repeated boxes
+     top_counts, top_indices = torch.topk(counts, k=min(5, len(counts)))
+     print("\nMost repeated")
+     for i, (count, idx) in enumerate(zip(top_counts, top_indices)):
+          print(f"Box {i}: appears {count} times - {unique_boxes[idx].cpu().detach().numpy()}")
+
+     print(box.shape)
+     print(clss.shape)
 
      for i in range(int(len(box[0][0]))):
           # Dimensions

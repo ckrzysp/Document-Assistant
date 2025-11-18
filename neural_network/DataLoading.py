@@ -1,3 +1,5 @@
+# Custom Dataset Creation file
+
 import os
 import numpy as np
 import pandas as pd
@@ -58,7 +60,6 @@ class DocumentCSVDataset(Dataset):
           image = Image.fromarray(image).convert("RGB")
 
           # Transform
-
           if self.transform:
                transformed = self.transform(image)
                # If the transform is a tuple, extract the first item
@@ -79,15 +80,12 @@ class DocumentCSVDataset(Dataset):
                     if len(row) > 0 and row[0] == image_name:
                          boxes.append([float(row[1]), float(row[2]), float(row[3]), float(row[4])])
                          labels.append(classification[row[-1]])
-          
+
           boxes = torch.as_tensor(boxes, dtype=torch.float32, device=device)
           labels = torch.as_tensor(labels, dtype=torch.long, device=device)
 
           # Return box coords, labels, image
           sample = {'name': image_name, 'image': image, 'boxes': boxes, 'labels': labels}
-
-          boxes = boxes[:1,:]
-          labels = labels[:1]
 
           H, W = image.shape[1], image.shape[2]
           boxes[:, [0,2]] /= W
