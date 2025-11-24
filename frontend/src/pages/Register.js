@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { useNavigate } from "react-router-dom";
-import {Box, Typography, Button, Paper, TextField, Divider, Alert} from "@mui/material";
-import { Google } from '@mui/icons-material';
+import { useNavigate, Link } from "react-router-dom";
+import {Box, Typography, Button, Paper, TextField, Divider, Alert, InputAdornment, IconButton, FormControlLabel, Checkbox} from "@mui/material";
+import { Google, Visibility, VisibilityOff } from '@mui/icons-material';
 import axios from 'axios';
 import { API_BASE_URL } from '../config';
 import PasswordSetup from './PasswordSetup';
@@ -11,6 +11,9 @@ export default function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirm, setShowConfirm] = useState(false);
+  const [rememberMe, setRememberMe] = useState(true);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [googleLoading, setGoogleLoading] = useState(false);
@@ -114,6 +117,12 @@ export default function Register() {
     e.preventDefault();
     setError('');
 
+    if (rememberMe) {
+      localStorage.setItem('remember_email', email);
+    } else {
+      localStorage.removeItem('remember_email');
+    }
+
     if (password !== confirmPassword) {
       setError('Passwords do not match');
       return;
@@ -213,7 +222,7 @@ export default function Register() {
           display: "flex",
           flexDirection: "column",
           bgcolor: "#fff",
-          color: "#000",
+          color: "text.primary",
         }}
       >
         <Box
@@ -224,31 +233,37 @@ export default function Register() {
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
+            px: 2
           }}
         >
-          <Box
-            component="img"
-            src="/LDAALogo.png"
-            alt="Legal Document AI Assistant Logo"
-            sx={{
-              height: 150,
-              width: 'auto',
-            }}
-          />
-          <Typography
-            variant="h4"
-            component="h1"
-            sx={{ fontWeight: "bold", mb: 1 }}
-          >
-            Join us Today! Sign up for 
-          </Typography>
-          <Typography
-            variant="h4"
-            component="h1"
-            sx={{ fontWeight: "bold", mb: 4 }}
-          >
-            Legal Document AI Assistant
-          </Typography>
+          <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
+            <Box
+              component="img"
+              src="/LDAALogo.png"
+              alt="Legal Document AI Assistant Logo"
+              sx={{
+                height: 150,
+                width: 'auto',
+                mr: 2, 
+              }}
+            />
+            <Box>
+              <Typography
+                variant="h4"
+                component="h1"
+                sx={{ fontWeight: "bold", mb: 1 }}
+              >
+                Join us Today!
+              </Typography>
+              <Typography
+                variant="h4"
+                component="h1"
+                sx={{ fontWeight: "bold" }}
+              >
+                Legal Document AI Assistant
+              </Typography>
+            </Box>
+          </Box>
 
           <Box
             sx={{
@@ -260,13 +275,48 @@ export default function Register() {
             <Paper
               elevation={8}
               sx={{
-                width: 350,
-                padding: 4,
-                borderRadius: 2,
-                border: '1px solid',
-                borderColor: 'black',
+                width: 420,
+                p: 4,
+                border: '1px solid #0f172a',
+                background: '#fff',
+                textAlign: 'left'
               }}
             >
+              <Box
+                sx={{
+                  position: 'relative',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  pl: 3,
+                  mb: 1.5,
+                  fontWeight: 700,
+                  fontSize: 24,
+                  color: 'primary.main',
+                  letterSpacing: '-0.02em',
+                  '&::before': {
+                    content: '""',
+                    position: 'absolute',
+                    left: 0,
+                    width: 18,
+                    height: 18,
+                    borderRadius: '50%',
+                    backgroundColor: 'primary.main'
+                  },
+                  '&::after': {
+                    content: '""',
+                    position: 'absolute',
+                    left: 0,
+                    width: 18,
+                    height: 18,
+                    borderRadius: '50%',
+                    backgroundColor: 'primary.main',
+                    animation: 'pulse 1s linear infinite'
+                  }
+                }}
+              >
+                Register
+              </Box>
+
               <form onSubmit={handleRegister}>
                 {error && (
                   <Alert severity="error" sx={{ mb: 2 }}>
@@ -296,35 +346,72 @@ export default function Register() {
                 <TextField
                   fullWidth
                   label="Password"
-                  type="password"
+                  type={showPassword ? 'text' : 'password'}
                   variant="outlined"
                   margin="normal"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
+                  InputProps={{
+                    endAdornment: (
+                      <InputAdornment position="end">
+                        <IconButton
+                          onClick={() => setShowPassword((prev) => !prev)}
+                          edge="end"
+                          aria-label="toggle password visibility"
+                          sx={{ color: 'text.secondary' }}
+                        >
+                          {showPassword ? <VisibilityOff /> : <Visibility />}
+                        </IconButton>
+                      </InputAdornment>
+                    )
+                  }}
                   required
                 />
                 <TextField
                   fullWidth
                   label="Confirm Password"
-                  type="password"
+                  type={showConfirm ? 'text' : 'password'}
                   variant="outlined"
                   margin="normal"
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   sx={{ mb: 3 }}
+                  InputProps={{
+                    endAdornment: (
+                      <InputAdornment position="end">
+                        <IconButton
+                          onClick={() => setShowConfirm((prev) => !prev)}
+                          edge="end"
+                          aria-label="toggle confirm password visibility"
+                          sx={{ color: 'text.secondary' }}
+                        >
+                          {showConfirm ? <VisibilityOff /> : <Visibility />}
+                        </IconButton>
+                      </InputAdornment>
+                    )
+                  }}
                   required
                 />
 
-                <Button
-                  type="submit"
-                  fullWidth
-                  variant="contained"
-                  size="large"
-                  disabled={loading}
-                  sx={{ backgroundColor: "black", mb: 2 }}
-                >
-                  {loading ? 'Signing up...' : 'Sign up'}
-                </Button>
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                size="large"
+                disabled={loading}
+                sx={{ backgroundColor: "#4159FD", mb: 2 }}
+              >
+                {loading ? 'Signing up...' : 'Sign up'}
+              </Button>
+
+              <Box sx={{ textAlign: 'center', mb: 2 }}>
+                <Typography variant="body2" color="gray">
+                  Already have an account?{" "}
+                  <Link to="/login" style={{ textDecoration: 'none', color: '#1d4ed8', fontWeight: 700 }}>
+                    Sign in
+                  </Link>
+                </Typography>
+              </Box>
               </form>
 
               <Divider textAlign="center">
@@ -341,14 +428,13 @@ export default function Register() {
                 sx={{
                   mt: 2,
                   py: 1,
-                  borderRadius: "12px",
                   fontWeight: "bold",
                   textTransform: 'none',
-                  color: "black",
-                  border: "2px solid gray",
+                  color: "#1d4ed8",
+                  border: "1.5px solid #0f172a",
                 }}
+                startIcon={<Google />}
               >
-                <Google sx={{ mr: 1 }} />
                 Sign up with Google
               </Button>
             </Paper>

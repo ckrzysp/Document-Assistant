@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Typography, Paper, Grid, Box, Button, LinearProgress, Alert, CircularProgress } from '@mui/material';
+import { Typography, Paper, Grid, Box, Button, LinearProgress, Alert, CircularProgress, IconButton, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
 import { 
   InsertDriveFileOutlined,
   MoreHoriz,
   Logout,
   CloudQueueOutlined,
-  Upload 
+  Upload,
+  Delete
 } from '@mui/icons-material';
 import axios from 'axios';
 import { API_BASE_URL } from '../config';
@@ -17,7 +18,8 @@ export default function Documents() {
   const [downloadError, setDownloadError] = useState('');
   const [uploading, setUploading] = useState(false);
   const [uploadProgress, setUploadProgress] = useState(0);
-  const { documents: files, loading, error } = useDocuments();
+  const [deleteConfirm, setDeleteConfirm] = useState({ open: false, file: null });
+  const { documents: files, loading, error, reloadDocuments } = useDocuments();
   const activeTab = 'folders';
   
 const handleOpenFile = (file) => {
@@ -93,6 +95,25 @@ const handleOpenFile = (file) => {
     localStorage.removeItem('user_email');
     localStorage.removeItem('user_name');
     navigate('/login');
+  };
+
+  const confirmDelete = (file) => {
+    setDeleteConfirm({ open: true, file });
+  };
+
+  const handleDelete = async () => {
+    if (!deleteConfirm.file) return;
+    const userId = localStorage.getItem('user_id');
+    try {
+      await axios.delete(`${API_BASE_URL}/documents/${deleteConfirm.file.id}`, {
+        params: { user_id: userId }
+      });
+      setDeleteConfirm({ open: false, file: null });
+      reloadDocuments();
+    } catch (err) {
+      setDownloadError('Failed to delete document. Please try again.');
+      setDeleteConfirm({ open: false, file: null });
+    }
   };
 
   const DocumentsSidebar = (
@@ -247,140 +268,170 @@ const handleOpenFile = (file) => {
   );
 
   return (
-    <Box sx={{ display: 'flex', height: '100vh', bgcolor: '#fff', color: '#000', overflow: 'hidden' }}>
-      <Box
-        sx={{
-          width: 240,
-          borderRight: '1.5px solid #000',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-          p: 2.2
-        }}
-      >
-        {DocumentsSidebar}
-      </Box>
-
-      <Box sx={{ flex: 1, p: 5, overflow: 'auto' }}>
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 4 }}>
-          <Typography
-            sx={{
-              fontWeight: 800,
-              fontSize: 34,
-            }}
-          >
-            My Files - All Documents
-          </Typography>
-          
-          <Button
-            variant='contained'
-            component='label'
-            startIcon={<Upload />}
-            sx={{
-              border: '1.2px solid #000',
-              borderRadius: 2,
-              fontWeight: 600,
-              textTransform: 'none',
-              color: '#fff',
-              bgcolor: '#000',
-              boxShadow: '2px 2px 0 rgba(0,0,0,0.15)',
-              '&:hover': { 
-                bgcolor: '#333',
-              }
-            }}
-          >
-            Upload New Document
-            <input
-              type='file'
-              hidden
-              onChange={handleFileUpload}
-            />
-          </Button>
+    <>
+      <Box sx={{ display: 'flex', height: '100vh', bgcolor: '#fff', color: '#000', overflow: 'hidden' }}>
+        <Box
+          sx={{
+            width: 240,
+            borderRight: '1.5px solid #000',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            p: 2.2
+          }}
+        >
+          {DocumentsSidebar}
         </Box>
 
-        {error && (
-          <Alert severity="error" sx={{ mb: 2 }}>
-            {error}
-          </Alert>
-        )}
-
-        {loading ? (
-          <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 200 }}>
-            <CircularProgress />
-          </Box>
-        ) : files.length === 0 ? (
-          <Box sx={{ textAlign: 'center', mt: 4 }}>
-            <Typography sx={{ fontSize: 18, color: '#666' }}>
-              No documents found. Upload your first document to get started!
+        <Box sx={{ flex: 1, p: 5, overflow: 'auto' }}>
+          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 4 }}>
+            <Typography
+              sx={{
+                fontWeight: 800,
+                fontSize: 34,
+              }}
+            >
+              My Files - All Documents
             </Typography>
+            
+            <Button
+              variant='contained'
+              component='label'
+              startIcon={<Upload />}
+              sx={{
+                border: '1.2px solid #000',
+                borderRadius: 2,
+                fontWeight: 600,
+                textTransform: 'none',
+                color: '#fff',
+                bgcolor: '#4159FD',
+                boxShadow: '2px 2px 0 rgba(0,0,0,0.15)',
+                '&:hover': { 
+                  bgcolor: '#2d42d4',
+                }
+              }}
+            >
+              Upload New Document
+              <input
+                type='file'
+                hidden
+                onChange={handleFileUpload}
+              />
+            </Button>
           </Box>
-        ) : (
-          <Grid container spacing={3}>
-            {files.map((file, i) => (
-            <Grid item key={i}>
-              <Paper
-                onClick={() => handleOpenFile(file)}
-                sx={{
-                  width: 160,
-                  height: 160,
-                  border: '1.5px solid #000',
-                  borderRadius: 3,
-                  p: 2,
-                  boxShadow: '3px 3px 0 rgba(0,0,0,0.15)',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  cursor: 'pointer'
-                }}
-              >
-                <Box sx={{ textAlign: 'center', mt: 2 }}>
-                  <InsertDriveFileOutlined sx={{ fontSize: 50 }} />
-                </Box>
-                <Box
+
+          {error && (
+            <Alert severity="error" sx={{ mb: 2 }}>
+              {error}
+            </Alert>
+          )}
+
+          {loading ? (
+            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 200 }}>
+              <CircularProgress />
+            </Box>
+          ) : files.length === 0 ? (
+            <Box sx={{ textAlign: 'center', mt: 4 }}>
+              <Typography sx={{ fontSize: 18, color: '#666' }}>
+                No documents found. Upload your first document to get started!
+              </Typography>
+            </Box>
+          ) : (
+            <Grid container spacing={3}>
+              {files.map((file, i) => (
+              <Grid item key={i}>
+                <Paper
+                  onClick={() => handleOpenFile(file)}
                   sx={{
-                    borderTop: '1px solid #000',
-                    width: '100%',
-                    mt: 2,
-                    pt: 1,
-                    textAlign: 'center',
-                    position: 'relative'
+                    width: 160,
+                    height: 160,
+                    border: '1.5px solid #000',
+                    borderRadius: 3,
+                    p: 2,
+                    boxShadow: '3px 3px 0 rgba(0,0,0,0.15)',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    cursor: 'pointer'
                   }}
                 >
-                  
-                  <Typography
-                    sx={{ 
-                    fontSize: 14, 
-                    fontWeight: 500,
-                    overflow: 'hidden',
-                    textOverflow: 'ellipsis',
-                    whiteSpace: 'nowrap',
-                    width: '100%',
-                    px: 0.5 
-                    }} 
-                  >
-                    {file.name.length > 20 ? `${file.name.substring(0, 20)}...` : file.name }
-                  </Typography> 
-
-                  <Typography sx={{ fontSize: 12, color: '#555' }}>
-                    {file.date}
-                  </Typography>
-                  <MoreHoriz
+                  <Box sx={{ textAlign: 'center', mt: 2 }}>
+                    <InsertDriveFileOutlined sx={{ fontSize: 50 }} />
+                  </Box>
+                  <Box
                     sx={{
-                      position: 'absolute',
-                      right: 4,
-                      top: -30,
-                      fontSize: 22,
-                      color: '#000'
+                      borderTop: '1px solid #000',
+                      width: '100%',
+                      mt: 2,
+                      pt: 1,
+                      textAlign: 'center',
+                      position: 'relative'
                     }}
-                  />
-                </Box>
-              </Paper>
+                  >
+                    
+                    <Typography
+                      sx={{ 
+                      fontSize: 14, 
+                      fontWeight: 500,
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                      whiteSpace: 'nowrap',
+                      width: '100%',
+                      px: 0.5 
+                      }} 
+                    >
+                      {file.name.length > 20 ? `${file.name.substring(0, 20)}...` : file.name }
+                    </Typography> 
+
+                    <Typography sx={{ fontSize: 12, color: '#555' }}>
+                      {file.date}
+                    </Typography>
+                    <IconButton
+                      size="small"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        confirmDelete(file);
+                      }}
+                      sx={{
+                        position: 'absolute',
+                        right: 4,
+                        top: -30,
+                        color: '#d32f2f'
+                      }}
+                    >
+                      <Delete fontSize="small" />
+                    </IconButton>
+                  </Box>
+                </Paper>
+              </Grid>
+            ))}
             </Grid>
-          ))}
-          </Grid>
-        )}
+          )}
+        </Box>
       </Box>
-    </Box>
+
+      <Dialog
+        open={deleteConfirm.open}
+        onClose={() => setDeleteConfirm({ open: false, file: null })}
+        maxWidth="xs"
+        fullWidth
+      >
+        <DialogTitle>Delete document?</DialogTitle>
+        <DialogContent>
+          <Typography>
+            This will remove the document and its related chats. This action cannot be undone.
+          </Typography>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={() => setDeleteConfirm({ open: false, file: null })}>
+            Cancel
+          </Button>
+          <Button color="error" onClick={handleDelete}>
+            Delete
+          </Button>
+        </DialogActions>
+      </Dialog>
+    </>
   );
 }

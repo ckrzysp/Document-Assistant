@@ -22,6 +22,7 @@ export default function Chat() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [currentChatId, setCurrentChatId] = useState(null);
   const [hasUploadedFile, setHasUploadedFile] = useState(false);
+  const [selectedDocument, setSelectedDocument] = useState(null);
 
   const fileRef = useRef(null);
   const endRef = useRef(null);
@@ -94,7 +95,6 @@ export default function Chat() {
       
       setCurrentChatId(chatData.id);
       
-      // If chat has no messages, treat it like a new upload and show language selection
       if (transformedMessages.length === 0) {
         setHasUploadedFile(true);
         setCanChat(true);
@@ -139,10 +139,11 @@ export default function Chat() {
     setCanChat(false);
     setCurrentChatId(null);
     setHasUploadedFile(false);
+    setSelectedDocument('');
   };
 
   const sendMsg = () => {
-    if (!input.trim()) return;
+    if (!input.trim() || !currentChatId) return;
     
     const messageText = input;
     setMessages(m => [...m, { role: 'user', text: messageText }]);
@@ -152,7 +153,17 @@ export default function Chat() {
       chat_id: currentChatId,
       text: messageText,
       language: lang
-    }).then(response => setMessages(m => [...m, { role: 'assistant', text: response.data }]));
+    })
+    .then(response => {
+      setMessages(m => [...m, { role: 'assistant', text: response.data }]);
+    })
+    .catch(error => {
+      console.error('Error sending message:', error);
+      setMessages(m => m.slice(0, -1));
+      if (error.response?.data?.detail) {
+        setMessages(m => [...m, { role: 'assistant', text: error.response.data.detail }]);
+      }
+    });
   };
 
   // upload file and start chat
@@ -210,14 +221,35 @@ export default function Chat() {
     navigate('/chat/new');
     setTimeout(() => {
       setMessages([{ role: 'assistant', type: 'oldDocSelect' }]);
+      setSelectedDocument('');
     }, 100);
   };
 
-  const selectOldDoc = (docName) => {
-    setMessages(m => [...m, { role: 'user', text: `Selected document: ${docName}` }]);
+  const selectOldDoc = async (docId) => {
+    const doc = userDocuments.find(d => d.id === docId);
+    if (!doc) return;
+    setSelectedDocument(docId);
     setHasUploadedFile(true);
-    setCanChat(true);
-    showLanguagePrompt(500);
+    setCanChat(false);
+    setMessages([{ role: 'user', text: `Uploaded ${doc.filename}` }]);
+
+    try {
+      const userId = parseInt(localStorage.getItem('user_id'));
+      const response = await axios.post(`${API_BASE_URL}/create_chat_from_document`, {
+        user_id: userId,
+        document_id: docId,
+        name: doc.filename
+      });
+      setCurrentChatId(response.data.chat_id);
+      setMessages([{ role: 'user', text: `Uploaded ${response.data.chat_name || doc.filename}` }]);
+      setCanChat(true);
+      showLanguagePrompt(500);
+    } catch (error) {
+      console.error('Failed to start chat from document:', error);
+      setMessages([{ role: 'assistant', text: 'Unable to start chat with that document. Please try again.' }]);
+      setHasUploadedFile(false);
+      setCanChat(false);
+    }
   };
 
   return (
@@ -260,9 +292,10 @@ export default function Chat() {
           messages={messages}
           lang={lang}
           translating={translating}
-          savedDocs={userDocuments.map(doc => doc.filename)}
+          savedDocs={userDocuments}
           chooseLang={chooseLang}
           selectOldDoc={selectOldDoc}
+          selectedDocument={selectedDocument}
           endRef={endRef}
         />
 
@@ -282,6 +315,7 @@ export default function Chat() {
             setInput={setInput}
             sendMsg={sendMsg}
             canChat={canChat}
+            hasUploadedFile={hasUploadedFile}
           />
         </Box>
       </Box>

@@ -2,9 +2,14 @@ import React from 'react';
 import { Paper, TextField, InputAdornment, IconButton } from '@mui/material';
 import { ArrowUpward } from '@mui/icons-material';
 
-export default function ChatInput({ input, setInput, sendMsg, canChat, loading }) {
+export default function ChatInput({ input, setInput, sendMsg, canChat, loading, hasUploadedFile }) {
   const handleKeyPress = (e) => {
-    if (e.key === 'Enter' && !e.shiftKey) sendMsg();
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      if (hasUploadedFile && canChat && input.trim()) {
+        sendMsg();
+      }
+    }
   };
 
 
@@ -24,11 +29,28 @@ export default function ChatInput({ input, setInput, sendMsg, canChat, loading }
       <TextField
         fullWidth
         multiline
+        minRows={1}
+        maxRows={6}
         variant='standard'
-        placeholder='Type your message...'
+        placeholder={hasUploadedFile ? 'Type your message...' : 'Please upload your document before asking questions...'}
         value={input}
-        onChange={(e) => setInput(e.target.value)}
+        onChange={(e) => {
+          if (hasUploadedFile) {
+            setInput(e.target.value);
+          }
+        }}
+        disabled={!hasUploadedFile}
         onKeyDown={handleKeyPress}
+        sx={{
+          '& .MuiInputBase-input.Mui-disabled': {
+            WebkitTextFillColor: '#999',
+            color: '#999'
+          },
+          '& .MuiInputBase-input::placeholder': {
+            color: '#999',
+            opacity: 1
+          }
+        }}
         InputProps={{
           disableUnderline: true,
           startAdornment: (
@@ -38,13 +60,13 @@ export default function ChatInput({ input, setInput, sendMsg, canChat, loading }
             <InputAdornment position='end'>
               <IconButton
                 onClick={sendMsg}
-                disabled={!canChat || !input.trim() || loading}
+                disabled={!hasUploadedFile || !canChat || !input.trim() || loading}
                 sx={{
-                  bgcolor: '#000',
+                  bgcolor: '#4159FD',
                   color: '#fff',
                   width: 36,
                   height: 36,
-                  '&:hover': { bgcolor: '#000' },
+                  '&:hover': { bgcolor: '#4159FD' },
                   '&:disabled': { opacity: 0.6 }
                 }}
               >
