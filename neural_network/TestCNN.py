@@ -43,27 +43,33 @@ class ConvolutionalNN(NN.Module):
 
           num_boxes = 1
           num_classes = 4
+          self.obj_head = NN.Conv2d(150, num_boxes*1, 1)
           self.box_head = NN.Conv2d(150, num_boxes*4, 1)
           self.class_head = NN.Conv2d(150, num_boxes*num_classes, 1)
 
      # Output Tensors, function used for training
      def forward(self, x):
           seq = self.convolutional_relu_seq(x)
-          boxP = self.box_head(seq)
-          classP = self.class_head(seq)
 
-          # Single Box
-          #boxP = boxP.mean(dim=[2,3])
-          #classP = classP.mean(dim=[2,3])
+          # Single label, multi-class
+          # boxP = boxP.mean(dim=[2,3])
+          # classP = classP.mean(dim=[2,3])
 
           # Multi-label, multi-class
-          n, _, h, w = boxP.shape
-          boxP = boxP.permute(0,2,3,1).contiguous()
-          boxP = boxP.view(n,-1,4)
-          classP = classP.permute(0,2,3,1).contiguous()
-          classP = classP.view(n,-1,4)
+          boxP = self.box_head(seq)               # (B,4,H,W)
+          boxP = torch.sigmoid(boxP)               # constrain to 0..1
+          boxP = boxP.permute(0,2,3,1)             # → (B,H,W,4)
 
-          return boxP, classP
+          # Objectness
+          objP = self.obj_head(seq)               # (B,1,H,W)
+          objP = torch.sigmoid(objP)
+          objP = objP.permute(0,2,3,1)             # → (B,H,W,1)
+
+          # Class scores (raw logits)
+          classP = self.class_head(seq)           # (B,4,H,W)
+          classP = classP.permute(0,2,3,1)         # → (B,H,W,4)
+
+          return boxP, objP, classP
 
 
 ## LOADING
@@ -92,7 +98,7 @@ model = ConvolutionalNN()
 model.load_state_dict(torch.load(statepath, weights_only=True))
 model.to('cuda')
 
-boxcount = 1
+boxcount = 3
 # Show prediction on every image
 dirc = os.listdir(datapath_testing_image)
 for imaget in range(boxcount):
@@ -111,7 +117,8 @@ for imaget in range(boxcount):
      box = model(img_tensor)[0]
      clss = model(img_tensor)[1]
   
-     boxP, classP = model(img_tensor)
+     boxP, objP, classP = model(img_tensor)
+     #print(boxP, objP, classP)
 
      # Analyze repetition pattern
      unique_boxes, counts = torch.unique(boxP[0], dim=0, return_counts=True)
@@ -122,45 +129,46 @@ for imaget in range(boxcount):
      top_counts, top_indices = torch.topk(counts, k=min(5, len(counts)))
      print("\nMost repeated")
      for i, (count, idx) in enumerate(zip(top_counts, top_indices)):
-          print(f"Box {i}: appears {count} times - {unique_boxes[idx].cpu().detach().numpy()}")
+          print(f"Box {i}: appears {count} times")
 
      print(box.shape)
      print(clss.shape)
 
-     for i in range(int(len(box[0][0]))):
+     for i in range(int(len(box[0][0])/2)):
           # Dimensions
           img_w, img_h = img.size
-          x, y = int(box[0][i][0].item()*img_w), int(box[0][i][1].item()*img_h)
-          box_w, box_h = int(box[0][i][2].item()*img_w), int(box[0][i][3].item()*img_h)
+          x, y = int(box[0][0][i][0].item()*img_w), int(box[0][0][i][1].item()*img_h)
+          box_w, box_h = int(box[0][0][i][2].item()*img_w), int(box[0][0][i][3].item()*img_h)
 
           x = abs(x)
           y = abs(y)
           box_w = abs(box_w)
           box_h = abs(box_h)
 
-          xp = x
-          yp = y
-          box_wp = box_w
-          box_hp = box_h
-          x1, y1 = xp - box_wp/2, yp - box_hp/2
-          x2, y2 = xp + box_wp/2, yp + box_hp/2
+          x1, y1 = x - box_w/2, y - box_h/2
+          x2, y2 = x + box_w/2, y + box_h/2
+
+          w = x2-x1
+          h = y2-y1
+
+          print(x1,y1,w,h)
 
           ax.imshow(img)
-          rect = patches.Rectangle((x1, y1), x2, y2, linewidth=2, edgecolor='r', facecolor='none')
+          rect = patches.Rectangle((x1, y1), w, h, linewidth=2, edgecolor='r', facecolor='none')
           tempx = x
           tempy = y
 
           boxvector.append(rect)
      
-     for i in range(int(len(box[0][0]))):
+     for i in range(int(len(box[0][0])/2)):
           ax.add_patch(boxvector[i])
-          ax.text(tempx, tempy, finder[torch.argmax(model(img_tensor)[0][0][i]).item()], color='red', fontsize=2)
+          #ax.text(tempx, tempy, finder[torch.argmax(model(img_tensor)[0][0][0][i]).item()], color='red', fontsize=2)
      
      pyp.show()
      pyp.close()
      
      # OUTPUT 
-     print("IMG: "+name+" --- Class: " + finder[torch.argmax(model(img_tensor)[0][0][i]).item()])
+     #print("IMG: "+name+" --- Class: " + finder[torch.argmax(model(img_tensor)[0][0][i]).item()])
 
      # print(torch.argmax(model(img_tensor)[0]).item())
      print(len(boxvector))

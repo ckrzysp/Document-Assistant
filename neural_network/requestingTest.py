@@ -1,5 +1,6 @@
+# Output file, testing
+
 import os
-import sys
 import pandas as pd
 import torch.nn as NN
 import torch.nn.functional as F
@@ -11,10 +12,7 @@ from torchvision.transforms import ToTensor
 import torch.optim as optim
 import torch
 
-sys.path.insert(0, "../Document-Assistant/backend")
 from DataLoading import *
-from getDoc import document_name # type: ignore
-print(document_name) # type: ignore
 
 ## CNN for text detection
 
@@ -58,13 +56,33 @@ class ConvolutionalNN(NN.Module):
           #boxP = boxP.mean(dim=[2,3])
           #classP = classP.mean(dim=[2,3])
 
-          inSize = x.size(0)
-          boxP = boxP.permute(0,1,2,3).contiguous().view(1,-1,4)
-          #boxP = boxP.view(inSize,-1,4)
-          classP = classP.permute(0,1,2,3).contiguous().view(1,-1,4)
-          #classP = classP.view(inSize,-1,4)
+          # Multi-label, multi-class
+          n, _, h, w = boxP.shape
+          boxP = boxP.permute(0,2,3,1).contiguous()
+          boxP = boxP.view(n,-1,4)
+          classP = classP.permute(0,2,3,1).contiguous()
+          classP = classP.view(n,-1,4)
 
           return boxP, classP
+
+
+## LOADING
+
+# NOT EVERY image is the size resolution
+resize = transforms.Compose([transforms.Resize((1000,750)), transforms.ToTensor()])
+
+# Training loader
+training_LOADER = DataLoader(
+                              DocumentCSVDataset(
+                              csv_file=datapata_training_csv, root_dir=datapath_training_image, transform=resize), 
+                              batch_size=1, shuffle=True, collate_fn=collate_fn)
+testing_LOADER = DataLoader(
+                              DocumentCSVDataset(
+                              csv_file= datapata_testing_csv, root_dir=datapath_testing_image, transform=resize), 
+                              batch_size=1, shuffle=False, collate_fn=collate_fn)
+
+print('Training set has {} instances'.format(len(training_LOADER)))
+print('Testing set has {} instances'.format(len(testing_LOADER)))
 
 # MODEL STATE LOADING
 
@@ -74,8 +92,7 @@ model = ConvolutionalNN()
 model.load_state_dict(torch.load(statepath, weights_only=True))
 model.to('cuda')
 
-boxcount = 5
-detected = 0
+boxcount = 1
 # Show prediction on every image
 dirc = os.listdir(datapath_testing_image)
 for imaget in range(boxcount):
@@ -93,8 +110,22 @@ for imaget in range(boxcount):
      tempy = 0
      box = model(img_tensor)[0]
      clss = model(img_tensor)[1]
-     #print(box)
-     #print(clss)
+  
+     boxP, classP = model(img_tensor)
+
+     # Analyze repetition pattern
+     unique_boxes, counts = torch.unique(boxP[0], dim=0, return_counts=True)
+     print(f"unique boxes: {len(unique_boxes)}")
+     print(f"common box appears {counts.max().item()} ")
+
+     # Show the top 5 most repeated boxes
+     top_counts, top_indices = torch.topk(counts, k=min(5, len(counts)))
+     print("\nMost repeated")
+     for i, (count, idx) in enumerate(zip(top_counts, top_indices)):
+          print(f"Box {i}: appears {count} times")
+
+     print(box.shape)
+     print(clss.shape)
 
      for i in range(int(len(box[0][0]))):
           # Dimensions
@@ -107,17 +138,19 @@ for imaget in range(boxcount):
           box_w = abs(box_w)
           box_h = abs(box_h)
 
-          xp = x
-          yp = y
-          box_wp = box_w
-          box_hp = box_h
-          x1, y1 = xp - box_wp/2, yp - box_hp/2
-          x2, y2 = xp + box_wp/2, yp + box_hp/2
+          x1, y1 = x - box_w/2, y - box_h/2
+          x2, y2 = x + box_w/2, y + box_h/2
+
+          w = x2-x1
+          h = y2-y1
+
+          print(x1,y1,w,h)
 
           ax.imshow(img)
-          rect = patches.Rectangle((x1, y1), x2, y2, linewidth=2, edgecolor='r', facecolor='none')
+          rect = patches.Rectangle((x1, y1), w, h, linewidth=2, edgecolor='r', facecolor='none')
           tempx = x
           tempy = y
+
           boxvector.append(rect)
      
      for i in range(int(len(box[0][0]))):
@@ -128,6 +161,7 @@ for imaget in range(boxcount):
      pyp.close()
      
      # OUTPUT 
-     print("IMG: "+name+" --- Class: "+finder[torch.argmax(model(img_tensor)[0][0][i]).item()])
+     print("IMG: "+name+" --- Class: " + finder[torch.argmax(model(img_tensor)[0][0][i]).item()])
 
      # print(torch.argmax(model(img_tensor)[0]).item())
+     print(len(boxvector))
