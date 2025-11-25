@@ -6,10 +6,7 @@ export default function ChatWelcome({ fileRef, uploadFile, oldFile }) {
     <>
       <Box sx={{ textAlign: 'center', mt: 5, mb: 2 }}>
         <Typography sx={{ fontWeight: 800, fontSize: 38 }}>
-          Hi! Welcome to
-        </Typography>
-        <Typography sx={{ fontWeight: 800, fontSize: 38 }}>
-          Legal Document AI Assistant!
+          Ask about any part of your document.
         </Typography>
       </Box>
 
@@ -24,7 +21,7 @@ export default function ChatWelcome({ fileRef, uploadFile, oldFile }) {
             borderRadius: 2,
             border: '1.5px solid #000',
             fontWeight: 700,
-            color: '#000',
+            color: '#4159FD',
             textTransform: 'none',
             boxShadow: '3px 2px 0 rgba(0,0,0,0.18)',
             '&:hover': { bgcolor: '#f8f8f8' }
@@ -44,7 +41,7 @@ export default function ChatWelcome({ fileRef, uploadFile, oldFile }) {
             borderRadius: 2,
             border: '1.5px solid #000',
             fontWeight: 700,
-            color: '#000',
+            color: '#4159FD',
             textTransform: 'none',
             boxShadow: '2px 2px 0 rgba(0,0,0,0.2)',
             '&:hover': { bgcolor: '#f8f8f8' }

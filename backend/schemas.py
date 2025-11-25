@@ -45,3 +45,18 @@ class UpdateUserRequest(BaseModel):
 class UpdateUserResponse(BaseModel):
     success: bool
     message: str
+
+
+class UpdateChatRequest(BaseModel):
+    name: str
+
+
+class CreateChatFromDocumentRequest(BaseModel):
+    user_id: int
+    document_id: int
+    name: str | None = None
+
+
+class DeleteDocumentResponse(BaseModel):
+    success: bool
+    message: str

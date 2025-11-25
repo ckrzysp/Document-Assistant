@@ -25,14 +25,14 @@ export default function GuestLanding() {
         }}
       >
         <Link to="/login">
-          <Button variant="text" sx={{ color: "#000", fontWeight: "bold" }}>
+          <Button variant="text" sx={{ color: "#4159FD", fontWeight: "bold" }}>
             Login
           </Button>
         </Link>
         <Link to="/register">
           <Button
             variant="outlined"
-            sx={{ color: "#000", borderColor: "#000", fontWeight: "bold" }}
+            sx={{ color: "#4159FD", borderColor: "#000", fontWeight: "bold" }}
           >
             Sign up
           </Button>
@@ -86,7 +86,7 @@ export default function GuestLanding() {
               px: 4,
               py: 2,
               fontWeight: "bold",
-              color: "#000",
+              color: "#4159FD",
               borderColor: "#000",
             }}
           >
@@ -100,7 +100,7 @@ export default function GuestLanding() {
               px: 4,
               py: 2,
               fontWeight: "bold",
-              color: "#000",
+              color: "#4159FD",
               borderColor: "#000",
             }}
           >

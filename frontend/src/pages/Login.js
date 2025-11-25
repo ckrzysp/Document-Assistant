@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import {Box, Typography, Button, Paper, TextField, Divider, IconButton, Alert} from "@mui/material";
-import { Google } from '@mui/icons-material';
+import {Box, Typography, Button, Paper, TextField, Divider, IconButton, Alert, FormControlLabel, Checkbox, InputAdornment} from "@mui/material";
+import { Google, AlternateEmail, LockOutlined, Visibility, VisibilityOff } from '@mui/icons-material';
 import axios from 'axios';
 import { API_BASE_URL } from '../config';
 import PasswordSetup from './PasswordSetup';
@@ -9,6 +9,8 @@ import PasswordSetup from './PasswordSetup';
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [rememberMe, setRememberMe] = useState(true);
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [googleLoading, setGoogleLoading] = useState(false);
@@ -85,6 +87,15 @@ export default function Login() {
     setPendingUser(null);
   }, [pendingUser, handleAuthSuccess]);
 
+  // Prefill remembered email
+  useEffect(() => {
+    const savedEmail = localStorage.getItem('remember_email');
+    if (savedEmail) {
+      setEmail(savedEmail);
+      setRememberMe(true);
+    }
+  }, []);
+
   // Check for Google OAuth callback when component loads
   useEffect(() => {
     const checkGoogleCallback = async () => {
@@ -127,6 +138,11 @@ export default function Login() {
       
       localStorage.setItem('user_id', userId);
       localStorage.setItem('user_email', email);
+      if (rememberMe) {
+        localStorage.setItem('remember_email', email);
+      } else {
+        localStorage.removeItem('remember_email');
+      }
       
       const userInfo = await getUserInfo(userId);
       
@@ -211,8 +227,8 @@ export default function Login() {
           height: "100vh",
           display: "flex",
           flexDirection: "column",
-          bgcolor: "#fff",
-          color: "#000",
+          bgcolor: "background.default",
+          color: "text.primary",
         }}
       >
         <Box
@@ -223,9 +239,10 @@ export default function Login() {
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
+            px: 2
           }}
         >
-          <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
+          <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
             <Box
               component="img"
               src="/LDAALogo.png"
@@ -264,11 +281,11 @@ export default function Login() {
             <Paper
               elevation={8}
               sx={{
-                width: 350,
-                padding: 4,
-                borderRadius: 2,
-                border: '1px solid',
-                borderColor: 'black',
+                width: 420,
+                p: 4,
+                border: '1px solid #0f172a',
+                background: '#fff',
+                textAlign: 'left'
               }}
             >
               <form onSubmit={handleLogin}>
@@ -286,19 +303,63 @@ export default function Login() {
                   margin="normal"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position="start">
+                        <AlternateEmail fontSize="small" />
+                      </InputAdornment>
+                    )
+                  }}
                   required
                 />
                 <TextField
                   fullWidth
                   label="Password"
-                  type="password"
+                  type={showPassword ? 'text' : 'password'}
                   variant="outlined"
                   margin="normal"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  sx={{ mb: 3 }}
+                  sx={{ mb: 1 }}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position="start">
+                        <LockOutlined fontSize="small" />
+                      </InputAdornment>
+                    ),
+                    endAdornment: (
+                      <InputAdornment position="end">
+                        <IconButton
+                          onClick={() => setShowPassword((prev) => !prev)}
+                          edge="end"
+                          aria-label="toggle password visibility"
+                          sx={{ color: 'text.secondary' }}
+                        >
+                          {showPassword ? <VisibilityOff /> : <Visibility />}
+                        </IconButton>
+                      </InputAdornment>
+                    )
+                  }}
                   required
                 />
+
+                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: 3 }}>
+                  <FormControlLabel
+                    control={
+                      <Checkbox
+                        checked={rememberMe}
+                        onChange={(e) => setRememberMe(e.target.checked)}
+                        color="primary"
+                        sx={{ p: 0.3 }}
+                      />
+                    }
+                    label="Remember me"
+                    sx={{ color: 'text.secondary', userSelect: 'none' }}
+                  />
+                  <Typography variant="body2" color="text.secondary" sx={{ cursor: 'pointer' }}>
+                    Forgot password?
+                  </Typography>
+                </Box>
 
                 <Button
                   type="submit"
@@ -306,7 +367,7 @@ export default function Login() {
                   variant="contained"
                   size="large"
                   disabled={loading}
-                  sx={{ backgroundColor: "black", mb: 2 }}
+                  sx={{ backgroundColor: "#1d4ed8", mb: 2 }}
                 >
                   {loading ? 'Logging in...' : 'Log In'}
                 </Button>
@@ -336,16 +397,13 @@ export default function Login() {
                 sx={{
                   mt: 2,
                   py: 1,
-                  borderRadius: "12px",
                   fontWeight: "bold",
                   textTransform: 'none',
-                  color: "black",
-                  border: "2px solid gray",
+                  color: "#1d4ed8",
+                  border: "1.5px solid #0f172a",
                 }}
+                startIcon={<Google />}
               >
-                <IconButton sx={{ color: '#000' }}>
-                  <Google />
-                </IconButton>
                 Continue with Google
               </Button>
             </Paper>

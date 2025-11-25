@@ -119,7 +119,7 @@ export default function PasswordSetup({ open, onClose, userData }) {
             variant="contained"
             disabled={loading || password.length < 6 || password !== confirmPassword}
             sx={{ 
-              backgroundColor: "black",
+              backgroundColor: "#4159FD",
               fontSize: '1rem',
               textTransform: 'none'
             }}

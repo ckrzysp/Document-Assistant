@@ -16,6 +16,7 @@ export default function ChatMessages({
   savedDocs,
   chooseLang,
   selectOldDoc,
+  selectedDocument,
   endRef
 }) {
   return (
@@ -57,7 +58,24 @@ export default function ChatMessages({
                   sx={{
                     minWidth: 160,
                     borderRadius: '8px',
-                    '& .MuiSelect-select': { py: 0.6, px: 1.3 }
+                    '& .MuiSelect-select': { py: 0.6, px: 1.3 },
+                    color: lang ? '#4159FD' : 'inherit',
+                    '& .MuiOutlinedInput-notchedOutline, &:hover .MuiOutlinedInput-notchedOutline, &.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                      borderColor: '#000'
+                    }
+                  }}
+                  MenuProps={{
+                    PaperProps: {
+                      sx: {
+                        '& .MuiMenuItem-root.Mui-selected': {
+                          backgroundColor: 'rgba(65, 89, 253, 0.2)',
+                          color: '#4159FD',
+                          '&:hover': {
+                            backgroundColor: 'rgba(65, 89, 253, 0.3)'
+                          }
+                        }
+                      }
+                    }
                   }}
                 >
                   <MenuItem value='' disabled>
@@ -92,21 +110,38 @@ export default function ChatMessages({
                 </Typography>
                 <Select
                   size='small'
-                  value=''
+                  value={selectedDocument}
                   onChange={(e) => selectOldDoc(e.target.value)}
                   displayEmpty
                   sx={{
                     minWidth: 200,
                     borderRadius: '8px',
-                    '& .MuiSelect-select': { py: 0.6, px: 1.3 }
+                    '& .MuiSelect-select': { py: 0.6, px: 1.3 },
+                    color: selectedDocument ? '#4159FD' : 'inherit',
+                    '& .MuiOutlinedInput-notchedOutline, &:hover .MuiOutlinedInput-notchedOutline, &.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                      borderColor: '#000'
+                    }
+                  }}
+                  MenuProps={{
+                    PaperProps: {
+                      sx: {
+                        '& .MuiMenuItem-root.Mui-selected': {
+                          backgroundColor: 'rgba(65, 89, 253, 0.2)',
+                          color: '#4159FD',
+                          '&:hover': {
+                            backgroundColor: 'rgba(65, 89, 253, 0.3)'
+                          }
+                        }
+                      }
+                    }
                   }}
                 >
                   <MenuItem value='' disabled>
                     Select a document
                   </MenuItem>
                   {savedDocs.map((doc) => (
-                    <MenuItem key={doc} value={doc}>
-                      {doc}
+                    <MenuItem key={doc.id} value={doc.id}>
+                      {doc.filename}
                     </MenuItem>
                   ))}
                 </Select>
@@ -120,7 +155,7 @@ export default function ChatMessages({
 
       {translating && (
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.2, mt: 1 }}>
-          <CircularProgress size={18} sx={{ color: '#000' }} />
+          <CircularProgress size={18} sx={{ color: '#4159FD' }} />
           <Typography variant='body2'>Translating...</Typography>
         </Box>
       )}

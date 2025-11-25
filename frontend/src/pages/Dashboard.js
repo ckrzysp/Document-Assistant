@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
   Typography, Paper, Grid, Box, Button, IconButton, Alert, 
-  CircularProgress, TextField, MenuItem 
+  CircularProgress, TextField, MenuItem, Menu, Dialog, DialogTitle, 
+  DialogContent, DialogActions 
 } from '@mui/material';
 import { 
   InsertDriveFileOutlined,
@@ -21,6 +22,13 @@ export default function Dashboard() {
   const [activeTab, setActiveTab] = useState('history');
   const [chatHistory, setChatHistory] = useState([]);
   const [chatLoading, setChatLoading] = useState(false);
+  const [menuAnchor, setMenuAnchor] = useState(null);
+  const [selectedChat, setSelectedChat] = useState(null);
+  const [renameDialogOpen, setRenameDialogOpen] = useState(false);
+  const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
+  const [renameValue, setRenameValue] = useState('');
+  const [chatActionLoading, setChatActionLoading] = useState(false);
+  const [chatActionError, setChatActionError] = useState('');
   const { documents: files, loading, error } = useDocuments();
   
   // All settings states
@@ -75,6 +83,85 @@ export default function Dashboard() {
       'ar': 'Arabic'
     };
     return languages[code] || code;
+  };
+
+  // Chat actions
+  const handleMenuOpen = (event, chat) => {
+    event.stopPropagation();
+    setMenuAnchor(event.currentTarget);
+    setSelectedChat(chat);
+    setChatActionError('');
+  };
+
+  const handleMenuClose = () => {
+    setMenuAnchor(null);
+  };
+
+  const openRenameDialog = () => {
+    if (!selectedChat) return;
+    setRenameValue(selectedChat.title || selectedChat.document_name || '');
+    setRenameDialogOpen(true);
+    setChatActionError('');
+    handleMenuClose();
+  };
+
+  const openDeleteDialog = () => {
+    setDeleteDialogOpen(true);
+    setChatActionError('');
+    handleMenuClose();
+  };
+
+  const handleRenameSubmit = async () => {
+    const newName = renameValue.trim();
+    if (!newName) {
+      setChatActionError('Please enter a chat name');
+      return;
+    }
+
+    if (!selectedChat) return;
+
+    setChatActionLoading(true);
+    setChatActionError('');
+    try {
+      const response = await axios.put(`${API_BASE_URL}/chat/${selectedChat.id}`, {
+        name: newName
+      });
+      setChatHistory(chats =>
+        chats.map(chat =>
+          chat.id === selectedChat.id
+            ? { ...chat, title: response.data.name || newName }
+            : chat
+        )
+      );
+      handleCloseDialogs();
+    } catch (error) {
+      setChatActionError(error.response?.data?.detail || 'Failed to rename chat');
+    } finally {
+      setChatActionLoading(false);
+    }
+  };
+
+  const handleDeleteChat = async () => {
+    if (!selectedChat) return;
+    setChatActionLoading(true);
+    setChatActionError('');
+    try {
+      await axios.delete(`${API_BASE_URL}/chat/${selectedChat.id}`);
+      setChatHistory(chats => chats.filter(chat => chat.id !== selectedChat.id));
+      handleCloseDialogs();
+    } catch (error) {
+      setChatActionError(error.response?.data?.detail || 'Failed to delete chat');
+    } finally {
+      setChatActionLoading(false);
+    }
+  };
+
+  const handleCloseDialogs = () => {
+    setRenameDialogOpen(false);
+    setDeleteDialogOpen(false);
+    setChatActionError('');
+    setSelectedChat(null);
+    setRenameValue('');
   };
 
   const handleInputChange = (setter) => (field) => (event) => {
@@ -246,7 +333,7 @@ export default function Dashboard() {
         return (
           <Box sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
             <Typography sx={{ fontWeight: 800, fontSize: 34, mb: 4 }}>
-              Previous Chat
+              Previous Conversations
             </Typography>
             <Box sx={{ flexGrow: 1, overflowY: 'auto' }}>
               {chatLoading ? (
@@ -257,7 +344,7 @@ export default function Dashboard() {
                 chatHistory.map((chat, i) => (
                   <Paper
                     key={chat.id || i}
-                    onClick={() => navigate(`/chat/${chat.document_id || chat.id}`)}
+                    onClick={() => navigate(`/chat/${chat.id}`)}
                     sx={{
                       display: 'flex',
                       justifyContent: 'space-between',
@@ -275,7 +362,11 @@ export default function Dashboard() {
                     <Typography sx={{ fontSize: 14 }}>
                       {chat.title || chat.document_name || `Chat ${i + 1}`}
                     </Typography>
-                    <IconButton size='small' sx={{ color: '#000' }}>
+                    <IconButton
+                      size='small'
+                      sx={{ color: '#000' }}
+                      onClick={(e) => handleMenuOpen(e, chat)}
+                    >
                       <MoreHoriz />
                     </IconButton>
                   </Paper>
@@ -410,7 +501,7 @@ export default function Dashboard() {
                     disabled={nameLoading || !nameData.newName || !nameData.password} 
                     sx={{ 
                       textTransform: 'none', 
-                      backgroundColor: 'black', 
+                      backgroundColor: '#4159FD', 
                       minWidth: 200,
                       fontSize: 16,
                       py: 1
@@ -464,7 +555,7 @@ export default function Dashboard() {
                     disabled={emailLoading || !emailData.newEmail || !emailData.password} 
                     sx={{ 
                       textTransform: 'none', 
-                      backgroundColor: 'black', 
+                      backgroundColor: '#4159FD', 
                       minWidth: 200,
                       fontSize: 16,
                       py: 1
@@ -533,7 +624,7 @@ export default function Dashboard() {
                     disabled={languageLoading || !languageData.newLanguage || !languageData.password} 
                     sx={{ 
                       textTransform: 'none', 
-                      backgroundColor: 'black', 
+                      backgroundColor: '#4159FD', 
                       minWidth: 200,
                       fontSize: 16,
                       py: 1
@@ -589,7 +680,7 @@ export default function Dashboard() {
                     disabled={passwordLoading || !passwordData.currentPassword || !passwordData.newPassword} 
                     sx={{ 
                       textTransform: 'none', 
-                      backgroundColor: 'black', 
+                      backgroundColor: '#4159FD', 
                       minWidth: 200,
                       fontSize: 16,
                       py: 1
@@ -730,6 +821,66 @@ export default function Dashboard() {
       <Box sx={{ flex: 1, p: 5, overflow: 'auto' }}>
         {renderContent()}
       </Box>
+
+      <Menu
+        anchorEl={menuAnchor}
+        open={Boolean(menuAnchor)}
+        onClose={handleMenuClose}
+      >
+        <MenuItem onClick={openRenameDialog}>Rename</MenuItem>
+        <MenuItem onClick={openDeleteDialog} sx={{ color: '#d32f2f' }}>
+          Delete
+        </MenuItem>
+      </Menu>
+
+      <Dialog open={renameDialogOpen} onClose={handleCloseDialogs} fullWidth maxWidth="xs">
+        <DialogTitle>Rename chat</DialogTitle>
+        <DialogContent sx={{ pt: 1 }}>
+          <TextField
+            fullWidth
+            autoFocus
+            label="Chat name"
+            value={renameValue}
+            onChange={(e) => setRenameValue(e.target.value)}
+            sx={{ mt: 1 }}
+          />
+          {chatActionError && (
+            <Alert severity="error" sx={{ mt: 2 }}>
+              {chatActionError}
+            </Alert>
+          )}
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleCloseDialogs} disabled={chatActionLoading}>Cancel</Button>
+          <Button onClick={handleRenameSubmit} disabled={chatActionLoading}>
+            {chatActionLoading ? 'Saving...' : 'Save'}
+          </Button>
+        </DialogActions>
+      </Dialog>
+
+      <Dialog open={deleteDialogOpen} onClose={handleCloseDialogs} fullWidth maxWidth="xs">
+        <DialogTitle>Delete chat</DialogTitle>
+        <DialogContent>
+          <Typography>
+            This will remove the chat and its messages. Are you sure?
+          </Typography>
+          {chatActionError && (
+            <Alert severity="error" sx={{ mt: 2 }}>
+              {chatActionError}
+            </Alert>
+          )}
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleCloseDialogs} disabled={chatActionLoading}>Cancel</Button>
+          <Button
+            onClick={handleDeleteChat}
+            disabled={chatActionLoading}
+            sx={{ color: '#d32f2f' }}
+          >
+            {chatActionLoading ? 'Deleting...' : 'Delete'}
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Box>
   );
 }
