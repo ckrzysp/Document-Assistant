@@ -9,10 +9,12 @@ from crud.user_crud import UserCRUD
 from crud.document_crud import DocumentCRUD
 from crud.message_crud import MessageCRUD
 from crud.chat_crud import ChatCRUD
-from crud.chat_crud import ChatCRUD
 from passlib.context import CryptContext
 from contextlib import asynccontextmanager
 from helpers import saveFile, get_gpt_response_with_context, check_logic_with_gemini
+import requests
+import secrets
+import os
 
 
 @asynccontextmanager
@@ -33,6 +35,10 @@ app.add_middleware(
 )
 
 pwd_context = CryptContext(schemes=["argon2"], deprecated="auto")
+
+# Google OAuth configuration
+GOOGLE_CLIENT_ID = "763420082617-j42eaoshh28sv6dncameph7gjqhei4qc.apps.googleusercontent.com"
+GOOGLE_CLIENT_SECRET = "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" 
 
 def get_db():
     db = Session(bind=engine)
@@ -80,6 +86,117 @@ def get_user_info(user_id: int, db: Session = Depends(get_db)):
         "name": user.name,
         "email": user.email,
         "language": user.language
+    }
+
+@app.post("/google-auth")
+async def google_auth(request: dict, db: Session = Depends(get_db)):
+    """Handle Google OAuth login/signup"""
+    try:
+        code = request.get('code')
+        if not code:
+            raise HTTPException(status_code=422, detail="Authorization code required")
+
+        # Exchange code for tokens
+        token_data = {
+            'client_id': GOOGLE_CLIENT_ID,
+            'client_secret': GOOGLE_CLIENT_SECRET,
+            'code': code,
+            'grant_type': 'authorization_code',
+            'redirect_uri': request.get('redirect_uri', 'http://localhost:3000/login')
+        }
+
+        token_resp = requests.post(
+            "https://oauth2.googleapis.com/token",
+            data=token_data,
+            headers={'Content-Type': 'application/x-www-form-urlencoded'}
+        )
+        
+        if token_resp.status_code != 200:
+            raise HTTPException(status_code=401, detail="Failed to verify with Google")
+
+        tokens = token_resp.json()
+        id_token = tokens.get('id_token')
+        
+        # Verify ID token
+        token_verify = requests.get(
+            f"https://oauth2.googleapis.com/tokeninfo?id_token={id_token}"
+        )
+        
+        if token_verify.status_code != 200:
+            raise HTTPException(status_code=401, detail="Invalid Google token")
+        
+        token_data = token_verify.json()
+
+        # Check token audience
+        if token_data.get('aud') != GOOGLE_CLIENT_ID:
+            raise HTTPException(status_code=401, detail="Invalid token")
+        
+        user_email = token_data.get('email')
+        if not user_email:
+            raise HTTPException(status_code=401, detail="No email in token")
+
+        user_info = {
+            'email': user_email,
+            'name': token_data.get('name', user_email.split('@')[0])
+        }
+
+        # Check if user exists
+        user = UserCRUD.get_by_email(db=db, email=user_info['email'])
+        
+        if user:
+            # Existing user login
+            return {
+                "success": True,
+                "user_id": user.id,
+                "is_new_user": False,
+                "user_email": user.email,
+                "user_name": user.name
+            }
+        else:
+            # New user - create account
+            temp_password = pwd_context.hash("temp_setup_required")
+            
+            new_user = UserCRUD.create(
+                db=db, 
+                name=user_info['name'], 
+                email=user_info['email'], 
+                hashed_password=temp_password, 
+                language='en'
+            )
+            
+            return {
+                "success": True,
+                "user_id": new_user.id,
+                "is_new_user": True,
+                "needs_password_setup": True,
+                "user_email": new_user.email,
+                "user_name": new_user.name
+            }
+            
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=401, detail="Google authentication failed")
+
+# Set password for OAuth users
+@app.post("/set-password")
+async def set_password(
+    user_id: int = Form(...),
+    password: str = Form(...),
+    db: Session = Depends(get_db)
+):
+    user = UserCRUD.get_by_id(db=db, user_id=user_id)
+    
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    # Update password
+    hashed_password = pwd_context.hash(password)
+    UserCRUD.update(db=db, user_id=user_id, hashed_password=hashed_password)
+    
+    return {
+        "success": True,
+        "message": "Password set successfully"
     }
 
 @app.post("/create_chat")
