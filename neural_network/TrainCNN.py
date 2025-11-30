@@ -31,17 +31,17 @@ class ConvolutionalNN(NN.Module):
                NN.Conv2d(3, 25, 3, 1, padding=1),
                NN.BatchNorm2d(25),
                NN.ReLU(),
-               NN.MaxPool2d(2,2),
+               NN.MaxPool2d(4,4),
                # 2
                NN.Conv2d(25, 75, 3, 1, padding=1), # 2D Convolutional Layer, Kernel Size 5, Moves 1 pixel (x,y) direction , 16 input layers to 24 output
                NN.BatchNorm2d(75),                 # Batches are standardized so feature learning to even
                NN.ReLU(),                          # Retified Learning Unit, Non-Linearity // Outlier detection or uniqueness 
-               NN.MaxPool2d(2,2),                  # 4x4 grid of 2x2 pools, extracting highest # / highest feature
+               NN.MaxPool2d(4,4),                  # 4x4 grid of 2x2 pools, extracting highest # / highest feature
                # 3
                NN.Conv2d(75, 150, 3, 1, padding=1),
                NN.BatchNorm2d(150),
                NN.ReLU(), 
-               NN.MaxPool2d(2,2)              
+               NN.MaxPool2d(4,4)              
           )
 
           num_boxes = 1
@@ -96,22 +96,33 @@ print('Testing set has {} instances'.format(len(testing_LOADER)))
 
 # MODEL
 model = ConvolutionalNN()
-reg_lossfn = NN.SmoothL1Loss()
-class_lossfn = NN.CrossEntropyLoss()
-bce = NN.BCELoss()
-SmoothL1 = NN.SmoothL1Loss()
-ce = NN.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(), lr= 0.001)
 device = torch.device("cuda")
 model.to(device)
 
+SmoothL1 = NN.SmoothL1Loss()
+ce = NN.CrossEntropyLoss()
+
+bce = NN.BCELoss(reduction='none')  
+optimizer = optim.AdamW(model.parameters(), lr=.0001)
+
+# Get grid dimensions ONCE
+with torch.no_grad():
+    dummy_input = torch.randn(1, 3, 1000, 750).to(device)
+    dummy_boxes, _, _ = model(dummy_input)
+    H_out = dummy_boxes.shape[1]
+    W_out = dummy_boxes.shape[2]
+    print(f"Grid dimensio3s: {H_out}x{W_out}")
+
 # TRAINING
 train_losses = []
-num_epochs = 10
+num_epochs = 30
+e_loss = 0
 for epoch in range(num_epochs):
-     correction = 0
+     model.train()
+     e_loss = 0.0 
      for i, (image_name, image, boxes, labels) in enumerate(training_LOADER):
           # Handle image tuple from DataLoader
+          optimizer.zero_grad()
           if isinstance(image, (tuple, list)):
                image = image[0]
           if isinstance(boxes, (tuple, list)):
@@ -128,13 +139,6 @@ for epoch in range(num_epochs):
           boxes = boxes.to(device)
           labels = labels.to(device)
 
-          # Forward function is called
-          with torch.no_grad():
-               dummy_boxes, dummy_obj, dummy_cls = model(image)
-               H_out = dummy_boxes.shape[1]
-               W_out = dummy_boxes.shape[2]
-
-       
           gt_obj = torch.zeros((H_out, W_out), dtype=torch.float32, device=device)
           gt_boxes = torch.zeros((H_out, W_out, 4), dtype=torch.float32, device=device)
           gt_labels = torch.zeros((H_out, W_out), dtype=torch.long, device=device)
@@ -156,65 +160,55 @@ for epoch in range(num_epochs):
                cy_rel = cy * H_out - gy
                w_rel = w
                h_rel = h
-
+               
                gt_boxes[gy, gx] = torch.tensor([cx_rel, cy_rel, w_rel, h_rel], device=device)
                gt_labels[gy, gx] = clss
+
+          num_boxes_in_image = boxes.shape[0]
+          num_cells_assigned = (gt_obj > 0).sum().item()
+
           pred_boxes, pred_obj, pred_classes = model(image)
           pred_boxes = pred_boxes.squeeze(0)
           pred_obj = pred_obj.squeeze(0)
           pred_classes = pred_classes.squeeze(0)
 
-          # Objectness loss
-          L_obj = bce(pred_obj, gt_obj.unsqueeze(-1))
-
-          # Mask for object cells
           obj_mask = gt_obj == 1
+          
+          # Objectness loss with manual weighting for imbalance
+          obj_loss_raw = bce(pred_obj, gt_obj.unsqueeze(-1))
+          weight = torch.ones_like(gt_obj).unsqueeze(-1)
+          weight[obj_mask] = 20.0
+          L_obj = (obj_loss_raw * weight).mean()
 
-          # SmoothL1 box regression ONLY for object cells
-          L_box = SmoothL1(pred_boxes[obj_mask], gt_boxes[obj_mask])
-
-          # Class loss only for object cells
-          L_cls = ce(pred_classes[obj_mask], gt_labels[obj_mask])
+          # Box and class loss only for object cells
+          if obj_mask.sum() > 0:
+               L_box = SmoothL1(pred_boxes[obj_mask], gt_boxes[obj_mask])
+               L_cls = ce(pred_classes[obj_mask], gt_labels[obj_mask])
+          else:
+               L_box = torch.tensor(0.0, device=device)
+               L_cls = torch.tensor(0.0, device=device)
 
           # Total
-          loss = L_obj + 5*L_box + L_cls
+          loss = 1*L_obj + 1*L_box + 1*L_cls
+          e_loss += loss.item()
 
-          optimizer.zero_grad()
           loss.backward()
+          NN.utils.clip_grad_norm_(model.parameters(), max_norm=5.0)
           optimizer.step()
-
-          #correction += (classP==labels).float().sum().item()
-          #acc = correction/labels.size(0)
           
-          if (i+1) % 10 == 9:
-               print(f"[Epoch {epoch+1}, Batch {i+1}] Loss: {loss / 20:.12f}")
+          if (i+1) % 15 == 0:
+               avgloss = e_loss/(i+1)
+               print(f"[Epoch {epoch+1}, Batch {i+1}] Loss: {avgloss:.12f}")
+               print(f"  Obj cells: {obj_mask.sum().item()}/{H_out*W_out}, Total boxes: {boxes.shape[0]}")
 
-     train_losses.append(loss / len(training_LOADER))
+     Aloss = e_loss/len(training_LOADER)
+     train_losses.append(Aloss)
+     print(f"Epoch {epoch+1} Average Loss: {Aloss:.6f}")
 
-
+model.eval()
 # Save state
-statepath = "../Document-Assistant/model_state/CNNstate.pt"
+statepath = "../Document-Assistant/model_state/CNNstateTEST.pt"
 try:
      torch.save(model.state_dict(), statepath)
 except:
      print("Cannot Open.")
-
-# TRAINING
-
-# Printing to see if everything is resized and every file is loaded, NOT printing boxes because it takes a while, add: boxes after shape if need be
-# for i, (image_name, image, boxes, labels) in enumerate(training_LOADER):
-#     print(i, image_name[0], image[0].shape)
-"""
-          boxP = boxP.squeeze(0)
-          IoUP = torchvision.ops.box_iou(boxP, boxes)
-          _, posBox = IoUP.max(dim=1)
-          positiveMask = IoUP > .5
-          target_classes = torch.ones_like(classP).to(device).float()
-
-          # CrossEntropyLoss expects labels 
-          loss = reg_lossfn(boxP, boxes[posBox]) + class_lossfn(classP, target_classes)
-          
-          # Changes weights within network
-          loss.backward()
-          optimizer.step()
-"""

@@ -58,6 +58,8 @@ class DocumentCSVDataset(Dataset):
           image_name = image_name[:-4] + ".json"
           # PYTORCH expects 3 channels not 1, needed to convert from grayscale (1) to RGB (3)
           image = Image.fromarray(image).convert("RGB")
+          sizes = image.size
+          
 
           # Transform
           if self.transform:
@@ -84,12 +86,9 @@ class DocumentCSVDataset(Dataset):
           boxes = torch.as_tensor(boxes, dtype=torch.float32, device=device)
           labels = torch.as_tensor(labels, dtype=torch.long, device=device)
 
+          boxes[:, [0,2]] /= sizes[0]
+          boxes[:, [1,3]] /= sizes[1]
+
           # Return box coords, labels, image
-          sample = {'name': image_name, 'image': image, 'boxes': boxes, 'labels': labels}
-
-          H, W = image.shape[1], image.shape[2]
-          boxes[:, [0,2]] /= W
-          boxes[:, [1,3]] /= H
-
           return image_name, image, boxes, labels
 
