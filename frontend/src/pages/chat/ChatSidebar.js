@@ -15,8 +15,6 @@ import {
   MenuOpen,
   LogoutRounded
 } from '@mui/icons-material';
-import { useDocuments } from '../../hooks/useDocuments';
-import { splitDocuments } from '../../utils/documentUtils';
 import { API_BASE_URL } from '../../config';
 import axios from 'axios';
 
@@ -26,12 +24,12 @@ export default function ChatSidebar({
   handleNewChat
 }) {
   const navigate = useNavigate();
-  const { documents: userDocuments, loading } = useDocuments();
   const [userName, setUserName] = useState('User');
   const [userLoading, setUserLoading] = useState(true);
-  
-  // split documents into recent and previous
-  const { recent, previous } = splitDocuments(userDocuments, 3);
+  const [chatHistory, setChatHistory] = useState([]);
+  const [chatLoading, setChatLoading] = useState(true);
+  const recentChats = chatHistory.slice(0, 3);
+  const previousChats = chatHistory.slice(3);
 
   // Fetch user info from API
   useEffect(() => {
@@ -60,6 +58,31 @@ export default function ChatSidebar({
     };
 
     fetchUserInfo();
+  }, []);
+
+  useEffect(() => {
+    const loadChatHistory = async () => {
+      const userId = localStorage.getItem('user_id');
+      if (!userId) {
+        setChatLoading(false);
+        return;
+      }
+
+      setChatLoading(true);
+      setChatHistory([]);
+
+      try {
+        const response = await axios.get(`${API_BASE_URL}/chats/${userId}`);
+        setChatHistory(response.data || []);
+      } catch (error) {
+        console.error('Failed to load chat history:', error);
+        setChatHistory([]);
+      } finally {
+        setChatLoading(false);
+      }
+    };
+
+    loadChatHistory();
   }, []);
 
   const handleLogout = () => {
@@ -160,13 +183,13 @@ export default function ChatSidebar({
           </Button>
 
           <Typography sx={{ fontWeight: 700, mb: 1, mt: 1 }}>Recent</Typography>
-          {loading ? (
+          {chatLoading ? (
             <Typography sx={{ fontSize: 14, color: 'gray' }}>Loading...</Typography>
-          ) : recent.length > 0 ? (
-            recent.map((doc) => (
+          ) : recentChats.length > 0 ? (
+            recentChats.map((chat) => (
               <Paper
-                key={doc.id}
-                onClick={() => navigate(`/chat/${doc.id}`)}
+                key={chat.id}
+                onClick={() => navigate(`/chat/${chat.id}`)}
                 sx={{
                   display: 'flex',
                   justifyContent: 'space-between',
@@ -181,7 +204,9 @@ export default function ChatSidebar({
                   '&:hover': { bgcolor: '#f8f8f8' }
                 }}
               >
-                <Typography sx={{ fontSize: 14 }}>{doc.filename}</Typography>
+                <Typography sx={{ fontSize: 14 }}>
+                  {chat.title || chat.document_name || 'Untitled chat'}
+                </Typography>
                 <IconButton size='small' sx={{ color: '#000' }}>
                   <MoreHoriz />
                 </IconButton>
@@ -199,13 +224,13 @@ export default function ChatSidebar({
           flex: 1, 
           overflowY: 'auto',
         }}>
-          {loading ? (
+          {chatLoading ? (
             <Typography sx={{ fontSize: 14, color: 'gray' }}>Loading...</Typography>
-          ) : previous.length > 0 ? (
-            previous.map((doc) => (
+          ) : previousChats.length > 0 ? (
+            previousChats.map((chat) => (
               <Paper
-                key={doc.id}
-                onClick={() => navigate(`/chat/${doc.id}`)}
+                key={chat.id}
+                onClick={() => navigate(`/chat/${chat.id}`)}
                 sx={{
                   display: 'flex',
                   justifyContent: 'space-between',
@@ -220,7 +245,9 @@ export default function ChatSidebar({
                   '&:hover': { bgcolor: '#f8f8f8' }
                 }}
               >
-                <Typography sx={{ fontSize: 14 }}>{doc.filename}</Typography>
+                <Typography sx={{ fontSize: 14 }}>
+                  {chat.title || chat.document_name || 'Untitled chat'}
+                </Typography>
                 <IconButton size='small' sx={{ color: '#000' }}>
                   <MoreHoriz />
                 </IconButton>
