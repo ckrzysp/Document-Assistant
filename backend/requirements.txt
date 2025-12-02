@@ -9,3 +9,4 @@ passlib[argon2]==1.7.4
 google-genai
 python-multipart
 python-doctr
+boto3==1.35.77

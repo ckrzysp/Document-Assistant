@@ -3,28 +3,29 @@ from fastapi import UploadFile
 from openai import OpenAI
 from google import genai
 from google.genai import types
+from s3_storage import get_s3_storage
 
 
 GPT_client = OpenAI(api_key=os.getenv("GPT_API_KEY"))
 Gemini_client = genai.Client()
 
 async def saveFile(file : UploadFile, user_id : int, document_id : int, type : str, base_path : str = "."):
-    tmp_path = os.path.join(base_path, "tmp")
-    os.makedirs(tmp_path, exist_ok=True)
+    """
+    Save file to AWS S3.
 
-    file_dir = os.path.join(tmp_path, str(user_id))
-    os.makedirs(file_dir, exist_ok=True)
+    Args:
+        file: UploadFile object
+        user_id: User ID
+        document_id: Document ID
+        type: Type of file ('original' or 'translated')
+        base_path: Ignored (kept for backward compatibility)
 
-    document_dir = os.path.join(file_dir, str(document_id))
-    os.makedirs(document_dir, exist_ok=True)
-
-    file_path = os.path.join(document_dir, type)
-
-    content = await file.read()
-    with open(file_path, "wb") as f:
-        f.write(content)
-
-    return file_path
+    Returns:
+        S3 key (path) where file was stored
+    """
+    s3_storage = get_s3_storage()
+    s3_key = await s3_storage.upload_file(file, user_id, document_id, type)
+    return s3_key
 
 def get_gpt_response_with_context(messages: list, document_text: str, model: str = "gpt-4o-mini", language: str | None = None) -> str:
     language_instruction = ""

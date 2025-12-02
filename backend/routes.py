@@ -1,6 +1,6 @@
 # Endpoint Code
 from fastapi import FastAPI, Depends, HTTPException, Form, File, UploadFile
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from database import database, engine
@@ -12,9 +12,11 @@ from crud.chat_crud import ChatCRUD
 from passlib.context import CryptContext
 from contextlib import asynccontextmanager
 from helpers import saveFile, get_gpt_response_with_context, check_logic_with_gemini
+from s3_storage import get_s3_storage
 import requests
 import secrets
 import os
+from io import BytesIO
 
 
 @asynccontextmanager
@@ -75,7 +77,7 @@ def login(request: LoginRequest, db: Session = Depends(get_db)):
     else:
         raise HTTPException(status_code=401, detail="Invalid email or password")
 
-@app.get("/user/{user_id}")
+@app.get("/users/{user_id}")
 def get_user_info(user_id: int, db: Session = Depends(get_db)):
     user = UserCRUD.get_by_id(db=db, user_id=user_id)
     if not user:
@@ -295,7 +297,7 @@ def download_document(
     db: Session = Depends(get_db)
 ):
     """
-    Download a document file.
+    Download a document file from S3.
 
     Args:
         document_id: The document ID
@@ -306,23 +308,33 @@ def download_document(
     if not document:
         raise HTTPException(status_code=404, detail="Document not found")
 
-    # Determine which file path to use
+    # Determine which S3 key to use
     if version == "translated":
-        file_path = document.translated_file_path
-        if not file_path or not file_path.strip():
+        s3_key = document.translated_file_path
+        if not s3_key or not s3_key.strip():
             raise HTTPException(status_code=404, detail="Translated version not available")
         filename_prefix = "translated_"
     else:  # default to original
-        file_path = document.original_file_path
-        if not file_path:
+        s3_key = document.original_file_path
+        if not s3_key:
             raise HTTPException(status_code=404, detail="Original file not found")
         filename_prefix = ""
 
-    return FileResponse(
-        path=file_path,
-        filename=f"{filename_prefix}{document.file_info.get('filename', 'download')}",
-        media_type=document.file_info.get("media_type", "application/octet-stream")
-    )
+    # Download file from S3
+    try:
+        s3_storage = get_s3_storage()
+        file_content = s3_storage.download_file(s3_key)
+
+        # Return as streaming response
+        return StreamingResponse(
+            BytesIO(file_content),
+            media_type=document.file_info.get("media_type", "application/octet-stream"),
+            headers={
+                "Content-Disposition": f'attachment; filename="{filename_prefix}{document.file_info.get("filename", "download")}"'
+            }
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error downloading file from S3: {str(e)}")
 
 # Get user chats
 @app.get("/chats/{user_id}")
@@ -388,6 +400,14 @@ def delete_document(document_id: int, user_id: int, db: Session = Depends(get_db
     document = DocumentCRUD.get_by_id(db=db, document_id=document_id)
     if not document or document.user_id != user_id:
         raise HTTPException(status_code=404, detail="Document not found")
+
+    # Delete files from S3
+    try:
+        s3_storage = get_s3_storage()
+        s3_storage.delete_document_files(user_id, document_id)
+    except Exception as e:
+        # Log error but continue with database deletion
+        print(f"Warning: Failed to delete files from S3: {str(e)}")
 
     # delete related chats/messages
     for chat in document.chats:
