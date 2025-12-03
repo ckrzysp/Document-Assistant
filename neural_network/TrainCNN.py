@@ -33,22 +33,22 @@ class ConvolutionalNN(NN.Module):
                NN.ReLU(),
                NN.MaxPool2d(4,4),
                # 2
-               NN.Conv2d(25, 75, 3, 1, padding=1), # 2D Convolutional Layer, Kernel Size 5, Moves 1 pixel (x,y) direction , 16 input layers to 24 output
-               NN.BatchNorm2d(75),                 # Batches are standardized so feature learning to even
+               NN.Conv2d(25, 150, 3, 1, padding=1), # 2D Convolutional Layer, Kernel Size 5, Moves 1 pixel (x,y) direction , 16 input layers to 24 output
+               NN.BatchNorm2d(150),                 # Batches are standardized so feature learning to even
                NN.ReLU(),                          # Retified Learning Unit, Non-Linearity // Outlier detection or uniqueness 
                NN.MaxPool2d(4,4),                  # 4x4 grid of 2x2 pools, extracting highest # / highest feature
                # 3
-               NN.Conv2d(75, 150, 3, 1, padding=1),
-               NN.BatchNorm2d(150),
+               NN.Conv2d(150, 400, 3, 1, padding=1),
+               NN.BatchNorm2d(400),
                NN.ReLU(), 
                NN.MaxPool2d(4,4)              
           )
 
           num_boxes = 1
           num_classes = 4
-          self.obj_head = NN.Conv2d(150, num_boxes*1, 1)
-          self.box_head = NN.Conv2d(150, num_boxes*4, 1)
-          self.class_head = NN.Conv2d(150, num_boxes*num_classes, 1)
+          self.obj_head = NN.Conv2d(400, num_boxes*1, 1)
+          self.box_head = NN.Conv2d(400, num_boxes*4, 1)
+          self.class_head = NN.Conv2d(400, num_boxes*num_classes, 1)
 
      # Output Tensors, function used for training
      def forward(self, x):
@@ -73,7 +73,6 @@ class ConvolutionalNN(NN.Module):
           classP = classP.permute(0,2,3,1)         # → (B,H,W,4)
 
           return boxP, objP, classP
-
 
 ## LOADING
 
@@ -111,11 +110,11 @@ with torch.no_grad():
     dummy_boxes, _, _ = model(dummy_input)
     H_out = dummy_boxes.shape[1]
     W_out = dummy_boxes.shape[2]
-    print(f"Grid dimensio3s: {H_out}x{W_out}")
+    print(f"Grid dimensions: {H_out}x{W_out}")
 
 # TRAINING
 train_losses = []
-num_epochs = 30
+num_epochs = 20
 e_loss = 0
 for epoch in range(num_epochs):
      model.train()
