@@ -236,8 +236,6 @@ for imaget in range(files):
                          minh = averagebox[i][0]
                     if averagebox[i][1] > minw:
                          minw = averagebox[i][1]
-
-          print(maxx, maxy, minh, minw)
                
           if maxy <= 0:
                maxy = 5
