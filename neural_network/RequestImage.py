@@ -15,7 +15,7 @@ import torch
 import sys
 
 from DataLoading import *
-
+from ExtractionCNN import *
 
 ## CNN for text detection
 
@@ -33,10 +33,10 @@ class ConvolutionalNN(NN.Module):
                NN.ReLU(),
                NN.MaxPool2d(4,4),
                # 2
-               NN.Conv2d(25, 150, 3, 1, padding=1), # 2D Convolutional Layer, Kernel Size 5, Moves 1 pixel (x,y) direction , 16 input layers to 24 output
-               NN.BatchNorm2d(150),                 # Batches are standardized so feature learning to even
-               NN.ReLU(),                          # Retified Learning Unit, Non-Linearity // Outlier detection or uniqueness 
-               NN.MaxPool2d(4,4),                  # 4x4 grid of 2x2 pools, extracting highest # / highest feature
+               NN.Conv2d(25, 150, 3, 1, padding=1),    # 2D Convolutional Layer, Kernel Size 5, Moves 1 pixel (x,y) direction , 16 input layers to 24 output
+               NN.BatchNorm2d(150),                    # Batches are standardized so feature learning to even
+               NN.ReLU(),                              # Retified Learning Unit, Non-Linearity // Outlier detection or uniqueness 
+               NN.MaxPool2d(4,4),                      # 4x4 grid of 2x2 pools, extracting highest # / highest feature
                # 3
                NN.Conv2d(150, 400, 3, 1, padding=1),
                NN.BatchNorm2d(400),
@@ -74,7 +74,7 @@ class ConvolutionalNN(NN.Module):
 
           return boxP, objP, classP
 
-## REQUESTING TEXT DETECTION
+## DETECTION
 
 statepath = "../Document-Assistant/model_state/CNNstate.pt"
 model = ConvolutionalNN()
@@ -92,13 +92,18 @@ with torch.no_grad():
      print(f"Grid dimensions: {H_out}x{W_out}")
 
 # File
-img = "enterfilenamehere.whateverfileextension"
+#img = "enterfilenamehere.whateverfileextension"
+img = "neural_network//82573104.png"
+path = img
 name = img
 img = Image.open(img).convert('RGB')
+tempimage = img
 w, h = img.size
 if w < 750 or h < 1000:
      img = img.resize((750,1000))
 img_tensor = ToTensor()(img).unsqueeze(0).to('cuda')
+
+fx,fy,fh,fw = 0, 0, 0, 0
 
 # Get predictions
 with torch.no_grad():
@@ -217,8 +222,6 @@ if obj_mask.sum() > 0:
                     minh = averagebox[i][0]
                if averagebox[i][1] > minw:
                     minw = averagebox[i][1]
-
-     print(maxx, maxy, minh, minw)
           
      if maxy <= 0:
           maxy = 5
@@ -229,9 +232,15 @@ if obj_mask.sum() > 0:
      if minh <= img_h:
           minh = img_h-50
 
+     fx = int(maxx)
+     fy = int(maxy)
+     fw = int(minw)
+     fh = int(minh)
+
+     print(maxx, maxy, minh, minw)
      # Draw rectangle
      rect = patches.Rectangle(
-          (maxx, maxy), minw, minh,
+          (fx, fy), fw, fh,
           linewidth=4,
           edgecolor='purple',
           facecolor='none'
@@ -240,10 +249,17 @@ if obj_mask.sum() > 0:
      
      # Add label
      label = f"{obj_score:.2f} " + class_id
-     ax.text(x1, y1-5, "Text", color=color, fontsize=8, 
+     ax.text(fx, fy-10, "General Box", color='purple', fontsize=8, 
                bbox=dict(boxstyle='round', facecolor='white', alpha=0.7))
 
      pyp.title(f"Detections: {len(detections)} found")
      pyp.tight_layout()
      pyp.show()
      pyp.close()
+
+## EXTRACTION
+
+croppedImage = tempimage.crop((fx,fy,fw,fh))
+extractedOutput = extract_text_from_crop(cropped_image=path)
+text = extractedOutput['text']
+print(text)
