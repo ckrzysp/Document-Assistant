@@ -3,10 +3,29 @@ from fastapi import UploadFile
 from openai import OpenAI
 from google import genai
 from google.genai import types
+from google.genai.errors import ClientError
 
 
-GPT_client = OpenAI(api_key=os.getenv("GPT_API_KEY"))
-Gemini_client = genai.Client()
+# Initialize clients lazily or with error handling
+GPT_client = None
+Gemini_client = None
+
+def get_gpt_client():
+    """Get or initialize GPT client."""
+    global GPT_client
+    if GPT_client is None:
+        api_key = os.getenv("GPT_API_KEY")
+        if not api_key:
+            raise ValueError("GPT_API_KEY environment variable is not set")
+        GPT_client = OpenAI(api_key=api_key)
+    return GPT_client
+
+def get_gemini_client():
+    """Get or initialize Gemini client."""
+    global Gemini_client
+    if Gemini_client is None:
+        Gemini_client = genai.Client()
+    return Gemini_client
 
 async def saveFile(file : UploadFile, user_id : int, document_id : int, type : str, base_path : str = "."):
     tmp_path = os.path.join(base_path, "tmp")
@@ -27,6 +46,9 @@ async def saveFile(file : UploadFile, user_id : int, document_id : int, type : s
     return file_path
 
 def get_gpt_response_with_context(messages: list, document_text: str, model: str = "gpt-4o-mini", language: str | None = None) -> str:
+    if not document_text or not document_text.strip():
+        return "I cannot find that information in the provided document."
+    
     language_instruction = ""
     if language:
         language_instruction = f"\n        - Respond ONLY in {language}. All your responses must be in {language}."
@@ -47,7 +69,8 @@ def get_gpt_response_with_context(messages: list, document_text: str, model: str
 
     full_messages = [system_prompt] + messages
 
-    response = GPT_client.chat.completions.create(
+    client = get_gpt_client()
+    response = client.chat.completions.create(
         model=model,
         messages=full_messages
     )
@@ -81,7 +104,8 @@ def check_logic_with_gemini(content: str, document_text: str, language: str | No
     [UNREASONABLE] -> **False**
     """
 
-    response = Gemini_client.models.generate_content(
+    client = get_gemini_client()
+    response = client.models.generate_content(
         model="gemini-2.5-flash",
         contents=content,
         config=types.GenerateContentConfig(
@@ -92,3 +116,38 @@ def check_logic_with_gemini(content: str, document_text: str, language: str | No
     if response.text == "True":
         return True
     return False
+
+def translate_text(text: str, target_language: str) -> str:
+    """
+    Translate text to target language using Gemini.
+    
+    Args:
+        text: Text to translate
+        target_language: Target language name (e.g., "Spanish", "French", "English")
+        
+    Returns:
+        Translated text, or original text if translation fails
+    """
+    if not text or not target_language:
+        return text
+    
+    try:
+        prompt = f"""Translate the following text to {target_language}. 
+Only return the translated text, nothing else. Do not add any explanations or notes.
+
+Text to translate:
+{text}"""
+
+        client = get_gemini_client()
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=prompt
+        )
+        
+        translated = response.text.strip()
+        return translated if translated else text
+        
+    except Exception as e:
+        # If translation fails, return original text
+        print(f"Translation error: {e}")
+        return text
