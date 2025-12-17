@@ -11,6 +11,7 @@ from torch.utils.data import Dataset, DataLoader
 from torchvision import datasets, transforms
 from torchvision.transforms import ToTensor
 import torch.optim as optim
+import pypdf
 import torch
 import sys
 
@@ -92,7 +93,7 @@ with torch.no_grad():
      print(f"Grid dimensions: {H_out}x{W_out}")
 
 # File
-#img = "enterfilenamehere.whateverfileextension"
+#img = "enterfilenamehere.whateverfileextension"\
 img = "neural_network//82573104.png"
 path = img
 name = img
