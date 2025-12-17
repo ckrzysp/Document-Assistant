@@ -19,7 +19,27 @@ export default function Register() {
   const [googleLoading, setGoogleLoading] = useState(false);
   const [showPasswordModal, setShowPasswordModal] = useState(false);
   const [pendingUser, setPendingUser] = useState(null);
+  const [googleConfig, setGoogleConfig] = useState(null);
+  const [configLoading, setConfigLoading] = useState(true);
   const navigate = useNavigate();
+
+  // Load Google OAuth configuration
+  useEffect(() => {
+    const loadGoogleConfig = async () => {
+      try {
+        const response = await axios.get(`${API_BASE_URL}/config/google-oauth`);
+        setGoogleConfig(response.data);
+        setError('');
+      } catch (err) {
+        console.error('Failed to load Google OAuth config:', err);
+        setError('Authentication service is currently unavailable. Please try again later.');
+      } finally {
+        setConfigLoading(false);
+      }
+    };
+    
+    loadGoogleConfig();
+  }, []);
 
   // Get user info from backend
   const getUserInfo = useCallback(async (userId) => {
@@ -160,24 +180,28 @@ export default function Register() {
 
   // Start Google OAuth flow
   const startGoogleSignup = () => {
-    const clientId = "763420082617-j42eaoshh28sv6dncameph7gjqhei4qc.apps.googleusercontent.com";
-    const redirectUri = encodeURIComponent(`${window.location.origin}/register`);
-    const scope = encodeURIComponent("email profile openid");
+    if (!googleConfig || !googleConfig.client_id) {
+      setError('Authentication configuration not loaded. Please refresh the page.');
+      return;
+    }
+
+    const redirectUri = googleConfig.redirect_uris.register;
+    const params = new URLSearchParams({
+      client_id: googleConfig.client_id,
+      redirect_uri: redirectUri,
+      response_type: 'code',
+      scope: 'email profile openid',
+      access_type: 'offline',
+      prompt: 'consent',
+      state: 'signup'
+    });
     
-    const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?` +
-      `client_id=${clientId}&` +
-      `redirect_uri=${redirectUri}&` +
-      `response_type=code&` +
-      `scope=${scope}&` +
-      `access_type=offline&` +
-      `prompt=consent&` +
-      `state=signup`;
-    
+    const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?${params.toString()}`;
     window.location.href = authUrl;
   };
 
-  // Show loading during Google auth
-  if (googleLoading) {
+  // Show loading during Google auth or config loading
+  if (googleLoading || configLoading) {
     return (
       <Box
         sx={{
@@ -205,11 +229,57 @@ export default function Register() {
           Legal Document AI Assistant
         </Typography>
         <Typography variant="h6" sx={{ mb: 2 }}>
-          Creating your account with Google...
+          {configLoading ? 'Loading authentication...' : 'Creating your account with Google...'}
         </Typography>
         <Typography variant="body2" color="gray">
           Please wait while we complete your registration.
         </Typography>
+      </Box>
+    );
+  }
+
+  // Show configuration error
+  if (error && error.includes('Authentication service')) {
+    return (
+      <Box
+        sx={{
+          height: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          bgcolor: "#fff",
+          color: "#000",
+          textAlign: "center",
+          px: 2
+        }}
+      >
+        <Box
+          component="img"
+          src="/LDAALogo.png"
+          alt="Legal Document AI Assistant Logo"
+          sx={{
+            height: 150,
+            width: 'auto',
+            mb: 3
+          }}
+        />
+        <Typography variant="h4" sx={{ fontWeight: "bold", mb: 2 }}>
+          Configuration Error
+        </Typography>
+        <Typography variant="h6" sx={{ mb: 2, color: 'error.main' }}>
+          {error}
+        </Typography>
+        <Typography variant="body2" color="gray" sx={{ mb: 3 }}>
+          Please check your backend server connection and refresh the page.
+        </Typography>
+        <Button
+          variant="contained"
+          onClick={() => window.location.reload()}
+          sx={{ backgroundColor: "#1d4ed8" }}
+        >
+          Refresh Page
+        </Button>
       </Box>
     );
   }
@@ -424,7 +494,7 @@ export default function Register() {
                 fullWidth
                 variant="outlined"
                 onClick={startGoogleSignup}
-                disabled={loading || googleLoading}
+                disabled={loading || googleLoading || !googleConfig}
                 sx={{
                   mt: 2,
                   py: 1,
