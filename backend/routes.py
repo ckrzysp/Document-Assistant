@@ -40,8 +40,11 @@ app.add_middleware(
 pwd_context = CryptContext(schemes=["argon2"], deprecated="auto")
 
 # Google OAuth configuration
-GOOGLE_CLIENT_ID = "763420082617-j42eaoshh28sv6dncameph7gjqhei4qc.apps.googleusercontent.com"
-GOOGLE_CLIENT_SECRET = "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" 
+GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
+GOOGLE_CLIENT_SECRET = os.getenv("GOOGLE_CLIENT_SECRET")
+
+if not GOOGLE_CLIENT_ID or not GOOGLE_CLIENT_SECRET:
+    raise ValueError("Google OAuth credentials not found in environment variables")
 
 def get_db():
     db = Session(bind=engine)
@@ -50,6 +53,18 @@ def get_db():
     finally:
         db.close()
 
+@app.get("/config/google-oauth")
+def get_google_config():
+    """Get Google OAuth configuration for frontend"""
+    frontend_url = os.getenv("FRONTEND_URL", "http://localhost:3000")
+    
+    return {
+        "client_id": os.getenv("GOOGLE_CLIENT_ID"),
+        "redirect_uris": {
+            "login": f"{frontend_url}/login",
+            "register": f"{frontend_url}/register"
+        }
+    }
 
 logger = logging.getLogger(__name__)
 
