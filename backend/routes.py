@@ -29,9 +29,10 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 # Add CORS middleware
+frontend_origins = os.getenv("FRONTEND_ORIGINS", "https://document-assistant-lemon.vercel.app,http://localhost:3000").split(",")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Frontend URL
+    allow_origins=[origin.strip() for origin in frontend_origins],  # Frontend URLs
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -56,7 +57,7 @@ def get_db():
 @app.get("/config/google-oauth")
 def get_google_config():
     """Get Google OAuth configuration for frontend"""
-    frontend_url = os.getenv("FRONTEND_URL", "http://localhost:3000")
+    frontend_url = os.getenv("FRONTEND_URL", "https://document-assistant-lemon.vercel.app")
     
     return {
         "client_id": os.getenv("GOOGLE_CLIENT_ID"),
@@ -123,12 +124,13 @@ async def google_auth(request: dict, db: Session = Depends(get_db)):
             raise HTTPException(status_code=422, detail="Authorization code required")
 
         # Exchange code for tokens
+        frontend_url = os.getenv("FRONTEND_URL", "https://document-assistant-lemon.vercel.app")
         token_data = {
             'client_id': GOOGLE_CLIENT_ID,
             'client_secret': GOOGLE_CLIENT_SECRET,
             'code': code,
             'grant_type': 'authorization_code',
-            'redirect_uri': request.get('redirect_uri', 'http://localhost:3000/login')
+            'redirect_uri': request.get('redirect_uri', f'{frontend_url}/login')
         }
 
         token_resp = requests.post(
