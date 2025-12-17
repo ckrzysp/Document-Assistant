@@ -343,7 +343,7 @@ export default function Login() {
                   required
                 />
 
-                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: 3 }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', mb: 3 }}>
                   <FormControlLabel
                     control={
                       <Checkbox
@@ -356,9 +356,6 @@ export default function Login() {
                     label="Remember me"
                     sx={{ color: 'text.secondary', userSelect: 'none' }}
                   />
-                  <Typography variant="body2" color="text.secondary" sx={{ cursor: 'pointer' }}>
-                    Forgot password?
-                  </Typography>
                 </Box>
 
                 <Button

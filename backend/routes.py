@@ -11,7 +11,10 @@ from crud.message_crud import MessageCRUD
 from crud.chat_crud import ChatCRUD
 from passlib.context import CryptContext
 from contextlib import asynccontextmanager
-from helpers import saveFile, get_gpt_response_with_context, check_logic_with_gemini
+from helpers import saveFile, get_gpt_response_with_context, check_logic_with_gemini, translate_text
+from ocr_pipeline import extract_document_text
+import asyncio
+import logging
 import requests
 import secrets
 import os
@@ -46,6 +49,9 @@ def get_db():
         yield db
     finally:
         db.close()
+
+
+logger = logging.getLogger(__name__)
 
 @app.post("/register", response_model=RegisterResponse)
 async def register(request : RegisterRequest, db : Session = Depends(get_db)):
@@ -87,6 +93,11 @@ def get_user_info(user_id: int, db: Session = Depends(get_db)):
         "email": user.email,
         "language": user.language
     }
+
+# Alias endpoint for frontend calls expecting /users/{id}
+@app.get("/users/{user_id}")
+def get_user_info_alias(user_id: int, db: Session = Depends(get_db)):
+    return get_user_info(user_id=user_id, db=db)
 
 @app.post("/google-auth")
 async def google_auth(request: dict, db: Session = Depends(get_db)):
@@ -203,28 +214,81 @@ async def set_password(
 async def create_chat(
     user_id: int = Form(...),
     name: str = Form(...),
+    language: str | None = Form(None),
     file: UploadFile = File(...),
     db: Session = Depends(get_db)
 ):
+    
+    # look up user in the db to see if they've set a prefered language
+    user = UserCRUD.get_by_id(db=db, user_id=user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail='User not found')
+
+    target_language = (language or user.language or '').strip() or None
+
     file_info = {
-        "filename": file.filename,
-        "media_type": file.content_type
+        'filename': file.filename,
+        'media_type': file.content_type,
+        'target_language': target_language
     }
 
     document = DocumentCRUD.create(db=db, user_id=user_id, file_info=file_info)
 
     original_file_path = await saveFile(file=file, user_id=user_id, document_id=document.id, type="original")
 
-    # TO DO: Implementation of translating the document
-    translated_file_path = ""  # Placeholder for now
-    # translated_file_path = await saveFile(file=translated_file, user_id=user_id, document_id=document.id, type="translated")
+    text = ''
+    original_text = ''
+    translated_file_path = ''
+    extraction = None
+    try:
+        # ocr workload gets pushed into a background thread so fastAPI can handle other requests while it runs
+        # Note: On CPU this can take 30-60+ seconds for large images
+        # Add timeout of 120 seconds for CPU inference
+        extraction = await asyncio.wait_for(
+            asyncio.to_thread(extract_document_text, original_file_path),
+            timeout=120.0
+        )
+        if isinstance(extraction, dict):
+            original_text = extraction.get('text', '') or ''
+            if extraction.get('error'):
+                logger.warning('OCR issue for document %s: %s', document.id, extraction['error'])
+        else:
+            original_text = str(extraction) if extraction else ''
+    except asyncio.TimeoutError:
+        logger.error('OCR extraction timed out after 120 seconds for document %s', document.id)
+        extraction = {'text': '', 'regions': [], 'error': 'OCR extraction timed out (CPU inference is slow)'}
+        original_text = ''
+    except Exception as exc:
+        logger.warning('Failed to extract text for document %s: %s', document.id, exc)
+        extraction = {'text': '', 'regions': [], 'error': str(exc)}
+        original_text = ''
+
+    text = original_text
+
+    if original_text and target_language:
+        try:
+            # translate in background thread
+            translated_text = await asyncio.to_thread(translate_text, original_text, target_language)
+            if translated_text:
+                text = translated_text
+        except Exception as exc:
+            logger.warning('Failed to translate document %s: %s', document.id, exc)
+
+    if extraction and extraction.get('error'):
+        logger.error('OCR failed for document %s: %s', document.id, extraction.get('error'))
+
+    if text:
+        translated_file_path = os.path.join(os.path.dirname(original_file_path), f'translated_{(target_language or "default").replace(" ", "_").lower()}.txt')
+        try:
+            # persist translated text alongside the upload
+            with open(translated_file_path, 'w', encoding='utf-8') as f:
+                f.write(text)
+        except Exception as exc:
+            logger.warning('Failed to write translated text file for document %s: %s', document.id, exc)
+            translated_file_path = ""
 
     DocumentCRUD.add_file_paths(db=db, document_id=document.id, original_file_path=original_file_path, translated_file_path=translated_file_path)
-
-    # TO DO: Add functionality for text extraction
-    text = ""
-
-    DocumentCRUD.add_text(db=db, document_id=document.id, text=text)
+    DocumentCRUD.add_text(db=db, document_id=document.id, text=text or "")
 
     chat_name = ChatCRUD.generate_chat_name(db=db, user_id=user_id, document_id=document.id, base_name=name)
     chat = ChatCRUD.create(db=db, user_id=user_id, document_id=document.id, chat_name=chat_name)
@@ -245,17 +309,23 @@ def send_message(request : SendMessageRequest, db : Session = Depends(get_db)):
 
     chat = ChatCRUD.update_chat(db=db, chat_id=chat_id, message=user_message, role="user")
 
+    if not chat.document:
+        raise HTTPException(status_code=404, detail="Document not found for this chat")
+    
+    db.refresh(chat.document)
+    document_text = chat.document.text or ""
+
     gemini_approved = False
     gpt_response=""
     retries = 0
     # Get Response from GPT
     while not gemini_approved and retries < 5:
 
-        gpt_response = get_gpt_response_with_context(chat.message_history, chat.document.text, language=request.language)
+        gpt_response = get_gpt_response_with_context(chat.message_history, document_text, language=request.language)
 
         content = user_message + " " + gpt_response
 
-        gemini_approved = check_logic_with_gemini(content=content, document_text=chat.document.text, language=request.language)
+        gemini_approved = check_logic_with_gemini(content=content, document_text=document_text, language=request.language)
 
         retries += 1
     
@@ -312,16 +382,18 @@ def download_document(
         if not file_path or not file_path.strip():
             raise HTTPException(status_code=404, detail="Translated version not available")
         filename_prefix = "translated_"
+        media_type = 'text/plain' if file_path.lower().endswith('.txt') else document.file_info.get('media_type', 'application/octet-stream')
     else:  # default to original
         file_path = document.original_file_path
         if not file_path:
             raise HTTPException(status_code=404, detail="Original file not found")
         filename_prefix = ""
+        media_type = document.file_info.get("media_type", "application/octet-stream")
 
     return FileResponse(
         path=file_path,
         filename=f"{filename_prefix}{document.file_info.get('filename', 'download')}",
-        media_type=document.file_info.get("media_type", "application/octet-stream")
+        media_type=media_type
     )
 
 # Get user chats
@@ -400,10 +472,71 @@ def delete_document(document_id: int, user_id: int, db: Session = Depends(get_db
     return DeleteDocumentResponse(success=True, message="Document deleted successfully")
 
 @app.post("/create_chat_from_document")
-def create_chat_from_document(request: CreateChatFromDocumentRequest, db: Session = Depends(get_db)):
+async def create_chat_from_document(request: CreateChatFromDocumentRequest, db: Session = Depends(get_db)):
     document = DocumentCRUD.get_by_id(db=db, document_id=request.document_id)
     if not document or document.user_id != request.user_id:
         raise HTTPException(status_code=404, detail="Document not found")
+
+    user = UserCRUD.get_by_id(db=db, user_id=request.user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    target_language = (user.language or '').strip() or None
+
+    # If text was never extracted (e.g., uploaded before OCR wiring), run OCR now
+    if not (document.text and document.text.strip()):
+        original_text = ''
+        text = ''
+        translated_file_path = document.translated_file_path or ''
+        try:
+            if document.original_file_path:
+                extraction = await asyncio.to_thread(extract_document_text, document.original_file_path)
+                if isinstance(extraction, dict):
+                    original_text = extraction.get('text', '') or ''
+                    if extraction.get('error'):
+                        logger.warning('OCR issue for document %s: %s', document.id, extraction['error'])
+                else:
+                    original_text = str(extraction)
+        except Exception as exc:
+            logger.warning('Failed to extract text for document %s: %s', document.id, exc)
+
+        text = original_text
+
+        if original_text and target_language:
+            try:
+                translated_text = await asyncio.to_thread(translate_text, original_text, target_language)
+                if translated_text:
+                    text = translated_text
+            except Exception as exc:
+                logger.warning('Failed to translate document %s: %s', document.id, exc)
+
+        if extraction and isinstance(extraction, dict) and extraction.get('error'):
+            logger.error('OCR failed for document %s: %s', document.id, extraction.get('error'))
+
+        if text:
+            DocumentCRUD.add_text(db=db, document_id=document.id, text=text)
+
+            if text != original_text:
+                translated_filename = (
+                    f"translated_{target_language.replace(' ', '_').lower()}.txt"
+                    if target_language else
+                    "translated_default.txt"
+                )
+                translated_file_path = os.path.join(
+                    os.path.dirname(document.original_file_path or '.'),
+                    translated_filename
+                )
+                try:
+                    with open(translated_file_path, 'w', encoding='utf-8') as f:
+                        f.write(text)
+                    DocumentCRUD.add_file_paths(
+                        db=db,
+                        document_id=document.id,
+                        original_file_path=document.original_file_path,
+                        translated_file_path=translated_file_path
+                    )
+                except Exception as exc:
+                    logger.warning('Failed to write translated text file for document %s: %s', document.id, exc)
     
     base_name = request.name or document.file_info.get("filename", "Chat")
     chat_name = ChatCRUD.generate_chat_name(db=db, user_id=request.user_id, document_id=document.id, base_name=base_name)
