@@ -426,7 +426,6 @@ export default function Dashboard() {
                           <Typography sx={{ fontSize: 12, color: '#555' }}>
                             {file.date}
                           </Typography>
-                          <MoreHoriz sx={{ position: 'absolute', right: 4, top: -30, fontSize: 22, color: '#000' }} />
                         </Box>
                       </Paper>
                     </Grid>

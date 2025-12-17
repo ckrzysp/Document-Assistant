@@ -6,7 +6,14 @@ PyMySQL==1.1.2
 SQLAlchemy==2.0.43
 python-dotenv==1.1.1
 passlib[argon2]==1.7.4
+email-validator
 google-genai
 python-multipart
 python-doctr
 numpy<2
+torch==2.2.2
+torchvision==0.17.2
+openai==2.13.0
+httpx>=0.24,<1.0
+requests==2.32.3
+pillow==10.3.0

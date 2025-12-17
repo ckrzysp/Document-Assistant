@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Box } from '@mui/material';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { Box, CircularProgress, Typography } from '@mui/material';
 import { useParams, useNavigate } from 'react-router-dom';
 import ChatHeader from './ChatHeader';
 import ChatWelcome from './ChatWelcome';
@@ -14,6 +14,7 @@ export default function Chat() {
   const { docId } = useParams();
   const navigate = useNavigate();
   
+  // State management for chat functionality
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [lang, setLang] = useState('');
@@ -22,13 +23,17 @@ export default function Chat() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [currentChatId, setCurrentChatId] = useState(null);
   const [hasUploadedFile, setHasUploadedFile] = useState(false);
-  const [selectedDocument, setSelectedDocument] = useState(null);
+  const [selectedDocument, setSelectedDocument] = useState('');
+  const [processingFile, setProcessingFile] = useState(false);
+  const [processingFileName, setProcessingFileName] = useState('');
+  const [aiProcessing, setAiProcessing] = useState(false);
 
+  // Refs for file input and scroll anchoring
   const fileRef = useRef(null);
   const endRef = useRef(null);
   const { documents: userDocuments } = useDocuments();
 
-  // convert from language codes
+  // Convert language codes to full names
   const getLanguageFromCode = (code) => {
     const languageMap = {
       'en': 'English',
@@ -42,6 +47,7 @@ export default function Chat() {
     return languageMap[code];
   };
 
+  // Show language selection prompt with optional user preference
   const showLanguagePrompt = (delay = 100) => {
     // check if prefered language is set, automatically select it if it is
     const userLanguageCode = localStorage.getItem('user_language');
@@ -64,22 +70,8 @@ export default function Chat() {
     }, delay);
   };
 
-  // start chat when document is selected or existing chat is loaded
-  useEffect(() => {
-    // Check if docId is "new" or a chat/document ID
-    if (docId === 'new') {
-      resetChat();
-    } else if (docId) {
-      // Check if docId is a chat ID (from chat history) or document ID
-      loadChatOrDocument(docId);
-    }
-  }, [docId]);
-
-  useEffect(() => {
-    endRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages]);
-
-  const loadChatOrDocument = async (id) => {
+  // Load existing chat or document based on ID
+  const loadChatOrDocument = useCallback(async (id) => {
     try {
       // First, try to load as existing chat ID
       const response = await axios.get(`${API_BASE_URL}/chat/${id}`);
@@ -90,7 +82,7 @@ export default function Chat() {
       // Transform messages from backend format to frontend format
       const transformedMessages = (chatData.messages || []).map(msg => ({
         role: msg.role,
-        text: msg.content  // Backend uses 'content', frontend expects 'text'
+        text: msg.content
       }));
       
       setCurrentChatId(chatData.id);
@@ -116,9 +108,10 @@ export default function Chat() {
     
     // If not found as chat ID, treat as document ID
     loadDocumentChat(id);
-  };
+  }, []);
 
-  const loadDocumentChat = (documentId) => {
+  // Load chat from existing document
+  const loadDocumentChat = useCallback((documentId) => {
     const document = userDocuments.find(doc => doc.id === parseInt(documentId));
     if (document) {
       setMessages([
@@ -129,9 +122,24 @@ export default function Chat() {
       setCanChat(true);
       showLanguagePrompt();
     }
-  };
+  }, [userDocuments]);
 
-  const resetChat = () => {
+  // Initialize chat based on URL parameter
+  useEffect(() => {
+    if (docId === 'new') {
+      resetChat();
+    } else if (docId) {
+      loadChatOrDocument(docId);
+    }
+  }, [docId, loadChatOrDocument]);
+
+  // Auto-scroll to bottom when messages change
+  useEffect(() => {
+    endRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages]);
+
+  // Reset chat to initial state
+  const resetChat = useCallback(() => {
     setMessages([]);
     setInput('');
     setLang('');
@@ -140,14 +148,26 @@ export default function Chat() {
     setCurrentChatId(null);
     setHasUploadedFile(false);
     setSelectedDocument('');
-  };
+    setProcessingFile(false);
+    setProcessingFileName('');
+    setAiProcessing(false);
+  }, []);
 
+  // Send message to backend
   const sendMsg = () => {
-    if (!input.trim() || !currentChatId) return;
+    if (!input.trim() || !currentChatId || aiProcessing) return;
     
     const messageText = input;
     setMessages(m => [...m, { role: 'user', text: messageText }]);
     setInput('');
+    setAiProcessing(true);
+    
+    // Add AI processing indicator
+    setMessages(m => [...m, { 
+      role: 'assistant', 
+      text: '',
+      type: 'aiProcessing' 
+    }]);
 
     axios.post(`${API_BASE_URL}/send_message`, {
       chat_id: currentChatId,
@@ -155,19 +175,36 @@ export default function Chat() {
       language: lang
     })
     .then(response => {
-      setMessages(m => [...m, { role: 'assistant', text: response.data }]);
+      setAiProcessing(false);
+      setMessages(m => {
+        const newMessages = [...m];
+        newMessages.pop();
+        return [...newMessages, { role: 'assistant', text: response.data }];
+      });
     })
     .catch(error => {
+      setAiProcessing(false);
       console.error('Error sending message:', error);
-      setMessages(m => m.slice(0, -1));
+      setMessages(m => {
+        const newMessages = [...m];
+        newMessages.pop();
+        newMessages.pop();
+        return newMessages;
+      });
+      
       if (error.response?.data?.detail) {
         setMessages(m => [...m, { role: 'assistant', text: error.response.data.detail }]);
+      } else {
+        setMessages(m => [...m, { role: 'assistant', text: 'Sorry, I encountered an error while processing your request.' }]);
       }
     });
   };
 
-  // upload file and start chat
+  // Create new chat with uploaded file
   const createNewChatWithFile = (file) => {
+    setProcessingFile(true);
+    setProcessingFileName(file.name);
+    
     const formData = new FormData();
     formData.append('user_id', localStorage.getItem('user_id'));
     formData.append('name', file.name);
@@ -176,16 +213,27 @@ export default function Chat() {
     axios.post(`${API_BASE_URL}/create_chat`, formData, {
       headers: { 'Content-Type': 'multipart/form-data' }
     }).then(response => {
+      setProcessingFile(false);
       setCurrentChatId(response.data.chat_id);
+      
       setMessages([
         { role: 'user', text: `Uploaded ${file.name}` }
       ]);
+      
       setHasUploadedFile(true);
       setCanChat(true);
       showLanguagePrompt();
+    }).catch(error => {
+      setProcessingFile(false);
+      console.error('Error uploading file:', error);
+      
+      setMessages([
+        { role: 'assistant', text: `Failed to process "${file.name}". Please try again.` }
+      ]);
     });
   };
 
+  // Handle file upload
   const uploadFile = (e) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -195,7 +243,14 @@ export default function Chat() {
     } else {
       createNewChatWithFile(file);
     }
+    
+    // Reset file input
+    if (fileRef.current) {
+      fileRef.current.value = '';
+    }
   };
+
+  // Handle language selection
   const chooseLang = (val) => {
     setLang(val);
     setTranslating(true);
@@ -215,7 +270,7 @@ export default function Chat() {
     }, 2000);
   };
 
-
+  // Start process for selecting existing document
   const oldFile = () => {
     // force new chat for old file selection
     navigate('/chat/new');
@@ -225,13 +280,17 @@ export default function Chat() {
     }, 100);
   };
 
+  // Select and load existing document
   const selectOldDoc = async (docId) => {
     const doc = userDocuments.find(d => d.id === docId);
     if (!doc) return;
+    
+    setProcessingFile(true);
+    setProcessingFileName(doc.filename);
+    
     setSelectedDocument(docId);
     setHasUploadedFile(true);
     setCanChat(false);
-    setMessages([{ role: 'user', text: `Uploaded ${doc.filename}` }]);
 
     try {
       const userId = parseInt(localStorage.getItem('user_id'));
@@ -240,17 +299,62 @@ export default function Chat() {
         document_id: docId,
         name: doc.filename
       });
+      
+      setProcessingFile(false);
       setCurrentChatId(response.data.chat_id);
+      
       setMessages([{ role: 'user', text: `Uploaded ${response.data.chat_name || doc.filename}` }]);
       setCanChat(true);
       showLanguagePrompt(500);
     } catch (error) {
+      setProcessingFile(false);
       console.error('Failed to start chat from document:', error);
-      setMessages([{ role: 'assistant', text: 'Unable to start chat with that document. Please try again.' }]);
+      
+      setMessages([{ 
+        role: 'assistant', 
+        text: `Unable to start chat with "${doc.filename}". Please try again.` 
+      }]);
       setHasUploadedFile(false);
       setCanChat(false);
     }
   };
+
+  // Overlay component for file processing
+  const ProcessingOverlay = () => (
+    <Box
+      sx={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        bgcolor: 'rgba(255, 255, 255, 0.9)',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        zIndex: 2000,
+      }}
+    >
+      <CircularProgress 
+        size={60} 
+        sx={{ 
+          color: '#4159FD',
+          mb: 3 
+        }} 
+      />
+      <Typography variant="h6" sx={{ mb: 1, fontWeight: 600 }}>
+        Processing Document
+      </Typography>
+      <Typography variant="body1" sx={{ color: '#666', mb: 1 }}>
+        {processingFileName}
+      </Typography>
+      <Typography variant="body2" sx={{ color: '#888', maxWidth: 400, textAlign: 'center' }}>
+        Extracting text and preparing your document for chatting. 
+        This may take a moment for large documents.
+      </Typography>
+    </Box>
+  );
 
   return (
     <Box
@@ -261,9 +365,12 @@ export default function Chat() {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        pt: 10
+        pt: 10,
+        position: 'relative'
       }}
     >
+      {processingFile && <ProcessingOverlay />}
+      
       <ChatSidebar
         open={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
@@ -292,11 +399,14 @@ export default function Chat() {
           messages={messages}
           lang={lang}
           translating={translating}
-          savedDocs={userDocuments}
+          savedDocs={userDocuments || []}
           chooseLang={chooseLang}
           selectOldDoc={selectOldDoc}
           selectedDocument={selectedDocument}
           endRef={endRef}
+          processingFile={processingFile}
+          processingFileName={processingFileName}
+          aiProcessing={aiProcessing}
         />
 
         <Box sx={{ 
@@ -316,6 +426,7 @@ export default function Chat() {
             sendMsg={sendMsg}
             canChat={canChat}
             hasUploadedFile={hasUploadedFile}
+            loading={aiProcessing || processingFile}
           />
         </Box>
       </Box>

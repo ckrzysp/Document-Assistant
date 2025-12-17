@@ -4,14 +4,16 @@ import { ArrowUpward } from '@mui/icons-material';
 
 export default function ChatInput({ input, setInput, sendMsg, canChat, loading, hasUploadedFile }) {
   const handleKeyPress = (e) => {
+    // Send message on Enter key (without Shift)
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
-      if (hasUploadedFile && canChat && input.trim()) {
+      if (hasUploadedFile && canChat && input.trim() && !loading) {
         sendMsg();
       }
     }
   };
 
+  const isDisabled = !hasUploadedFile || !canChat || !input.trim() || loading;
 
   return (
     <Paper
@@ -23,7 +25,8 @@ export default function ChatInput({ input, setInput, sendMsg, canChat, loading, 
         p: 1,
         bgcolor: '#fff',
         mt: 'auto',
-        mb: 4
+        mb: 4,
+        opacity: loading ? 0.7 : 1
       }}
     >
       <TextField
@@ -32,14 +35,20 @@ export default function ChatInput({ input, setInput, sendMsg, canChat, loading, 
         minRows={1}
         maxRows={6}
         variant='standard'
-        placeholder={hasUploadedFile ? 'Type your message...' : 'Please upload your document before asking questions...'}
+        placeholder={
+          loading 
+            ? 'Processing...' 
+            : hasUploadedFile 
+              ? 'Type your message...' 
+              : 'Please upload your document before asking questions...'
+        }
         value={input}
         onChange={(e) => {
-          if (hasUploadedFile) {
+          if (hasUploadedFile && !loading) {
             setInput(e.target.value);
           }
         }}
-        disabled={!hasUploadedFile}
+        disabled={!hasUploadedFile || loading}
         onKeyDown={handleKeyPress}
         sx={{
           '& .MuiInputBase-input.Mui-disabled': {
@@ -60,14 +69,17 @@ export default function ChatInput({ input, setInput, sendMsg, canChat, loading, 
             <InputAdornment position='end'>
               <IconButton
                 onClick={sendMsg}
-                disabled={!hasUploadedFile || !canChat || !input.trim() || loading}
+                disabled={isDisabled}
                 sx={{
                   bgcolor: '#4159FD',
                   color: '#fff',
                   width: 36,
                   height: 36,
                   '&:hover': { bgcolor: '#4159FD' },
-                  '&:disabled': { opacity: 0.6 }
+                  '&:disabled': { 
+                    opacity: 0.6,
+                    bgcolor: '#ccc'
+                  }
                 }}
               >
                 <ArrowUpward />

@@ -10,14 +10,17 @@ import MessageBubble from './MessageBubble';
 import { SUPPORTED_LANGS } from '../../config';
 
 export default function ChatMessages({
-  messages,
+  messages = [],
   lang,
   translating,
-  savedDocs,
+  savedDocs = [],
   chooseLang,
   selectOldDoc,
   selectedDocument,
-  endRef
+  endRef,
+  processingFile,
+  processingFileName,
+  aiProcessing
 }) {
   return (
     <Box
@@ -33,6 +36,7 @@ export default function ChatMessages({
     >
       {messages.map((m, i) => {
         if (m.type === 'lang') {
+          // Language selection prompt message
           return (
             <Box
               key={i}
@@ -48,7 +52,7 @@ export default function ChatMessages({
             >
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                 <Typography sx={{ fontWeight: 500, mr: 1 }}>
-                  Select source language:
+                  Select preferred language:
                 </Typography>
                 <Select
                   size='small'
@@ -91,6 +95,7 @@ export default function ChatMessages({
             </Box>
           );
         } else if (m.type === 'oldDocSelect') {
+          // Saved document selection prompt
           return (
             <Box
               key={i}
@@ -148,7 +153,30 @@ export default function ChatMessages({
               </Box>
             </Box>
           );
+        } else if (m.type === 'aiProcessing') {
+          // AI processing indicator message
+          return (
+            <Box
+              key={i}
+              sx={{
+                alignSelf: 'flex-start',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 1.5,
+                border: '1px solid #ddd',
+                borderRadius: 2,
+                p: 1.6,
+                mb: 1.4,
+                boxShadow: '1px 2px 0 rgba(0,0,0,0.15)',
+                maxWidth: '80%',
+                backgroundColor: '#f9f9f9'
+              }}
+            >
+              <CircularProgress size={24} sx={{ color: '#4159FD' }} />
+            </Box>
+          );
         } else {
+          // Regular message bubble
           return <MessageBubble key={i} message={m} />;
         }
       })}
@@ -160,6 +188,7 @@ export default function ChatMessages({
         </Box>
       )}
 
+      {/* Scroll anchor for auto-scroll */}
       <div ref={endRef} />
     </Box>
   );
