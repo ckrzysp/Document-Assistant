@@ -61,8 +61,8 @@ def get_gpt_response_with_context(messages: list, document_text: str, model: str
         {document_text}
 
         RULES:
-        - Only answer questions using information from the document above 
-        - If the answer is not in the document, say "I cannot find that information in the provided document"
+        - Only answer questions relevent to the information in the document above.
+        - If the answer is not relevent to the document, say "I cannot find that information in the provided document"
         - Quote relevant parts of the document when answering{language_instruction}"""
     }
 
@@ -90,11 +90,9 @@ def check_logic_with_gemini(content: str, document_text: str, language: str | No
     ---
 
     INSTRUCTIONS:
-  
 
-    3.  Your task is to evaluate a question-and-answer pair (the "Conclusion") and determine if the answer is a **reasonable and direct consequence** of the facts stated in the 'DOCUMENT CONTEXT'.
-    4.  If the answer can be logically inferred and fully supported by the document, the conclusion is **Reasonable**.
-    5.  If the answer contains any information that contradicts the document, the conclusion is **Unreasonable**.{lang_note}
+    1.  If the answer can be logically inferred and supported by the document, the conclusion is **Reasonable**.
+    2.  If the answer contains any information that contradicts the document, the conclusion is **Unreasonable**.{lang_note}
 
     OUTPUT FORMAT:
     Your final response **must be a single boolean value**.
