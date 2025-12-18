@@ -191,7 +191,7 @@ export default function Login() {
       return;
     }
 
-    const redirectUri = googleConfig.redirect_uris.login;
+    const redirectUri = `${window.location.origin}/login`;
     const params = new URLSearchParams({
       client_id: googleConfig.client_id,
       redirect_uri: redirectUri,

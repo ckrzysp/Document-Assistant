@@ -185,7 +185,7 @@ export default function Register() {
       return;
     }
 
-    const redirectUri = googleConfig.redirect_uris.register;
+    const redirectUri = `${window.location.origin}/register`;
     const params = new URLSearchParams({
       client_id: googleConfig.client_id,
       redirect_uri: redirectUri,
