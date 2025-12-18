@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Typography, Paper, Grid, Box, Button, LinearProgress, Alert, CircularProgress, IconButton, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
+import { 
+  Typography, Paper, Grid, Box, Button, LinearProgress, Alert, 
+  CircularProgress, IconButton, Dialog, DialogTitle, DialogContent, 
+  DialogActions, Backdrop
+} from '@mui/material';
 import { 
   InsertDriveFileOutlined,
-  MoreHoriz,
   Logout,
   CloudQueueOutlined,
   Upload,
@@ -19,38 +22,39 @@ export default function Documents() {
   const [uploading, setUploading] = useState(false);
   const [uploadProgress, setUploadProgress] = useState(0);
   const [deleteConfirm, setDeleteConfirm] = useState({ open: false, file: null });
+  const [uploadingFileName, setUploadingFileName] = useState('');
   const { documents: files, loading, error, reloadDocuments } = useDocuments();
   const activeTab = 'folders';
   
-const handleOpenFile = (file) => {
-  // Download file from backend
-  axios.get(`${API_BASE_URL}/documents/${file.id}/download`, {
-    responseType: 'blob'
-  })
-  .then(response => {
-    // Get file extension
-    const fileExt = file.name.split('.').pop().toLowerCase();
-    
-    // Set correct MIME type based on file extension
-    let mimeType = 'application/octet-stream'; // Default MIME type
-    if (fileExt === 'pdf') mimeType = 'application/pdf';
-    if (['jpg', 'jpeg'].includes(fileExt)) mimeType = 'image/jpeg';
-    if (fileExt === 'png') mimeType = 'image/png';
-    if (fileExt === 'gif') mimeType = 'image/gif';
-    if (fileExt === 'txt') mimeType = 'text/plain';
-    
-    // Create blob with correct MIME type
-    const blob = new Blob([response.data], { type: mimeType });
-    const url = window.URL.createObjectURL(blob);
-    
-    // Open in new window for preview
-    window.open(url, '_blank');
-  })
-  .catch(error => {
-    console.error('Failed to open file:', error);
-    setDownloadError('Failed to open file. Please try again.');
-  });
-};
+  const handleOpenFile = (file) => {
+    // Download file from backend
+    axios.get(`${API_BASE_URL}/documents/${file.id}/download`, {
+      responseType: 'blob'
+    })
+    .then(response => {
+      // Get file extension
+      const fileExt = file.name.split('.').pop().toLowerCase();
+      
+      // Set correct MIME type based on file extension
+      let mimeType = 'application/octet-stream'; // Default MIME type
+      if (fileExt === 'pdf') mimeType = 'application/pdf';
+      if (['jpg', 'jpeg'].includes(fileExt)) mimeType = 'image/jpeg';
+      if (fileExt === 'png') mimeType = 'image/png';
+      if (fileExt === 'gif') mimeType = 'image/gif';
+      if (fileExt === 'txt') mimeType = 'text/plain';
+      
+      // Create blob with correct MIME type
+      const blob = new Blob([response.data], { type: mimeType });
+      const url = window.URL.createObjectURL(blob);
+      
+      // Open in new window for preview
+      window.open(url, '_blank');
+    })
+    .catch(error => {
+      console.error('Failed to open file:', error);
+      setDownloadError('Failed to open file. Please try again.');
+    });
+  };
 
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
@@ -63,6 +67,7 @@ const handleOpenFile = (file) => {
     }
 
     setUploading(true);
+    setUploadingFileName(file.name);
     setDownloadError('');
 
     const formData = new FormData();
@@ -115,6 +120,41 @@ const handleOpenFile = (file) => {
       setDeleteConfirm({ open: false, file: null });
     }
   };
+
+  // Simple Processing Overlay
+  const UploadingOverlay = () => (
+    <Backdrop
+      open={uploading}
+      sx={{
+        zIndex: 1300,
+        bgcolor: 'rgba(255, 255, 255, 0.9)',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <CircularProgress 
+        size={60} 
+        sx={{ 
+          color: '#4159FD',
+          mb: 3 
+        }} 
+      />
+      <Typography variant="h6" sx={{ mb: 1, fontWeight: 600 }}>
+        Uploading Document
+      </Typography>
+      <Typography variant="body1" sx={{ color: '#666', mb: 1 }}>
+        {uploadingFileName}
+      </Typography>
+      <Typography variant="body2" sx={{ color: '#888', maxWidth: 400, textAlign: 'center' }}>
+        Please wait while we process your document.
+      </Typography>
+      <Typography variant="body2" sx={{ color: '#888', maxWidth: 400, textAlign: 'center' }}>
+        You will be redirected to chat once processing is complete.
+      </Typography>
+    </Backdrop>
+  );
 
   const DocumentsSidebar = (
     <>
@@ -175,26 +215,6 @@ const handleOpenFile = (file) => {
             All Documents
           </Button>
         </Box>
-
-        {/* commenting out for now since we are not sure if we wanna do this
-      <Button
-        fullWidth
-        variant={activeTab === 'folders' ? 'contained' : 'outlined'}
-        onClick={() => window.location.href = '/folders'}
-        sx={{
-          border: '1.2px solid #000',
-          borderRadius: 2,
-          fontWeight: 600,
-          textTransform: 'none',
-          color: '#000',
-          bgcolor: activeTab === 'folders' ? '#ddd' : '#f3f3f3ff',
-          boxShadow: '2px 2px 0 rgba(0,0,0,0.15)',
-          '&:hover': { bgcolor: activeTab === 'folders' ? '#ddd' : '#f8f8f8' }
-        }}
-      >
-        Folders
-      </Button>
-      */ }
 
         <Box>
           <Button
@@ -410,6 +430,9 @@ const handleOpenFile = (file) => {
           )}
         </Box>
       </Box>
+
+      {/* Simple Uploading Overlay */}
+      {uploading && <UploadingOverlay />}
 
       <Dialog
         open={deleteConfirm.open}

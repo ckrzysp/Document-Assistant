@@ -58,7 +58,7 @@ export default function Register() {
     localStorage.setItem('user_email', userInfo.email);
     localStorage.setItem('user_language', userInfo.language || 'en');
     
-    navigate('/dashboard');
+    navigate('/chat/new');
   }, [getUserInfo, navigate]);
 
   // Process Google auth code
@@ -90,7 +90,7 @@ export default function Register() {
       console.error('Google auth error:', err);
       // If user is already logged in, redirect to dashboard
       if (localStorage.getItem('user_id')) {
-        navigate('/dashboard');
+        navigate('/chat/new');
         return;
       }
       setError('Sign up with Google failed. Please try again.');
@@ -185,7 +185,7 @@ export default function Register() {
       return;
     }
 
-    const redirectUri = googleConfig.redirect_uris.register;
+    const redirectUri = `${window.location.origin}/register`;
     const params = new URLSearchParams({
       client_id: googleConfig.client_id,
       redirect_uri: redirectUri,

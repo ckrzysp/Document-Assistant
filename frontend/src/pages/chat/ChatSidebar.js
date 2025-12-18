@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import {
   Drawer,
   Box,
@@ -30,6 +30,7 @@ export default function ChatSidebar({
   handleNewChat
 }) {
   const navigate = useNavigate();
+  const location = useLocation();
   const [userName, setUserName] = useState('User');
   const [userLoading, setUserLoading] = useState(true);
   const [chatHistory, setChatHistory] = useState([]);
@@ -43,10 +44,10 @@ export default function ChatSidebar({
   const [chatActionLoading, setChatActionLoading] = useState(false);
   const [chatActionError, setChatActionError] = useState('');
 
-  const recentChats = chatHistory.slice(0, 3);
-  const previousChats = chatHistory.slice(3);
+  const sortedChats = [...chatHistory].sort((a, b) => b.id - a.id);
+  const recentChats = sortedChats.slice(0, 3);
+  const previousChats = sortedChats.slice(3);
 
-  // Fetch user info from API
   useEffect(() => {
     const fetchUserInfo = async () => {
       const userId = localStorage.getItem('user_id');
@@ -97,6 +98,16 @@ export default function ChatSidebar({
   useEffect(() => {
     loadChatHistory();
   }, []);
+
+  useEffect(() => {
+    if (open) {
+      loadChatHistory();
+    }
+  }, [open]);
+
+  useEffect(() => {
+    loadChatHistory();
+  }, [location.pathname]);
 
   const handleMenuOpen = (event, chat) => {
     event.stopPropagation();

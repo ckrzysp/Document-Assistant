@@ -376,12 +376,22 @@ export default function Chat() {
         onClose={() => setSidebarOpen(false)}
         handleNewChat={() => {
           setSidebarOpen(false);
-          navigate('/chat/new');
+          if (docId === 'new') {
+            resetChat();
+          } else {
+            navigate('/chat/new');
+          }
         }}
       />
 
       <ChatHeader 
-        handleNewChat={() => navigate('/chat/new')} 
+        handleNewChat={() => {
+          if (docId === 'new') {
+            resetChat();
+          } else {
+            navigate('/chat/new');
+          }
+        }} 
         onToggleSidebar={() => setSidebarOpen(o => !o)} 
       />
 

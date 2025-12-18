@@ -93,19 +93,6 @@ export default function GuestLanding() {
             Start Chatting
           </Button>
           </Link>
-          <Button
-            variant="outlined"
-            sx={{
-              borderRadius: "12px",
-              px: 4,
-              py: 2,
-              fontWeight: "bold",
-              color: "#4159FD",
-              borderColor: "#000",
-            }}
-          >
-            Get to know us
-          </Button>
         </Box>
       </Box>
     </Box>

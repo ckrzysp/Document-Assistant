@@ -55,7 +55,7 @@ export default function Login() {
     localStorage.setItem('user_email', userInfo.email);
     localStorage.setItem('user_language', userInfo.language || 'en');
     
-    navigate('/dashboard');
+    navigate('/chat/new');
   }, [getUserInfo, navigate]);
 
   // Process Google auth code
@@ -87,7 +87,7 @@ export default function Login() {
       console.error('Google auth error:', err);
       // If user is already logged in, redirect to dashboard
       if (localStorage.getItem('user_id')) {
-        navigate('/dashboard');
+        navigate('/chat/new');
         return;
       }
       setError('Sign in with Google failed. Please try again.');
@@ -169,7 +169,7 @@ export default function Login() {
       localStorage.setItem('user_name', userInfo.name);
       localStorage.setItem('user_language', userInfo.language || 'en');
       
-      navigate('/dashboard');
+      navigate('/chat/new');
       
     } catch (err) {
       if (err.response?.status === 401) {
@@ -191,7 +191,7 @@ export default function Login() {
       return;
     }
 
-    const redirectUri = googleConfig.redirect_uris.login;
+    const redirectUri = `${window.location.origin}/login`;
     const params = new URLSearchParams({
       client_id: googleConfig.client_id,
       redirect_uri: redirectUri,

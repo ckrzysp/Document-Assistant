@@ -31,6 +31,7 @@ export default function ChatMessages({
         flexDirection: 'column',
         overflowY: 'auto',
         alignItems: 'center',
+        px: 2,
         pb: 1
       }}
     >
